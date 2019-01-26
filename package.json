@@ -1,0 +1,17 @@
+{
+  "name": "av-trial-test",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:baadillahnabil/av-trial-test.git",
+  "author": "baadillahnabil <nabilzero27@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "sass --no-source-map --watch ./resources/app.sass:./dist/index.css",
+    "build-js": "webpack --watch --progress"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  }
+}

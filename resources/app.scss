@@ -32,10 +32,14 @@ $theme-colors: (
 }
 body {
   font-family: 'ProximaNova-Reg', sans-serif;
+  background-color: #f8f8f8;
+  height: 100%;
 }
 
 // Navbar / Header
 .navbar-custom {
+  background-color: white;
+
   @include media-breakpoint-down(md) {
     border-bottom: 3px solid $primary;
   }
@@ -176,4 +180,23 @@ body {
       }
     }
   }
+}
+
+.background-layout {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: $navbar-height;
+  left: 0;
+  z-index: -1;
+  background-color: $primary;
+}
+
+.main-container {
+  background-color: white;
+  z-index: 3;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 2000px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
 }

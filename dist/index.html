@@ -11,107 +11,107 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="root_app">
-      <!-- Navbar / Header -->
-      <nav class="navbar navbar-light navbar-expand-lg navbar-custom">
-        <!-- Company Logo -->
-        <a class="navbar-brand" href="#">
-          <img
-            src="./images/logo_hic.png"
-            height="30"
-            class="d-inline-block align-top navbar-custom__logo"
-            alt="logo_hic"
-          />
-        </a>
+    <!-- Navbar / Header -->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-custom">
+      <!-- Company Logo -->
+      <a class="navbar-brand" href="#">
+        <img
+          src="./images/logo_hic.png"
+          height="30"
+          class="d-inline-block align-top navbar-custom__logo"
+          alt="logo_hic"
+        />
+      </a>
 
-        <!-- Menus -->
-        <div class="collapse navbar-collapse navbar-custom__menus" id="navbarToggleBreakpoint">
-          <ul id="navbarMenus" class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <!-- Search Button -->
-            <li class="searchToggleTrigger nav-item navbar-custom__menu-search">
-              <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-            </li>
+      <!-- Menus -->
+      <div class="collapse navbar-collapse navbar-custom__menus" id="navbarToggleBreakpoint">
+        <ul id="navbarMenus" class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <!-- Search Button -->
+          <li class="searchToggleTrigger nav-item navbar-custom__menu-search">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
 
-            <!-- All Menus -->
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                >Compare Policies <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                >Health Funds <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Guides <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                >Calculators <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                >About Us <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                >Health & Lifestyle <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
-              ></a>
-            </li>
-          </ul>
+          <!-- All Menus -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Compare Policies <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Health Funds <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Guides <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Calculators <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Health & Lifestyle <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+        </ul>
 
-          <!-- Search Input -->
-          <form id="formSearch" class="form-inline navbar-custom__search-form d-lg-none d-xl-none">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="searchToggleTrigger input-group-text" id="basic-addon1"
-                  ><i class="fas fa-search"></i
-                ></span>
-              </div>
-              <input
-                id="searchInput"
-                type="text"
-                class="form-control"
-                placeholder="Enter keyword..."
-                aria-label="search"
-                aria-describedby="basic-addon1"
-                autofocus
-              />
+        <!-- Search Input -->
+        <form id="formSearch" class="form-inline navbar-custom__search-form d-lg-none d-xl-none">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="searchToggleTrigger input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
             </div>
-          </form>
-        </div>
+            <input
+              id="searchInput"
+              type="text"
+              class="form-control"
+              placeholder="Enter keyword..."
+              aria-label="search"
+              aria-describedby="basic-addon1"
+              autofocus
+            />
+          </div>
+        </form>
+      </div>
 
-        <!-- Contact Number Image & Button Toggle Tablet/Mobile Menu -->
-        <div>
-          <img
-            src="./images/phone_icon.png"
-            class="d-inline-block align-top navbar-custom__phone-icon"
-            height="30"
-            alt="phone_icon"
-          />
-          <img
-            src="./images/contact_number.png"
-            class="d-inline-block align-top navbar-custom__header-contact"
-            height="30"
-            alt="contact_number"
-          />
-          <button
-            class="navbar-toggler navbar-custom__toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleBreakpoint"
-            aria-controls="navbarToggleBreakpoint"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-    </div>
+      <!-- Contact Number Image & Button Toggle Tablet/Mobile Menu -->
+      <div>
+        <img
+          src="./images/phone_icon.png"
+          class="d-inline-block align-top navbar-custom__phone-icon"
+          height="30"
+          alt="phone_icon"
+        />
+        <img
+          src="./images/contact_number.png"
+          class="d-inline-block align-top navbar-custom__header-contact"
+          height="30"
+          alt="contact_number"
+        />
+        <button
+          class="navbar-toggler navbar-custom__toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleBreakpoint"
+          aria-controls="navbarToggleBreakpoint"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Background Layout -->
+    <div class="background-layout"></div>
+
+    <!-- Main Layout -->
+    <div class="container main-container"></div>
 
     <script src="index.js"></script>
   </body>

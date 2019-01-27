@@ -9530,8 +9530,13 @@ h3 {
 }
 body {
   font-family: "ProximaNova-Reg", sans-serif;
+  background-color: #f8f8f8;
+  height: 100%;
 }
 
+.navbar-custom {
+  background-color: white;
+}
 @media (max-width: 991.98px) {
   .navbar-custom {
     border-bottom: 3px solid #40a9bc;
@@ -9663,4 +9668,23 @@ body {
   .navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group input::placeholder {
     color: white;
   }
+}
+
+.background-layout {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  z-index: -1;
+  background-color: #40a9bc;
+}
+
+.main-container {
+  background-color: white;
+  z-index: 3;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 2000px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
 }

@@ -3,6 +3,7 @@
 
 // Colors
 $primary: #40a9bc;
+$primary-darken: #3da2b5;
 
 // Variables
 $navbar-height: 56px;
@@ -40,27 +41,31 @@ body {
   }
 
   .navbar-custom__header-contact {
+    margin-right: 12px;
+
     @include media-breakpoint-down(sm) {
       display: none !important;
     }
-    margin-right: 12px;
   }
 
   .navbar-custom__phone-icon {
+    margin-right: 12px;
+
     @include media-breakpoint-up(md) {
       display: none !important;
     }
-    margin-right: 12px;
   }
 
   .navbar-custom__toggler {
     border: none;
+
+    &:focus {
+      outline: none;
+    }
+
     i {
       color: $primary;
       font-size: 24px;
-    }
-    &:focus {
-      outline: none;
     }
   }
 
@@ -113,6 +118,61 @@ body {
     .navbar-custom__menu-search {
       @include media-breakpoint-down(md) {
         display: none;
+      }
+    }
+
+    .navbar-custom__search-form {
+      width: 100%;
+
+      .input-group {
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          background-color: $primary-darken;
+        }
+
+        .input-group-prepend {
+          margin-left: 8px;
+
+          @include media-breakpoint-down(md) {
+            background-color: transparent;
+          }
+
+          span.input-group-text {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            i.fas {
+              font-size: 14px;
+
+              @include media-breakpoint-down(md) {
+                color: white;
+              }
+            }
+          }
+        }
+
+        input {
+          font-family: 'ProximaNova-SemiBold', sans-serif;
+          border: none;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          @include media-breakpoint-down(md) {
+            padding: 35px 20px;
+            color: white;
+            background-color: transparent;
+            margin-left: -10px;
+            font-family: 'ProximaNova-Regular', sans-serif;
+            font-weight: 400;
+
+            &::placeholder {
+              color: white;
+            }
+          }
+        }
       }
     }
   }

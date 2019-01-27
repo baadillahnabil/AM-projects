@@ -9556,12 +9556,12 @@ body {
 .navbar-custom .navbar-custom__toggler {
   border: none;
 }
+.navbar-custom .navbar-custom__toggler:focus {
+  outline: none;
+}
 .navbar-custom .navbar-custom__toggler i {
   color: #40a9bc;
   font-size: 24px;
-}
-.navbar-custom .navbar-custom__toggler:focus {
-  outline: none;
 }
 .navbar-custom .navbar-custom__menus {
   margin-left: 20px;
@@ -9612,5 +9612,55 @@ body {
 @media (max-width: 991.98px) {
   .navbar-custom .navbar-custom__menus .navbar-custom__menu-search {
     display: none;
+  }
+}
+.navbar-custom .navbar-custom__menus .navbar-custom__search-form {
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group {
+    width: 100%;
+    background-color: #3da2b5;
+  }
+}
+.navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group .input-group-prepend {
+  margin-left: 8px;
+}
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group .input-group-prepend {
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group .input-group-prepend span.input-group-text {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group .input-group-prepend span.input-group-text i.fas {
+  font-size: 14px;
+}
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group .input-group-prepend span.input-group-text i.fas {
+    color: white;
+  }
+}
+.navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group input {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  border: none;
+}
+.navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group input:focus {
+  box-shadow: none;
+}
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group input {
+    padding: 35px 20px;
+    color: white;
+    background-color: transparent;
+    margin-left: -10px;
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-weight: 400;
+  }
+  .navbar-custom .navbar-custom__menus .navbar-custom__search-form .input-group input::placeholder {
+    color: white;
   }
 }

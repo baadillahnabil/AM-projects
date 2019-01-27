@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.html",
   "repository": "git@github.com:baadillahnabil/av-trial-test.git",
-  "author": "baadillahnabil <nabilzero27@gmail.com>",
+  "author": "baadillahnabil <baadillahnabil@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build-css": "sass --no-source-map --watch ./resources/app.scss:./dist/index.css",
     "build-js": "webpack --watch --progress"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6"

@@ -1,16 +1,119 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 // Colors
 $primary: #40a9bc;
+
+// Variables
+$navbar-height: 56px;
 
 // Theming
 $theme-colors: (
   'primary': $primary
 );
 
-// Styling
-.navbar-custom {
+// Fonts
+@font-face {
+  font-family: 'ProximaNova-Reg';
+  src: url('../dist/fonts/ProximaNova-Reg.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../dist/fonts/ProximaNova-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'ProximaNova-SemiBold';
+  src: url('../dist/fonts/ProximaNova-SemiBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'ProximaNova-RegItalic';
+  src: url('../dist/fonts/ProximaNova-RegItalic.otf') format('opentype');
+}
+body {
+  font-family: 'ProximaNova-Reg', sans-serif;
 }
 
-.navbar-custom__img {
+// Navbar / Header
+.navbar-custom {
+  @include media-breakpoint-down(md) {
+    border-bottom: 3px solid $primary;
+  }
+
+  .navbar-custom__header-contact {
+    @include media-breakpoint-down(sm) {
+      display: none !important;
+    }
+    margin-right: 12px;
+  }
+
+  .navbar-custom__phone-icon {
+    @include media-breakpoint-up(md) {
+      display: none !important;
+    }
+    margin-right: 12px;
+  }
+
+  .navbar-custom__toggler {
+    border: none;
+    i {
+      color: $primary;
+      font-size: 24px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navbar-custom__menus {
+    margin-left: 20px;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      position: absolute;
+      top: $navbar-height;
+      left: 0;
+      background-color: $primary;
+      width: 100%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+      &:before {
+        content: '';
+        position: absolute;
+        border: 11px solid transparent;
+        border-bottom: 10px solid $primary;
+        top: -19px;
+        right: 28px;
+      }
+    }
+
+    a {
+      font-weight: bold;
+      font-size: 14px;
+      color: black !important;
+
+      @include media-breakpoint-up(lg) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      @include media-breakpoint-down(md) {
+        color: white !important;
+        font-family: 'ProximaNova-SemiBold', sans-serif;
+        padding: 15px 20px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba($color: #d8d8d8, $alpha: 0.5);
+
+        i.fas {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .navbar-custom__menu-search {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
 }

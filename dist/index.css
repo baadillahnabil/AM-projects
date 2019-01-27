@@ -5,6 +5,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9509,5 +9510,107 @@ h3 {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
+  }
+}
+@font-face {
+  font-family: "ProximaNova-Reg";
+  src: url("../dist/fonts/ProximaNova-Reg.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../dist/fonts/ProximaNova-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-SemiBold";
+  src: url("../dist/fonts/ProximaNova-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNova-RegItalic";
+  src: url("../dist/fonts/ProximaNova-RegItalic.otf") format("opentype");
+}
+body {
+  font-family: "ProximaNova-Reg", sans-serif;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-custom {
+    border-bottom: 3px solid #40a9bc;
+  }
+}
+.navbar-custom .navbar-custom__header-contact {
+  margin-right: 12px;
+}
+@media (max-width: 767.98px) {
+  .navbar-custom .navbar-custom__header-contact {
+    display: none !important;
+  }
+}
+.navbar-custom .navbar-custom__phone-icon {
+  margin-right: 12px;
+}
+@media (min-width: 768px) {
+  .navbar-custom .navbar-custom__phone-icon {
+    display: none !important;
+  }
+}
+.navbar-custom .navbar-custom__toggler {
+  border: none;
+}
+.navbar-custom .navbar-custom__toggler i {
+  color: #40a9bc;
+  font-size: 24px;
+}
+.navbar-custom .navbar-custom__toggler:focus {
+  outline: none;
+}
+.navbar-custom .navbar-custom__menus {
+  margin-left: 20px;
+}
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-custom__menus {
+    margin-left: 0;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    background-color: #40a9bc;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .navbar-custom .navbar-custom__menus:before {
+    content: "";
+    position: absolute;
+    border: 11px solid transparent;
+    border-bottom: 10px solid #40a9bc;
+    top: -19px;
+    right: 28px;
+  }
+}
+.navbar-custom .navbar-custom__menus a {
+  font-weight: bold;
+  font-size: 14px;
+  color: black !important;
+}
+@media (min-width: 992px) {
+  .navbar-custom .navbar-custom__menus a {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-custom__menus a {
+    color: white !important;
+    font-family: "ProximaNova-SemiBold", sans-serif;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+  }
+  .navbar-custom .navbar-custom__menus a i.fas {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-custom__menus .navbar-custom__menu-search {
+    display: none;
   }
 }

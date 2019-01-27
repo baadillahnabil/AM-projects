@@ -13,42 +13,80 @@
   <body>
     <div id="root_app">
       <!-- Navbar / Header -->
-      <nav class="navbar navbar-light navbar-expand-lg bg-light navbar-custom">
+      <nav class="navbar navbar-light navbar-expand-lg navbar-custom">
         <a class="navbar-brand" href="#">
           <img
             src="./images/logo_hic.png"
             height="30"
-            class="d-inline-block align-top navbar-custom__img"
+            class="d-inline-block align-top navbar-custom__logo"
             alt="logo_hic"
           />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggleBreakpoint"
-          aria-controls="navbarToggleBreakpoint"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse primary" id="navbarToggleBreakpoint">
+
+        <div class="collapse navbar-collapse navbar-custom__menus" id="navbarToggleBreakpoint">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item navbar-custom__menu-search">
+              <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#"
+                >Compare Policies <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Health Funds <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Guides <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Calculators <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >About Us <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Health & Lifestyle <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+              ></a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+        </div>
+
+        <div>
+          <img
+            src="./images/phone_icon.png"
+            class="d-inline-block align-top navbar-custom__phone-icon"
+            height="30"
+            alt="phone_icon"
+          />
+          <img
+            src="./images/contact_number.png"
+            class="d-inline-block align-top navbar-custom__header-contact"
+            height="30"
+            alt="contact_number"
+          />
+          <button
+            class="navbar-toggler navbar-custom__toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleBreakpoint"
+            aria-controls="navbarToggleBreakpoint"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
       </nav>
+
+      <p>Oh yeah</p>
     </div>
 
     <script src="index.js"></script>

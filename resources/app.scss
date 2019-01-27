@@ -6,7 +6,7 @@ $primary: #40a9bc;
 $primary-darken: #3da2b5;
 
 // Variables
-$navbar-height: 56px;
+$navbar-height: 69px;
 
 // Theming
 $theme-colors: (
@@ -90,7 +90,7 @@ body {
         position: absolute;
         border: 11px solid transparent;
         border-bottom: 10px solid $primary;
-        top: -19px;
+        top: -22px;
         right: 28px;
       }
     }
@@ -190,13 +190,101 @@ body {
   left: 0;
   z-index: -1;
   background-color: $primary;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .main-container {
   background-color: white;
   z-index: 3;
-  margin-top: 100px;
-  margin-bottom: 100px;
   height: 2000px;
+  margin-top: $navbar-height + 3;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+  padding: 50px;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 85%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+
+  .sidebar-left {
+    // outline: 1px solid deeppink;
+    // padding: 50px;
+
+    .page-content {
+      .page-content__header {
+        font-family: 'ProximaNova-SemiBold', sans-serif;
+        background-color: transparent;
+        font-weight: bold;
+        color: $primary;
+      }
+
+      .page-content__timeline {
+        list-style-type: none;
+        position: relative;
+        margin-top: 10px;
+
+        &:before {
+          content: ' ';
+          background: #d4d9df;
+          display: inline-block;
+          position: absolute;
+          top: 25px;
+          left: 24px;
+          width: 1px;
+          height: 77%;
+          z-index: 400;
+        }
+
+        li {
+          margin: 20px 0;
+          padding-left: 20px;
+          padding-right: 20px;
+          cursor: pointer;
+
+          &:before {
+            content: ' ';
+            background-color: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin-top: 5px;
+            left: 20px;
+            width: 10px;
+            height: 10px;
+            z-index: 400;
+          }
+
+          &:hover {
+            font-weight: bold;
+            &:before {
+              border: 2px solid $primary;
+            }
+          }
+
+          &.active {
+            font-family: 'ProximaNova-SemiBold', sans-serif;
+            color: $primary;
+
+            &:before {
+              background-color: $primary;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    // outline: 1px solid teal;
+  }
 }

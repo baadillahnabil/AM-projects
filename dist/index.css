@@ -9691,7 +9691,7 @@ body {
   height: 2000px;
   margin-top: 72px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
-  padding: 50px;
+  padding: 50px 0px 50px 50px;
 }
 @media (min-width: 992px) {
   .main-container {
@@ -9824,4 +9824,20 @@ body {
 .main-container .sidebar-left .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-meta {
   color: #b4b4b4;
   font-size: 12px;
+}
+@media (min-width: 992px) {
+  .main-container .main-content {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+}
+.main-container .main-content .main-content__meta-title {
+  font-size: 12px;
+}
+.main-container .main-content .main-content__title {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 38px;
+}
+.main-container .main-content .main-content__image {
+  margin-top: 15px;
 }

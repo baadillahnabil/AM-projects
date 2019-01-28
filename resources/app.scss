@@ -202,7 +202,7 @@ body {
   height: 2000px;
   margin-top: $navbar-height + 3;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
-  padding: 50px;
+  padding: 50px 0px 50px 50px;
 
   @include media-breakpoint-up(lg) {
     max-width: 85%;
@@ -364,6 +364,22 @@ body {
   }
 
   .main-content {
-    // outline: 1px solid teal;
+    @include media-breakpoint-up(lg) {
+      padding-left: 30px;
+      padding-right: 0;
+    }
+
+    .main-content__meta-title {
+      font-size: 12px;
+    }
+
+    .main-content__title {
+      font-family: 'ProximaNova-Bold', sans-serif;
+      font-size: 38px;
+    }
+
+    .main-content__image {
+      margin-top: 15px;
+    }
   }
 }

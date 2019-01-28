@@ -705,5 +705,45 @@ body {
         }
       }
     }
+
+    .main-content__faq {
+      .faq__title {
+        font-size: 22px;
+        font-family: 'ProximaNova-SemiBold', sans-serif;
+        margin-top: 40px;
+      }
+
+      .faq__lists {
+        .faq__item {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          font-size: 15px;
+          color: $primary;
+          font-family: 'ProximaNova-SemiBold', sans-serif;
+          border-left: 1px solid #ededed;
+          border-right: 1px solid #ededed;
+          border-bottom: 1px solid #ededed;
+          cursor: pointer;
+
+          &:first-child {
+            border-top: 1px solid #ededed;
+          }
+
+          i.fas {
+            margin-right: 15px;
+            margin-left: 10px;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .faq__meta {
+        font-size: 12px;
+        color: #898989;
+        font-family: 'ProximaNova-RegItalic', sans-serif;
+        margin-top: 20px;
+      }
+    }
   }
 }

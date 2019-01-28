@@ -208,16 +208,31 @@ body {
   // height: 2000px;
   margin-top: $navbar-height + 3;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
-  padding: 50px 0px 50px 50px;
 
   @include media-breakpoint-up(lg) {
+    padding: 50px 0px 50px 50px;
     max-width: 85%;
     margin-top: 100px;
     margin-bottom: 100px;
   }
 
   @include media-breakpoint-down(md) {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .row {
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   .sidebar-left {
@@ -374,13 +389,28 @@ body {
       padding-left: 30px;
     }
 
+    @include media-breakpoint-down(sm) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
     .main-content__meta-title {
       font-size: 12px;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
 
     .main-content__title {
       font-family: 'ProximaNova-Bold', sans-serif;
       font-size: 38px;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
 
     .main-content__image {
@@ -393,6 +423,11 @@ body {
       width: 100%;
       text-align: center;
 
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
       $bubble-width: 135px;
       .cta-box__bubble {
         position: absolute;
@@ -400,20 +435,30 @@ body {
         height: $bubble-width - 2;
         right: -($bubble-width + 12);
         top: $bubble-width - 2;
+
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
       }
 
       .cta-box__intro {
         border: 1px solid #eaeaea;
         padding: 30px 30px 20px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
 
         .intro__title {
           font-size: 20px;
           margin-bottom: 8px;
           font-family: 'ProximaNova-SemiBold', sans-serif;
+          width: 100%;
         }
 
         .intro__message {
           font-size: 14px;
+          width: 100%;
           margin-bottom: 8px;
 
           a {
@@ -449,6 +494,10 @@ body {
           padding-right: 20px;
 
           .form__input-suburb {
+            @include media-breakpoint-down(md) {
+              padding-top: 10px;
+            }
+
             input {
               background-color: white;
               color: black;
@@ -470,6 +519,10 @@ body {
           }
 
           .form__input-life-stage {
+            @include media-breakpoint-down(md) {
+              padding-top: 10px;
+            }
+
             div.dropdown {
               button {
                 background-color: white;
@@ -526,6 +579,11 @@ body {
       font-size: 22px;
       font-family: 'ProximaNova-SemiBold', sans-serif;
       margin-top: 40px;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
 
     .main-content__paragraph-content {
@@ -533,6 +591,11 @@ body {
       text-align: left;
       margin-top: 25px;
       margin-bottom: 25px;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
 
     .main-content__cta-simple {
@@ -541,6 +604,10 @@ body {
       align-items: center;
       padding: 30px;
       border: 1px solid #f3f3f3;
+
+      @include media-breakpoint-down(sm) {
+        border: none;
+      }
 
       .cta-simple__button {
         background-color: #79ca1b;
@@ -558,6 +625,10 @@ body {
           box-shadow: none;
         }
 
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+
         i.fas {
           margin-left: 10px;
         }
@@ -569,6 +640,11 @@ body {
       justify-content: center;
       margin-top: 40px;
       cursor: pointer;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
 
       img {
         outline: 1px solid #d8d8d8;

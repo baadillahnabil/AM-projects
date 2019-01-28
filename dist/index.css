@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../node_modules/zoom-vanilla.js/dist/zoom.css';
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9534,6 +9535,10 @@ body {
   height: 100%;
 }
 
+.zoom-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .navbar-custom {
   background-color: white;
 }
@@ -9673,7 +9678,7 @@ body {
 .background-layout {
   height: 30%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 69px;
   left: 0;
   z-index: -1;
@@ -9688,7 +9693,6 @@ body {
 .main-container {
   background-color: white;
   z-index: 3;
-  height: 2000px;
   margin-top: 72px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
   padding: 50px 0px 50px 50px;
@@ -9828,7 +9832,6 @@ body {
 @media (min-width: 992px) {
   .main-container .main-content {
     padding-left: 30px;
-    padding-right: 0;
   }
 }
 .main-container .main-content .main-content__meta-title {
@@ -9839,5 +9842,171 @@ body {
   font-size: 38px;
 }
 .main-container .main-content .main-content__image {
+  width: 100%;
   margin-top: 15px;
+  margin-bottom: 25px;
+}
+.main-container .main-content .main-content__cta-box {
+  width: 100%;
+  text-align: center;
+}
+.main-container .main-content .main-content__cta-box .cta-box__bubble {
+  position: absolute;
+  width: 135px;
+  height: 133px;
+  right: -147px;
+  top: 133px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__intro {
+  border: 1px solid #eaeaea;
+  padding: 30px 30px 20px 30px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__intro .intro__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+}
+.main-container .main-content .main-content__cta-box .cta-box__intro .intro__message {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__intro .intro__message a {
+  color: #40a9bc;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  text-decoration-color: #40a9bc;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form {
+  background-color: #40a9bc;
+  padding: 20px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__title {
+  color: white;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding: 5px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__title img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-suburb input {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  padding: 24px 20px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-suburb input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-suburb input::placeholder {
+  color: black;
+  font-size: 15px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage div.dropdown button {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage div.dropdown button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage div.dropdown button::placeholder {
+  color: black;
+  font-size: 15px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-submit {
+  margin-top: 15px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-submit button.btn {
+  background-color: #79ca1b;
+  color: white;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 12px;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-submit button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-submit button.btn i.fas {
+  margin-left: 10px;
+}
+.main-container .main-content .main-content__paragraph-title {
+  font-size: 22px;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  margin-top: 40px;
+}
+.main-container .main-content .main-content__paragraph-content {
+  font-size: 15px;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.main-container .main-content .main-content__cta-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #f3f3f3;
+}
+.main-container .main-content .main-content__cta-simple .cta-simple__button {
+  background-color: #79ca1b;
+  color: white;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 12px;
+  width: 285px;
+}
+.main-container .main-content .main-content__cta-simple .cta-simple__button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .main-content .main-content__cta-simple .cta-simple__button i.fas {
+  margin-left: 10px;
+}
+.main-container .main-content .main-content__image-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.main-container .main-content .main-content__image-content img {
+  outline: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+.main-container .main-content .main-content__image-content div.icon-wrapper {
+  position: relative;
+}
+.main-container .main-content .main-content__image-content div.icon-wrapper i.fas {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  background-color: #d8d8d8;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
 }

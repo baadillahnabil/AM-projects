@@ -9705,10 +9705,16 @@ body {
     max-width: 100%;
   }
 }
+@media (min-width: 992px) {
+  .main-container .sidebar-left {
+    max-width: 29%;
+  }
+}
 .main-container .sidebar-left .page-content .page-content__header {
   font-family: "ProximaNova-SemiBold", sans-serif;
   background-color: transparent;
   font-weight: bold;
+  font-size: 15px;
   color: #40a9bc;
 }
 .main-container .sidebar-left .page-content .page-content__timeline {
@@ -9731,6 +9737,7 @@ body {
   margin: 20px 0;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 15px;
   cursor: pointer;
 }
 .main-container .sidebar-left .page-content .page-content__timeline li:before {
@@ -9759,4 +9766,62 @@ body {
 .main-container .sidebar-left .page-content .page-content__timeline li.active:before {
   background-color: #40a9bc;
   border: none;
+}
+.main-container .sidebar-left .categories {
+  margin-top: 20px;
+}
+.main-container .sidebar-left .categories .categories__header {
+  font-size: 15px;
+  color: white;
+  background-color: #40a9bc;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+}
+.main-container .sidebar-left .categories .categories__lists {
+  list-style-type: none;
+  padding: 30px 35px;
+}
+.main-container .sidebar-left .categories .categories__lists p {
+  margin-bottom: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.main-container .sidebar-left .categories .categories__lists p:hover {
+  font-weight: bold;
+}
+.main-container .sidebar-left .categories .categories__lists p.active {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  color: #40a9bc;
+}
+.main-container .sidebar-left .categories .categories__lists p i.fas {
+  margin-right: 20px;
+}
+.main-container .sidebar-left .popular-guides {
+  margin-top: 20px;
+}
+.main-container .sidebar-left .popular-guides .popular-guides__header {
+  color: white;
+  font-size: 15px;
+  background-color: #40a9bc;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+}
+.main-container .sidebar-left .popular-guides .popular-guides__lists {
+  padding: 20px 15px;
+}
+.main-container .sidebar-left .popular-guides .popular-guides__lists li.media img {
+  width: 100px;
+  height: 60px;
+}
+.main-container .sidebar-left .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-title {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 19px;
+  cursor: pointer;
+}
+.main-container .sidebar-left .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-title:hover {
+  text-decoration: underline;
+}
+.main-container .sidebar-left .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-meta {
+  color: #b4b4b4;
+  font-size: 12px;
 }

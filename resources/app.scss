@@ -215,14 +215,16 @@ body {
   }
 
   .sidebar-left {
-    // outline: 1px solid deeppink;
-    // padding: 50px;
+    @include media-breakpoint-up(lg) {
+      max-width: 29%;
+    }
 
     .page-content {
       .page-content__header {
         font-family: 'ProximaNova-SemiBold', sans-serif;
         background-color: transparent;
         font-weight: bold;
+        font-size: 15px;
         color: $primary;
       }
 
@@ -247,6 +249,7 @@ body {
           margin: 20px 0;
           padding-left: 20px;
           padding-right: 20px;
+          font-size: 15px;
           cursor: pointer;
 
           &:before {
@@ -277,6 +280,82 @@ body {
             &:before {
               background-color: $primary;
               border: none;
+            }
+          }
+        }
+      }
+    }
+
+    .categories {
+      margin-top: 20px;
+
+      .categories__header {
+        font-size: 15px;
+        color: white;
+        background-color: $primary;
+        font-family: 'ProximaNova-SemiBold', sans-serif;
+      }
+
+      .categories__lists {
+        list-style-type: none;
+        padding: 30px 35px;
+
+        p {
+          margin-bottom: 8px;
+          font-size: 15px;
+          cursor: pointer;
+
+          &:hover {
+            font-weight: bold;
+          }
+
+          &.active {
+            font-family: 'ProximaNova-SemiBold', sans-serif;
+            color: $primary;
+          }
+
+          i.fas {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .popular-guides {
+      margin-top: 20px;
+
+      .popular-guides__header {
+        color: white;
+        font-size: 15px;
+        background-color: $primary;
+        font-family: 'ProximaNova-SemiBold', sans-serif;
+      }
+
+      .popular-guides__lists {
+        padding: 20px 15px;
+
+        li.media {
+          img {
+            width: 100px;
+            height: 60px;
+          }
+
+          div.media-body {
+            .popular-guides__lists-title {
+              font-family: 'ProximaNova-SemiBold', sans-serif;
+              font-size: 15px;
+              font-weight: bold;
+              line-height: 19px;
+              cursor: pointer;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            .popular-guides__lists-meta {
+              color: #b4b4b4;
+              font-size: 12px;
             }
           }
         }

@@ -665,5 +665,45 @@ body {
         }
       }
     }
+
+    .main-content__timeline {
+      margin-top: 35px;
+      padding-left: 10px;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .timeline-group {
+        position: relative;
+        padding-left: 30px;
+
+        &:not(:last-child) {
+          border-left: 1px solid #d8d8d8;
+        }
+
+        i.fas {
+          color: #79ca1b;
+          background-color: white;
+          font-size: 24px;
+          position: absolute;
+          top: -5px;
+          left: -12px;
+        }
+
+        .timeline-header {
+          font-size: 17px;
+          font-family: 'ProximaNova-SemiBold', sans-serif;
+          color: black;
+          margin-bottom: 15px;
+        }
+
+        .timeline-text {
+          padding-bottom: 30px;
+          margin-bottom: 0px;
+        }
+      }
+    }
   }
 }

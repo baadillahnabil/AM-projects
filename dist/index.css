@@ -10133,6 +10133,12 @@ body {
   padding-bottom: 30px;
   margin-bottom: 0px;
 }
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__faq {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .main-container .main-content .main-content__faq .faq__title {
   font-size: 22px;
   font-family: "ProximaNova-SemiBold", sans-serif;
@@ -10163,4 +10169,178 @@ body {
   color: #898989;
   font-family: "ProximaNova-RegItalic", sans-serif;
   margin-top: 20px;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__faq .faq__meta {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+.main-container .main-content .main-content__big-cta {
+  padding: 20px 60px;
+  margin-top: 50px;
+  background-color: #40a9bc;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__big-cta {
+    padding: 5px 20px;
+    margin-top: 30px;
+  }
+}
+.main-container .main-content .main-content__big-cta .big-cta__row {
+  margin-top: 30px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row.big-cta__row-first-content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__big-cta .big-cta__row {
+    text-align: center;
+  }
+}
+.main-container .main-content .main-content__big-cta .big-cta__row .big-cta__column-icon {
+  padding: 0;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__big-cta .big-cta__row .big-cta__column-icon img {
+    padding: 20px 0;
+    width: 35px;
+    height: auto;
+  }
+}
+.main-container .main-content .main-content__big-cta .big-cta__row .big-cta__column-content {
+  padding-left: 0;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row .big-cta__column-content .row__title {
+  color: white;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 22px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row .big-cta__column-content .row__content {
+  font-size: 15px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row .big-cta__column-content .row__content .row__content-phone {
+  font-family: "ProximaNova-Bold", sans-serif;
+  background-color: #79ca1b;
+  padding: 10px;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__big-cta .big-cta__row .big-cta__column-content .row__content .row__content-phone {
+    background-color: transparent;
+    padding: 0px;
+  }
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form {
+  background-color: #40a9bc;
+  padding: 0px;
+  margin-top: 0;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 100%;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-name,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-email,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-phone,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-suburb {
+  padding-left: 0;
+  padding-top: 15px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-name input,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-email input,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-phone input,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-suburb input {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  padding: 24px 20px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-name input:focus,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-email input:focus,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-phone input:focus,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-suburb input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-name input::placeholder,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-email input::placeholder,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-phone input::placeholder,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-suburb input::placeholder {
+  color: black;
+  font-size: 15px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-email {
+  padding-left: 5px;
+  padding-right: 0;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage {
+  padding-right: 0;
+  padding-top: 15px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund div.dropdown button,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage div.dropdown button {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund div.dropdown button:focus,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage div.dropdown button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund div.dropdown button::placeholder,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage div.dropdown button::placeholder {
+  color: black;
+  font-size: 15px;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-name,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-email,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-phone,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-suburb,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-submit {
+  margin-top: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-submit button.btn {
+  background-color: #79ca1b;
+  color: white;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 12px;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-submit button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-submit button.btn i.fas {
+  margin-left: 10px;
 }

@@ -10344,3 +10344,212 @@ body {
 .main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-submit button.btn i.fas {
   margin-left: 10px;
 }
+.main-container .main-content .main-content__email {
+  margin-top: 40px;
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__email {
+    padding: 10px;
+  }
+}
+.main-container .main-content .main-content__email .email__title {
+  font-size: 22px;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__email .email__title {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.main-container .main-content .main-content__email .email__description {
+  font-size: 14px;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__email .email__description {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.main-container .main-content .main-content__email .email__required-sign {
+  color: #d73737;
+}
+.main-container .main-content .main-content__email .email__form {
+  margin-top: 30px;
+}
+.main-container .main-content .main-content__email .email__form .form-group label {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.main-container .main-content .main-content__email .email__form input,
+.main-container .main-content .main-content__email .email__form textarea {
+  background-color: white;
+  color: black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+  border: none;
+  border-radius: 2px;
+  padding: 24px 20px;
+}
+.main-container .main-content .main-content__email .email__form input:focus,
+.main-container .main-content .main-content__email .email__form textarea:focus {
+  outline: none;
+}
+.main-container .main-content .main-content__email .email__form input::placeholder,
+.main-container .main-content .main-content__email .email__form textarea::placeholder {
+  color: black;
+  font-size: 15px;
+}
+.main-container .main-content .main-content__email .email__form .email__form-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-container .main-content .main-content__email .email__form .email__form-submit button.btn {
+  background-color: #79ca1b;
+  color: white;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 12px 40px;
+}
+.main-container .main-content .main-content__email .email__form .email__form-submit button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__email .email__form .email__form-submit button.btn {
+    width: 100%;
+  }
+}
+.main-container .main-content .main-content__email .email__form .email__form-submit button.btn i.fas {
+  margin-left: 10px;
+}
+.main-container .similar-items {
+  margin-top: 60px;
+}
+@media (max-width: 991.98px) {
+  .main-container .similar-items {
+    margin-top: 30px;
+  }
+}
+.main-container .similar-items .similar-items__title {
+  font-size: 22px;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+}
+@media (max-width: 991.98px) {
+  .main-container .similar-items .similar-items__title {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .main-container .similar-items .similar-items__cards {
+    padding-right: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-container .similar-items .similar-items__cards {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-container .similar-items .similar-items__cards {
+    padding: 0 50px;
+  }
+}
+.main-container .similar-items .similar-items__cards .card-deck {
+  margin-left: 0;
+  margin-right: 0;
+}
+.main-container .similar-items .similar-items__cards .card-deck .card {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.04), 0 1px 0px rgba(0, 0, 0, 0.04);
+}
+.main-container .similar-items .similar-items__cards .card-deck .card:first-child {
+  margin-left: 0;
+}
+.main-container .similar-items .similar-items__cards .card-deck .card:last-child {
+  margin-right: 0;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-container .similar-items .similar-items__cards .card-deck .card:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main-container .similar-items .similar-items__cards .card-deck .card:nth-child(2) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-container .similar-items .similar-items__cards .card-deck .card:nth-child(1) {
+    margin-right: 0;
+  }
+}
+.main-container .similar-items .similar-items__cards .card-deck .card .card-body .card-title {
+  font-size: 16px;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  color: #40a9bc;
+}
+.main-container .similar-items .similar-items__cards .card-deck .card .card-body .card-text {
+  font-size: 14px;
+}
+.main-container .similar-items .similar-items__cards .similar-items__cards-arrows {
+  position: relative;
+}
+.main-container .similar-items .similar-items__cards .similar-items__cards-arrows .arrow-right {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.06);
+  font-size: 35px;
+  top: -172px;
+  right: -35px;
+  cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .main-container .similar-items .similar-items__cards .similar-items__cards-arrows .arrow-right {
+    right: -30px;
+  }
+}
+.main-container .similar-items .similar-items__cards .similar-items__cards-arrows .arrow-left {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.06);
+  font-size: 35px;
+  top: -172px;
+  left: -35px;
+  cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .main-container .similar-items .similar-items__cards .similar-items__cards-arrows .arrow-left {
+    left: -30px;
+  }
+}
+.main-container .similar-items .similar-items__cards-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px 20px 0;
+}
+@media (max-width: 991.98px) {
+  .main-container .similar-items .similar-items__cards-dots {
+    padding: 30px 0px 20px 0;
+  }
+}
+.main-container .similar-items .similar-items__cards-dots i.fas {
+  font-size: 8px;
+  color: #e8e8e8;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.main-container .similar-items .similar-items__cards-dots i.fas.active {
+  color: #40a9bc;
+}

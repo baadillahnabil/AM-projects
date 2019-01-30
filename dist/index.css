@@ -9678,7 +9678,7 @@ body {
 .background-layout {
   height: 30%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 69px;
   left: 0;
   z-index: -1;
@@ -10070,6 +10070,27 @@ body {
 }
 .main-container .main-content .main-content__cta-simple .cta-simple__button i.fas {
   margin-left: 10px;
+}
+.main-container .main-content .main-content__page-content {
+  font-size: 14px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #40a9bc;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  border: 1px solid #ededed;
+  cursor: pointer;
+}
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__page-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.main-container .main-content .main-content__page-content i.fas {
+  color: rgba(0, 0, 0, 0.19);
 }
 .main-container .main-content .main-content__image-content {
   display: flex;
@@ -10706,4 +10727,67 @@ body {
   .footer .footer__small .footer__socials img {
     margin: 0 5px;
   }
+}
+
+.social-media-widgets {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 350px;
+  left: 0;
+}
+@media (max-width: 767.98px) {
+  .social-media-widgets {
+    flex-direction: row;
+    bottom: 0;
+    top: initial;
+    width: 100%;
+  }
+}
+.social-media-widgets .facebook-icon {
+  background-color: #4867aa;
+}
+.social-media-widgets .twitter-icon {
+  background-color: #1da1f2;
+}
+.social-media-widgets .google_plus-icon {
+  background-color: #db5043;
+}
+.social-media-widgets .linkedin-icon {
+  background-color: #0274b3;
+}
+.social-media-widgets .mail-icon {
+  background-color: #3c3c3c;
+}
+.social-media-widgets .facebook-icon,
+.social-media-widgets .twitter-icon,
+.social-media-widgets .google_plus-icon,
+.social-media-widgets .linkedin-icon,
+.social-media-widgets .mail-icon {
+  padding: 12px;
+  cursor: pointer;
+}
+@media (max-width: 767.98px) {
+  .social-media-widgets .facebook-icon,
+.social-media-widgets .twitter-icon,
+.social-media-widgets .google_plus-icon,
+.social-media-widgets .linkedin-icon,
+.social-media-widgets .mail-icon {
+    height: 50px;
+    width: 20%;
+  }
+}
+.social-media-widgets .facebook-icon img,
+.social-media-widgets .twitter-icon img,
+.social-media-widgets .google_plus-icon img,
+.social-media-widgets .linkedin-icon img,
+.social-media-widgets .mail-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
 }

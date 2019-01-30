@@ -192,7 +192,7 @@ body {
 .background-layout {
   height: 30%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: $navbar-height;
   left: 0;
   z-index: -1;
@@ -633,6 +633,28 @@ body {
         i.fas {
           margin-left: 10px;
         }
+      }
+    }
+
+    .main-content__page-content {
+      font-size: 14px;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      color: $primary;
+      font-family: 'ProximaNova-SemiBold', sans-serif;
+      border: 1px solid #ededed;
+      cursor: pointer;
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      i.fas {
+        color: rgba($color: #000000, $alpha: 0.19);
       }
     }
 
@@ -1330,4 +1352,60 @@ body {
       }
     }
   }
+}
+
+.social-media-widgets {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 350px;
+  left: 0;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: row;
+    bottom: 0;
+    top: initial;
+    width: 100%;
+  }
+
+  .facebook-icon {
+    background-color: #4867aa;
+  }
+  .twitter-icon {
+    background-color: #1da1f2;
+  }
+  .google_plus-icon {
+    background-color: #db5043;
+  }
+  .linkedin-icon {
+    background-color: #0274b3;
+  }
+  .mail-icon {
+    background-color: #3c3c3c;
+  }
+
+  .facebook-icon,
+  .twitter-icon,
+  .google_plus-icon,
+  .linkedin-icon,
+  .mail-icon {
+    padding: 12px;
+    cursor: pointer;
+
+    @include media-breakpoint-down(sm) {
+      height: 50px;
+      width: 20%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
 }

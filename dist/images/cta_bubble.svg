@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="141px" height="128px" viewBox="0 0 141 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hic_guide_template" transform="translate(-1284.000000, -776.000000)">
+            <g id="Group-21" transform="translate(528.000000, 657.000000)">
+                <g id="Group-17" transform="translate(755.000000, 113.000000)">
+                    <g id="Group-16" transform="translate(72.942524, 44.395259) rotate(-7.000000) translate(-72.942524, -44.395259) translate(4.442524, 8.895259)">
+                        <text id="Compare" transform="translate(65.878422, 29.775462) rotate(2.000000) translate(-65.878422, -29.775462) " font-family="BradleyHandITCTT-Bold, Bradley Hand" font-size="20" font-style="expanded" font-weight="bold" fill="#000000">
+                            <tspan x="28.7984225" y="34.2754617">Compare</tspan>
+                        </text>
+                        <text id="Now!" transform="translate(66.118367, 50.907758) rotate(2.000000) translate(-66.118367, -50.907758) " font-family="BradleyHandITCTT-Bold, Bradley Hand" font-size="20" font-style="expanded" font-weight="bold" fill="#000000">
+                            <tspan x="44.1383666" y="55.4077582">Now!</tspan>
+                        </text>
+                        <path d="M86.5181311,0.515610291 C41.9155532,5.1198554 5.05445305,13.8713066 1.2128232,37.4172806 C-2.62880665,60.9632547 39.257342,70.3918008 64.5997158,70.3918008 C82.7991007,70.3918008 125.105386,63.9932543 135.669868,41.5983415 C140.15177,24.5355508 119.35906,14.0405803 73.2917398,10.1134301" id="Path-3" stroke="#000000" stroke-width="1.54"></path>
+                    </g>
+                    <path id="Path-4" d="M3.78640381,119.759649 L10.2986529,113.144063 L11.5529182,114.378736 L2.69142287,123.380847 L1.59791181,124.49171 L1.21172506,122.98153 L-1.91781997,110.743473 L-0.212689724,110.307433 L2.08719036,119.301093 L4.08003151,111.916472 L4.11582316,111.810929 C8.37596243,101.456242 16.5966021,93.1085243 28.3083538,88.2860383 C40.9847847,83.0663315 54.4124985,83.0663315 68.5476343,88.2740131 L67.9391929,89.925497 C54.2076621,84.8665119 41.2353759,84.8665119 28.9784735,89.9134718 C17.7248033,94.5473359 9.85392634,102.528164 5.76461937,112.429224 L3.78640381,119.759649 Z" fill="#000000" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

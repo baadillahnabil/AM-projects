@@ -1320,6 +1320,10 @@ body {
     padding: 20px 0;
     border-top: 1px solid #d8d8d8;
 
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 50px;
+    }
+
     .row {
       @include media-breakpoint-down(md) {
         flex-direction: column-reverse;

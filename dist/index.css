@@ -10698,6 +10698,11 @@ body {
   padding: 20px 0;
   border-top: 1px solid #d8d8d8;
 }
+@media (max-width: 767.98px) {
+  .footer .footer__small {
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 991.98px) {
   .footer .footer__small .row {
     flex-direction: column-reverse;

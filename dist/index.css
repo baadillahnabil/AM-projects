@@ -10395,6 +10395,17 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+@media (max-width: 767.98px) {
+  .main-container .main-content .main-content__cta-box .cta-box__form .form__input {
+    padding: 0;
+  }
+  .main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-suburb,
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage,
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-submit {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media (max-width: 991.98px) {
   .main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-suburb {
     padding-top: 10px;

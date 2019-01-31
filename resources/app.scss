@@ -505,6 +505,17 @@ body {
           padding-left: 20px;
           padding-right: 20px;
 
+          @include media-breakpoint-down(sm) {
+            padding: 0;
+
+            .form__input-suburb,
+            .form__input-life-stage,
+            .form__input-submit {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+
           .form__input-suburb {
             @include media-breakpoint-down(md) {
               padding-top: 10px;

@@ -1,5 +1,4 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
-@import '../node_modules/zoom-vanilla.js/dist/zoom';
 @import '../node_modules/magnific-popup/dist/magnific-popup';
 @import '../dist/fonts/fontawesome-free/css/all.min.css';
 
@@ -760,25 +759,37 @@ body {
 
       .faq__lists {
         .faq__item {
-          display: flex;
-          align-items: center;
-          padding: 10px;
-          font-size: 15px;
-          color: $primary;
-          font-family: 'ProximaNova-SemiBold', sans-serif;
+          border: none;
           border-left: 1px solid #ededed;
           border-right: 1px solid #ededed;
           border-bottom: 1px solid #ededed;
-          cursor: pointer;
 
           &:first-child {
             border-top: 1px solid #ededed;
           }
 
-          i.fas {
-            margin-right: 15px;
-            margin-left: 10px;
-            font-size: 10px;
+          .card-header {
+            padding: 0;
+            background-color: transparent;
+
+            button {
+              display: flex;
+              align-items: baseline;
+              text-align: left;
+              font-size: 15px;
+              color: $primary;
+              font-family: 'ProximaNova-SemiBold', sans-serif;
+              cursor: pointer;
+              text-decoration: none;
+              padding: 10px 6px;
+              width: 100%;
+
+              i.fas {
+                margin-right: 15px;
+                margin-left: 10px;
+                font-size: 10px;
+              }
+            }
           }
         }
       }

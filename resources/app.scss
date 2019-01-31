@@ -1,5 +1,6 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/zoom-vanilla.js/dist/zoom';
+@import '../node_modules/magnific-popup/dist/magnific-popup';
 @import '../dist/fonts/fontawesome-free/css/all.min.css';
 
 // Paths
@@ -680,7 +681,6 @@ body {
       display: flex;
       justify-content: center;
       margin-top: 40px;
-      cursor: pointer;
 
       @include media-breakpoint-down(sm) {
         padding-left: 20px;
@@ -689,10 +689,9 @@ body {
 
       img {
         outline: 1px solid #d8d8d8;
-        cursor: pointer;
       }
 
-      div.icon-wrapper {
+      a.icon-wrapper {
         position: relative;
 
         i.fas {

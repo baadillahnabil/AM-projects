@@ -1,7 +1,7 @@
-import * as $ from 'jquery/dist/jquery.min.js'
+window.$ = window.jQuery = require('jquery/dist/jquery.min.js')
 import 'popper.js/dist/popper.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import 'zoom-vanilla.js/dist/zoom-vanilla.min.js'
+import 'magnific-popup/dist/jquery.magnific-popup.min.js'
 
 const primaryColor = '#40a9bc'
 
@@ -13,6 +13,10 @@ $(document).ready(() => {
 
   $('#formSearch').focusout(() => {
     hideSearch()
+  })
+
+  $('.image_content').magnificPopup({
+    type: 'image'
   })
 })
 

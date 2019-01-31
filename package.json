@@ -13,7 +13,7 @@
     "@fortawesome/fontawesome-free": "^5.6.3",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6",
-    "zoom-vanilla.js": "^2.0.6"
+    "magnific-popup": "^1.1.0",
+    "popper.js": "^1.14.6"
   }
 }

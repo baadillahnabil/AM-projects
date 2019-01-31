@@ -7,18 +7,24 @@ const primaryColor = '#40a9bc'
 
 $(document).ready(() => {
   $('.searchToggleTrigger').click(() => {
-    if ($('#formSearch').css('display') === 'none') {
-      $('#formSearch').removeClass(['d-lg-none', 'd-xl-none'])
-      $('#navbarMenus').css('display', 'none')
+    if ($('#formSearch').css('display') === 'none') showSearch()
+    else hideSearch()
+  })
 
-      $('.searchToggleTrigger > .fas').css('color', primaryColor)
-
-      $('#searchInput').focus()
-    } else {
-      $('#formSearch').addClass(['d-lg-none', 'd-xl-none'])
-      $('#navbarMenus').css('display', 'flex')
-
-      $('.searchToggleTrigger > .fas').css('color', 'white')
-    }
+  $('#formSearch').focusout(() => {
+    hideSearch()
   })
 })
+
+function showSearch() {
+  $('#formSearch').removeClass(['d-lg-none', 'd-xl-none'])
+  $('#navbarMenus').css('display', 'none')
+  $('.searchToggleTrigger > .fas').css('color', primaryColor)
+  $('#searchInput').focus()
+}
+
+function hideSearch() {
+  $('#formSearch').addClass(['d-lg-none', 'd-xl-none'])
+  $('#navbarMenus').css('display', 'flex')
+  $('.searchToggleTrigger > .fas').css('color', 'white')
+}

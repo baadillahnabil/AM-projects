@@ -9567,6 +9567,8 @@ body {
   font-family: "ProximaNova-Reg", sans-serif;
   background-color: #f8f8f8;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .zoom-overlay {
@@ -9808,7 +9810,7 @@ body {
   z-index: 400;
 }
 .main-container .sidebar-left .page-content .page-content__timeline li:hover {
-  font-weight: bold;
+  text-decoration: underline;
 }
 .main-container .sidebar-left .page-content .page-content__timeline li:hover:before {
   border: 2px solid #40a9bc;
@@ -9840,7 +9842,7 @@ body {
   cursor: pointer;
 }
 .main-container .sidebar-left .categories .categories__lists p:hover {
-  font-weight: bold;
+  text-decoration: underline;
 }
 .main-container .sidebar-left .categories .categories__lists p.active {
   font-family: "ProximaNova-SemiBold", sans-serif;

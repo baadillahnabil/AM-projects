@@ -38,6 +38,8 @@ body {
   font-family: 'ProximaNova-Reg', sans-serif;
   background-color: #f8f8f8;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .zoom-overlay {
   background-color: rgba(0, 0, 0, 0.7);
@@ -289,7 +291,8 @@ body {
           }
 
           &:hover {
-            font-weight: bold;
+            text-decoration: underline;
+
             &:before {
               border: 2px solid $primary;
             }
@@ -328,7 +331,7 @@ body {
           cursor: pointer;
 
           &:hover {
-            font-weight: bold;
+            text-decoration: underline;
           }
 
           &.active {

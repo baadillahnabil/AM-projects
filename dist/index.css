@@ -10010,7 +10010,7 @@ body {
     padding-top: 10px;
   }
 }
-.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage div.dropdown button {
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage select.custom-select {
   background-color: white;
   color: black;
   box-shadow: none;
@@ -10020,12 +10020,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url("../dist/icons/chevron_down_black.svg");
+  background-size: 13px;
+  background-position: right;
+  background-origin: content-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 100%;
+  width: 100%;
 }
-.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage div.dropdown button:focus {
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage select.custom-select:focus {
   outline: none;
   box-shadow: none;
 }
-.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage div.dropdown button::placeholder {
+.main-container .main-content .main-content__cta-box .cta-box__form .form__input .form__input-life-stage select.custom-select::placeholder {
   color: black;
   font-size: 15px;
 }
@@ -10347,8 +10356,8 @@ body {
   padding-right: 0;
   padding-top: 15px;
 }
-.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund div.dropdown button,
-.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage div.dropdown button {
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund select.custom-select,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage select.custom-select {
   background-color: white;
   color: black;
   box-shadow: none;
@@ -10358,14 +10367,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url("../dist/icons/chevron_down_black.svg");
+  background-size: 13px;
+  background-position: right;
+  background-origin: content-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 100%;
+  width: 100%;
 }
-.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund div.dropdown button:focus,
-.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage div.dropdown button:focus {
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund select.custom-select:focus,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage select.custom-select:focus {
   outline: none;
   box-shadow: none;
 }
-.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund div.dropdown button::placeholder,
-.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage div.dropdown button::placeholder {
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-fund select.custom-select::placeholder,
+.main-container .main-content .main-content__big-cta .big-cta__row-form .form__input .form__input-life-stage select.custom-select::placeholder {
   color: black;
   font-size: 15px;
 }

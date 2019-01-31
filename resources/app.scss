@@ -2,6 +2,14 @@
 @import '../node_modules/zoom-vanilla.js/dist/zoom';
 @import '../dist/fonts/fontawesome-free/css/all.min.css';
 
+// Paths
+$font--proxima-regular: '../dist/fonts/ProximaNova-Reg.ttf';
+$font--proxima-regular-italic: '../dist/fonts/ProximaNova-RegItalic.otf';
+$font--proxima-bold: '../dist/fonts/ProximaNova-Bold.otf';
+$font--proxima-semi-bold: '../dist/fonts/ProximaNova-SemiBold.otf';
+$icon--chevron-down-black: '../dist/icons/chevron_down_black.svg';
+$image--footer-cta: '../dist/images/footer_cta_bg.png';
+
 // Colors
 $primary: #40a9bc;
 $primary-darken: #3da2b5;
@@ -18,19 +26,19 @@ $theme-colors: (
 // Fonts
 @font-face {
   font-family: 'ProximaNova-Reg';
-  src: url('../dist/fonts/ProximaNova-Reg.ttf') format('truetype');
+  src: url($font--proxima-regular) format('truetype');
 }
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url('../dist/fonts/ProximaNova-Bold.otf') format('opentype');
+  src: url($font--proxima-bold) format('opentype');
 }
 @font-face {
   font-family: 'ProximaNova-SemiBold';
-  src: url('../dist/fonts/ProximaNova-SemiBold.otf') format('opentype');
+  src: url($font--proxima-semi-bold) format('opentype');
 }
 @font-face {
   font-family: 'ProximaNova-RegItalic';
-  src: url('../dist/fonts/ProximaNova-RegItalic.otf') format('opentype');
+  src: url($font--proxima-regular-italic) format('opentype');
 }
 
 // Global Tags Overrides
@@ -527,27 +535,34 @@ body {
               padding-top: 10px;
             }
 
-            div.dropdown {
-              button {
-                background-color: white;
-                color: black;
+            select.custom-select {
+              background-color: white;
+              color: black;
+              box-shadow: none;
+              border: none;
+              border-radius: 2px;
+              padding: 12px 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-image: url($icon--chevron-down-black);
+              background-size: 13px;
+              background-position: right;
+              background-origin: content-box;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              height: 100%;
+              width: 100%;
+
+              &:focus {
+                outline: none;
                 box-shadow: none;
-                border: none;
-                border-radius: 2px;
-                padding: 12px 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+              }
 
-                &:focus {
-                  outline: none;
-                  box-shadow: none;
-                }
-
-                &::placeholder {
-                  color: black;
-                  font-size: 15px;
-                }
+              &::placeholder {
+                color: black;
+                font-size: 15px;
               }
             }
           }
@@ -897,27 +912,34 @@ body {
             padding-right: 0;
             padding-top: 15px;
 
-            div.dropdown {
-              button {
-                background-color: white;
-                color: black;
+            select.custom-select {
+              background-color: white;
+              color: black;
+              box-shadow: none;
+              border: none;
+              border-radius: 2px;
+              padding: 12px 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-image: url($icon--chevron-down-black);
+              background-size: 13px;
+              background-position: right;
+              background-origin: content-box;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              height: 100%;
+              width: 100%;
+
+              &:focus {
+                outline: none;
                 box-shadow: none;
-                border: none;
-                border-radius: 2px;
-                padding: 12px 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+              }
 
-                &:focus {
-                  outline: none;
-                  box-shadow: none;
-                }
-
-                &::placeholder {
-                  color: black;
-                  font-size: 15px;
-                }
+              &::placeholder {
+                color: black;
+                font-size: 15px;
               }
             }
           }
@@ -1195,7 +1217,7 @@ body {
 }
 
 .footer__cta {
-  background-image: url('../dist/images/footer_cta_bg.png');
+  background-image: url($image--footer-cta);
   background-color: $primary;
   padding: 50px 10px;
   text-align: center;

@@ -10270,19 +10270,19 @@ body {
     max-width: 29%;
   }
 }
-.main-container .sidebar-left .page-content .page-content__header {
+.main-container .page-content .page-content__header {
   font-family: "ProximaNova-SemiBold", sans-serif;
   background-color: transparent;
   font-weight: bold;
   font-size: 15px;
   color: #40a9bc;
 }
-.main-container .sidebar-left .page-content .page-content__timeline {
+.main-container .page-content .page-content__timeline {
   list-style-type: none;
   position: relative;
   margin-top: 10px;
 }
-.main-container .sidebar-left .page-content .page-content__timeline:before {
+.main-container .page-content .page-content__timeline:before {
   content: " ";
   background: #d4d9df;
   display: inline-block;
@@ -10293,14 +10293,14 @@ body {
   height: 77%;
   z-index: 400;
 }
-.main-container .sidebar-left .page-content .page-content__timeline li {
+.main-container .page-content .page-content__timeline li {
   margin: 20px 0;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 15px;
   cursor: pointer;
 }
-.main-container .sidebar-left .page-content .page-content__timeline li:before {
+.main-container .page-content .page-content__timeline li:before {
   content: " ";
   background-color: white;
   display: inline-block;
@@ -10313,75 +10313,75 @@ body {
   height: 10px;
   z-index: 400;
 }
-.main-container .sidebar-left .page-content .page-content__timeline li:hover {
+.main-container .page-content .page-content__timeline li:hover {
   text-decoration: underline;
 }
-.main-container .sidebar-left .page-content .page-content__timeline li:hover:before {
+.main-container .page-content .page-content__timeline li:hover:before {
   border: 2px solid #40a9bc;
 }
-.main-container .sidebar-left .page-content .page-content__timeline li.active {
+.main-container .page-content .page-content__timeline li.active {
   font-family: "ProximaNova-SemiBold", sans-serif;
   color: #40a9bc;
 }
-.main-container .sidebar-left .page-content .page-content__timeline li.active:before {
+.main-container .page-content .page-content__timeline li.active:before {
   background-color: #40a9bc;
   border: none;
 }
-.main-container .sidebar-left .categories {
+.main-container .categories {
   margin-top: 20px;
 }
-.main-container .sidebar-left .categories .categories__header {
+.main-container .categories .categories__header {
   font-size: 15px;
   color: white;
   background-color: #40a9bc;
   font-family: "ProximaNova-SemiBold", sans-serif;
 }
-.main-container .sidebar-left .categories .categories__lists {
+.main-container .categories .categories__lists {
   list-style-type: none;
   padding: 30px 35px;
 }
-.main-container .sidebar-left .categories .categories__lists p {
+.main-container .categories .categories__lists p {
   margin-bottom: 8px;
   font-size: 15px;
   cursor: pointer;
 }
-.main-container .sidebar-left .categories .categories__lists p:hover {
+.main-container .categories .categories__lists p:hover {
   text-decoration: underline;
 }
-.main-container .sidebar-left .categories .categories__lists p.active {
+.main-container .categories .categories__lists p.active {
   font-family: "ProximaNova-SemiBold", sans-serif;
   color: #40a9bc;
 }
-.main-container .sidebar-left .categories .categories__lists p i.fas {
+.main-container .categories .categories__lists p i.fas {
   margin-right: 20px;
 }
-.main-container .sidebar-left .popular-guides {
+.main-container .popular-guides {
   margin-top: 20px;
 }
-.main-container .sidebar-left .popular-guides .popular-guides__header {
+.main-container .popular-guides .popular-guides__header {
   color: white;
   font-size: 15px;
   background-color: #40a9bc;
   font-family: "ProximaNova-SemiBold", sans-serif;
 }
-.main-container .sidebar-left .popular-guides .popular-guides__lists {
+.main-container .popular-guides .popular-guides__lists {
   padding: 20px 15px;
 }
-.main-container .sidebar-left .popular-guides .popular-guides__lists li.media img {
+.main-container .popular-guides .popular-guides__lists li.media img {
   width: 100px;
   height: 60px;
 }
-.main-container .sidebar-left .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-title {
+.main-container .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-title {
   font-family: "ProximaNova-SemiBold", sans-serif;
   font-size: 15px;
   font-weight: bold;
   line-height: 19px;
   cursor: pointer;
 }
-.main-container .sidebar-left .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-title:hover {
+.main-container .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-title:hover {
   text-decoration: underline;
 }
-.main-container .sidebar-left .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-meta {
+.main-container .popular-guides .popular-guides__lists li.media div.media-body .popular-guides__lists-meta {
   color: #b4b4b4;
   font-size: 12px;
 }
@@ -10632,16 +10632,7 @@ body {
   margin-left: 10px;
 }
 .main-container .main-content .main-content__page-content {
-  font-size: 14px;
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 15px;
-  color: #40a9bc;
-  font-family: "ProximaNova-SemiBold", sans-serif;
-  border: 1px solid #ededed;
-  cursor: pointer;
+  margin-top: 40px;
 }
 @media (max-width: 767.98px) {
   .main-container .main-content .main-content__page-content {
@@ -10649,8 +10640,52 @@ body {
     margin-right: 20px;
   }
 }
-.main-container .main-content .main-content__page-content i.fas {
-  color: rgba(0, 0, 0, 0.19);
+.main-container .main-content .main-content__page-content .page_content_item {
+  border: 1px solid #ededed;
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-header {
+  padding: 0;
+  background-color: transparent;
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-header button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 15px;
+  color: #40a9bc;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 100%;
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-header button img {
+  font-size: 10px;
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-body {
+  padding-bottom: 20px;
+}
+@media (max-width: 575.98px) {
+  .main-container .main-content .main-content__page-content .page_content_item .page_content-body .container-fluid {
+    padding: 0;
+  }
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-body .card.categories {
+  border-bottom: 1px solid #d8d8d8;
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-body .card.popular-guides {
+  border-bottom: 1px solid #d8d8d8;
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-body .card.page-content {
+  margin-top: 20px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.main-container .main-content .main-content__page-content .page_content_item .page_content-body .card.page-content .page-content__header {
+  color: white;
+  font-size: 15px;
+  background-color: #40a9bc;
+  font-family: "ProximaNova-SemiBold", sans-serif;
 }
 .main-container .main-content .main-content__image-content {
   display: flex;
@@ -11310,6 +11345,11 @@ body {
   flex-direction: column;
   top: 350px;
   left: 0;
+}
+@media (max-width: 991.98px) {
+  .social-media-widgets {
+    top: 200px;
+  }
 }
 @media (max-width: 767.98px) {
   .social-media-widgets {

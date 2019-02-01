@@ -11123,14 +11123,27 @@ body {
     padding: 30px 0px 20px 0;
   }
 }
-.main-container .similar-items .similar-items__cards-dots ul {
+.main-container .similar-items .similar-items__cards-dots ul.slick-dots {
   list-style-type: none;
   display: flex;
   padding-left: 0;
 }
-.main-container .similar-items .similar-items__cards-dots ul li {
+.main-container .similar-items .similar-items__cards-dots ul.slick-dots li button.button-dots {
   margin: 0 2px;
   cursor: pointer;
+  border: none;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+}
+.main-container .similar-items .similar-items__cards-dots ul.slick-dots li button.button-dots:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main-container .similar-items .similar-items__cards-dots ul.slick-dots li.slick-active button.button-dots {
+  background-color: #40a9bc;
 }
 
 .footer__cta {

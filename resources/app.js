@@ -28,9 +28,11 @@ $(document).ready(() => {
     arrows: true,
     mobileFirst: true,
     adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     appendDots: $('.similar-items__cards-dots'),
-    customPaging: (slider, index) => {
-      return '<img src="./dist/icons/dot_solid_primary.svg" />'
+    customPaging: () => {
+      return '<button class="button-dots"></button>'
     },
     prevArrow: $('.similar-items__cards-arrows > .arrow-left'),
     nextArrow: $('.similar-items__cards-arrows > .arrow-right'),
@@ -77,6 +79,11 @@ $(document).ready(() => {
       }
     ]
   })
+
+  // $('.similar-items__cards-slider').on('afterChange', () => {
+  //   console.log($('.similar-items__cards-slider').slick('slickCurrentSlide'))
+  //   console.log($('.similar-items__cards-slider').slick('slickGetOption'))
+  // })
 })
 
 function showSearch() {

@@ -1201,14 +1201,33 @@ body {
         padding: 30px 0px 20px 0;
       }
 
-      ul {
+      ul.slick-dots {
         list-style-type: none;
         display: flex;
         padding-left: 0;
 
         li {
-          margin: 0 2px;
-          cursor: pointer;
+          button.button-dots {
+            margin: 0 2px;
+            cursor: pointer;
+            border: none;
+            background-color: #d8d8d8;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            padding: 0;
+
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+          }
+
+          &.slick-active {
+            button.button-dots {
+              background-color: $primary;
+            }
+          }
         }
       }
 

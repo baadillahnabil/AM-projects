@@ -6,7 +6,7 @@
   "author": "baadillahnabil <baadillahnabil@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build-css": "sass --no-source-map --watch ./resources/app.scss:./dist/index.css",
+    "build-css": "sass --no-source-map --watch ./resources/app.scss:./dist/index.css --style compressed",
     "build-js": "webpack --watch --progress"
   },
   "dependencies": {

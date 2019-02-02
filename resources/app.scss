@@ -1,5 +1,5 @@
 // Dependency Variable Overrides
-$fa-font-path: '../dist/fonts';
+$fa-font-path: 'fonts';
 
 // Import dependencies
 @import '../node_modules/bootstrap/scss/bootstrap';
@@ -9,12 +9,12 @@ $fa-font-path: '../dist/fonts';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 
 // Paths
-$font--proxima-regular: '../dist/fonts/ProximaNova-Reg.ttf';
-$font--proxima-regular-italic: '../dist/fonts/ProximaNova-RegItalic.otf';
-$font--proxima-bold: '../dist/fonts/ProximaNova-Bold.otf';
-$font--proxima-semi-bold: '../dist/fonts/ProximaNova-SemiBold.otf';
-$icon--chevron-down-black: '../dist/icons/chevron_down_black.svg';
-$image--footer-cta: '../dist/images/footer_cta_bg.svg';
+$font--proxima-regular: 'fonts/ProximaNova-Reg.ttf';
+$font--proxima-regular-italic: 'fonts/ProximaNova-RegItalic.otf';
+$font--proxima-bold: 'fonts/ProximaNova-Bold.otf';
+$font--proxima-semi-bold: 'fonts/ProximaNova-SemiBold.otf';
+$icon--chevron-down-black: 'icons/chevron_down_black.svg';
+$image--footer-cta: 'images/footer_cta_bg.svg';
 
 // Colors
 $primary: #40a9bc;

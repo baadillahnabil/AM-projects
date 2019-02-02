@@ -15606,8 +15606,8 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
-  src: url("../dist/fonts/fa-solid-900.eot");
-  src: url("../dist/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../dist/fonts/fa-solid-900.woff2") format("woff2"), url("../dist/fonts/fa-solid-900.woff") format("woff"), url("../dist/fonts/fa-solid-900.ttf") format("truetype"), url("../dist/fonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("fonts/fa-solid-900.eot");
+  src: url("fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("fonts/fa-solid-900.woff2") format("woff2"), url("fonts/fa-solid-900.woff") format("woff"), url("fonts/fa-solid-900.ttf") format("truetype"), url("fonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -15617,19 +15617,19 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: "ProximaNova-Reg";
-  src: url("../dist/fonts/ProximaNova-Reg.ttf") format("truetype");
+  src: url("fonts/ProximaNova-Reg.ttf") format("truetype");
 }
 @font-face {
   font-family: "ProximaNova-Bold";
-  src: url("../dist/fonts/ProximaNova-Bold.otf") format("opentype");
+  src: url("fonts/ProximaNova-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "ProximaNova-SemiBold";
-  src: url("../dist/fonts/ProximaNova-SemiBold.otf") format("opentype");
+  src: url("fonts/ProximaNova-SemiBold.otf") format("opentype");
 }
 @font-face {
   font-family: "ProximaNova-RegItalic";
-  src: url("../dist/fonts/ProximaNova-RegItalic.otf") format("opentype");
+  src: url("fonts/ProximaNova-RegItalic.otf") format("opentype");
 }
 body {
   font-family: "ProximaNova-Reg", sans-serif;
@@ -16099,7 +16099,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../dist/icons/chevron_down_black.svg");
+  background-image: url("icons/chevron_down_black.svg");
   background-size: 13px;
   background-position: right;
   background-origin: content-box;
@@ -16489,7 +16489,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../dist/icons/chevron_down_black.svg");
+  background-image: url("icons/chevron_down_black.svg");
   background-size: 13px;
   background-position: right;
   background-origin: content-box;
@@ -16746,7 +16746,7 @@ body {
 }
 
 .footer__cta {
-  background-image: url("../dist/images/footer_cta_bg.svg");
+  background-image: url("images/footer_cta_bg.svg");
   background-color: #40a9bc;
   padding: 50px 10px;
   text-align: center;

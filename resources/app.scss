@@ -1,7 +1,12 @@
+// Dependency Variable Overrides
+$fa-font-path: '../dist/fonts';
+
+// Import dependencies
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/slick-carousel/slick/slick';
 @import '../node_modules/magnific-popup/dist/magnific-popup';
-@import '../dist/fonts/fontawesome-free/css/all.min.css';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 
 // Paths
 $font--proxima-regular: '../dist/fonts/ProximaNova-Reg.ttf';
@@ -9,7 +14,7 @@ $font--proxima-regular-italic: '../dist/fonts/ProximaNova-RegItalic.otf';
 $font--proxima-bold: '../dist/fonts/ProximaNova-Bold.otf';
 $font--proxima-semi-bold: '../dist/fonts/ProximaNova-SemiBold.otf';
 $icon--chevron-down-black: '../dist/icons/chevron_down_black.svg';
-$image--footer-cta: '../dist/images/footer_cta_bg.png';
+$image--footer-cta: '../dist/images/footer_cta_bg.svg';
 
 // Colors
 $primary: #40a9bc;

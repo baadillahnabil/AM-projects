@@ -268,7 +268,7 @@ body {
 
   .sidebar-left {
     @include media-breakpoint-up(lg) {
-      max-width: 29%;
+      max-width: 28%;
     }
   }
 
@@ -340,6 +340,7 @@ body {
 
     .guides__lists {
       padding: 20px 15px;
+      margin-bottom: 0;
 
       li.media {
         img {
@@ -361,6 +362,51 @@ body {
           }
 
           .guides__lists-meta {
+            color: #b4b4b4;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .health-lifestyle {
+    margin-top: 20px;
+
+    .health-lifestyle__header {
+      font-size: 15px;
+      color: white;
+      background-color: $primary;
+      font-family: 'ProximaNova-SemiBold', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .health-lifestyle__lists {
+      padding: 20px 15px;
+      margin-bottom: 0;
+
+      li.media {
+        img {
+          width: 100px;
+          height: 60px;
+        }
+
+        div.media-body {
+          .health-lifestyle__lists-title {
+            font-family: 'ProximaNova-SemiBold', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 19px;
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          .health-lifestyle__lists-meta {
             color: #b4b4b4;
             font-size: 12px;
           }

@@ -231,15 +231,6 @@ body {
         }
       }
     }
-
-    // @include media-breakpoint-up(lg) {
-    //   padding: 50px 0px 50px 50px;
-    // }
-    // padding: 50px 0px 50px 50px;
-    // span {
-    //   font-family: 'ProximaNova-SemiBold', sans-serif;
-    //   font-size: 14px;
-    // }
   }
 }
 
@@ -281,68 +272,53 @@ body {
     }
   }
 
-  .page-content {
-    .page-content__header {
-      font-family: 'ProximaNova-SemiBold', sans-serif;
-      background-color: transparent;
-      font-weight: bold;
+  .funds {
+    margin-top: 20px;
+
+    .funds__header {
       font-size: 15px;
-      color: $primary;
+      color: white;
+      background-color: $primary;
+      font-family: 'ProximaNova-SemiBold', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .page-content__timeline {
-      list-style-type: none;
-      position: relative;
-      margin-top: 10px;
+    .funds__lists {
+      padding-left: 30px;
 
-      &:before {
-        content: ' ';
-        background: #d4d9df;
-        display: inline-block;
-        position: absolute;
-        top: 25px;
-        left: 24px;
-        width: 1px;
-        height: 77%;
-        z-index: 400;
-      }
-
-      li {
+      .funds__item {
+        display: flex;
+        align-items: center;
         margin: 20px 0;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 15px;
-        cursor: pointer;
 
-        &:before {
-          content: ' ';
-          background-color: white;
-          display: inline-block;
-          position: absolute;
-          border-radius: 50%;
-          border: 1px solid black;
-          margin-top: 5px;
-          left: 20px;
-          width: 10px;
-          height: 10px;
-          z-index: 400;
+        &:first-child {
+          margin-top: 0;
         }
 
-        &:hover {
-          text-decoration: underline;
+        &:last-child {
+          margin-bottom: 0;
+        }
 
-          &:before {
-            border: 2px solid $primary;
+        .funds__image {
+          width: 60px;
+          height: auto;
+        }
+
+        .funds__name {
+          margin: 0;
+          margin-left: 30px;
+          font-size: 15px;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
           }
-        }
 
-        &.active {
-          font-family: 'ProximaNova-SemiBold', sans-serif;
-          color: $primary;
-
-          &:before {
-            background-color: $primary;
-            border: none;
+          &.active {
+            color: $primary;
+            font-family: 'ProximaNova-SemiBold', sans-serif;
           }
         }
       }

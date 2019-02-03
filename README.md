@@ -1,2 +1,2 @@
-# av-trial-test
-A trial-test-project for Alternative Media
+# AM Projects
+Projects me working with Alternative Media Company

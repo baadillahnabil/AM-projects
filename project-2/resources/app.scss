@@ -325,52 +325,20 @@ body {
     }
   }
 
-  .categories {
+  .guides {
     margin-top: 20px;
 
-    .categories__header {
+    .guides__header {
       font-size: 15px;
       color: white;
       background-color: $primary;
       font-family: 'ProximaNova-SemiBold', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .categories__lists {
-      list-style-type: none;
-      padding: 30px 35px;
-
-      p {
-        margin-bottom: 8px;
-        font-size: 15px;
-        cursor: pointer;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        &.active {
-          font-family: 'ProximaNova-SemiBold', sans-serif;
-          color: $primary;
-        }
-
-        i.fas {
-          margin-right: 20px;
-        }
-      }
-    }
-  }
-
-  .popular-guides {
-    margin-top: 20px;
-
-    .popular-guides__header {
-      color: white;
-      font-size: 15px;
-      background-color: $primary;
-      font-family: 'ProximaNova-SemiBold', sans-serif;
-    }
-
-    .popular-guides__lists {
+    .guides__lists {
       padding: 20px 15px;
 
       li.media {
@@ -380,7 +348,7 @@ body {
         }
 
         div.media-body {
-          .popular-guides__lists-title {
+          .guides__lists-title {
             font-family: 'ProximaNova-SemiBold', sans-serif;
             font-size: 15px;
             font-weight: bold;
@@ -392,7 +360,7 @@ body {
             }
           }
 
-          .popular-guides__lists-meta {
+          .guides__lists-meta {
             color: #b4b4b4;
             font-size: 12px;
           }

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Health Insurance</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navbar / Header -->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-custom">
+      <!-- Company Logo -->
+      <a class="navbar-brand" href="#">
+        <img
+          src="images/logo_hic.svg"
+          height="40"
+          class="d-inline-block align-top navbar-custom__logo"
+          alt="logo_hic"
+        />
+      </a>
+
+      <!-- Menus -->
+      <div class="collapse navbar-collapse navbar-custom__menus" id="navbarToggleBreakpoint">
+        <ul id="navbarMenus" class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <!-- Search Button -->
+          <li class="searchToggleTrigger nav-item navbar-custom__menu-search">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
+
+          <!-- All Menus -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Compare Policies <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Health Funds <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Guides <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Calculators <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Health & Lifestyle <i class="fas fa-angle-right d-lg-none d-xl-none float-right"></i
+            ></a>
+          </li>
+        </ul>
+
+        <!-- Search Input -->
+        <form id="formSearch" class="form-inline navbar-custom__search-form d-lg-none d-xl-none">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="searchToggleTrigger input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+            </div>
+            <input
+              id="searchInput"
+              type="text"
+              class="form-control"
+              placeholder="Enter keyword..."
+              aria-label="search"
+              aria-describedby="basic-addon1"
+              autofocus
+            />
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Number Image & Button Toggle Tablet/Mobile Menu -->
+      <div>
+        <img
+          src="icons/phone_icon.svg"
+          class="d-inline-block align-top navbar-custom__phone-icon"
+          height="30"
+          alt="phone_icon"
+        />
+        <img
+          src="images/contact_number.svg"
+          class="d-inline-block align-top navbar-custom__header-contact"
+          height="30"
+          alt="contact_number"
+        />
+        <button
+          class="navbar-toggler navbar-custom__toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleBreakpoint"
+          aria-controls="navbarToggleBreakpoint"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Background Layout -->
+    <div class="background-layout"></div>
+
+    <!-- Main Layout -->
+    <div class="container main-container">
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 d-none d-lg-block d-xl-block sidebar-left">
+          <!-- Page Contents -->
+          <div class="card page-content">
+            <div class="card-header page-content__header">Page Contents</div>
+            <ul class="page-content__timeline">
+              <li class="active">Health Insurance for families</li>
+              <li>Why do I need a specific family health insurance policy?</li>
+              <li>Why do I need to re-evaluate my family health insurance?</li>
+              <li>How long can my children stay on my policy?</li>
+              <li>Frequently Asked Questions about health insurance</li>
+            </ul>
+          </div>
+
+          <!-- Categories -->
+          <div class="card categories">
+            <div class="card-header categories__header">Categories</div>
+            <div class="categories__lists">
+              <p class="active"><i class="fas fa-caret-right"></i>By Relationship Status</p>
+              <p><i class="fas fa-caret-right"></i>By Life Stage</p>
+              <p><i class="fas fa-caret-right"></i>By Cover Type</p>
+              <p><i class="fas fa-caret-right"></i>By State</p>
+              <p><i class="fas fa-caret-right"></i>For Children</p>
+              <p><i class="fas fa-caret-right"></i>General Guides</p>
+              <p><i class="fas fa-caret-right"></i>See All</p>
+            </div>
+          </div>
+
+          <!-- Popular Guides -->
+          <div class="card popular-guides">
+            <div class="card-header popular-guides__header">Popular Guides</div>
+            <ul class="list-unstyled popular-guides__lists">
+              <li class="media">
+                <img src="images/popular_guides_1.jpg" class="mr-3" alt="img_dummy" />
+                <div class="media-body">
+                  <p class="mt-0 mb-1 popular-guides__lists-title">Health Insurance for Families</p>
+                  <span class="popular-guides__lists-meta">21 January 2019</span>
+                </div>
+              </li>
+              <li class="media mt-4">
+                <img src="images/popular_guides_2.jpg" class="mr-3" alt="img_dummy" />
+                <div class="media-body">
+                  <p class="mt-0 mb-1 popular-guides__lists-title">Expecting a Little One? Your Guide to…</p>
+                  <span class="popular-guides__lists-meta">21 January 2019</span>
+                </div>
+              </li>
+              <li class="media mt-4">
+                <img src="images/popular_guides_3.jpg" class="mr-3" alt="img_dummy" />
+                <div class="media-body">
+                  <p class="mt-0 mb-1 popular-guides__lists-title">How to Maintain Private Health…</p>
+                  <span class="popular-guides__lists-meta">21 January 2019</span>
+                </div>
+              </li>
+              <li class="media mt-4">
+                <img src="images/popular_guides_4.jpg" class="mr-3" alt="img_dummy" />
+                <div class="media-body">
+                  <p class="mt-0 mb-1 popular-guides__lists-title">Your Guide to Hospital Cover in Australia…</p>
+                  <span class="popular-guides__lists-meta">21 January 2019</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 main-content">
+          <p class="main-content__meta-title">Last Updated on 16 January 2019</p>
+          <h1 class="main-content__title">Health Insurance for Families</h1>
+          <img src="images/main_content.jpg" class="img-fluid main-content__image" alt="main_content_image" />
+
+          <!-- CTA Box -->
+          <div class="container-fluid main-content__cta-box">
+            <div class="row">
+              <!-- Header -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 cta-box__intro">
+                <img src="images/cta_bubble.png" class="cta-box__bubble" alt="cta_bubble" />
+                <div class="intro__title">Have questions? Let's talk!</div>
+                <div class="intro__message">
+                  Not sure if this applies to your situation? Phone us on <a href="tel:1300643355">1300 643 355</a> for
+                  some free, no obligation advice.
+                </div>
+              </div>
+
+              <!-- Form -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 cta-box__form">
+                <p class="form__title">
+                  <img src="images/logo_hic_small_white.svg" alt="logo_hic_small_white" /> Compare Health
+                  Insurance Policies Now
+                </p>
+                <form class="form__input">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form__input-suburb">
+                      <input type="text" class="form-control" placeholder="Enter Suburb or Postcode" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form__input-life-stage">
+                      <select class="custom-select">
+                        <option selected disabled value="">Life Stage...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 form__input-submit">
+                      <button type="button" class="btn btn-block">
+                        Show my quotes <i class="fas fa-long-arrow-alt-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page Content -->
+          <div class="accordion main-content__page-content d-lg-none d-xl-none" id="page_content_accordion">
+            <div class="card page_content_item">
+              <div class="card-header page_content-header" id="page_content_header">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#page_content_item"
+                  aria-expanded="true"
+                  aria-controls="page_content_item"
+                >
+                  Page Contents <img src="icons/plus_grey.svg" alt="plus_icon" />
+                </button>
+              </div>
+              <div
+                id="page_content_item"
+                class="collapse page_content-body"
+                aria-labelledby="page_content_header"
+                data-parent="#page_content_accordion"
+              >
+                <div class="container-fluid">
+                  <div class="row">
+                    
+                    <!-- Page Contents -->
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="card page-content">
+                        <div class="card-header page-content__header">Page Contents</div>
+                        <ul class="page-content__timeline">
+                          <li class="active">Health Insurance for families</li>
+                          <li>Why do I need a specific family health insurance policy?</li>
+                          <li>Why do I need to re-evaluate my family health insurance?</li>
+                          <li>How long can my children stay on my policy?</li>
+                          <li>Frequently Asked Questions about health insurance</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="card categories">
+                        <div class="card-header categories__header">Categories</div>
+                        <div class="categories__lists">
+                          <p class="active"><i class="fas fa-caret-right"></i>By Relationship Status</p>
+                          <p><i class="fas fa-caret-right"></i>By Life Stage</p>
+                          <p><i class="fas fa-caret-right"></i>By Cover Type</p>
+                          <p><i class="fas fa-caret-right"></i>By State</p>
+                          <p><i class="fas fa-caret-right"></i>For Children</p>
+                          <p><i class="fas fa-caret-right"></i>General Guides</p>
+                          <p><i class="fas fa-caret-right"></i>See All</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Popular Guides -->
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="card popular-guides">
+                        <div class="card-header popular-guides__header">Popular Guides</div>
+                        <ul class="list-unstyled popular-guides__lists">
+                          <li class="media">
+                            <img src="images/popular_guides_1.jpg" class="mr-3" alt="img_dummy" />
+                            <div class="media-body">
+                              <p class="mt-0 mb-1 popular-guides__lists-title">Health Insurance for Families</p>
+                              <span class="popular-guides__lists-meta">21 January 2019</span>
+                            </div>
+                          </li>
+                          <li class="media mt-4">
+                            <img src="images/popular_guides_2.jpg" class="mr-3" alt="img_dummy" />
+                            <div class="media-body">
+                              <p class="mt-0 mb-1 popular-guides__lists-title">
+                                Expecting a Little One? Your Guide to…
+                              </p>
+                              <span class="popular-guides__lists-meta">21 January 2019</span>
+                            </div>
+                          </li>
+                          <li class="media mt-4">
+                            <img src="images/popular_guides_3.jpg" class="mr-3" alt="img_dummy" />
+                            <div class="media-body">
+                              <p class="mt-0 mb-1 popular-guides__lists-title">How to Maintain Private Health…</p>
+                              <span class="popular-guides__lists-meta">21 January 2019</span>
+                            </div>
+                          </li>
+                          <li class="media mt-4">
+                            <img src="images/popular_guides_4.jpg" class="mr-3" alt="img_dummy" />
+                            <div class="media-body">
+                              <p class="mt-0 mb-1 popular-guides__lists-title">
+                                Your Guide to Hospital Cover in Australia…
+                              </p>
+                              <span class="popular-guides__lists-meta">21 January 2019</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paragraphs -->
+          <p class="main-content__paragraph-content">
+            Raising children is expensive enough without adding high medical costs on top, which is why most Australian
+            families have private family health insurance. <br /><br />
+            As a parent you want to protect your children so they can grow up to be healthy and happy, but even the
+            healthiest children can encounter regular illnesses and occasional injuries. In the event that you have to
+            deal with a long-term or serious illness in the family, medical costs can quickly spiral out of control.
+            <br /><br />
+            The best family health insurance can help ease the financial burden of raising a family and give you the
+            reassurance that comes with knowing you are covered in case of the unexpected, so it’s important to do your
+            research and compare the family health insurance policies that are out there to get the best deal possible.
+            <br /><br />
+            Whether you’re first time parents, you’re expanding your family or it’s been a while since you reviewed your
+            health insurance policy, now is a good time to speak to someone about whether your current policy is meeting
+            all your needs. <br /><br />
+            As you know, families change very quickly and your health insurance should grow with you. Our health
+            insurance experts can help you compare family health insurance policies to find the best one for your
+            family’s growing needs with one simple, half-hour phone call. <br /><br />
+            Switching health insurance providers is easier than you think. You don’t need to re-serve waiting periods
+            when you transfer to a cover with equivalent benefits… even if you have a pre-existing condition. Call us
+            today and we can clarify any questions that you may have in regards to family health insurance.
+          </p>
+
+          <!-- Simple CTA -->
+          <div class="main-content__cta-simple">
+            <button type="button" class="btn cta-simple__button">
+              Compare Health Cover<i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </div>
+
+          <!-- Another Paragraph -->
+          <p class="main-content__paragraph-title">Why do I need a specific family health insurance policy?</p>
+          <p class="main-content__paragraph-content">
+            Health insurance is designed to cover you for different life stages. Before meeting your partner or starting
+            a family you probably had an individual health insurance policy. You may have kept this when you met your
+            partner, or you might have changed to a couple’s policy where you were both included. <br /><br />
+            When considering starting a family, most couples decide to switch to a family health insurance policy. While
+            you can in theory, take out a separate policy for each individual member of the family, a family policy lets
+            you combine cover for everyone. <br /><br />
+            This is more convenient and usually cheaper than taking out individual cover and because family health
+            insurance is tailored to meet the needs of people at this particular stage of their lives, the level and
+            type of cover provided is usually more suited to the needs of families than a generic policy. <br /><br />
+            If you’re expecting, it’s a good idea to take out family cover early so that your baby will be covered from
+            birth. It’s also important to be aware that whatever type of health insurance policy you have now, you will
+            need to have obstetrics cover for at least 12 months before the birth of your baby to ensure you will be
+            covered for the birth-related hospital costs.
+          </p>
+
+          <!-- Image Content -->
+          <div class="main-content__image-content">
+            <img src="images/image_content.svg" class="img-fluid" alt="image_content" />
+            <a href="images/image_content.svg" class="icon-wrapper image_content"
+              ><i class="fas fa-search-plus"></i
+            ></a>
+          </div>
+
+          <!-- Another Paragraph -->
+          <p class="main-content__paragraph-title">Why do I need to re-evaluate my family health insurance?</p>
+          <p class="main-content__paragraph-content">
+            While it may seem obvious to switch from a singles or couples policy to a family one when you’re expecting,
+            as your family grows it’s equally important to make sure your health insurance policy keeps up with your
+            changing needs. <br /><br />
+            From baby care to early childhood development where you might need treatment like speech therapy and
+            occupational therapy, to glasses and braces for your teenager, it’s important to review your family’s health
+            insurance policy on a regular basis to make sure it’s still appropriate for you.
+          </p>
+
+          <!-- Another Simple CTA -->
+          <div class="main-content__cta-simple">
+            <button type="button" class="btn cta-simple__button">
+              Compare Health Cover<i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </div>
+
+          <!-- Another Paragraph -->
+          <p class="main-content__paragraph-content">
+            While it’s unlikely you’re going to need cover for hip replacements or cataract surgery, you should make
+            sure your policy does include cover for the following:
+          </p>
+
+          <!-- Content Timeline -->
+          <div class="main-content__timeline">
+            <div class="timeline-group">
+              <i class="fas fa-check-circle"></i>
+              <h3 class="timeline-header">Dental treatment and orthodontics</h3>
+              <p class="timeline-text">
+                While Medicare covers children for a minimal amount of standard dental treatment each year, if your
+                child requires extensive treatment like wisdom tooth removal or orthodontics (braces) you could be out
+                of pocket by thousands of dollars.
+              </p>
+            </div>
+            <div class="timeline-group">
+              <i class="fas fa-check-circle"></i>
+              <h3 class="timeline-header">Glasses and contact lenses</h3>
+              <p class="timeline-text">
+                While eye tests are usually free on Medicare, unfortunately corrective treatment including glasses and
+                contact lenses aren’t. If your child is nearsighted or farsighted it can affect their ability to learn
+                at school so it’s important that issues are addressed as soon as possible.
+              </p>
+            </div>
+            <div class="timeline-group">
+              <i class="fas fa-check-circle"></i>
+              <h3 class="timeline-header">Speech and occupational therapy</h3>
+              <p class="timeline-text">
+                Many children experience difficulties with their speech or physical development as they grow. These
+                issues can often be corrected with the right therapy, but it’s expensive and not usually covered by
+                Medicare. The right extras cover on your family health insurance policy means that your child can get
+                the help they need to get back on track before they are affected over the long term.
+              </p>
+            </div>
+            <div class="timeline-group">
+              <i class="fas fa-check-circle"></i>
+              <h3 class="timeline-header">Hospital care</h3>
+              <p class="timeline-text">
+                Children invariably have accidents and illnesses that may require hospital treatment. With the right
+                hospital cover your family will be covered for some or all of the costs and for long term issues you
+                will have more affordable access to quality private treatment, shorter waiting lists and your choice of
+                health care provider.
+              </p>
+            </div>
+            <div class="timeline-group">
+              <i class="fas fa-check-circle"></i>
+              <h3 class="timeline-header">Ambulance cover</h3>
+              <p class="timeline-text">
+                If there is a medical emergency, you or a family member may need to get to hospital quickly. Without
+                private ambulance cover you could be left with an expensive bill to pay on top of treatment costs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Another Paragraph -->
+          <p class="main-content__paragraph-content mt-0">
+            Family policies are tailored to the specific needs of families, so you can get access to the services you
+            need without having to pay extra on your premium for unnecessary cover.
+          </p>
+
+          <!-- Another Paragraph -->
+          <p class="main-content__paragraph-title">How long can my children stay on my policy?</p>
+          <p class="main-content__paragraph-content">
+            Your children can remain on your family policy until they are 25 provided they are full-time students and
+            still your dependents. Once they stop studying full time or turn 25 they will usually need to purchase their
+            own health insurance policy. <br /><br />
+            Some health insurance policies ask you to pay a higher premium once your children are over the age of 18 and
+            not studying full-time. If this is the case for you, it may be time to review your policy and look around
+            for one that is more suited to your family’s situation. <br /><br />
+            If your children have left home you will probably want to change from a family to a singles or couples’
+            insurance policy. This can help you reduce your premium costs and ensure that you’re covered for any medical
+            issues you may experience in the future. <br /><br />
+            Family health insurance can be confusing. At Health Insurance Comparison, we can help you find the best
+            policy for your family’s changing needs. Fill out your details below or give us a call and we’ll find you
+            tailored policies at the best prices.
+          </p>
+
+          <!-- Another Simple CTA -->
+          <div class="main-content__cta-simple">
+            <button type="button" class="btn cta-simple__button">
+              Compare Health Cover<i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </div>
+
+          <!-- FAQ -->
+          <div class="main-content__faq">
+            <p class="faq__title">Frequently Asked Questions About Health Insurance</p>
+
+            <div class="accordion faq__lists" id="faq_accordion">
+              <div class="card faq__item">
+                <div class="card-header" id="faq_item_1_header">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#faq_item_1"
+                    aria-expanded="true"
+                    aria-controls="faq_item_1"
+                  >
+                    <i class="fas fa-plus"></i> What types of health insurance are available in Australia?
+                  </button>
+                </div>
+                <div id="faq_item_1" class="collapse" aria-labelledby="faq_item_1_header" data-parent="#faq_accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq__item">
+                <div class="card-header" id="faq_item_2_header">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#faq_item_2"
+                    aria-expanded="false"
+                    aria-controls="faq_item_2"
+                  >
+                    <i class="fas fa-plus"></i> Who should buy health insurance?
+                  </button>
+                </div>
+                <div id="faq_item_2" class="collapse" aria-labelledby="faq_item_2_header" data-parent="#faq_accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq__item">
+                <div class="card-header" id="faq_item_3_header">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#faq_item_3"
+                    aria-expanded="false"
+                    aria-controls="faq_item_3"
+                  >
+                    <i class="fas fa-plus"></i> How much will it cost?
+                  </button>
+                </div>
+                <div id="faq_item_3" class="collapse" aria-labelledby="faq_item_3_header" data-parent="#faq_accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq__item">
+                <div class="card-header" id="faq_item_4_header">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#faq_item_4"
+                    aria-expanded="false"
+                    aria-controls="faq_item_4"
+                  >
+                    <i class="fas fa-plus"></i> Health insurance glossary
+                  </button>
+                </div>
+                <div id="faq_item_4" class="collapse" aria-labelledby="faq_item_4_header" data-parent="#faq_accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq__meta">
+              Disclaimer: The above information is correct and current at the time of publication
+            </div>
+          </div>
+
+          <!-- Big CTA -->
+          <div class="main-content__big-cta">
+            <div class="row big-cta__row big-cta__row-first-content">
+              <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 big-cta__column-icon">
+                <img src="icons/icon_message_double.svg" alt="icon_message_double" />
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 big-cta__column-content">
+                <h1 class="row__title">Still have questions? Let's talk!</h1>
+                <p class="row__content">
+                  Confused? Not sure if this applies to your situation? Phone us on
+                  <span class="row__content-phone">1300 643 355</span> for some free, no obligation advice.
+                </p>
+              </div>
+            </div>
+            <div class="row big-cta__row">
+              <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 big-cta__column-icon">
+                <img src="icons/icon_message_quote.svg" alt="icon_message_double" />
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 big-cta__column-content">
+                <h1 class="row__title">Or want to compare policies now?</h1>
+              </div>
+            </div>
+            <div class="row big-cta__row big-cta__row-form">
+              <form class="form__input">
+                <div class="form-row">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form__input-name">
+                    <input type="text" class="form-control" placeholder="Name" />
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form__input-email">
+                    <input type="email" class="form-control" placeholder="Email Address" />
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form__input-phone">
+                    <input type="text" class="form-control" placeholder="Phone Number" />
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form__input-fund">
+                    <select class="custom-select">
+                      <option selected disabled value="">Your Current Fund...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form__input-suburb">
+                    <input type="text" class="form-control" placeholder="Enter Suburb or Postcode" />
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form__input-life-stage">
+                    <select class="custom-select">
+                      <option selected disabled value="">Life Stage...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 form__input-submit">
+                    <button type="button" class="btn btn-block">
+                      Show my quotes <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Email Form -->
+          <div class="main-content__email">
+            <p class="email__title">Leave a Reply</p>
+            <p class="email__description">
+              Your email address will not be published. Required fields are marked
+              <span class="email__required-sign">*</span>
+            </p>
+            <form class="email__form">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="form-group">
+                    <label>Name<span class="email__required-sign">*</span></label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="form-group">
+                    <label>Email Address<span class="email__required-sign">*</span></label>
+                    <input type="email" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <div class="form-group"><label>Website</label> <input type="text" class="form-control" /></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <div class="form-group"><label>Comment</label> <textarea class="form-control"></textarea></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 email__form-submit">
+                  <button type="button" class="btn">Post Comment <i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Similar Items -->
+      <div class="row similar-items">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 similar-items__title">
+          <p>You may also like...</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 similar-items__cards">
+          <div class="card-deck similar-items__cards-slider">
+            <div class="card">
+              <img src="images/similar_item_1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">How much do grommets cost, and are they…</h5>
+                <p class="card-text">
+                  If your child has frequent ear infections, you may already be familiar with grommets…
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/similar_item_2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Expecting a Little One? Your Guide to Choosing…</h5>
+                <p class="card-text">Starting a family is an exciting, but nerve-wracking time for many people…</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/similar_item_3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">How to Maintain Private Health Insurance…</h5>
+                <p class="card-text">The professional landscape is always changing, and nobody’s job is truly safe…</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/similar_item_4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Your Guide to Hospital Cover in Australia…</h5>
+                <p class="card-text">
+                  Medicare is fantastic for those who can’t afford or do not choose to purchase private health cover…
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/similar_item_2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Expecting a Little One? Your Guide to Choosing…</h5>
+                <p class="card-text">Starting a family is an exciting, but nerve-wracking time for many people…</p>
+              </div>
+            </div>
+          </div>
+          <div class="similar-items__cards-arrows">
+            <i class="fas fa-angle-right arrow-right"></i> <i class="fas fa-angle-left arrow-left"></i>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 similar-items__cards-dots">
+          <!-- <i class="fas fa-circle active"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer CTA -->
+    <div class="footer__cta">
+      <p class="footer__cta-title">Compare health insurance policies & save</p>
+      <div class="footer__cta-action">
+        <button type="button" class="btn footer__cta-action">
+          Compare Now <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container footer__big">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 footer__logo">
+            <img src="images/logo_hic.svg" alt="hic_logo" />
+            <p class="footer__logo-address">724-728 George St, Sydney New South Wales 2000</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 footer__list">
+            <ul>
+              <li>About Us</li>
+              <li>Health Funds</li>
+              <li>Guides</li>
+              <li>Tools & Calculators</li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 footer__list">
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Terms of use</li>
+              <li>FAQ</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 footer__license">
+            <img src="images/footer_license.svg" alt="license" />
+          </div>
+        </div>
+      </div>
+      <div class="footer__small">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xl-6 footer__rights">
+              © Copyright Health Insurance Comparison 2019. All right reserved.
+            </div>
+            <div class="col-lg-6 col-xl-6 footer__socials">
+              <img src="icons/facebook_black_circle.svg" alt="facebook_icon" />
+              <img src="icons/twitter_black_circle.svg" alt="facebook_icon" />
+              <img src="icons/linkedin_black_circle.svg" alt="facebook_icon" />
+              <img src="icons/youtube_black_circle.svg" alt="facebook_icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Widgets -->
+    <div class="social-media-widgets">
+      <div class="facebook-icon"><img src="icons/facebook_white.svg" alt="facebook_icon" /></div>
+      <div class="twitter-icon"><img src="icons/twitter_white.svg" alt="twitter_icon" /></div>
+      <div class="google_plus-icon"><img src="icons/google_plus_white.svg" alt="google_plus_icon" /></div>
+      <div class="linkedin-icon"><img src="icons/linkedin_white.svg" alt="linkedin_icon" /></div>
+      <div class="mail-icon"><img src="icons/mail_white.svg" alt="mail_icon" /></div>
+    </div>
+
+    <!-- Chat Widget -->
+    <!-- <div class="chat-widget d-sm-none d-md-none d-lg-none d-xl-none">
+      <img src="icons/chat.svg" alt="chat_icon" />
+    </div> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>

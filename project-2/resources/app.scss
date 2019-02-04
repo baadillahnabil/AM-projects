@@ -865,13 +865,30 @@ body {
         padding-right: 20px;
       }
 
-      img.bupa_map {
-        width: 406px;
-        height: 327px;
+      img {
+        &.bupa_map {
+          width: 406px;
+          height: 327px;
+        }
+        &.horizontal_checklists_type {
+          margin-bottom: 40px;
+        }
+        &.graphic_1 {
+          width: 427px;
+          height: 295px;
+        }
+        &.graphic_2 {
+          width: 468px;
+          height: 281px;
+        }
       }
 
       a.icon-wrapper {
         position: relative;
+
+        &.outside {
+          right: -60px;
+        }
 
         i.fas {
           font-size: 20px;

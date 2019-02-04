@@ -28,8 +28,10 @@ $(document).ready(() => {
     arrows: true,
     mobileFirst: true,
     adaptiveHeight: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
+    rows: 2,
+    slidesPerRow: 1,
     appendDots: $('.similar-items__cards-dots'),
     customPaging: () => {
       return '<button class="button-dots"></button>'

@@ -274,6 +274,10 @@ body {
   }
 
   .funds {
+    @include media-breakpoint-down(md) {
+      margin-top: 10px;
+    }
+
     @include media-breakpoint-down(sm) {
       margin-left: 20px;
       margin-right: 20px;
@@ -349,6 +353,10 @@ body {
   .guides {
     margin-top: 20px;
 
+    @include media-breakpoint-down(md) {
+      margin-top: 10px;
+    }
+
     @include media-breakpoint-down(sm) {
       margin-left: 20px;
       margin-right: 20px;
@@ -421,11 +429,14 @@ body {
       border: 1px solid #d8d8d8;
     }
 
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
     @include media-breakpoint-down(sm) {
       margin-left: 20px;
       margin-right: 20px;
-      margin-top: 10px;
-      margin-bottom: 20px;
     }
 
     .health-lifestyle__header {

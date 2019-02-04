@@ -778,9 +778,21 @@ body {
     }
 
     .main-content__paragraph-title {
-      font-size: 22px;
+      font-size: 20px;
       font-family: 'ProximaNova-SemiBold', sans-serif;
       margin-top: 40px;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .main-content__paragraph-sub-title {
+      font-size: 16px;
+      font-family: 'ProximaNova-SemiBold', sans-serif;
+      margin: 15px 0;
+      color: $primary;
 
       @include media-breakpoint-down(sm) {
         padding-left: 20px;
@@ -791,12 +803,18 @@ body {
     .main-content__paragraph-content {
       font-size: 15px;
       text-align: left;
-      margin-top: 25px;
+      margin-top: 10px;
       margin-bottom: 25px;
 
       @include media-breakpoint-down(sm) {
         padding-left: 20px;
         padding-right: 20px;
+      }
+
+      .paragraph-link {
+        text-decoration: underline;
+        cursor: pointer;
+        color: $primary;
       }
     }
 
@@ -837,70 +855,6 @@ body {
       }
     }
 
-    .main-content__page-content {
-      margin-top: 40px;
-
-      @include media-breakpoint-down(sm) {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-
-      .page_content_item {
-        border: 1px solid #ededed;
-
-        .page_content-header {
-          padding: 0;
-          background-color: transparent;
-
-          button {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
-            font-size: 15px;
-            color: $primary;
-            font-family: 'ProximaNova-SemiBold', sans-serif;
-            cursor: pointer;
-            text-decoration: none;
-            padding: 10px 20px;
-            width: 100%;
-
-            img {
-              font-size: 10px;
-            }
-          }
-        }
-
-        .page_content-body {
-          padding-bottom: 20px;
-
-          @include media-breakpoint-down(xs) {
-            .container-fluid {
-              padding: 0;
-            }
-          }
-
-          .card.categories {
-            border-bottom: 1px solid #d8d8d8;
-          }
-          .card.popular-guides {
-            border-bottom: 1px solid #d8d8d8;
-          }
-          .card.page-content {
-            margin-top: 20px;
-            border-bottom: 1px solid #d8d8d8;
-
-            .page-content__header {
-              color: white;
-              font-size: 15px;
-              background-color: $primary;
-              font-family: 'ProximaNova-SemiBold', sans-serif;
-            }
-          }
-        }
-      }
-    }
-
     .main-content__image-content {
       display: flex;
       justify-content: center;
@@ -911,18 +865,19 @@ body {
         padding-right: 20px;
       }
 
-      img {
-        outline: 1px solid #d8d8d8;
+      img.bupa_map {
+        width: 406px;
+        height: 327px;
       }
 
       a.icon-wrapper {
         position: relative;
 
         i.fas {
-          font-size: 25px;
-          color: white;
+          font-size: 20px;
+          color: rgba($color: #ffffff, $alpha: 0.64);
           padding: 10px;
-          background-color: #d8d8d8;
+          background-color: rgba($color: #000000, $alpha: 0.09);
           position: absolute;
           bottom: 0;
           right: 0px;
@@ -952,7 +907,7 @@ body {
           background-color: white;
           font-size: 24px;
           position: absolute;
-          top: -5px;
+          top: 0;
           left: -12px;
         }
 
@@ -961,6 +916,12 @@ body {
           font-family: 'ProximaNova-SemiBold', sans-serif;
           color: black;
           margin-bottom: 15px;
+
+          &.header-only {
+            margin-bottom: 0;
+            font-size: 15px;
+            padding-bottom: 30px;
+          }
         }
 
         .timeline-text {

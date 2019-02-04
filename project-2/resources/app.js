@@ -2,7 +2,7 @@ window.$ = window.jQuery = require('jquery/dist/jquery.min.js')
 import 'popper.js/dist/popper.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'magnific-popup/dist/jquery.magnific-popup.min.js'
-import 'slick-carousel/slick/slick.min.js'
+import 'slick-carousel/slick/slick.js'
 
 const primaryColor = '#40a9bc'
 
@@ -28,10 +28,8 @@ $(document).ready(() => {
     arrows: true,
     mobileFirst: true,
     adaptiveHeight: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
-    rows: 2,
-    slidesPerRow: 1,
     appendDots: $('.similar-items__cards-dots'),
     customPaging: () => {
       return '<button class="button-dots"></button>'
@@ -40,19 +38,12 @@ $(document).ready(() => {
     nextArrow: $('.similar-items__cards-arrows > .arrow-right'),
     responsive: [
       {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          dots: true
-        }
-      },
-      {
         breakpoint: 992,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          dots: true
+          dots: true,
+          rows: 2,
+          slidesPerRow: 1,
+          initialSlide: 0
         }
       },
       {
@@ -60,7 +51,8 @@ $(document).ready(() => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          dots: true
+          dots: true,
+          rows: 1
         }
       },
       {
@@ -68,7 +60,8 @@ $(document).ready(() => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true
+          dots: true,
+          rows: 1
         }
       },
       {
@@ -76,16 +69,18 @@ $(document).ready(() => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true
+          dots: true,
+          rows: 1
         }
       }
     ]
   })
 
-  // $('.similar-items__cards-slider').on('afterChange', () => {
-  //   console.log($('.similar-items__cards-slider').slick('slickCurrentSlide'))
-  //   console.log($('.similar-items__cards-slider').slick('slickGetOption'))
-  // })
+  $('.similar-items__cards-slider').on('breakpoint', (event, slick, breakpoint) => {
+    if (breakpoint === 992) {
+      $('.similar-items__cards-slider').slick('slickGoTo', 0, true)
+    }
+  })
 })
 
 function showSearch() {

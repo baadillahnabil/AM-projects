@@ -585,6 +585,11 @@ body {
       border-bottom: 1px solid #d8d8d8;
       margin-bottom: 20px;
 
+      @include media-breakpoint-down(sm) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
       p {
         font-family: 'ProximaNova-Bold', sans-serif;
         font-size: 24px;
@@ -823,6 +828,7 @@ body {
       text-decoration: underline;
       cursor: pointer;
       color: $primary;
+      word-break: break-all;
     }
 
     .main-content__image-content {
@@ -851,6 +857,21 @@ body {
           width: 468px;
           height: 281px;
         }
+
+        @include media-breakpoint-down(sm) {
+          &.bupa_map {
+            width: 230px;
+            height: 190px;
+          }
+          &.graphic_1 {
+            width: 225px;
+            height: 155px;
+          }
+          &.graphic_2 {
+            width: 220px;
+            height: 135px;
+          }
+        }
       }
 
       a.icon-wrapper {
@@ -877,6 +898,16 @@ body {
       padding-left: 10px;
 
       @include media-breakpoint-down(sm) {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &.timeline-header-only {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      &.timeline-header-only {
         padding-left: 30px;
         padding-right: 30px;
       }
@@ -923,6 +954,11 @@ body {
       padding: 20px 40px;
       margin: 25px 0;
 
+      @include media-breakpoint-down(sm) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
       p {
         margin-bottom: 0;
       }
@@ -936,6 +972,12 @@ body {
     .main-content__disclaimer {
       padding: 40px;
       border: 1px solid #f3f3f3;
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+      }
 
       p {
         text-align: center;
@@ -954,6 +996,8 @@ body {
       @include media-breakpoint-down(sm) {
         padding: 5px 20px;
         margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
 
       .big-cta__row {
@@ -1577,12 +1621,12 @@ body {
   top: 250px;
   left: 0;
 
-  @include media-breakpoint-down(sm) {
-    flex-direction: row;
-    bottom: 0;
-    top: initial;
-    width: 100%;
-  }
+  // @include media-breakpoint-down(sm) {
+  //   flex-direction: row;
+  //   bottom: 0;
+  //   top: initial;
+  //   width: 100%;
+  // }
 
   .facebook-icon {
     background-color: #4867aa;
@@ -1608,10 +1652,10 @@ body {
     padding: 12px;
     cursor: pointer;
 
-    @include media-breakpoint-down(sm) {
-      height: 50px;
-      width: 20%;
-    }
+    // @include media-breakpoint-down(sm) {
+    //   height: 50px;
+    //   width: 20%;
+    // }
 
     img {
       width: 100%;

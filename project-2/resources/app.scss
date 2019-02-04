@@ -273,8 +273,6 @@ body {
   }
 
   .funds {
-    margin-top: 20px;
-
     .funds__header {
       font-size: 15px;
       color: white;
@@ -454,13 +452,8 @@ body {
           padding-right: 0;
         }
 
-        // @include media-breakpoint-down(sm) {
-        // }
-
         .form__input-suburb {
           padding-top: 10px;
-          // @include media-breakpoint-down(md) {
-          // }
 
           input {
             background-color: white;
@@ -484,8 +477,6 @@ body {
 
         .form__input-life-stage {
           padding-top: 10px;
-          // @include media-breakpoint-down(md) {
-          // }
 
           select.custom-select {
             background-color: white;
@@ -566,12 +557,22 @@ body {
     }
 
     .main-content__title {
-      font-family: 'ProximaNova-Bold', sans-serif;
-      font-size: 38px;
+      display: flex;
+      justify-content: space-between;
 
-      @include media-breakpoint-down(sm) {
-        padding-left: 20px;
-        padding-right: 20px;
+      h1 {
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-size: 35px;
+
+        @include media-breakpoint-down(sm) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      img {
+        width: 102px;
+        height: 42px;
       }
     }
 

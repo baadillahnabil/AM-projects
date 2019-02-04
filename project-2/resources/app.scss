@@ -810,49 +810,12 @@ body {
         padding-left: 20px;
         padding-right: 20px;
       }
-
-      .paragraph-link {
-        text-decoration: underline;
-        cursor: pointer;
-        color: $primary;
-      }
     }
 
-    .main-content__cta-simple {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-      border: 1px solid #f3f3f3;
-
-      @include media-breakpoint-down(sm) {
-        border: none;
-      }
-
-      .cta-simple__button {
-        background-color: $secondary;
-        color: white;
-        font-family: 'ProximaNova-SemiBold', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2px;
-        padding: 12px;
-        width: 285px;
-
-        &:focus {
-          outline: none;
-          box-shadow: none;
-        }
-
-        @include media-breakpoint-down(sm) {
-          width: 100%;
-        }
-
-        i.fas {
-          margin-left: 10px;
-        }
-      }
+    .paragraph-link {
+      text-decoration: underline;
+      cursor: pointer;
+      color: $primary;
     }
 
     .main-content__image-content {
@@ -963,65 +926,16 @@ body {
       }
     }
 
-    .main-content__faq {
-      @include media-breakpoint-down(sm) {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
+    .main-content__disclaimer {
+      padding: 40px;
+      border: 1px solid #f3f3f3;
 
-      .faq__title {
-        font-size: 22px;
-        font-family: 'ProximaNova-SemiBold', sans-serif;
-        margin-top: 40px;
-      }
-
-      .faq__lists {
-        .faq__item {
-          border: none;
-          border-left: 1px solid #ededed;
-          border-right: 1px solid #ededed;
-          border-bottom: 1px solid #ededed;
-
-          &:first-child {
-            border-top: 1px solid #ededed;
-          }
-
-          .card-header {
-            padding: 0;
-            background-color: transparent;
-
-            button {
-              display: flex;
-              align-items: baseline;
-              text-align: left;
-              font-size: 15px;
-              color: $primary;
-              font-family: 'ProximaNova-SemiBold', sans-serif;
-              cursor: pointer;
-              text-decoration: none;
-              padding: 10px 6px;
-              width: 100%;
-
-              i.fas {
-                margin-right: 15px;
-                margin-left: 10px;
-                font-size: 10px;
-              }
-            }
-          }
-        }
-      }
-
-      .faq__meta {
-        font-size: 12px;
-        color: #898989;
+      p {
+        text-align: center;
+        color: #a9a9a9;
+        font-size: 15px;
+        margin-bottom: 0;
         font-family: 'ProximaNova-RegItalic', sans-serif;
-        margin-top: 20px;
-
-        @include media-breakpoint-down(sm) {
-          text-align: center;
-          padding: 0 20px;
-        }
       }
     }
 

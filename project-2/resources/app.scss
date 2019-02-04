@@ -948,6 +948,21 @@ body {
       }
     }
 
+    .main-content__blockquote {
+      border-left: 4px solid $primary;
+      padding: 20px 40px;
+      margin: 25px 0;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .blockquote-title {
+        font-size: 16px;
+        font-family: 'ProximaNova-SemiBold', sans-serif;
+      }
+    }
+
     .main-content__faq {
       @include media-breakpoint-down(sm) {
         padding-left: 20px;

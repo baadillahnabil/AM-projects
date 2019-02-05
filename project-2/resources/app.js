@@ -7,6 +7,14 @@ import 'slick-carousel/slick/slick.js'
 const primaryColor = '#40a9bc'
 
 $(document).ready(() => {
+  $(window).scroll(() => {
+    if ($(window).scrollTop() > 50) {
+      $('#navbar').addClass('shadow-sm')
+    } else {
+      $('#navbar').removeClass('shadow-sm')
+    }
+  })
+
   $('.searchToggleTrigger').click(() => {
     if ($('#formSearch').css('display') === 'none') showSearch()
     else hideSearch()

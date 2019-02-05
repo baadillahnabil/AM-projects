@@ -289,577 +289,721 @@
             <img src="images/funds_2.svg" class="d-none d-md-block d-lg-block d-xl-block" alt="bupa_image" />
           </div>
 
-          <!-- Section Heading -->
-          <div class="main-content__section-heading">
-            <p>About Bupa Health Insurance</p>
-            <img class="d-none d-lg-block d-xl-block" src="icons/chevron_down_grey.svg" alt="chevron_icon" />
-          </div>
-
-          <!-- Paragraphs -->
-          <p class="main-content__paragraph-content">
-            Bupa is part of a global family that re-invests its profits into areas that Bupa believes will benefit their
-            members, including businesses, health services and the community –
-            <span class="paragraph-link">https://www.bupa.com.au/about-us.</span> <br /><br />
-            The team at Bupa wants lives to be happier and healthier, and there are many ways that Bupa can make a
-            positive difference. That’s why Bupa is building a broad range of health and care services that do just
-            that.
-          </p>
-
-          <!-- CTA Box -->
-          <div class="container-fluid main-content__cta-box">
-            <div class="row">
-              <!-- Header -->
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 cta-box__intro">
-                <img src="images/cta_bubble.png" class="cta-box__bubble" alt="cta_bubble" />
-                <div class="intro__title">Have questions? Let's talk!</div>
-                <div class="intro__message">
-                  Not sure if this applies to your situation? Phone us on <a href="tel:1300643355">1300 643 355</a> for
-                  some free, no obligation advice.
-                </div>
+          <!-- Section -->
+          <div class="accordion main-content__section" id="section_1_accordion">
+            <div class="card">
+              <!-- Section Heading -->
+              <div
+                id="section_1_header"
+                class="card-header main-content__section-header"
+                data-toggle="collapse"
+                data-target="#section_1"
+                aria-expanded="true"
+                aria-controls="section_1"
+              >
+                <p>About Bupa Health Insurance</p>
+                <img src="icons/chevron_down_grey.svg" alt="chevron_icon" />
               </div>
 
-              <!-- Form -->
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 cta-box__form">
-                <div class="form__title">
-                  <img src="images/logo_hic_small_white.svg" alt="logo_hic_small_white" />
-                  <p>Compare Health Insurance Policies Now</p>
-                </div>
-                <form class="form__input">
+              <!-- Section Body -->
+              <div
+                id="section_1"
+                class="collapse show"
+                aria-labelledby="section_1_header"
+                data-parent="#section_1_accordion"
+              >
+                <p class="main-content__paragraph-content">
+                  Bupa is part of a global family that re-invests its profits into areas that Bupa believes will benefit
+                  their members, including businesses, health services and the community –
+                  <span class="paragraph-link">https://www.bupa.com.au/about-us.</span> <br /><br />
+                  The team at Bupa wants lives to be happier and healthier, and there are many ways that Bupa can make a
+                  positive difference. That’s why Bupa is building a broad range of health and care services that do
+                  just that.
+                </p>
+
+                <!-- CTA Box -->
+                <div class="container-fluid main-content__cta-box">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form__input-suburb">
-                      <input type="text" class="form-control" placeholder="Enter Suburb or Postcode" />
+                    <!-- Header -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 cta-box__intro">
+                      <img src="images/cta_bubble.png" class="cta-box__bubble" alt="cta_bubble" />
+                      <div class="intro__title">Have questions? Let's talk!</div>
+                      <div class="intro__message">
+                        Not sure if this applies to your situation? Phone us on
+                        <a href="tel:1300643355">1300 643 355</a> for some free, no obligation advice.
+                      </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form__input-life-stage">
-                      <select class="custom-select">
-                        <option selected disabled value="">Life Stage...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 form__input-submit">
-                      <button type="button" class="btn btn-block">
-                        Show my quotes <i class="fas fa-long-arrow-alt-right"></i>
-                      </button>
+
+                    <!-- Form -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 cta-box__form">
+                      <div class="form__title">
+                        <img src="images/logo_hic_small_white.svg" alt="logo_hic_small_white" />
+                        <p>Compare Health Insurance Policies Now</p>
+                      </div>
+                      <form class="form__input">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form__input-suburb">
+                            <input type="text" class="form-control" placeholder="Enter Suburb or Postcode" />
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form__input-life-stage">
+                            <select class="custom-select">
+                              <option selected disabled value="">Life Stage...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 form__input-submit">
+                            <button type="button" class="btn btn-block">
+                              Show my quotes <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
-                </form>
+                </div>
+
+                <!-- Content Timeline -->
+                <div class="main-content__timeline timeline-header-only">
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      As one of Australia’s largest private health insurance providers, Bupa can provide its customers
+                      with a large variety of coverage options and extras. They offer options for people of diverse age,
+                      family planning, and financial stages in life.
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Bupa strives to ensure all patients receive private rooms at private hospitals and offers a
+                      reimbursement for when private rooms are not available.
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Bupa has built relationships with many hospitals and medical professionals. In doing so, it has
+                      negotiated lower prices for its clients – reducing any potential out of pocket expenses.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Content Timeline -->
-          <div class="main-content__timeline timeline-header-only">
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                As one of Australia’s largest private health insurance providers, Bupa can provide its customers with a
-                large variety of coverage options and extras. They offer options for people of diverse age, family
-                planning, and financial stages in life.
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Bupa strives to ensure all patients receive private rooms at private hospitals and offers a
-                reimbursement for when private rooms are not available.
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Bupa has built relationships with many hospitals and medical professionals. In doing so, it has
-                negotiated lower prices for its clients – reducing any potential out of pocket expenses.
-              </p>
-            </div>
-          </div>
+          <!-- Another Section -->
+          <div class="accordion main-content__section" id="section_2_accordion">
+            <div class="card">
+              <!-- Section Heading -->
+              <div
+                id="section_2_header"
+                class="card-header main-content__section-header"
+                data-toggle="collapse"
+                data-target="#section_2"
+                aria-expanded="true"
+                aria-controls="section_2"
+              >
+                <p>Benefits of Bupa Health Insurance</p>
+                <img src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+              </div>
 
-          <!-- Another Section Heading -->
-          <div class="main-content__section-heading">
-            <p>Benefits of Bupa Health Insurance</p>
-            <img class="d-none d-lg-block d-xl-block" src="icons/chevron_down_grey.svg" alt="chevron_icon" />
-          </div>
+              <!-- Section Body -->
+              <div
+                id="section_2"
+                class="collapse show"
+                aria-labelledby="section_2_header"
+                data-parent="#section_2_accordion"
+              >
+                <!-- Another Paragraph -->
+                <p class="main-content__paragraph-title mt-3">Privacy</p>
+                <p class="main-content__paragraph-content">
+                  Bupa prides itself on affording its customers with private, individual rooms at most private hospitals
+                  across Australia. This service is even included with Bupa’s most basic hospital cover. Therefore, Bupa
+                  customers do not have to worry about sharing a room during an emergency or elective hospital stay.
+                  <br /><br />
+                  Bupa also provides additional customer benefits for those who chose to receive medical care at one of
+                  their Members First hospitals.
+                  <br /><br />
+                  At these hospitals, patients will actually receive money back if a private room is not available.
+                  While it is rare, those who are inconvenienced with having to share a room at Members First hospitals
+                  will receive $50 back each night they do not have a private room.
+                  <br /><br />
+                  In additional to a money back guarantee on private rooms, Bupa customers at Members First hospitals
+                  also receive certain luxuries to help make their hospital stays more enjoyable. These luxuries include
+                  complimentary local phone calls, free-to-air TV, and a daily newspaper.
+                </p>
 
-          <!-- Another Paragraph -->
-          <p class="main-content__paragraph-title">Privacy</p>
-          <p class="main-content__paragraph-content">
-            Bupa prides itself on affording its customers with private, individual rooms at most private hospitals
-            across Australia. This service is even included with Bupa’s most basic hospital cover. Therefore, Bupa
-            customers do not have to worry about sharing a room during an emergency or elective hospital stay.
-            <br /><br />
-            Bupa also provides additional customer benefits for those who chose to receive medical care at one of their
-            Members First hospitals.
-            <br /><br />
-            At these hospitals, patients will actually receive money back if a private room is not available. While it
-            is rare, those who are inconvenienced with having to share a room at Members First hospitals will receive
-            $50 back each night they do not have a private room.
-            <br /><br />
-            In additional to a money back guarantee on private rooms, Bupa customers at Members First hospitals also
-            receive certain luxuries to help make their hospital stays more enjoyable. These luxuries include
-            complimentary local phone calls, free-to-air TV, and a daily newspaper.
-          </p>
+                <!-- Image Content -->
+                <div class="main-content__image-content">
+                  <img src="images/bupa_map.jpg" class="bupa_map img-fluid" alt="bupa_map" />
+                  <a href="images/bupa_map.jpg" class="icon-wrapper image_content"
+                    ><i class="fas fa-search-plus"></i
+                  ></a>
+                </div>
 
-          <!-- Image Content -->
-          <div class="main-content__image-content">
-            <img src="images/bupa_map.jpg" class="bupa_map img-fluid" alt="bupa_map" />
-            <a href="images/bupa_map.jpg" class="icon-wrapper image_content"><i class="fas fa-search-plus"></i></a>
-          </div>
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title">Increased Savings</p>
+                <p class="main-content__paragraph-content">
+                  Like hospital cover, there are several different tiers from which to choose from provided by nib
+                  Health Fund.
+                </p>
+                <p class="main-content__paragraph-sub-title">Hospital Cover</p>
+                <p class="main-content__paragraph-content">
+                  Generally, the cost of a hospital stay includes two sets of fees: those charged by the hospital itself
+                  and those charged by the physician or specialist. As Bupa consistently works to increase quality and
+                  ease of care for its patients, it has made agreements with many private hospitals and medical
+                  professionals throughout Australia to help cut the overall costs. This also gives customers the
+                  benefit of knowing how much treatment will cost before they receive it.
+                  <br /><br />
+                  Additionally, many of the agreements mean that Bupa will pay 100% of a patient’s covered hospitals
+                  costs. With this benefit, customers are only left to pay a small hospital excess or co-payment;
+                  depending on their selected cover and choice of doctor or surgeon.
+                </p>
+                <p class="main-content__paragraph-sub-title">Specialist Gap Cover</p>
+                <p class="main-content__paragraph-content">
+                  Bupa has negotiated lower wages with specialists to help cover Medicare gaps charges. Normally, if a
+                  medical professional charges more than Medicare and private health cover offers for a specific
+                  service, the patient is left paying the difference.
+                  <br /><br />
+                  Fortunately, Bupa has created the Bupa Medical Gap Scheme to help protect customers from such
+                  unforeseen costs. Those who choose doctors that are part of the Bupa Medical Gap Scheme never pay more
+                  than $500 for the fee differential. Sometimes, patients have no fee at all.
+                  <br /><br />
+                  Bupa representatives are available and eager to answer customer questions about which professionals
+                  are part of the Bupa Medical Gap Scheme and how much they should expect to pay for their surgeries or
+                  specialist care based on their level of coverage.
+                </p>
+                <p class="main-content__paragraph-sub-title">Extra Benefits for Expecting Mothers</p>
+                <p class="main-content__paragraph-content">
+                  Those expecting a child are privileged to receive extra benefits from Bupa that may not be available
+                  with other health care providers.
+                  <br /><br />
+                  Bupa provides educational classes on childbirth, breastfeeding, and parenting at its Members First
+                  hospitals. It also allows members the opportunity to take advance of exclusive postnatal clinics. This
+                  benefits is offered at selected Members First hospitals and can be used up to eight weeks after the
+                  baby is born.
+                </p>
+                <p class="main-content__paragraph-sub-title">Self-Management Guides</p>
+                <p class="main-content__paragraph-content">
+                  Bupa also empowers its customers to take an active role in managing any chronic health conditions they
+                  might have. They do this by providing Self-Management Guides to all customers.
+                  <br /><br />
+                  The guides provide up-to-date information on various chronic conditions and how to manage them. This
+                  resource allows customers the freedom to live more comfortably and keep their conditions under control
+                  without persistent medical intervention.
+                  <br /><br />
+                  Bupa’s Self-Management Guides include topics like:
+                </p>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title">Increased Savings</p>
-          <p class="main-content__paragraph-content">
-            Like hospital cover, there are several different tiers from which to choose from provided by nib Health
-            Fund.
-          </p>
-          <p class="main-content__paragraph-sub-title">Hospital Cover</p>
-          <p class="main-content__paragraph-content">
-            Generally, the cost of a hospital stay includes two sets of fees: those charged by the hospital itself and
-            those charged by the physician or specialist. As Bupa consistently works to increase quality and ease of
-            care for its patients, it has made agreements with many private hospitals and medical professionals
-            throughout Australia to help cut the overall costs. This also gives customers the benefit of knowing how
-            much treatment will cost before they receive it.
-            <br /><br />
-            Additionally, many of the agreements mean that Bupa will pay 100% of a patient’s covered hospitals costs.
-            With this benefit, customers are only left to pay a small hospital excess or co-payment; depending on their
-            selected cover and choice of doctor or surgeon.
-          </p>
-          <p class="main-content__paragraph-sub-title">Specialist Gap Cover</p>
-          <p class="main-content__paragraph-content">
-            Bupa has negotiated lower wages with specialists to help cover Medicare gaps charges. Normally, if a medical
-            professional charges more than Medicare and private health cover offers for a specific service, the patient
-            is left paying the difference.
-            <br /><br />
-            Fortunately, Bupa has created the Bupa Medical Gap Scheme to help protect customers from such unforeseen
-            costs. Those who choose doctors that are part of the Bupa Medical Gap Scheme never pay more than $500 for
-            the fee differential. Sometimes, patients have no fee at all.
-            <br /><br />
-            Bupa representatives are available and eager to answer customer questions about which professionals are part
-            of the Bupa Medical Gap Scheme and how much they should expect to pay for their surgeries or specialist care
-            based on their level of coverage.
-          </p>
-          <p class="main-content__paragraph-sub-title">Extra Benefits for Expecting Mothers</p>
-          <p class="main-content__paragraph-content">
-            Those expecting a child are privileged to receive extra benefits from Bupa that may not be available with
-            other health care providers.
-            <br /><br />
-            Bupa provides educational classes on childbirth, breastfeeding, and parenting at its Members First
-            hospitals. It also allows members the opportunity to take advance of exclusive postnatal clinics. This
-            benefits is offered at selected Members First hospitals and can be used up to eight weeks after the baby is
-            born.
-          </p>
-          <p class="main-content__paragraph-sub-title">Self-Management Guides</p>
-          <p class="main-content__paragraph-content">
-            Bupa also empowers its customers to take an active role in managing any chronic health conditions they might
-            have. They do this by providing Self-Management Guides to all customers.
-            <br /><br />
-            The guides provide up-to-date information on various chronic conditions and how to manage them. This
-            resource allows customers the freedom to live more comfortably and keep their conditions under control
-            without persistent medical intervention.
-            <br /><br />
-            Bupa’s Self-Management Guides include topics like:
-          </p>
-
-          <!-- Another Timeline -->
-          <div class="main-content__timeline timeline-header-only">
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Back Pain Management
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Osteoarthritis Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Asthma Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Chronic Obstructive Pulmonary Disease Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Health Failure Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Coronary Artery Disease and Angina Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Type 2 Diabetes Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Osteoporosis Positive Health
-              </p>
+                <!-- Another Timeline -->
+                <div class="main-content__timeline timeline-header-only">
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Back Pain Management
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Osteoarthritis Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Asthma Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Chronic Obstructive Pulmonary Disease Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Health Failure Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Coronary Artery Disease and Angina Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Type 2 Diabetes Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Osteoporosis Positive Health
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Another Section Heading -->
-          <div class="main-content__section-heading">
-            <p>Types of Cover Offered by Bupa</p>
-            <img class="d-none d-lg-block d-xl-block" src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+          <!-- Another Section -->
+          <div class="accordion main-content__section" id="section_3_accordion">
+            <div class="card">
+              <!-- Section Heading -->
+              <div
+                id="section_3_header"
+                class="card-header main-content__section-header"
+                data-toggle="collapse"
+                data-target="#section_3"
+                aria-expanded="true"
+                aria-controls="section_3"
+              >
+                <p>Types of Cover Offered by Bupa</p>
+                <img src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+              </div>
+
+              <!-- Section Body -->
+              <div
+                id="section_3"
+                class="collapse show"
+                aria-labelledby="section_3_header"
+                data-parent="#section_3_accordion"
+              >
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  Because of Bupa’s size, they are able to provide several different kinds of care at affordable prices.
+                  Their coverage options include people at various points in life and consist of plans for:
+                </p>
+
+                <!-- Another Image Content -->
+                <div class="main-content__image-content">
+                  <img
+                    src="images/horizontal_checklists_type.svg"
+                    class="horizontal_checklists_type img-fluid"
+                    alt="horizontal_checklists_type"
+                  />
+                </div>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  People in these groups can chose several ranges of cover including:
+                </p>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title">Hospital Cover</p>
+                <p class="main-content__paragraph-content">
+                  Bupa’s Hospital Cover helps pay for inpatient-related hospital treatments. This type of cover can be
+                  used at public or private hospitals throughout Australia and includes different levels of coverage,
+                  including:
+                </p>
+
+                <!-- Another Timeline -->
+                <div class="main-content__timeline">
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header">Basic Hospital Cover</p>
+                    <p class="timeline-text">
+                      This option is best suited to people who are generally healthy and therefore only need a basic
+                      level of cover, or those looking to avoid the Lifetime Health Cover loading. The Lifetime Health
+                      Cover loading affects those who do not take out a private hospital policy by their 30th birthday.
+                      Under this initiative, patients who chose not to take out private health insurance by their 31st
+                      birthday, but decide to so later in life, may be subject to a 2% loading for on top of their
+                      premium for every year over 30 that they did not have private health insurance.
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header">Budget Hospital</p>
+                    <p class="timeline-text">
+                      Budget Hospital cover is best for young, healthy people who are not planning to have children in
+                      the near future. It provides an affordable policy that includes many common hospital procedures
+                      and treatments.
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header">Standard Hospital Cover</p>
+                    <p class="timeline-text">
+                      Bupa’s Standard Hospital cover is also designed for the young and healthy. It includes payment for
+                      most inpatient hospital treatments and also includes minimum benefits on some extended services.
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header">Top Hospital No Pregnancy</p>
+                    <p class="timeline-text">
+                      This level of cover is for those who are not planning on having children soon, but still want the
+                      top level of healthcare coverage. Patients enrolled in this plan also have access to the exclusive
+                      Best Doctors program. The Best Doctors program provides patients with access to a network of over
+                      50,000 leading specialist throughout the world. Customers can use this network to get a second
+                      opinion on a diagnosis. They can also use this service for help with a treatment plan.
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header">Top Hospital</p>
+                    <p class="timeline-text">
+                      Top Hospital cover is Bupa’s most comprehensive coverage option. It allows customers the freedom
+                      to adjust their premiums with varying excess options – including zero. It also covers children up
+                      to age 25 with no hospital excess charges.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title mt-3">Extras Cover</p>
+                <p class="main-content__paragraph-content">
+                  Bupa offers Extras cover in several levels. They include:
+                </p>
+
+                <!-- Another Timeline -->
+                <div class="main-content__timeline timeline-header-only">
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Bronze
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Your Choice
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Silver
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Gold
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Platinum
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Coronary Artery Disease and Angina Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Type 2 Diabetes Positive Health
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Osteoporosis Positive Health
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  These coverage plans help customers pay for many commonly used medical services such as:
+                </p>
+
+                <!-- Another Timeline -->
+                <div class="main-content__timeline timeline-header-only">
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Emergency Ambulance
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      General Dental
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Optical
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Physiotherapy
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Chiropractic
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Osteopathy
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Pharmacy
+                    </p>
+                  </div>
+                  <div class="timeline-group">
+                    <i class="fas fa-check-circle"></i>
+                    <p class="timeline-header header-only">
+                      Natural Therapies
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title mt-2">Ambulance Cover</p>
+                <p class="main-content__paragraph-content">
+                  Customers can choose from a variety of Ambulance cover plans that range from Emergency Only Ambulance
+                  cover to Premium Ambulance cover. While Emergency Only Ambulance cover will cover patients in
+                  emergency situations, Premium Ambulance cover will also cover non-emergency transport. All of Bupa’s
+                  Ambulance cover plans also include air services and on-the-spot treatments.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            Because of Bupa’s size, they are able to provide several different kinds of care at affordable prices. Their
-            coverage options include people at various points in life and consist of plans for:
-          </p>
+          <!-- Another Section -->
+          <div class="accordion main-content__section" id="section_4_accordion">
+            <div class="card">
+              <!-- Section Heading -->
+              <div
+                id="section_4_header"
+                class="card-header main-content__section-header"
+                data-toggle="collapse"
+                data-target="#section_4"
+                aria-expanded="true"
+                aria-controls="section_4"
+              >
+                <p>Bupa’s Performance</p>
+                <img src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+              </div>
 
-          <!-- Another Image Content -->
-          <div class="main-content__image-content">
-            <img
-              src="images/horizontal_checklists_type.svg"
-              class="horizontal_checklists_type img-fluid"
-              alt="horizontal_checklists_type"
-            />
-          </div>
+              <!-- Section Body -->
+              <div
+                id="section_4"
+                class="collapse show"
+                aria-labelledby="section_4_header"
+                data-parent="#section_4_accordion"
+              >
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  In the State of the Health Funds Report, Bupa demonstrates performance that is in line with its size
+                  and market share. In many areas, such as management expenses and member retention, it even performs
+                  better than the Health Funds industry as a whole.
+                  <br /><br />
+                  The amount of complaints that Bupa receives is also less than to be expected from a fund its size. It
+                  maintains about 27% market share, but only received 21.7 of all PHIO complaints. The below data is
+                  sourced from a 2016 report from www.ombudsman.gov.au.
+                </p>
+                <p class="main-content__paragraph-title mt-2">BUPA compared to Industry</p>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            People in these groups can chose several ranges of cover including:
-          </p>
+                <!-- Another Image Content -->
+                <div class="main-content__image-content">
+                  <img src="images/graphic_1.jpg" class="img-fluid graphic_1" alt="graphic_1" />
+                  <a
+                    href="images/graphic_1.jpg"
+                    class="icon-wrapper outside image_content d-none d-md-block d-lg-block d-xl-block"
+                    ><i class="fas fa-search-plus"></i
+                  ></a>
+                </div>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title">Hospital Cover</p>
-          <p class="main-content__paragraph-content">
-            Bupa’s Hospital Cover helps pay for inpatient-related hospital treatments. This type of cover can be used at
-            public or private hospitals throughout Australia and includes different levels of coverage, including:
-          </p>
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title">Share of Private Health Insurance Ombudsman complaints</p>
 
-          <!-- Another Timeline -->
-          <div class="main-content__timeline">
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header">Basic Hospital Cover</p>
-              <p class="timeline-text">
-                This option is best suited to people who are generally healthy and therefore only need a basic level of
-                cover, or those looking to avoid the Lifetime Health Cover loading. The Lifetime Health Cover loading
-                affects those who do not take out a private hospital policy by their 30th birthday. Under this
-                initiative, patients who chose not to take out private health insurance by their 31st birthday, but
-                decide to so later in life, may be subject to a 2% loading for on top of their premium for every year
-                over 30 that they did not have private health insurance.
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header">Budget Hospital</p>
-              <p class="timeline-text">
-                Budget Hospital cover is best for young, healthy people who are not planning to have children in the
-                near future. It provides an affordable policy that includes many common hospital procedures and
-                treatments.
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header">Standard Hospital Cover</p>
-              <p class="timeline-text">
-                Bupa’s Standard Hospital cover is also designed for the young and healthy. It includes payment for most
-                inpatient hospital treatments and also includes minimum benefits on some extended services.
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header">Top Hospital No Pregnancy</p>
-              <p class="timeline-text">
-                This level of cover is for those who are not planning on having children soon, but still want the top
-                level of healthcare coverage. Patients enrolled in this plan also have access to the exclusive Best
-                Doctors program. The Best Doctors program provides patients with access to a network of over 50,000
-                leading specialist throughout the world. Customers can use this network to get a second opinion on a
-                diagnosis. They can also use this service for help with a treatment plan.
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header">Top Hospital</p>
-              <p class="timeline-text">
-                Top Hospital cover is Bupa’s most comprehensive coverage option. It allows customers the freedom to
-                adjust their premiums with varying excess options – including zero. It also covers children up to age 25
-                with no hospital excess charges.
-              </p>
+                <!-- Another Image Content -->
+                <div class="main-content__image-content">
+                  <img src="images/graphic_2.jpg" class="img-fluid graphic_2" alt="graphic_2" />
+                  <a
+                    href="images/graphic_2.jpg"
+                    class="icon-wrapper outside image_content d-none d-md-block d-lg-block d-xl-block"
+                    ><i class="fas fa-search-plus"></i
+                  ></a>
+                </div>
+
+                <!-- Paragraph Link -->
+                <p class="main-content__paragraph-content mt-5 pr-5">
+                  <span class="paragraph-link">
+                    https://www.ombudsman.gov.au/__data/assets/pdf_file/0020/43355/2016-State-of-the-Health-Funds-Report.pdf
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title">Extras Cover</p>
-          <p class="main-content__paragraph-content">
-            Bupa offers Extras cover in several levels. They include:
-          </p>
+          <!-- Another Section -->
+          <div class="accordion main-content__section" id="section_5_accordion">
+            <div class="card">
+              <!-- Section Heading -->
+              <div
+                id="section_5_header"
+                class="card-header main-content__section-header"
+                data-toggle="collapse"
+                data-target="#section_5"
+                aria-expanded="true"
+                aria-controls="section_5"
+              >
+                <p>How to File a Claim With Bupa</p>
+                <img src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+              </div>
 
-          <!-- Another Timeline -->
-          <div class="main-content__timeline timeline-header-only">
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Bronze
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Your Choice
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Silver
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Gold
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Platinum
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Coronary Artery Disease and Angina Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Type 2 Diabetes Positive Health
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Osteoporosis Positive Health
-              </p>
-            </div>
-          </div>
+              <!-- Section Body -->
+              <div
+                id="section_5"
+                class="collapse show"
+                aria-labelledby="section_5_header"
+                data-parent="#section_5_accordion"
+              >
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">There are several ways to make claims through Bupa.</p>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            These coverage plans help customers pay for many commonly used medical services such as:
-          </p>
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title mt-2">On-the-spot Claims</p>
+                <p class="main-content__paragraph-content">
+                  More than 20,000 health care providers are currently enrolled in Bupa’s On-the-spot claims service. It
+                  is the fastest way to make a claim and is initiated electronically as soon as the patient receives
+                  care.
+                  <br /><br />
+                  After receiving treatment, the patient swipes his or her claims card and the claim is processed
+                  automatically. This process does not require any forms and patients will often know their balance
+                  immediately.
+                </p>
 
-          <!-- Another Timeline -->
-          <div class="main-content__timeline timeline-header-only">
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Emergency Ambulance
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                General Dental
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Optical
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Physiotherapy
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Chiropractic
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Osteopathy
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Pharmacy
-              </p>
-            </div>
-            <div class="timeline-group">
-              <i class="fas fa-check-circle"></i>
-              <p class="timeline-header header-only">
-                Natural Therapies
-              </p>
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title mt-2">Online</p>
+                <p class="main-content__paragraph-content">
+                  If a patient is unable to make an on-the-spot claim, he or she can easily make a claim online.
+                  Patients can make online claims by logging onto <span class="paragraph-link">myBupa</span> and enter
+                  the details of their claim. After processing, Bupa will transfer the appropriate funds into the
+                  customer’s bank account.
+                </p>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-title mt-2">Post</p>
+                <p class="main-content__paragraph-content">
+                  Bupa customers also have the option to file claims via post. Simply fill out the
+                  <span class="paragraph-link">claim form</span> and mail it to:
+                </p>
+
+                <!-- Blockquote -->
+                <div class="main-content__blockquote">
+                  <p class="blockquote-title">Bupa Reply Paid 990</p>
+                  <p class="blockquote-title">Adelaide SA 5001</p>
+                </div>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  After processing, Bupa will send customers a cheque or deposit money via EFT – depending on their
+                  preference as indicated in the form.
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title mt-2">Ambulance Cover</p>
-          <p class="main-content__paragraph-content">
-            Customers can choose from a variety of Ambulance cover plans that range from Emergency Only Ambulance cover
-            to Premium Ambulance cover. While Emergency Only Ambulance cover will cover patients in emergency
-            situations, Premium Ambulance cover will also cover non-emergency transport. All of Bupa’s Ambulance cover
-            plans also include air services and on-the-spot treatments.
-          </p>
+          <!-- Another Section -->
+          <div class="accordion main-content__section" id="section_6_accordion">
+            <div class="card">
+              <!-- Section Heading -->
+              <div
+                id="section_6_header"
+                class="card-header main-content__section-header"
+                data-toggle="collapse"
+                data-target="#section_6"
+                aria-expanded="true"
+                aria-controls="section_6"
+              >
+                <p>Member Rewards Offered by Bupa</p>
+                <img src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+              </div>
 
-          <!-- Another Section Heading -->
-          <div class="main-content__section-heading">
-            <p>Bupa’s Performance</p>
-            <img class="d-none d-lg-block d-xl-block" src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+              <!-- Section Body -->
+              <div
+                id="section_6"
+                class="collapse show"
+                aria-labelledby="section_6_header"
+                data-parent="#section_6_accordion"
+              >
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  Bupa members are eligible for the Bupa Plus program. With this program, customers are eligible to
+                  receive discounts from a number of companies and programs. The discounts are intended to make the
+                  lives of Bupa customers healthier, more fun, and more rewarding.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            In the State of the Health Funds Report, Bupa demonstrates performance that is in line with its size and
-            market share. In many areas, such as management expenses and member retention, it even performs better than
-            the Health Funds industry as a whole.
-            <br /><br />
-            The amount of complaints that Bupa receives is also less than to be expected from a fund its size. It
-            maintains about 27% market share, but only received 21.7 of all PHIO complaints. The below data is sourced
-            from a 2016 report from www.ombudsman.gov.au.
-          </p>
-          <p class="main-content__paragraph-title mt-2">BUPA compared to Industry</p>
+          <!-- Another Section -->
+          <div class="accordion main-content__section" id="section_7_accordion">
+            <div class="card">
+              <!-- Section Heading -->
+              <div
+                id="section_7_header"
+                class="card-header main-content__section-header"
+                data-toggle="collapse"
+                data-target="#section_7"
+                aria-expanded="true"
+                aria-controls="section_7"
+              >
+                <p>Contact Bupa</p>
+                <img src="icons/chevron_down_grey.svg" alt="chevron_icon" />
+              </div>
 
-          <!-- Another Image Content -->
-          <div class="main-content__image-content">
-            <img src="images/graphic_1.jpg" class="img-fluid graphic_1" alt="graphic_1" />
-            <a
-              href="images/graphic_1.jpg"
-              class="icon-wrapper outside image_content d-none d-md-block d-lg-block d-xl-block"
-              ><i class="fas fa-search-plus"></i
-            ></a>
+              <!-- Section Body -->
+              <div
+                id="section_7"
+                class="collapse show"
+                aria-labelledby="section_7_header"
+                data-parent="#section_7_accordion"
+              >
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  Bupa is a reputable healthcare company with many options and customisations to choose from. Any
+                  customer will be able to find suitable coverage to suit their medical and financial requirements. For
+                  more information on pricing and cover specifics, contact Bupa at:
+                </p>
+
+                <!-- Blockquote -->
+                <div class="main-content__blockquote">
+                  <p class="blockquote-title">Phone:</p>
+                  <p class="mb-3">1800 812 535</p>
+                  <p class="blockquote-title">Post:</p>
+                  <p>
+                    Bupa <br />
+                    GPO Box 9809 <br />
+                    Brisbane, QLD 4001 <br />
+                    Australia
+                  </p>
+                </div>
+
+                <!-- Another Paragraphs -->
+                <p class="main-content__paragraph-content">
+                  Or, find your local Bupa Centre here:
+                  <span class="paragraph-link">https://www.bupa.com.au/find-a-centre</span>
+                </p>
+              </div>
+            </div>
           </div>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title">Share of Private Health Insurance Ombudsman complaints</p>
-
-          <!-- Another Image Content -->
-          <div class="main-content__image-content">
-            <img src="images/graphic_2.jpg" class="img-fluid graphic_2" alt="graphic_2" />
-            <a
-              href="images/graphic_2.jpg"
-              class="icon-wrapper outside image_content d-none d-md-block d-lg-block d-xl-block"
-              ><i class="fas fa-search-plus"></i
-            ></a>
-          </div>
-
-          <!-- Paragraph Link -->
-          <p class="main-content__paragraph-content mt-5 pr-5">
-            <span class="paragraph-link">
-              https://www.ombudsman.gov.au/__data/assets/pdf_file/0020/43355/2016-State-of-the-Health-Funds-Report.pdf
-            </span>
-          </p>
-
-          <!-- Another Section Heading -->
-          <div class="main-content__section-heading">
-            <p>How to File a Claim With Bupa</p>
-            <img class="d-none d-lg-block d-xl-block" src="icons/chevron_down_grey.svg" alt="chevron_icon" />
-          </div>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">There are several ways to make claims through Bupa.</p>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title mt-2">On-the-spot Claims</p>
-          <p class="main-content__paragraph-content">
-            More than 20,000 health care providers are currently enrolled in Bupa’s On-the-spot claims service. It is
-            the fastest way to make a claim and is initiated electronically as soon as the patient receives care.
-            <br /><br />
-            After receiving treatment, the patient swipes his or her claims card and the claim is processed
-            automatically. This process does not require any forms and patients will often know their balance
-            immediately.
-          </p>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title mt-2">Online</p>
-          <p class="main-content__paragraph-content">
-            If a patient is unable to make an on-the-spot claim, he or she can easily make a claim online. Patients can
-            make online claims by logging onto <span class="paragraph-link">myBupa</span> and enter the details of their
-            claim. After processing, Bupa will transfer the appropriate funds into the customer’s bank account.
-          </p>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-title mt-2">Post</p>
-          <p class="main-content__paragraph-content">
-            Bupa customers also have the option to file claims via post. Simply fill out the
-            <span class="paragraph-link">claim form</span> and mail it to:
-          </p>
-
-          <!-- Blockquote -->
-          <div class="main-content__blockquote">
-            <p class="blockquote-title">Bupa Reply Paid 990</p>
-            <p class="blockquote-title">Adelaide SA 5001</p>
-          </div>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            After processing, Bupa will send customers a cheque or deposit money via EFT – depending on their preference
-            as indicated in the form.
-          </p>
-
-          <!-- Another Section Heading -->
-          <div class="main-content__section-heading">
-            <p>Member Rewards Offered by Bupa</p>
-            <img class="d-none d-lg-block d-xl-block" src="icons/chevron_down_grey.svg" alt="chevron_icon" />
-          </div>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            Bupa members are eligible for the Bupa Plus program. With this program, customers are eligible to receive
-            discounts from a number of companies and programs. The discounts are intended to make the lives of Bupa
-            customers healthier, more fun, and more rewarding.
-          </p>
-
-          <!-- Another Section Heading -->
-          <div class="main-content__section-heading">
-            <p>Contact Bupa</p>
-            <img class="d-none d-lg-block d-xl-block" src="icons/chevron_down_grey.svg" alt="chevron_icon" />
-          </div>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            Bupa is a reputable healthcare company with many options and customisations to choose from. Any customer
-            will be able to find suitable coverage to suit their medical and financial requirements. For more
-            information on pricing and cover specifics, contact Bupa at:
-          </p>
-
-          <!-- Blockquote -->
-          <div class="main-content__blockquote">
-            <p class="blockquote-title">Phone:</p>
-            <p class="mb-3">1800 812 535</p>
-            <p class="blockquote-title">Post:</p>
-            <p>
-              Bupa <br />
-              GPO Box 9809 <br />
-              Brisbane, QLD 4001 <br />
-              Australia
-            </p>
-          </div>
-
-          <!-- Another Paragraphs -->
-          <p class="main-content__paragraph-content">
-            Or, find your local Bupa Centre here:
-            <span class="paragraph-link">https://www.bupa.com.au/find-a-centre</span>
-          </p>
 
           <!-- Funds -->
           <div class="accordion funds d-lg-none d-xl-none" id="funds_accordion">

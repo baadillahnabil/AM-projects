@@ -1,0 +1,25 @@
+{
+  "name": "AM-projects_project-3",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:baadillahnabil/AM-projects.git",
+  "author": "baadillahnabil <baadillahnabil@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "sass --no-source-map --watch ./resources/app.scss:./dist/index.css --style compressed",
+    "build-js": "webpack --watch --progress"
+  },
+  "resolutions": {
+    "ajv": "6.8.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.1",
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}

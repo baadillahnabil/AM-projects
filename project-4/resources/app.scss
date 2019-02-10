@@ -1,0 +1,263 @@
+// Dependency Variable Overrides
+$fa-font-path: 'fonts';
+
+// Import dependencies
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+
+// Paths
+$font--proxima-regular: 'fonts/ProximaNova-Reg.ttf';
+$font--proxima-regular-italic: 'fonts/ProximaNova-RegItalic.otf';
+$font--proxima-semi-bold: 'fonts/ProximaNova-SemiBold.otf';
+$font--proxima-bold: 'fonts/ProximaNova-Bold.otf';
+$font--proxima-extra-bold: 'fonts/ProximaNova-ExtraBold.otf';
+$font--kgprimary-italics: 'fonts/KGPrimaryItalics.ttf';
+$font--kgprimary-italics-lined: 'fonts/KGPrimaryItalicsLined.ttf';
+
+$image--main-content-background: 'images/main_background.jpg';
+
+$icon--electric_primary: 'icons/electric_primary.png';
+$icon--electric_white: 'icons/electric_white.png';
+$icon--water_drop_primary: 'icons/water_drop_primary.png';
+$icon--water_drop_white: 'icons/water_drop_white.png';
+$icon--eng_primary: 'icons/eng_primary.png';
+$icon--eng_white: 'icons/eng_white.png';
+
+// Colors
+$primary: #f26522;
+$secondary: #0a4c7b;
+$primary-text: #252d46;
+
+// Variables
+$navbar-height: 80px;
+
+// Fonts
+@font-face {
+  font-family: 'ProximaNova-Reg';
+  src: url($font--proxima-regular) format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNova-RegItalic';
+  src: url($font--proxima-regular-italic) format('opentype');
+}
+@font-face {
+  font-family: 'ProximaNova-SemiBold';
+  src: url($font--proxima-semi-bold) format('opentype');
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url($font--proxima-bold) format('opentype');
+}
+@font-face {
+  font-family: 'ProximaNova-ExtraBold';
+  src: url($font--proxima-extra-bold) format('opentype');
+}
+@font-face {
+  font-family: 'KGPrimary-Italics';
+  src: url($font--kgprimary-italics) format('truetype');
+}
+@font-face {
+  font-family: 'KGPrimary-ItalicsLined';
+  src: url($font--kgprimary-italics-lined) format('truetype');
+}
+
+// Global Tags Overrides
+body {
+  font-family: 'ProximaNova-Reg', sans-serif;
+  background-color: #f8f8f8;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Styles
+.eng__navbar-custom {
+  height: $navbar-height;
+  background-color: $primary;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .eng__navbar-custom__logo {
+    height: 35px;
+  }
+
+  .eng__navbar-custom__phone {
+    display: flex;
+
+    .eng__navbar-custom__phone-icon {
+      height: 60px;
+      margin-right: 5px;
+    }
+
+    .eng__navbar-custom__phone-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .phone-days {
+        font-size: 12px;
+      }
+
+      .phone-number {
+        font-size: 24px;
+        font-family: 'ProximaNova-Bold', sans-serif;
+        line-height: normal;
+      }
+
+      .phone-number,
+      .phone-days {
+        color: white;
+      }
+    }
+  }
+}
+
+.eng__main-content {
+  margin-top: $navbar-height;
+  width: 100%;
+  height: 768px;
+  background-image: url($image--main-content-background);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+
+  .eng__stepper-container {
+    width: 770px;
+    height: 418px;
+    background-color: white;
+    margin-top: 60px;
+
+    .eng__stepper__step {
+      .step-title {
+        font-size: 36px;
+        font-family: 'ProximaNova-ExtraBold', sans-serif;
+        text-align: center;
+        margin: 20px 0;
+        color: $primary;
+      }
+
+      .step-subtitle {
+        font-size: 16px;
+        margin: 0 25%;
+        margin-bottom: 30px;
+        text-align: center;
+        color: $primary-text;
+      }
+
+      .step-options-container {
+        display: flex;
+        justify-content: center;
+
+        .step-option-item {
+          margin: 0 10px;
+
+          .step-option-item__label {
+            width: 120px;
+            height: 140px;
+            box-shadow: 0 1px 12px rgba(0, 0, 0, 0.12);
+            border-radius: 0.25rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 14px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            padding: 0 10px;
+
+            &:hover {
+              box-shadow: 0 2px 14px rgba(0, 0, 0, 0.19);
+            }
+
+            .step-option-item__text {
+              margin-bottom: 0;
+              line-height: normal;
+              color: #4f5567;
+            }
+
+            .step-option-item__image {
+              width: 40px;
+              height: 40px;
+              border: 1px solid #e0e8f3;
+              border-radius: 50%;
+              margin-top: 35px;
+              margin-bottom: 15px;
+              background-repeat: no-repeat;
+              background-size: 15px;
+              background-position: center;
+            }
+
+            .step-1__A__image {
+              background-size: 11px;
+              background-image: url($icon--electric_primary);
+            }
+            .step-1__B__image {
+              background-image: url($icon--water_drop_primary);
+            }
+            .step-1__C__image {
+              background-image: url($icon--eng_primary);
+            }
+          }
+
+          .step-option-item__radio {
+            display: none;
+
+            &:checked {
+              + .step-option-item__label {
+                background-color: $secondary;
+
+                .step-option-item__image {
+                  border: none;
+                  background-color: $primary;
+                }
+
+                .step-option-item__text {
+                  color: white;
+                }
+
+                .step-1__A__image {
+                  background-image: url($icon--electric_white);
+                }
+                .step-1__B__image {
+                  background-image: url($icon--water_drop_white);
+                }
+                .step-1__C__image {
+                  background-image: url($icon--eng_white);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .eng__next-step {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        button {
+          border-radius: 5px;
+          background-color: $primary;
+          color: white;
+          font-size: 18px;
+          padding: 10px 25px;
+          display: flex;
+          align-items: center;
+          box-shadow: 0 6px 8px rgba($color: $primary, $alpha: 0.5);
+
+          &:hover {
+            box-shadow: 0 10px 18px rgba($color: $primary, $alpha: 0.5);
+          }
+
+          i.fas {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}

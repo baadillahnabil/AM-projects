@@ -132,6 +132,7 @@ body {
 
     .eng__stepper__step {
       position: relative;
+      height: 100%;
 
       .eng__cta-bubble {
         position: absolute;
@@ -154,6 +155,11 @@ body {
         margin-bottom: 30px;
         text-align: center;
         color: $primary-text;
+
+        .step-subtitle-strong {
+          color: $primary;
+          font-family: 'ProximaNova-Bold', sans-serif;
+        }
       }
 
       .step-options-container {
@@ -264,6 +270,134 @@ body {
 
           i.fas {
             margin-left: 15px;
+          }
+        }
+      }
+
+      .eng__prev-step {
+        display: flex;
+        justify-content: start;
+        margin-top: 15px;
+
+        button {
+          background-color: transparent;
+          color: #c8c8c8;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          padding: 0;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          i.fas {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #c8c8c8;
+          }
+        }
+      }
+
+      .step-form {
+        margin-right: 20px;
+
+        .input-group {
+          &.error-state {
+            border: 1px solid $primary;
+          }
+
+          .input-group-prepend {
+            .input-group-text {
+              background-color: white;
+
+              i.fas {
+                color: $secondary;
+                font-size: 24px;
+              }
+            }
+          }
+
+          input {
+            border-left: none;
+            padding: 24px;
+            padding-left: 0;
+            font-size: 18px;
+            border-color: #dbdbdb;
+            background-color: white;
+
+            &:focus {
+              box-shadow: none;
+              border-color: #dbdbdb;
+            }
+          }
+
+          .step-form-info {
+            position: absolute;
+            right: 6px;
+            top: -2px;
+            cursor: pointer;
+            z-index: 3;
+
+            i.fas {
+              font-size: 10px;
+              color: #b2b2b2;
+            }
+          }
+        }
+
+        .step-info-message {
+          text-align: center;
+          color: $primary;
+          font-size: 12px;
+        }
+      }
+
+      &.step-2 {
+        display: flex;
+
+        .left-side {
+          height: 100%;
+          width: 50%;
+          padding: 35px 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 260px;
+            height: 243px;
+          }
+        }
+
+        .right-side {
+          height: 100%;
+          width: 50%;
+          padding: 35px 40px;
+          box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.075);
+          padding-left: 30px;
+
+          .step-title {
+            text-align: left;
+            font-size: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+
+          .step-subtitle {
+            margin-left: 0;
+            margin-right: 15%;
+            margin-bottom: 20px;
+            text-align: left;
+          }
+
+          .eng__next-step {
+            margin-top: 30px;
+            justify-content: start;
+
+            button {
+              padding: 10px 50px;
+            }
           }
         }
       }

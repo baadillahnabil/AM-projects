@@ -37,7 +37,7 @@
       <!-- Stepper -->
       <div class="eng__stepper-container shadow rounded">
         <!-- Step 1 -->
-        <div class="eng__stepper__step">
+        <!-- <div class="eng__stepper__step">
           <img src="images/cta_bubble.png" class="eng__cta-bubble" alt="cta_bubble" />
           <p class="step-title">What are you looking to compare?</p>
           <p class="step-subtitle">
@@ -68,6 +68,43 @@
           </div>
           <div class="eng__next-step">
             <button class="btn">Start search <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div> -->
+
+        <!-- Step 2 -->
+        <div class="eng__stepper__step step-2">
+          <div class="left-side">
+            <img src="images/step_2.png" alt="step_2" />
+          </div>
+          <div class="right-side">
+            <p class="step-title">Enter your postcode</p>
+            <p class="step-subtitle">
+              Enter your postcode to get started and we’ll find you a suitable policy,
+              <span class="step-subtitle-strong"> free of charge. </span>
+            </p>
+            <div class="form-group step-form">
+              <div class="input-group shadow-sm error-state">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter your postcode" />
+                <span
+                  class="step-form-info"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Yea good job! Now you know what is this!"
+                >
+                  <i class="fas fa-question-circle"></i>
+                </span>
+              </div>
+              <small class="form-text step-info-message">Please enter a valid postcode from the list</small>
+            </div>
+            <div class="eng__next-step">
+              <button class="btn">Next <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="eng__prev-step">
+              <button class="btn"><i class="fas fa-arrow-left"></i> Back</button>
+            </div>
           </div>
         </div>
       </div>

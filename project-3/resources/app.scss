@@ -74,6 +74,9 @@ body {
 .animated.faster {
   animation-duration: 200ms;
 }
+// .tooltip.show {
+//   top: -12px !important;
+// }
 
 // Styles
 .eng__navbar-custom {
@@ -156,7 +159,7 @@ body {
       .step-subtitle {
         font-size: 16px;
         margin: 0 25%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         text-align: center;
         color: $primary-text;
 
@@ -187,9 +190,15 @@ body {
             justify-content: start;
             align-items: center;
             padding: 0 10px;
+            margin-bottom: 0;
+            margin-top: 0.5rem;
 
             &:hover {
               box-shadow: 0 2px 14px rgba(0, 0, 0, 0.19);
+            }
+
+            &.error-state {
+              border: 1px solid $primary;
             }
 
             .step-option-item__text {
@@ -256,7 +265,7 @@ body {
       .eng__next-step {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 30px;
 
         button {
           border-radius: 5px;

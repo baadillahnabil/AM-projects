@@ -1,10 +1,16 @@
 window.$ = window.jQuery = require('jquery/dist/jquery.min.js')
 import 'popper.js/dist/popper.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
+import 'jquery-validation/dist/jquery.validate.min.js'
 
 let currentStep = 1
+
 function goNext(nextStep) {
   // 1. Check Validation
+  $(`#eng__stepper__step-${currentStep} input[name="step-${currentStep}"]`).on('change', () => {
+    isRadioValid()
+  })
+  if (!isRadioValid()) return
 
   // 2. FadeOut current step
   $(`#eng__stepper__step-${currentStep}`).addClass('animated faster fadeOutLeft')
@@ -45,8 +51,29 @@ function goBack(prevStep) {
   })
 }
 
+function isRadioValid() {
+  const isStepSelected =
+    $(`#eng__stepper__step-${currentStep} input[name="step-${currentStep}"]:checked`).val() !== undefined
+
+  if (!isStepSelected) {
+    $(`#eng__stepper__step-${currentStep} .step-options-container`)
+      .tooltip({ trigger: 'manual' })
+      .tooltip('show')
+    $(`#eng__stepper__step-${currentStep} .step-options-container .step-option-item__label`).addClass('error-state')
+
+    return false
+  } else {
+    $(`#eng__stepper__step-${currentStep} .step-options-container`)
+      .tooltip({ trigger: 'manual' })
+      .tooltip('hide')
+    $(`#eng__stepper__step-${currentStep} .step-options-container .step-option-item__label`).removeClass('error-state')
+
+    return true
+  }
+}
+
 $(document).ready(() => {
-  $('[data-toggle="tooltip"]').tooltip() // enable bootstrap tooltip
+  $('.step-form-info').tooltip() // enable bootstrap tooltip
 
   $(`#eng__stepper__step-${currentStep} .eng__next-step`).on('click', () => goNext(currentStep + 1))
 })

@@ -17,6 +17,24 @@ function goNext(nextStep) {
       isStep2FormValid()
     })
     if (!isStep2FormValid()) return
+  } else if (currentStep === 7) {
+    $(`#eng__stepper__step-${currentStep} #step-7-name`).on('input', () => {
+      isStep7FormValid()
+    })
+    $(`#eng__stepper__step-${currentStep} #step-7-phone`).on('input', () => {
+      isStep7FormValid()
+    })
+    $(`#eng__stepper__step-${currentStep} #step-7-email`).on('input', () => {
+      isStep7FormValid()
+    })
+    $(`#eng__stepper__step-${currentStep} #step-7-tnc`).on('input', () => {
+      isStep7FormValid()
+    })
+    if (!isStep7FormValid()) return
+    else {
+      alert("Good Job! Don't forget to smile :) and... you're awesome, dude ;)")
+      return
+    }
   }
 
   // 2. FadeOut current step
@@ -33,8 +51,18 @@ function goNext(nextStep) {
 
       currentStep = nextStep
 
-      $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
-      $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 1))
+      if (currentStep === 6) {
+        setTimeout(() => {
+          goNext(currentStep + 1)
+        }, 2000)
+      }
+      if (currentStep === 7) {
+        $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
+        $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 2))
+      } else {
+        $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
+        $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 1))
+      }
     })
   })
 }
@@ -55,7 +83,7 @@ function goBack(prevStep) {
       currentStep = prevStep
 
       $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
-      $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 1))
+      $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 2))
     })
   })
 }
@@ -95,6 +123,65 @@ function isStep2FormValid() {
 
     return true
   }
+}
+
+function isStep7FormValid() {
+  const isNameValid = $(`#eng__stepper__step-${currentStep} #step-7-name`).val() !== ''
+
+  const phoneRegEx = /^\s*-?[0-9]{10,10}\s*$/
+  const isPhoneValid =
+    $(`#eng__stepper__step-${currentStep} #step-7-phone`).val() !== '' &&
+    phoneRegEx.test($(`#eng__stepper__step-${currentStep} #step-7-phone`).val())
+
+  const emailRegEx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  const isEmailValid =
+    $(`#eng__stepper__step-${currentStep} #step-7-email`).val() !== '' &&
+    emailRegEx.test($(`#eng__stepper__step-${currentStep} #step-7-email`).val())
+
+  const isTnCValid = $(`#eng__stepper__step-${currentStep} #step-7-tnc:checked`).val() !== undefined
+
+  let isAllValid = true
+  if (!isNameValid) {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-name`).addClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-name + .step-info-message`).removeClass('invisible')
+
+    isAllValid = false
+  } else {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-name`).removeClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-name + .step-info-message`).addClass('invisible')
+  }
+
+  if (!isPhoneValid) {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-phone`).addClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-phone + .step-info-message`).removeClass('invisible')
+
+    isAllValid = false
+  } else {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-phone`).removeClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-phone + .step-info-message`).addClass('invisible')
+  }
+
+  if (!isEmailValid) {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-email`).addClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-email + .step-info-message`).removeClass('invisible')
+
+    isAllValid = false
+  } else {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-email`).removeClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-email + .step-info-message`).addClass('invisible')
+  }
+
+  if (!isTnCValid) {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-tnc #step-7-tnc`).addClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-tnc + .step-info-message`).removeClass('invisible')
+
+    isAllValid = false
+  } else {
+    $(`#eng__stepper__step-${currentStep} #step-7-form-tnc #step-7-tnc`).removeClass('error-state')
+    $(`#eng__stepper__step-${currentStep} #step-7-form-tnc + .step-info-message`).addClass('invisible')
+  }
+
+  return isAllValid
 }
 
 $(document).ready(() => {

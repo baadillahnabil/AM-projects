@@ -51,7 +51,7 @@
       <!-- Stepper -->
       <div class="eng__stepper-container shadow rounded">
         <!-- Step 1 -->
-        <!-- <div id="eng__stepper__step-1" class="eng__stepper__step step-1">
+        <div id="eng__stepper__step-1" class="eng__stepper__step step-1">
           <img
             src="images/cta_bubble.png"
             class="eng__cta-bubble d-none d-md-block d-lg-block d-xl-block"
@@ -92,10 +92,10 @@
           <div class="eng__next-step">
             <button class="btn">Start search <i class="fas fa-arrow-right"></i></button>
           </div>
-        </div> -->
+        </div>
 
         <!-- Step 2 -->
-        <!-- <div id="eng__stepper__step-2" class="eng__stepper__step step-2 d-none">
+        <div id="eng__stepper__step-2" class="eng__stepper__step step-2 d-none">
           <div class="left-side">
             <img src="images/step_2.png" alt="step_2" />
           </div>
@@ -129,10 +129,10 @@
               <button class="btn"><i class="fas fa-arrow-left"></i> Back</button>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <!-- Step 3 -->
-        <!-- <div id="eng__stepper__step-3" class="eng__stepper__step step-3 d-none">
+        <div id="eng__stepper__step-3" class="eng__stepper__step step-3 d-none">
           <p class="step-title">What type of property do you have?</p>
           <div
             class="step-options-container"
@@ -161,10 +161,10 @@
           <div class="eng__prev-step">
             <button class="btn btn-block justify-content-center"><i class="fas fa-arrow-left"></i> Back</button>
           </div>
-        </div> -->
+        </div>
 
         <!-- Step 4 -->
-        <!-- <div id="eng__stepper__step-4" class="eng__stepper__step step-4 d-none">
+        <div id="eng__stepper__step-4" class="eng__stepper__step step-4 d-none">
           <p class="step-title">Do you own or rent the property?</p>
           <div
             class="step-options-container"
@@ -193,10 +193,10 @@
           <div class="eng__prev-step">
             <button class="btn btn-block justify-content-center"><i class="fas fa-arrow-left"></i> Back</button>
           </div>
-        </div> -->
+        </div>
 
         <!-- Step 5 -->
-        <!-- <div id="eng__stepper__step-5" class="eng__stepper__step step-5 d-none">
+        <div id="eng__stepper__step-5" class="eng__stepper__step step-5 d-none">
           <p class="step-title">Are you moving into this property?</p>
           <div
             class="step-options-container"
@@ -225,10 +225,10 @@
           <div class="eng__prev-step">
             <button class="btn btn-block justify-content-center"><i class="fas fa-arrow-left"></i> Back</button>
           </div>
-        </div> -->
+        </div>
 
         <!-- Step 6 -->
-        <!-- <div id="eng__stepper__step-6" class="eng__stepper__step step-6 d-none">
+        <div id="eng__stepper__step-6" class="eng__stepper__step step-6 d-none">
           <p class="step-title">Please Wait</p>
           <p class="step-subtitle">
             Please wait a moment while we search for the best quotes for you.
@@ -252,10 +252,10 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <!-- Step 7 -->
-        <div id="eng__stepper__step-7" class="eng__stepper__step step-7">
+        <div id="eng__stepper__step-7" class="eng__stepper__step step-7 d-none">
           <div class="left-side d-none d-md-flex d-lg-flex d-xl-flex">
             <img src="images/step_7.png" alt="step_7" />
           </div>
@@ -265,14 +265,14 @@
               Enter your details and we’ll find you the best deal in your area.
             </p>
             <div class="form-group step-form">
-              <div class="input-group shadow-sm">
+              <div id="step-7-form-name" class="input-group shadow-sm">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-user"></i></span>
                 </div>
                 <input id="step-7-name" type="text" class="form-control" placeholder="Name" />
               </div>
               <small class="form-text step-info-message invisible">Please enter a name</small>
-              <div class="input-group shadow-sm">
+              <div id="step-7-form-phone" class="input-group shadow-sm">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-phone"></i></span>
                 </div>
@@ -287,7 +287,7 @@
                 </span>
               </div>
               <small class="form-text step-info-message invisible">Please enter a valid 10 digit mobile number</small>
-              <div class="input-group shadow-sm">
+              <div id="step-7-form-email" class="input-group shadow-sm">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                 </div>
@@ -302,13 +302,15 @@
                 </span>
               </div>
               <small class="form-text step-info-message invisible">Please enter a valid email address</small>
-              <div class="form-check">
+              <div id="step-7-form-tnc" class="form-check">
                 <input id="step-7-tnc" type="checkbox" class="form-control" />
                 <label for="step-7-tnc" class="form-check-label">
                   I understand and accept the Website Terms of Use and Privacy Policy.
                 </label>
               </div>
-              <small class="form-text step-info-message invisible">Please enter a valid email address</small>
+              <small class="form-text step-info-message invisible">
+                To utilise our comparison services, you must accept our terms and conditions.
+              </small>
             </div>
             <div class="eng__next-step">
               <button class="btn">Compare Now <i class="fas fa-arrow-right"></i></button>

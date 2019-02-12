@@ -6,6 +6,7 @@ $fa-font-path: 'fonts';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import '../node_modules/animate.css/animate';
+@import 'spinner';
 
 // Paths
 $font--proxima-regular: 'fonts/ProximaNova-Reg.ttf';
@@ -34,6 +35,9 @@ $icon--close_primary: 'icons/close_primary.png';
 $icon--close_white: 'icons/close_white.png';
 $icon--check_primary: 'icons/check_primary.png';
 $icon--check_white: 'icons/check_white.png';
+$icon--clock_white: 'icons/clock_white.png';
+$icon--save_white: 'icons/save_white.png';
+$icon--docs_white: 'icons/docs_white.png';
 
 // Colors
 $primary: #f26522;
@@ -747,6 +751,79 @@ body {
         .eng__prev-step {
           @include media-breakpoint-down(sm) {
             margin-bottom: 20px;
+          }
+        }
+      }
+
+      &.step-6 {
+        .step-subtitle {
+          margin-left: 12%;
+          margin-right: 12%;
+        }
+
+        .eng__step-loader {
+          display: flex;
+          justify-content: center;
+
+          @include media-breakpoint-down(sm) {
+            margin-top: 30px;
+          }
+
+          .loader {
+            margin: 60px auto;
+            font-size: 17px;
+            animation: load4 1.1s infinite linear;
+          }
+        }
+
+        .eng__benefits {
+          margin-top: 35px;
+
+          @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+          }
+
+          .row {
+            margin: 0;
+          }
+
+          .eng__benefits-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include media-breakpoint-down(sm) {
+              justify-content: start;
+              margin: 8px 20px;
+              margin-right: 0;
+              margin-left: 40px;
+            }
+
+            .benefit-image {
+              width: 40px;
+              height: 40px;
+              background-color: $primary;
+              border-radius: 50%;
+              background-repeat: no-repeat;
+              background-size: 20px;
+              background-position: center;
+
+              &.image-1 {
+                background-image: url($icon--clock_white);
+              }
+              &.image-2 {
+                background-image: url($icon--save_white);
+              }
+              &.image-3 {
+                background-image: url($icon--docs_white);
+              }
+            }
+
+            .benefit-text {
+              margin-bottom: 0;
+              margin-left: 15px;
+              font-size: 14px;
+            }
           }
         }
       }

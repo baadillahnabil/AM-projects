@@ -26,6 +26,14 @@ $icon--home_primary: 'icons/home_primary.png';
 $icon--home_white: 'icons/home_white.png';
 $icon--shopping_cart_primary: 'icons/shopping_cart_primary.png';
 $icon--shopping_cart_white: 'icons/shopping_cart_white.png';
+$icon--home_key_primary: 'icons/home_key_primary.png';
+$icon--home_key_white: 'icons/home_key_white.png';
+$icon--home_mail_primary: 'icons/home_mail_primary.png';
+$icon--home_mail_white: 'icons/home_mail_white.png';
+$icon--close_primary: 'icons/close_primary.png';
+$icon--close_white: 'icons/close_white.png';
+$icon--check_primary: 'icons/check_primary.png';
+$icon--check_white: 'icons/check_white.png';
 
 // Colors
 $primary: #f26522;
@@ -365,6 +373,20 @@ body {
             .step-3__B__image {
               background-image: url($icon--shopping_cart_primary);
             }
+
+            .step-4__A__image {
+              background-image: url($icon--home_key_primary);
+            }
+            .step-4__B__image {
+              background-image: url($icon--home_mail_primary);
+            }
+
+            .step-5__A__image {
+              background-image: url($icon--check_primary);
+            }
+            .step-5__B__image {
+              background-image: url($icon--close_primary);
+            }
           }
 
           .step-option-item__radio {
@@ -394,10 +416,24 @@ body {
                 }
 
                 .step-3__A__image {
-                  background-image: url($icon--home-white);
+                  background-image: url($icon--home_white);
                 }
                 .step-3__B__image {
                   background-image: url($icon--shopping_cart_white);
+                }
+
+                .step-4__A__image {
+                  background-image: url($icon--home_key_white);
+                }
+                .step-4__B__image {
+                  background-image: url($icon--home_mail_white);
+                }
+
+                .step-5__A__image {
+                  background-image: url($icon--check_white);
+                }
+                .step-5__B__image {
+                  background-image: url($icon--close_white);
                 }
               }
             }
@@ -691,7 +727,9 @@ body {
         }
       }
 
-      &.step-3 {
+      &.step-3,
+      &.step-4,
+      &.step-5 {
         .eng__next-step {
           margin-top: 60px;
 

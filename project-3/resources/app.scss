@@ -755,7 +755,10 @@ body {
 
             button {
               width: 100%;
-              justify-content: center;
+
+              @include media-breakpoint-down(sm) {
+                justify-content: center;
+              }
             }
           }
         }

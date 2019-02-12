@@ -5,6 +5,7 @@ $fa-font-path: 'fonts';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../node_modules/animate.css/animate';
 
 // Paths
 $font--proxima-regular: 'fonts/ProximaNova-Reg.ttf';
@@ -69,6 +70,9 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.animated.faster {
+  animation-duration: 200ms;
 }
 
 // Styles

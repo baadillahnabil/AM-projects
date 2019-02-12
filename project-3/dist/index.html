@@ -52,7 +52,11 @@
       <div class="eng__stepper-container shadow rounded">
         <!-- Step 1 -->
         <div id="eng__stepper__step-1" class="eng__stepper__step">
-          <img src="images/cta_bubble.png" class="eng__cta-bubble d-none d-md-block d-lg-block d-xl-block" alt="cta_bubble" />
+          <img
+            src="images/cta_bubble.png"
+            class="eng__cta-bubble d-none d-md-block d-lg-block d-xl-block"
+            alt="cta_bubble"
+          />
           <p class="step-title">What are you looking to compare?</p>
           <p class="step-subtitle">
             Free electricity and gas comparison from Australia’s leading energy suppliers - Save now!
@@ -102,11 +106,11 @@
               <span class="step-subtitle-strong"> free of charge. </span>
             </p>
             <div class="form-group step-form">
-              <div class="input-group shadow-sm error-state">
+              <div class="input-group shadow-sm">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="Enter your postcode" />
+                <input id="step-2-postcode" type="text" class="form-control" placeholder="Enter your postcode" />
                 <span
                   class="step-form-info"
                   data-toggle="tooltip"
@@ -116,7 +120,7 @@
                   <i class="fas fa-question-circle"></i>
                 </span>
               </div>
-              <small class="form-text step-info-message">Please enter a valid postcode from the list</small>
+              <small class="form-text step-info-message invisible">Please enter a valid postcode from the list</small>
             </div>
             <div class="eng__next-step">
               <button class="btn">Next <i class="fas fa-arrow-right"></i></button>
@@ -124,6 +128,16 @@
             <div class="eng__prev-step">
               <button class="btn"><i class="fas fa-arrow-left"></i> Back</button>
             </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="eng__stepper__step-3" class="eng__stepper__step step-3 d-none">
+          <div class="eng__next-step">
+            <button class="btn">Next <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="eng__prev-step">
+            <button class="btn"><i class="fas fa-arrow-left"></i> Back</button>
           </div>
         </div>
       </div>

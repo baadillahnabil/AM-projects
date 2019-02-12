@@ -7,10 +7,17 @@ let currentStep = 1
 
 function goNext(nextStep) {
   // 1. Check Validation
-  $(`#eng__stepper__step-${currentStep} input[name="step-${currentStep}"]`).on('change', () => {
-    isRadioValid()
-  })
-  if (!isRadioValid()) return
+  if (currentStep === 1) {
+    $(`#eng__stepper__step-${currentStep} input[name="step-${currentStep}"]`).on('change', () => {
+      isRadioValid()
+    })
+    if (!isRadioValid()) return
+  } else if (currentStep === 2) {
+    $(`#eng__stepper__step-${currentStep} #step-2-postcode`).on('input', () => {
+      isStep2FormValid()
+    })
+    if (!isStep2FormValid()) return
+  }
 
   // 2. FadeOut current step
   $(`#eng__stepper__step-${currentStep}`).addClass('animated faster fadeOutLeft')
@@ -26,6 +33,7 @@ function goNext(nextStep) {
 
       currentStep = nextStep
 
+      $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
       $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 1))
     })
   })
@@ -47,6 +55,7 @@ function goBack(prevStep) {
       currentStep = prevStep
 
       $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
+      $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 1))
     })
   })
 }
@@ -67,6 +76,22 @@ function isRadioValid() {
       .tooltip({ trigger: 'manual' })
       .tooltip('hide')
     $(`#eng__stepper__step-${currentStep} .step-options-container .step-option-item__label`).removeClass('error-state')
+
+    return true
+  }
+}
+
+function isStep2FormValid() {
+  const isValid = $(`#eng__stepper__step-${currentStep} #step-2-postcode`).val() !== ''
+
+  if (!isValid) {
+    $(`#eng__stepper__step-${currentStep} .step-form .input-group`).addClass('error-state')
+    $(`#eng__stepper__step-${currentStep} .step-info-message`).removeClass('invisible')
+
+    return false
+  } else {
+    $(`#eng__stepper__step-${currentStep} .step-form .input-group`).removeClass('error-state')
+    $(`#eng__stepper__step-${currentStep} .step-info-message`).addClass('invisible')
 
     return true
   }

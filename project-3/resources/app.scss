@@ -30,6 +30,8 @@ $primary-text: #252d46;
 
 // Variables
 $navbar-height: 80px;
+$navbar-height-tablet: 60px;
+$navbar-height-mobile: 100px;
 
 // Fonts
 @font-face {
@@ -81,8 +83,21 @@ body {
   display: flex;
   justify-content: space-between;
 
+  @include media-breakpoint-down(md) {
+    height: $navbar-height-tablet;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
   .eng__navbar-custom__logo {
     height: 35px;
+
+    @include media-breakpoint-down(md) {
+      height: 30px;
+    }
   }
 
   .eng__navbar-custom__phone {
@@ -91,6 +106,14 @@ body {
     .eng__navbar-custom__phone-icon {
       height: 60px;
       margin-right: 5px;
+
+      @include media-breakpoint-down(md) {
+        height: 45px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-right: 0;
+      }
     }
 
     .eng__navbar-custom__phone-details {
@@ -101,12 +124,20 @@ body {
 
       .phone-days {
         font-size: 12px;
+
+        @include media-breakpoint-down(md) {
+          font-size: 10px;
+        }
       }
 
       .phone-number {
         font-size: 24px;
         font-family: 'ProximaNova-Bold', sans-serif;
         line-height: normal;
+
+        @include media-breakpoint-down(md) {
+          font-size: 20px;
+        }
       }
 
       .phone-number,
@@ -115,6 +146,13 @@ body {
       }
     }
   }
+}
+
+.eng__header-background-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .eng__main-background {
@@ -128,6 +166,15 @@ body {
   flex-direction: column;
   align-items: center;
 
+  @include media-breakpoint-down(md) {
+    margin-top: $navbar-height-tablet;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 50px;
+    padding: 0 25px;
+  }
+
   .eng__stepper-container {
     width: 770px;
     height: 418px;
@@ -135,9 +182,14 @@ body {
     margin-top: 60px;
 
     @include media-breakpoint-down(md) {
-      margin-top: 25px;
+      margin-top: 35px;
       width: 520px;
       height: 350px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: auto;
+      height: auto;
     }
 
     .eng__stepper__step {
@@ -167,6 +219,14 @@ body {
           font-size: 27px;
           margin-bottom: 0;
         }
+
+        @include media-breakpoint-down(sm) {
+          font-size: 30px;
+          line-height: 35px;
+          margin-left: 40px;
+          margin-right: 40px;
+          margin-bottom: 10px;
+        }
       }
 
       .step-subtitle {
@@ -182,6 +242,12 @@ body {
           margin-bottom: 10px;
         }
 
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+          margin: 0 32px;
+          margin-bottom: 10px;
+        }
+
         .step-subtitle-strong {
           color: $primary;
           font-family: 'ProximaNova-Bold', sans-serif;
@@ -191,6 +257,10 @@ body {
       .step-options-container {
         display: flex;
         justify-content: center;
+
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+        }
 
         .step-option-item {
           margin: 0 10px;
@@ -225,10 +295,24 @@ body {
               height: 120px;
             }
 
+            @include media-breakpoint-down(sm) {
+              width: auto;
+              height: auto;
+              flex-direction: row;
+              padding: 10px 15px;
+              margin: 8px 10px;
+              font-size: 18px;
+              box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+            }
+
             .step-option-item__text {
               margin-bottom: 0;
               line-height: normal;
               color: #4f5567;
+
+              @include media-breakpoint-down(sm) {
+                margin-left: 15px;
+              }
             }
 
             .step-option-item__image {
@@ -245,6 +329,10 @@ body {
               @include media-breakpoint-down(md) {
                 margin-top: 24px;
                 margin-bottom: 10px;
+              }
+
+              @include media-breakpoint-down(sm) {
+                margin: 0;
               }
             }
 
@@ -296,6 +384,10 @@ body {
         justify-content: center;
         margin-top: 30px;
 
+        @include media-breakpoint-down(sm) {
+          margin: 35px 20px;
+        }
+
         button {
           border-radius: 5px;
           background-color: $primary;
@@ -312,6 +404,12 @@ body {
 
           @include media-breakpoint-down(md) {
             padding: 5px 30px;
+          }
+
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            padding: 15px 30px;
+            justify-content: center;
           }
 
           i.fas {
@@ -464,6 +562,12 @@ body {
       margin-top: 25px;
     }
 
+    @include media-breakpoint-down(sm) {
+      width: auto;
+      height: auto;
+      flex-direction: column;
+    }
+
     .eng__feedback {
       height: 100%;
       width: 50%;
@@ -473,11 +577,23 @@ body {
         padding: 20px;
       }
 
+      @include media-breakpoint-down(sm) {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       .eng__feedback__quote-image {
         width: 35px;
 
         @include media-breakpoint-down(md) {
           width: 30px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 10px;
+          width: 25px;
         }
       }
 
@@ -493,11 +609,20 @@ body {
           margin-left: 0;
           line-height: inherit;
         }
+
+        @include media-breakpoint-down(sm) {
+          text-align: center;
+          font-size: 20px;
+        }
       }
 
       .eng__feedback__quote-writer {
         display: flex;
         align-items: center;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 20px;
+        }
 
         .eng__feedback__quote-separator-image {
           width: 21px;
@@ -524,12 +649,24 @@ body {
         box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.075);
       }
 
+      @include media-breakpoint-down(sm) {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: inset 0px 2px 14px 0 rgba(0, 0, 0, 0.075);
+      }
+
       .eng__ratings-title {
         font-family: 'ProximaNova-Bold', sans-serif;
         font-size: 24px;
 
         @include media-breakpoint-down(md) {
           font-size: 21px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          font-family: 'ProximaNova-Reg', sans-serif;
         }
       }
 
@@ -540,6 +677,11 @@ body {
         @include media-breakpoint-down(md) {
           width: 116px;
         }
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 20px;
+          width: 230px;
+        }
       }
 
       .eng__ratings-five-stars {
@@ -548,6 +690,11 @@ body {
 
         @include media-breakpoint-down(md) {
           width: 140px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: 270px;
+          margin-top: 30px;
         }
       }
     }
@@ -562,6 +709,11 @@ body {
   align-items: center;
   padding: 20px;
 
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    padding: 40px;
+  }
+
   .eng__cta-text {
     margin-bottom: 0;
     font-size: 21px;
@@ -570,6 +722,12 @@ body {
 
     @include media-breakpoint-down(md) {
       font-size: 18px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 24px;
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 
@@ -587,6 +745,13 @@ body {
       box-shadow: 0 10px 18px rgba($color: $primary, $alpha: 0.5);
     }
 
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      padding: 15px 25px;
+      justify-content: center;
+      box-shadow: 0 5px 12px rgba($color: $primary, $alpha: 0.5);
+    }
+
     i.fas {
       margin-left: 15px;
     }
@@ -601,15 +766,36 @@ body {
     padding: 24px 12%;
   }
 
+  @include media-breakpoint-down(sm) {
+    padding: 24px 60px;
+  }
+
   .eng__footer-links {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #07395f;
     padding-bottom: 20px;
 
+    @include media-breakpoint-down(sm) {
+      padding-top: 20px;
+    }
+
     a {
       color: white;
       margin: 0 30px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
     }
   }
 

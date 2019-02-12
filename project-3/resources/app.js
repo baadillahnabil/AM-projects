@@ -26,7 +26,7 @@ function goNext(nextStep) {
 
       currentStep = nextStep
 
-      $(`#eng__stepper__step-${currentStep} .eng__prev-step`).on('click', () => goBack(currentStep - 1))
+      $(`#eng__stepper__step-${currentStep} .eng__prev-step > button`).on('click', () => goBack(currentStep - 1))
     })
   })
 }
@@ -46,7 +46,7 @@ function goBack(prevStep) {
 
       currentStep = prevStep
 
-      $(`#eng__stepper__step-${currentStep} .eng__next-step`).on('click', () => goNext(currentStep + 1))
+      $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
     })
   })
 }
@@ -75,5 +75,5 @@ function isRadioValid() {
 $(document).ready(() => {
   $('.step-form-info').tooltip() // enable bootstrap tooltip
 
-  $(`#eng__stepper__step-${currentStep} .eng__next-step`).on('click', () => goNext(currentStep + 1))
+  $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
 })

@@ -193,14 +193,14 @@ body {
 
   .eng__stepper-container {
     width: 770px;
-    height: 418px;
+    height: auto;
     background-color: white;
     margin-top: 60px;
 
     @include media-breakpoint-down(md) {
       margin-top: 35px;
       width: 520px;
-      height: 350px;
+      height: auto;
     }
 
     @include media-breakpoint-down(sm) {
@@ -583,6 +583,8 @@ body {
           text-align: center;
           color: $primary;
           font-size: 12px;
+          margin-top: 0;
+          margin-bottom: 0.25rem;
 
           @include media-breakpoint-down(md) {
             font-size: 11px;
@@ -594,7 +596,42 @@ body {
         }
       }
 
+      &.step-1 {
+        .eng__next-step {
+          @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+
       &.step-2 {
+        .right-side {
+          .eng__next-step {
+            @include media-breakpoint-down(sm) {
+              position: absolute;
+              bottom: 60px;
+              width: 100%;
+              margin: 0;
+              left: 0;
+              padding: 0 30px;
+            }
+          }
+
+          .eng__prev-step {
+            @include media-breakpoint-down(sm) {
+              position: absolute;
+              bottom: 20px;
+              width: 100%;
+              margin: 0;
+              left: 0;
+              padding: 0 30px;
+            }
+          }
+        }
+      }
+
+      &.step-2,
+      &.step-7 {
         display: flex;
 
         @include media-breakpoint-down(sm) {
@@ -602,7 +639,6 @@ body {
         }
 
         .left-side {
-          height: 100%;
           width: 50%;
           padding: 35px 40px;
           display: flex;
@@ -691,11 +727,8 @@ body {
             }
 
             @include media-breakpoint-down(sm) {
-              position: absolute;
-              bottom: 60px;
               width: 100%;
               margin: 0;
-              left: 0;
               padding: 0 30px;
             }
 
@@ -715,17 +748,14 @@ body {
 
           .eng__prev-step {
             @include media-breakpoint-down(sm) {
-              position: absolute;
-              bottom: 20px;
               width: 100%;
               margin: 0;
-              left: 0;
               padding: 0 30px;
+            }
 
-              button {
-                width: 100%;
-                justify-content: center;
-              }
+            button {
+              width: 100%;
+              justify-content: center;
             }
           }
         }
@@ -751,6 +781,10 @@ body {
         .eng__prev-step {
           @include media-breakpoint-down(sm) {
             margin-bottom: 20px;
+          }
+
+          @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
           }
         }
       }
@@ -781,6 +815,10 @@ body {
 
           @include media-breakpoint-down(sm) {
             margin-bottom: 30px;
+          }
+
+          @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
           }
 
           .row {
@@ -823,6 +861,60 @@ body {
               margin-bottom: 0;
               margin-left: 15px;
               font-size: 14px;
+            }
+          }
+        }
+      }
+
+      &.step-7 {
+        .right-side {
+          .step-form {
+            .input-group {
+              .input-group-prepend {
+                .input-group-text {
+                  i.fas {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+
+            .form-check {
+              padding-left: 5px;
+              display: flex;
+              align-items: center;
+
+              .form-control {
+                width: 25px;
+                height: 25px;
+
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+
+              .form-check-label {
+                margin-left: 10px;
+                font-size: 12px;
+              }
+            }
+          }
+
+          .eng__next-step {
+            @include media-breakpoint-down(sm) {
+              margin-bottom: 10px;
+            }
+
+            button {
+              padding: 10px 20px;
+            }
+          }
+
+          .eng__prev-step {
+            button {
+              @include media-breakpoint-up(md) {
+                justify-content: start;
+              }
             }
           }
         }

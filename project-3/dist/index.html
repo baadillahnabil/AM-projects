@@ -62,7 +62,7 @@
             Free electricity and gas comparison from Australia’s leading energy suppliers - Save now!
           </p>
           <div
-            class="step-options-container"
+            class="step-options-container horizontal-on-mobile"
             data-toggle="tooltip"
             data-placement="top"
             title="Please select one of these"
@@ -133,11 +133,33 @@
 
         <!-- Step 3 -->
         <div id="eng__stepper__step-3" class="eng__stepper__step step-3 d-none">
+          <p class="step-title">What type of property do you have?</p>
+          <div
+            class="step-options-container"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Please select one of these"
+          >
+            <div class="step-option-item">
+              <input type="radio" class="step-option-item__radio" name="step-3" id="step-3__A" />
+              <label for="step-3__A" class="step-option-item__label">
+                <div class="step-option-item__image step-3__A__image"></div>
+                <p class="step-option-item__text">Home</p>
+              </label>
+            </div>
+            <div class="step-option-item">
+              <input type="radio" class="step-option-item__radio" name="step-3" id="step-3__B" />
+              <label for="step-3__B" class="step-option-item__label">
+                <div class="step-option-item__image step-3__B__image"></div>
+                <p class="step-option-item__text">Business</p>
+              </label>
+            </div>
+          </div>
           <div class="eng__next-step">
             <button class="btn">Next <i class="fas fa-arrow-right"></i></button>
           </div>
           <div class="eng__prev-step">
-            <button class="btn"><i class="fas fa-arrow-left"></i> Back</button>
+            <button class="btn btn-block justify-content-center"><i class="fas fa-arrow-left"></i> Back</button>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ let currentStep = 1
 
 function goNext(nextStep) {
   // 1. Check Validation
-  if (currentStep === 1) {
+  if (currentStep === 1 || currentStep === 3) {
     $(`#eng__stepper__step-${currentStep} input[name="step-${currentStep}"]`).on('change', () => {
       isRadioValid()
     })

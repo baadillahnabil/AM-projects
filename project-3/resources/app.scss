@@ -191,6 +191,11 @@ body {
     padding: 0 25px;
   }
 
+  @include media-breakpoint-down(xs) {
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+
   .eng__stepper-container {
     width: 770px;
     height: auto;
@@ -206,6 +211,12 @@ body {
     @include media-breakpoint-down(sm) {
       width: auto;
       height: auto;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-top: 20px;
+      width: auto;
+      height: 480px;
     }
 
     .eng__stepper__step {
@@ -243,6 +254,13 @@ body {
           margin-right: 40px;
           margin-bottom: 10px;
         }
+
+        @include media-breakpoint-down(xs) {
+          font-size: 24px;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
       }
 
       .step-subtitle {
@@ -261,6 +279,12 @@ body {
         @include media-breakpoint-down(md) {
           font-size: 16px;
           margin: 0 32px;
+          margin-bottom: 10px;
+        }
+
+        @include media-breakpoint-down(xs) {
+          font-size: 13px;
+          margin: 0 15px;
           margin-bottom: 10px;
         }
 
@@ -298,6 +322,19 @@ body {
 
                 .step-option-item__image {
                   margin: 0;
+                }
+              }
+            }
+          }
+
+          @include media-breakpoint-down(xs) {
+            .step-option-item {
+              .step-option-item__label {
+                font-size: 16px;
+                padding: 10px;
+
+                .step-option-item__text {
+                  margin-left: 10px;
                 }
               }
             }
@@ -357,6 +394,16 @@ body {
               @include media-breakpoint-down(md) {
                 margin-top: 24px;
                 margin-bottom: 10px;
+              }
+
+              @include media-breakpoint-down(xs) {
+                width: 30px;
+                height: 30px;
+                background-size: 12px;
+
+                .step-1__A__image {
+                  background-size: 8px;
+                }
               }
             }
 
@@ -479,6 +526,10 @@ body {
             justify-content: center;
           }
 
+          @include media-breakpoint-down(xs) {
+            font-size: 18px;
+          }
+
           i.fas {
             margin-left: 15px;
           }
@@ -597,9 +648,28 @@ body {
       }
 
       &.step-1 {
+        .step-title {
+          @include media-breakpoint-down(xs) {
+            margin-left: 30px;
+            margin-right: 30px;
+          }
+        }
         .eng__next-step {
           @include media-breakpoint-up(md) {
             margin-bottom: 40px;
+          }
+
+          @include media-breakpoint-down(xs) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 35px;
+            padding: 5px 20px;
+
+            button {
+              padding: 10px;
+            }
           }
         }
       }
@@ -607,13 +677,27 @@ body {
       &.step-2 {
         .right-side {
           .eng__next-step {
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-only(sm) {
               position: absolute;
               bottom: 60px;
               width: 100%;
               margin: 0;
               left: 0;
               padding: 0 30px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              margin: 0;
+              margin-bottom: 45px;
+              left: 0;
+              padding: 5px 20px;
+
+              button {
+                padding: 10px;
+              }
             }
           }
 
@@ -652,6 +736,10 @@ body {
             padding-top: 20px;
           }
 
+          @include media-breakpoint-down(xs) {
+            padding-top: 0;
+          }
+
           img {
             width: 260px;
             height: 243px;
@@ -659,6 +747,11 @@ body {
             @include media-breakpoint-down(md) {
               width: 207px;
               height: 194px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              width: 149px;
+              height: 138px;
             }
           }
         }
@@ -680,6 +773,10 @@ body {
             box-shadow: none;
           }
 
+          @include media-breakpoint-down(xs) {
+            padding: 10px 20px;
+          }
+
           .step-title {
             text-align: left;
             font-size: 30px;
@@ -696,6 +793,10 @@ body {
               margin-left: 0;
               margin-right: 0;
               font-size: 28px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              font-size: 24px;
             }
           }
 
@@ -714,7 +815,7 @@ body {
               text-align: center;
               margin-left: 10px;
               margin-right: 10px;
-              font-size: 16px;
+              font-size: 13px;
             }
           }
 
@@ -726,7 +827,7 @@ body {
               margin-top: 10px;
             }
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-only(sm) {
               width: 100%;
               margin: 0;
               padding: 0 30px;
@@ -739,7 +840,7 @@ body {
                 padding: 5px 40px;
               }
 
-              @include media-breakpoint-down(sm) {
+              @include media-breakpoint-only(sm) {
                 padding: 10px;
                 font-size: 22px;
               }
@@ -747,7 +848,7 @@ body {
           }
 
           .eng__prev-step {
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-only(sm) {
               width: 100%;
               margin: 0;
               padding: 0 30px;
@@ -770,8 +871,21 @@ body {
         .eng__next-step {
           margin-top: 60px;
 
-          @include media-breakpoint-down(sm) {
+          @include media-breakpoint-only(sm) {
             margin-bottom: 0;
+          }
+
+          @include media-breakpoint-down(xs) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 70px;
+            padding: 5px 20px;
+
+            button {
+              padding: 10px;
+            }
           }
 
           button {
@@ -788,6 +902,19 @@ body {
 
           @include media-breakpoint-up(md) {
             margin-bottom: 40px;
+          }
+
+          @include media-breakpoint-down(xs) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 22px;
+            padding: 5px 20px;
+
+            button {
+              padding: 10px;
+            }
           }
         }
       }
@@ -824,6 +951,10 @@ body {
             margin-bottom: 40px;
           }
 
+          @include media-breakpoint-down(xs) {
+            margin-top: 20px;
+          }
+
           .row {
             margin: 0;
           }
@@ -838,6 +969,11 @@ body {
               margin: 8px 20px;
               margin-right: 0;
               margin-left: 40px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              margin: 6px 20px;
+              margin-left: 35px;
             }
 
             .benefit-image {
@@ -906,6 +1042,10 @@ body {
           .eng__next-step {
             @include media-breakpoint-down(sm) {
               margin-bottom: 10px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              margin: 0;
             }
 
             button {
@@ -991,6 +1131,10 @@ body {
           text-align: center;
           font-size: 20px;
         }
+
+        @include media-breakpoint-down(xs) {
+          font-size: 16px;
+        }
       }
 
       .eng__feedback__quote-writer {
@@ -1059,6 +1203,10 @@ body {
           margin-top: 20px;
           width: 230px;
         }
+
+        @include media-breakpoint-down(xs) {
+          width: 184px;
+        }
       }
 
       .eng__ratings-five-stars {
@@ -1072,6 +1220,10 @@ body {
         @include media-breakpoint-down(sm) {
           width: 270px;
           margin-top: 30px;
+        }
+
+        @include media-breakpoint-down(xs) {
+          width: 183px;
         }
       }
     }
@@ -1105,6 +1257,10 @@ body {
       font-size: 24px;
       margin-right: 0;
       margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 18px;
     }
   }
 
@@ -1147,6 +1303,10 @@ body {
     padding: 24px 60px;
   }
 
+  @include media-breakpoint-down(xs) {
+    padding: 15px 30px;
+  }
+
   .eng__footer-links {
     display: flex;
     justify-content: center;
@@ -1173,6 +1333,10 @@ body {
           margin-left: 10px;
         }
       }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 15px;
+      }
     }
   }
 
@@ -1185,6 +1349,10 @@ body {
 
     @include media-breakpoint-down(md) {
       margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 11px;
     }
   }
 }

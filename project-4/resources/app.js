@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import 'jquery-ui/ui/jquery-1-7.js'
 import 'jquery-ui/ui/widgets/autocomplete.js'
 import 'select2/dist/js/select2.full.js'
-import 'jquery-autocomplete/jquery.autocomplete.js'
+// import 'jquery-autocomplete/jquery.autocomplete.js'
 
 // $(document).ready(function() {
 //   $('.cs-lets-go-email').click(function() {

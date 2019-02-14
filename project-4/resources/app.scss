@@ -5,7 +5,7 @@ $fa-font-path: 'font/fonts';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
-@import '../node_modules/jquery-ui/themes/base/base.css';
+@import './jquery-ui';
 @import '../node_modules/select2/dist/css/select2';
 @import '../node_modules/jquery-autocomplete/jquery.autocomplete';
 

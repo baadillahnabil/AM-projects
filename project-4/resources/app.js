@@ -1,11 +1,7 @@
 window.$ = window.jQuery = require('jquery/dist/jquery.min.js')
 import 'popper.js/dist/popper.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import 'jquery-ui/ui/core.js'
-import 'jquery-ui/ui/widget.js'
-import 'jquery-ui/ui/widgets/checkboxradio.js'
-import 'jquery-ui/ui/widgets/selectable.js'
-import 'jquery-ui/ui/widgets/mouse.js'
+import 'jquery-ui/ui/jquery-1-7.js'
 import 'jquery-ui/ui/widgets/autocomplete.js'
 import 'select2/dist/js/select2.full.js'
 import 'jquery-autocomplete/jquery.autocomplete.js'

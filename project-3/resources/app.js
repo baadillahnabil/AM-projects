@@ -1,7 +1,8 @@
 window.$ = window.jQuery = require('jquery/dist/jquery.min.js')
 import 'popper.js/dist/popper.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import 'jquery-validation/dist/jquery.validate.min.js'
+import 'devbridge-autocomplete/dist/jquery.autocomplete.js'
+import GeoData from './geodata.js'
 
 let currentStep = 1
 
@@ -188,4 +189,14 @@ $(document).ready(() => {
   $('.step-form-info').tooltip() // enable bootstrap tooltip
 
   $(`#eng__stepper__step-${currentStep} .eng__next-step > button`).on('click', () => goNext(currentStep + 1))
+
+  // Set Autocomplete Step 2
+  let parsedData = []
+  for (const data of GeoData) {
+    parsedData.push({ value: `${data[0]}, ${data[1]}, ${data[2]}`, data: `${data[0]}, ${data[1]}, ${data[2]}` })
+  }
+  $('#step-2-postcode').autocomplete({
+    lookup: parsedData,
+    autoSelectFirst: true
+  })
 })

@@ -123,7 +123,7 @@
           <div class="hic-step" data-no="2">
             <div class="row">
               <div class="col-12 col-md-6 text-right">
-                <img src="images/map.png" alt="" class="img-fluid" />
+                <img src="images/map.png" alt="" class="img-fluid d-none d-md-block d-lg-block d-xl-block" />
                 <button type="button" class="hic-button hic-btn-next hic-btn-mobile">
                   Next <img src="images/arrow.png" alt="Next" />
                 </button>
@@ -561,7 +561,7 @@
           <div class="hic-step" data-no="5">
             <div class="row">
               <div class="col-12 col-md-6 text-center">
-                <img src="images/money-home.png" alt="" class="img-fluid" />
+                <img src="images/money-home.png" alt="" class="img-fluid d-none d-md-block d-lg-block d-xl-block" />
                 <button type="button" class="hic-button hic-btn-next hic-btn-mobile">
                   Next <img src="images/arrow.png" alt="Next" />
                 </button>
@@ -585,7 +585,6 @@
                   <img src="images/icon/fund.png" alt="" class="hic-icon-fund" />
                   <select name="ychf" id="hic-ychf" class="hic-ychf">
                     <option value="" selected disabled>Please Select your current Fund</option>
-                    <option value="not insured">Not Insured</option>
                     <option value="not insured">Not Insured</option>
                     <option value="ACA Health Benefits Fund">ACA Health Benefits Fund</option>
                     <option value="ahm">ahm health insurance</option>
@@ -658,28 +657,28 @@
             <h1>Checking our panel of health funds</h1>
             <p>We found <span>0</span> <strong>product(s)</strong> that match your cover requirements</p>
             <div class="row hic-product-loader">
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/1.png" alt="" class="hic-loader-product" />
               </div>
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/2.png" alt="" class="hic-loader-product" />
               </div>
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/3.png" alt="" class="hic-loader-product" />
               </div>
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/4.png" alt="" class="hic-loader-product" />
               </div>
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/5.png" alt="" class="hic-loader-product" />
               </div>
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/6.png" alt="" class="hic-loader-product" />
               </div>
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/7.png" alt="" class="hic-loader-product" />
               </div>
-              <div class="col-4 col-md-3">
+              <div class="col-6 col-sm-4 col-md-3">
                 <img src="images/products/8.png" alt="" class="hic-loader-product" />
               </div>
               <div class="col-12">
@@ -1331,6 +1330,7 @@
                   $('.hic-progress').hide()
                 }, 8000)
               }
+              document.body.scrollTop = document.documentElement.scrollTop = 0;
             }
           }
         }

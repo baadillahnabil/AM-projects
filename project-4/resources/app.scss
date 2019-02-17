@@ -284,14 +284,16 @@ header .hic-wrap {
 .hic-step[data-no='6'] p span:before {
   background: url('images/bg-counter.png');
   background-position: top left;
-  width: 99px;
-  height: 52px;
+  background-size: 85px;
+  width: 93px;
+  background-repeat: no-repeat;
+  height: 53px;
   display: inline-block;
   content: ' ';
   position: absolute;
   z-index: -1;
-  left: 7px;
-  top: 1px;
+  left: 10px;
+  top: 2px;
 }
 .hic-step[data-no='6'] .hic-loader {
   height: 88px;
@@ -1344,7 +1346,7 @@ footer {
     width: 100%;
   }
   .hic-select select {
-    font-size: 14px;
+    font-size: 12px;
   }
   .hic-btn-back {
     font-size: 12px;
@@ -1669,7 +1671,7 @@ footer {
     text-align: center;
   }
   .hic-7-left .hic-button {
-    font-size: 25px;
+    font-size: 20px;
   }
   .hic-7-left .hic-btn-back {
     font-size: 20px;
@@ -1698,7 +1700,7 @@ footer {
     position: absolute;
     left: 15px;
     bottom: 15px;
-    font-size: 16px;
+    font-size: 13px;
     right: 15px;
     width: 90%;
   }

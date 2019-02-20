@@ -7,14 +7,16 @@ html(lang='en')
 
     title Health Insurance Comparison
 
-    link(rel='stylesheet', href='./scss/app.sass')
+    link(href='index.sass', rel='stylesheet')
 
   body
     
-    p Hello
-
-    i.fas.fa-user
-    br
-    img(src='static/images/feefo_logo.png', alt='feefo')
+    //- Header
+    include ./components/Header/header.pug
     
-    script(src='js/app.js')
+    //- Stepper
+    include ./components/StepContainer/stepContainer.pug
+    
+
+    
+    script(src='index.js')

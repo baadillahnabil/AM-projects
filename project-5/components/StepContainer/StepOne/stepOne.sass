@@ -1,0 +1,165 @@
+.eng__step-1
+  .step-1__title
+    font-family: 'ProximaNova-Bold', sans-serif
+    font-size: 40px
+    text-align: center
+    color: white
+    margin: 30px 20% 60px 20%
+    line-height: 48px
+    
+  .step-1__content
+    display: flex
+    justify-content: center
+
+    .step-1__desc
+      width: 270px
+
+      .small-text
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 18px
+        color: white
+        margin-bottom: 0
+        text-align: center
+
+      .sale-box
+        display: flex
+        align-items: center
+        background-color: rgba($color: #ffffff, $alpha: 0.06)
+        border-top: 2px solid rgba($color: #ffffff, $alpha: 0.24)
+        border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0.24)
+        padding: 5px 0
+
+        .lamp-icon
+          margin-left: 20px
+
+        .amount
+          font-family: 'ProximaNova-ExtraBold', sans-serif
+          font-size: 84px
+          line-height: normal
+          margin-bottom: 0
+          color: white
+          margin-left: 15px
+          padding-top: 10px
+
+        .small-asterisk
+          font-family: 'ProximaNova-Bold', sans-serif
+          font-size: 54px
+          color: white
+
+      .steps-info
+        margin-top: 30px
+        
+        .steps-item
+          display: flex
+          align-items: baseline
+          justify-content: flex-start
+          margin: 15px 0
+          
+          .info-icon
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 32px
+            min-height: 32px
+            background-color: $primary
+            border-radius: 50%
+
+          .info-text
+            color: white
+            font-family: 'ProximaNova-Bold', sans-serif
+            font-size: 28px
+            margin-left: 15px
+            margin-right: 15px
+            margin-bottom: 0
+            line-height: 32px
+
+    .step-1__card-buttons
+      background-color: white
+      border-radius: 8px
+      width: 356px
+      height: fit-content
+      margin-left: 12%
+      padding: 20px 15px 
+
+      .buttons-title
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        margin-bottom: 20px
+        text-align: center
+
+      .buttons-button
+        width: 100%
+        border-radius: 8px
+        background-color: $primary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-size: 21px
+        padding: 10px
+        margin: 5px 0
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: 0.1)
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+        
+
+ 
+
+// Tablet Breakpoint
+@include media-breakpoint-down(md)
+  .eng__step-1
+    .step-1__title
+      margin: 30px 10% 60px 10%
+
+    .step-1__content
+      .step-1__card-buttons
+        margin-left: 8%
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .eng__step-1
+    .step-1__title
+      font-size: 28px
+      margin: 20px 0 35px 0
+      line-height: 32px
+
+    .step-1__content
+      flex-direction: column-reverse
+
+      .step-1__desc
+        width: auto
+        margin-top: 35px
+
+        .sale-box
+          justify-content: center
+
+          .small-asterisk
+            margin-left: 10px
+
+        .steps-info
+          .steps-item
+            margin: 8px 0
+
+            .info-icon
+              min-width: 24px
+              min-height: 24px
+
+              img 
+                width: 11px
+
+            .info-text
+              font-size: 21px
+              margin-right: 20px
+
+      .step-1__card-buttons
+        width: auto
+        margin-left: 0
+
+        .buttons-title
+          font-family: 'ProximaNova-Bold', sans-serif
+          font-size: 16px
+          margin-bottom: 10px

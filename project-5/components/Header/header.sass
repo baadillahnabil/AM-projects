@@ -1,0 +1,48 @@
+.eng__header
+  background-color: white
+  padding: 0 12%
+  height: $navbar-height
+  display: flex
+  justify-content: space-between
+
+  .phone
+    display: flex
+
+    .phone-icon
+      margin-right: 15px
+
+    .phone-details
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+      .phone-days
+        font-size: 13px
+        margin-bottom: 0
+
+      .phone-number
+        font-size: 32px
+        font-family: 'ProximaNova-Bold', sans-serif
+        margin-bottom: 0
+        line-height: normal
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(md)
+  .eng__header
+    padding: 20px
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .eng__header
+    height: $navbar-height-mobile
+
+    .logo
+      width: 138px
+
+    .phone
+      .phone-icon
+        margin-right: 0
+        width: 32px

@@ -6,8 +6,8 @@
   "author": "baadillahnabil <baadillahnabil@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build-css": "sass --no-source-map --watch ./resources/app.scss:./dist/index.css --style compressed",
-    "build-js": "webpack --watch --progress"
+    "serve": "parcel index.pug",
+    "build": "parcel build index.pug --public-url ./"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",

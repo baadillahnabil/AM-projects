@@ -6,8 +6,8 @@
   "author": "baadillahnabil <baadillahnabil@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "parcel index.pug",
-    "build": "parcel build index.pug --public-url ./"
+    "serve": "rm -rf ./dist && parcel index.pug",
+    "build": "rm -rf ./dist && parcel build index.pug --public-url ./"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",

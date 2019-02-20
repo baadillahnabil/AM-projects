@@ -6,7 +6,7 @@
   "author": "baadillahnabil <baadillahnabil@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "rm -rf ./dist && parcel index.pug",
+    "serve": "rm -rf ./dist && clear && parcel index.pug",
     "build": "rm -rf ./dist && parcel build index.pug --public-url ./"
   },
   "devDependencies": {

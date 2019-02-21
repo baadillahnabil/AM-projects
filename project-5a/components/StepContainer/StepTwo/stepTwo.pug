@@ -1,0 +1,93 @@
+div.eng__step-2
+  
+  //- Title
+  p.step-2__title This is the last step
+  p.step-2__subtitle In order to save you time and money we need to ask you for a few more basic details so that we can provide you with an accurate comparison from our trusted energy providers.
+  
+  //- Form
+  .container-fluid.step-2__form
+    .row
+
+      //- Question 1
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
+        .form-group.form-check.step-2__form-radio
+          label.step-2__form-label Do you Own or rent the property?  *
+          .step-2__form-radio-container
+            .step-2__form-radio-item
+              input#firstQuestion_option_A.form-radio-item__radio(name='firstQuestion', type='radio')
+              label.form-radio-item__label(for='firstQuestion_option_A')
+                .form-radio-item__image
+                  include ../../../static/icons/check_white.svg
+                p.form-radio-item__text Own
+            .step-2__form-radio-item
+              input#firstQuestion_option_B.form-radio-item__radio(name='firstQuestion', type='radio')
+              label.form-radio-item__label(for='firstQuestion_option_B')
+                .form-radio-item__image
+                  include ../../../static/icons/check_white.svg
+                p.form-radio-item__text Rent
+
+      //- Question 2
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2
+        .form-group.form-check.step-2__form-radio
+          label.step-2__form-label Are you moving into this property? *
+          .step-2__form-radio-container
+            .step-2__form-radio-item
+              input#secondQuestion_option_A.form-radio-item__radio(name='secondQuestion', type='radio')
+              label.form-radio-item__label(for='secondQuestion_option_A')
+                .form-radio-item__image
+                  include ../../../static/icons/check_white.svg
+                p.form-radio-item__text Yes
+            .step-2__form-radio-item
+              input#secondQuestion_option_B.form-radio-item__radio(name='secondQuestion', type='radio')
+              label.form-radio-item__label(for='secondQuestion_option_B')
+                .form-radio-item__image
+                  include ../../../static/icons/check_white.svg
+                p.form-radio-item__text No
+
+      //- Question 3 - First Name
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
+        .form-group.step-2__form-input
+          label.step-2__form-label(for='firstName') First Name *
+          input#firstName.form-control.step-2__form-input-field(type='text')
+
+      //- Question 4 - Last Name
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2
+        .form-group.step-2__form-input
+          label.step-2__form-label(for='lastName') Last Name *
+          input#lastName.form-control.step-2__form-input-field(type='text')
+
+      //- Question 5 - Mobile Phone
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
+        .form-group.step-2__form-input
+          label.step-2__form-label(for='mobilePhone') Mobile Phone *
+          input#mobilePhone.form-control.step-2__form-input-field(type='text')
+
+      //- Question 6 - Email Address
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2
+        .form-group.step-2__form-input
+          label.step-2__form-label(for='emailAddress') Email Address *
+          input#emailAddress.form-control.step-2__form-input-field(type='email')
+
+      //- Question 7 - Postcode
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
+        .form-group.step-2__form-input
+          label.step-2__form-label(for='postcode') Postcode *
+          input#postcode.form-control.step-2__form-input-field(type='text')
+
+      //- Button Submit
+      .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2.step-2__form-submit
+        button.btn.step-2__form-submit 
+          | Compare Now
+          .button-icon
+            include ../../../static/icons/chevron_right_white.svg
+
+      //- Agreement Checkbox
+      .col-xl-12.pr-0.pl-0.mt-2.step-2__form-agreement-checkbox
+        .form-check.pl-0
+          input#agreementCheckbox.form-control.agreement-checkbox-input(type='checkbox')
+          label.agreement-checkbox-label(for='agreementCheckbox')
+            | I understand and accept the Website 
+            b Terms of Use 
+            | and 
+            b Privacy Policy
+            | . I agree that Compare & Connect may contact me about the services it provides and that Residential Connections Pty Ltd, Compare & Connect trusted energy partner, may call during the call centre opening hours and email or text me to discuss my energy needs. (Call Centre Hours are Mon - Thu 9am - 8pm AEDT, Fri 9am - 7pm and Sat 10am - 5pm AEDT).

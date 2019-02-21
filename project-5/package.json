@@ -6,8 +6,9 @@
   "author": "baadillahnabil <baadillahnabil@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "rm -rf ./dist && clear && parcel index.pug",
-    "build": "rm -rf ./dist && parcel build index.pug --public-url ./ --experimental-scope-hoisting"
+    "serve": "rm -rf dist && clear && parcel index.pug",
+    "build": "rm -rf dist && rm -rf .cache && parcel build index.pug --public-url ./",
+    "push": "yarn build && git add . && git commit -m 'build production' && git push origin master"
   },
   "devDependencies": {
     "bootstrap": "^4.3.1",

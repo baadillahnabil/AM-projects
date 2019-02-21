@@ -12,7 +12,8 @@ div.eng__step-1
       //- Big Sale Box
       p.small-text Aussie Residents can save up to
       div.sale-box
-        img.lamp-icon(src="static/icons/idea.svg", alt="idea")
+        div.lamp-icon
+          include ../../../static/icons/idea.svg
         p.amount 40%
         p.small-asterisk *
       p.small-text on their Household Energy Bills
@@ -21,15 +22,18 @@ div.eng__step-1
       div.steps-info
         div.steps-item
           div.info-icon
-            img(src="static/icons/form_white.svg", alt="form_white")
+            div
+              include ../../../static/icons/form_white.svg
           p.info-text 1 Form
         div.steps-item
           div.info-icon
-            img(src="static/icons/stopwatch_white.svg", alt="stopwatch_white")
+            div
+              include ../../../static/icons/stopwatch_white.svg
           p.info-text 2 Minutes
         div.steps-item
           div.info-icon
-            img(src="static/icons/money_bag_white.svg", alt="money_bag_white")
+            div
+              include ../../../static/icons/money_bag_white.svg
           p.info-text 3 Cheapest providers for you
 
     //- Buttons

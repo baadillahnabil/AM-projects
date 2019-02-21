@@ -2,11 +2,13 @@ nav#navbar.navbar.navbar-light.navbar-expand-lg.fixed-top.eng__header
   
   //- Company Logo
   a.navbar-brand(href='#')
-    img.d-inline-block.align-top.logo(src='static/images/logo.svg', alt='logo')
+    div.d-inline-block.align-top.logo
+      include ../../static/images/logo.svg
   
   //- Contact Number
   .phone
-    img.d-inline-block.align-top.phone-icon(src='static/icons/phone_primary.svg', alt='phone_icon')
+    div.d-inline-block.align-top.phone-icon
+      include ../../static/icons/phone_primary.svg
     .phone-details.d-none.d-md-flex.d-lg-flex.d-xl-flex
       p.mb-0.phone-days Monday-Friday 8am to 8pm AEST
       p.mb-0.phone-number 1300 163 402

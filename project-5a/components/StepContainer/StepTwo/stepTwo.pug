@@ -12,7 +12,7 @@ div.eng__step-2
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
         .form-group.form-check.step-2__form-radio
           label.step-2__form-label Do you Own or rent the property?  *
-          .step-2__form-radio-container
+          #firstQuestion.step-2__form-radio-container
             .step-2__form-radio-item
               input#firstQuestion_option_A.form-radio-item__radio(name='firstQuestion', type='radio')
               label.form-radio-item__label(for='firstQuestion_option_A')
@@ -25,12 +25,13 @@ div.eng__step-2
                 .form-radio-item__image
                   include ../../../static/icons/check_white.svg
                 p.form-radio-item__text Rent
+          small.form-text.step-2__form-info-message.invisible Please select one of these
 
       //- Question 2
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2
         .form-group.form-check.step-2__form-radio
           label.step-2__form-label Are you moving into this property? *
-          .step-2__form-radio-container
+          #secondQuestion.step-2__form-radio-container
             .step-2__form-radio-item
               input#secondQuestion_option_A.form-radio-item__radio(name='secondQuestion', type='radio')
               label.form-radio-item__label(for='secondQuestion_option_A')
@@ -43,40 +44,46 @@ div.eng__step-2
                 .form-radio-item__image
                   include ../../../static/icons/check_white.svg
                 p.form-radio-item__text No
+          small.form-text.step-2__form-info-message.invisible Please select one of these
 
       //- Question 3 - First Name
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
         .form-group.step-2__form-input
           label.step-2__form-label(for='firstName') First Name *
           input#firstName.form-control.step-2__form-input-field(type='text')
+          small.form-text.step-2__form-info-message.invisible Please enter a valid first name
 
       //- Question 4 - Last Name
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2
         .form-group.step-2__form-input
           label.step-2__form-label(for='lastName') Last Name *
           input#lastName.form-control.step-2__form-input-field(type='text')
+          small.form-text.step-2__form-info-message.invisible Please enter a valid last name
 
       //- Question 5 - Mobile Phone
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
         .form-group.step-2__form-input
           label.step-2__form-label(for='mobilePhone') Mobile Phone *
           input#mobilePhone.form-control.step-2__form-input-field(type='text')
+          small.form-text.step-2__form-info-message.invisible Please enter a valid 8 digit mobile phone number
 
       //- Question 6 - Email Address
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2
         .form-group.step-2__form-input
           label.step-2__form-label(for='emailAddress') Email Address *
           input#emailAddress.form-control.step-2__form-input-field(type='email')
+          small.form-text.step-2__form-info-message.invisible Please enter a valid email address
 
       //- Question 7 - Postcode
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pl-0.mt-2
         .form-group.step-2__form-input
           label.step-2__form-label(for='postcode') Postcode *
           input#postcode.form-control.step-2__form-input-field(type='text')
+          small.form-text.step-2__form-info-message.invisible Please enter a valid postcode from the list
 
       //- Button Submit
       .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.pr-0.mt-2.step-2__form-submit
-        button.btn.step-2__form-submit 
+        button#step-2-button-submit.btn.step-2__form-submit 
           | Compare Now
           .button-icon
             include ../../../static/icons/chevron_right_white.svg

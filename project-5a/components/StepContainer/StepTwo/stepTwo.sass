@@ -87,6 +87,9 @@
         &:focus
           box-shadow: none
 
+        &.error-state
+          border: 1px solid $primary
+
     .step-2__form-submit
       display: flex
       justify-content: center
@@ -102,7 +105,7 @@
         font-size: 21px
         padding: 12px
         margin: 5px 0
-        margin-bottom: 16px
+        margin-bottom: 35px
         box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: 0.1)
         display: flex
         justify-content: center
@@ -138,6 +141,12 @@
           margin-bottom: 0
           margin-right: 15px
 
+    .step-2__form-info-message
+      text-align: center
+      color: $primary
+      font-size: 12px
+      margin-top: 2px
+      margin-bottom: 0.25rem
 
 
 // Tablet Breakpoint
@@ -180,3 +189,24 @@
         .form-check
           .agreement-checkbox-label
             margin-right: 5px
+
+
+
+// Autocomplete Styling Overrides
+.autocomplete-suggestions 
+  background-color: white
+  overflow: auto
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+  left: 752px
+  width: 292px
+
+  .autocomplete-suggestion 
+    padding: 5px
+    cursor: pointer
+
+    &:hover 
+      background-color: rgba($color: $primary, $alpha: 0.2)
+
+  .autocomplete-selected 
+    background-color: rgba($color: $primary, $alpha: 0.2)
+  

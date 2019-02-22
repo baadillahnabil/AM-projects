@@ -1,7 +1,6 @@
 import $ from 'jquery'
 import 'devbridge-autocomplete'
 import find from 'lodash/find'
-import isEmpty from 'lodash/isEmpty'
 import GeoData from './geodata'
 
 // Set Autocomplete Data

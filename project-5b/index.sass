@@ -1,0 +1,69 @@
+// Overrides node_modules variables
+$fa-font-path: 'static/fonts'
+
+
+
+// node_modules dependencies
+@import 'node_modules/bootstrap/scss/bootstrap'
+@import 'node_modules/animate.css/animate'
+
+
+
+// Fonts
+$font--proxima-regular: 'static/fonts/ProximaNova-Reg.ttf'
+$font--proxima-regular-italic: 'static/fonts/ProximaNova-RegItalic.otf'
+$font--proxima-semi-bold: 'static/fonts/ProximaNova-SemiBold.otf'
+$font--proxima-bold: 'static/fonts/ProximaNova-Bold.otf'
+$font--proxima-extra-bold: 'static/fonts/ProximaNova-ExtraBold.otf'
+
+@font-face
+  font-family: 'ProximaNova-Reg'
+  src: url($font--proxima-regular) format('truetype')
+
+@font-face
+  font-family: 'ProximaNova-RegItalic'
+  src: url($font--proxima-regular-italic) format('opentype')
+
+@font-face
+  font-family: 'ProximaNova-SemiBold'
+  src: url($font--proxima-semi-bold) format('opentype')
+
+@font-face
+  font-family: 'ProximaNova-Bold'
+  src: url($font--proxima-bold) format('opentype')
+
+@font-face
+  font-family: 'ProximaNova-ExtraBold'
+  src: url($font--proxima-extra-bold) format('opentype')
+
+
+
+// Colors
+$primary: #FB9943
+$secondary: #1D88C3
+
+
+
+// Global Variables
+$navbar-height: 84px
+$navbar-height-mobile: 70px
+
+  
+
+// Main Theme
+body
+  font-family: 'ProximaNova-Reg', sans-serif
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.animated.faster 
+  animation-duration: 200ms
+
+
+
+// All Components Style
+@import './components/Header/header'
+@import './components/StepContainer/stepContainer'
+@import './components/TrustedCompanies/trustedCompanies'
+@import './components/Footer/footer'

@@ -1,0 +1,65 @@
+.eng__footer
+  background-color: #25282B
+  padding: 50px 24%
+  display: flex
+  justify-content: center
+
+  .footer__left-section
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+
+    .footer__logo
+      margin-bottom: 20px
+
+    .footer__link
+      font-family: 'ProximaNova-SemiBold', sans-serif
+      font-size: 16px
+      color: white
+      margin: 3px 0
+
+  .footer__right-section
+    margin-left: 14%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+    .copyright-title
+      font-family: 'ProximaNova-Bold', sans-serif
+      font-size: 12px
+      color: white
+
+    .copyright-text
+      font-size: 12px
+      color: white
+      margin-bottom: 0
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .eng__footer
+    padding: 50px 6%
+
+    .footer__right-section
+      margin-left: 7%
+      justify-content: center
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .eng__footer
+    padding: 30px 15px
+    flex-direction: column
+
+    .footer__left-section
+      align-items: center
+
+      .footer__logo
+        svg
+          width: 145px
+          height: auto
+
+    .footer__right-section
+        margin: 35px 5px 0 5px
+

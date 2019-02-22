@@ -1,0 +1,55 @@
+.eng__trusted-companies
+  padding: 40px 0
+  margin: 0 20%
+
+  .trusted-companies__title
+    font-family: 'ProximaNova-SemiBold', sans-serif
+    font-size: 21px
+    margin-bottom: 0
+    text-align: center
+
+  .trusted-companies-container
+    margin-top: 20px
+
+    .row
+      margin: 0
+      display: flex
+      justify-content: center
+
+      .logo-box
+        border: 1px solid #e5e5e5
+        border-radius: 4px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 15px 30px
+        margin: 8px
+
+  
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .eng__trusted-companies
+    margin: 0 20px
+
+    .trusted-companies-container
+      .row
+        .logo-box
+          max-width: 22%
+
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .eng__trusted-companies
+    margin: 0
+
+    .trusted-companies-container
+      padding: 0
+
+      .row
+        justify-content: flex-start
+
+        .logo-box
+          max-width: 45%

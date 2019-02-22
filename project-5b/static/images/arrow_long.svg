@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="367px" height="131px" viewBox="0 0 367 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-Desktop" transform="translate(-433.000000, -472.000000)">
+            <g id="Arrow" transform="translate(435.000000, 474.000000)">
+                <path d="M2.84217094e-14,-2.55795385e-13 C107.893229,118.818245 227.002732,154.266978 357.328508,106.346197" id="Path-2" stroke="#FB9943" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M354.57103,99.0897174 L357.741217,113.115596 C357.862975,113.654292 358.398379,113.992286 358.937075,113.870528 C359.2049,113.809993 359.43605,113.641996 359.576307,113.405941 L364.526366,105.074943 C364.793534,104.625296 364.669076,104.045728 364.240858,103.74541 L356.120612,98.0505302 C355.668443,97.7334156 355.044816,97.8428988 354.727701,98.2950678 C354.565743,98.5260011 354.508845,98.8145928 354.57103,99.0897174 Z" id="Path-3" fill="#FB9943" transform="translate(359.500000, 106.063305) rotate(-12.000000) translate(-359.500000, -106.063305) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

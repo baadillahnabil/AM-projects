@@ -3,7 +3,7 @@
   margin: 40px 10%
 
   .eng__step-1__desc
-    margin: 20px 30px 0 9%
+    margin: 20px 30px 0 7%
     position: relative
 
     .step-1__title
@@ -12,6 +12,7 @@
       color: white
       line-height: 48px
       margin-bottom: 50px
+      text-transform: capitalize
 
     .step-1__subtitle
       font-family: 'ProximaNova-SemiBold', sans-serif
@@ -19,6 +20,7 @@
       color: white
       line-height: 32px
       margin-right: 60px
+      text-transform: capitalize
 
     .arrow-long-image
       position: absolute
@@ -26,8 +28,28 @@
       bottom: 60px
 
   .eng__step-1__image
-    cursor: pointer
+    g#Map
+      .Map_Region
+        cursor: pointer
+        &:hover
+          path, polygon
+            fill: $primary
+          
+          text
+            fill: white
+
+
  
+// 4K Screens Breakpoint
+@include media-breakpoint-up(4k)
+  .eng__step-1
+    margin: 40px 0
+
+    .eng__step-1__desc
+      margin: 20px 30px 0 0
+
+  
+
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)

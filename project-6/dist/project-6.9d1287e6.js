@@ -176,7 +176,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./static/fonts/ProximaNova-Reg.ttf":[["ProximaNova-Reg.5042a784.ttf","static/fonts/ProximaNova-Reg.ttf"],"static/fonts/ProximaNova-Reg.ttf"],"./static/fonts/ProximaNova-RegItalic.otf":[["ProximaNova-RegItalic.b489c002.otf","static/fonts/ProximaNova-RegItalic.otf"],"static/fonts/ProximaNova-RegItalic.otf"],"./static/fonts/ProximaNova-SemiBold.otf":[["ProximaNova-SemiBold.8fe04446.otf","static/fonts/ProximaNova-SemiBold.otf"],"static/fonts/ProximaNova-SemiBold.otf"],"./static/fonts/ProximaNova-Bold.otf":[["ProximaNova-Bold.7c16bc59.otf","static/fonts/ProximaNova-Bold.otf"],"static/fonts/ProximaNova-Bold.otf"],"./static/fonts/ProximaNova-BoldItalic.otf":[["ProximaNova-BoldItalic.981b2ada.otf","static/fonts/ProximaNova-BoldItalic.otf"],"static/fonts/ProximaNova-BoldItalic.otf"],"./static/fonts/ProximaNova-ExtraBold.otf":[["ProximaNova-ExtraBold.849c2545.otf","static/fonts/ProximaNova-ExtraBold.otf"],"static/fonts/ProximaNova-ExtraBold.otf"],"_css_loader":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./static/fonts/ProximaNova-Reg.ttf":[["ProximaNova-Reg.5042a784.ttf","static/fonts/ProximaNova-Reg.ttf"],"static/fonts/ProximaNova-Reg.ttf"],"./static/fonts/ProximaNova-RegItalic.otf":[["ProximaNova-RegItalic.b489c002.otf","static/fonts/ProximaNova-RegItalic.otf"],"static/fonts/ProximaNova-RegItalic.otf"],"./static/fonts/ProximaNova-SemiBold.otf":[["ProximaNova-SemiBold.8fe04446.otf","static/fonts/ProximaNova-SemiBold.otf"],"static/fonts/ProximaNova-SemiBold.otf"],"./static/fonts/ProximaNova-Bold.otf":[["ProximaNova-Bold.7c16bc59.otf","static/fonts/ProximaNova-Bold.otf"],"static/fonts/ProximaNova-Bold.otf"],"./static/fonts/ProximaNova-BoldItalic.otf":[["ProximaNova-BoldItalic.981b2ada.otf","static/fonts/ProximaNova-BoldItalic.otf"],"static/fonts/ProximaNova-BoldItalic.otf"],"./static/fonts/ProximaNova-ExtraBold.otf":[["ProximaNova-ExtraBold.849c2545.otf","static/fonts/ProximaNova-ExtraBold.otf"],"static/fonts/ProximaNova-ExtraBold.otf"],"./static/images/chat_box.svg":[["chat_box.5dc806c3.svg","static/images/chat_box.svg"],"static/images/chat_box.svg"],"_css_loader":"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -203,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55321" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59776" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

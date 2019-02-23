@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="396px" height="266px" viewBox="0 0 396 266" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#65BBCA" offset="0%"></stop>
+            <stop stop-color="#35869A" offset="100%"></stop>
+        </linearGradient>
+        <path d="M16,-7.29016847e-12 L348,-7.29372118e-12 C356.836556,-7.26395068e-12 364,7.163444 364,16 L364,192 C364,200.836556 356.836556,208 348,208 L313.451618,208 C311.242479,208 309.451618,209.790861 309.451618,212 C309.451618,212.057841 309.452872,212.115674 309.45538,212.173461 L310.500192,236.244147 C310.595991,238.451208 308.884476,240.318045 306.677415,240.413845 C305.84588,240.449938 305.023797,240.225742 304.325714,239.772495 L256.383879,208.645113 C255.735406,208.224076 254.978807,208 254.205638,208 L16,208 C7.163444,208 4.01620165e-14,200.836556 3.90798505e-14,192 L0,16 C-5.00638517e-15,7.163444 7.163444,-7.29209793e-12 16,-7.29372118e-12 Z" id="path-2"></path>
+        <filter x="-7.7%" y="-8.2%" width="115.4%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="8" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.272836538 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-step1" transform="translate(-842.000000, -568.000000)">
+            <g id="Body" transform="translate(162.000000, 128.000000)">
+                <g id="Group-4" transform="translate(32.000000, 448.000000)">
+                    <g id="Group-3" transform="translate(664.000000, 0.000000)">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

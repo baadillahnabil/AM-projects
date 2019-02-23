@@ -1,0 +1,176 @@
+.hic__main-content
+  width: 100%
+  height: 100%
+  margin-top: $navbar-height
+
+  .hic__main-content-background
+    z-index: -1
+    position: absolute
+    top: $navbar-height
+    background-color: $primary
+    height: 411px
+    width: 100%
+
+  .hic__contents
+    margin: $navbar-height + 40px 12%
+    margin-bottom: 40px
+    background-color: white
+    border-radius: 8px
+    box-shadow: 0 10px 40px -10px rgba($color: #000000, $alpha: 0.16)
+
+    .hic__content-title
+      padding: 32px 30px
+      font-family: 'ProximaNova-Bold', sans-serif
+      font-size: 38px
+      margin-bottom: 0
+      line-height: 40px
+
+      b
+        color: $primary
+
+    .hic__content-company-logos
+      padding: 26px 20px
+      background-color: rgba($color: #35869A, $alpha: 0.08)
+
+      .row
+        margin: 0
+        justify-content: center
+
+      .company-logos
+        display: flex
+        justify-content: center
+        align-items: center
+    
+    .hic__content-subtitle 
+      padding: 0 30px
+      padding-top: 32px
+      font-family: 'ProximaNova-SemiBold', sans-serif
+      font-size: 21px
+      line-height: 28px
+      margin-bottom: 0
+
+      b
+        color: $primary
+
+    .hic__content-progress
+      padding: 0 30px
+      padding-top: 32px
+
+      .progress
+        background-color: #f3f3f3
+        border-radius: 12px
+      
+        .progress-bar
+          width: 30%
+          background-color: $secondary
+
+      .progress-indicator
+        text-align: center
+        font-family: 'ProximaNova-RegItalic', sans-serif
+        font-size: 16px
+        margin-top: 8px
+        margin-bottom: 0
+
+    .hic__content-footer
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 32px 30px
+      
+      .footer-text
+        font-size: 16px
+        color: #7D7D7D
+        padding: 0 20px
+        margin-top: 4px
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .hic__main-content
+    .hic__contents
+      margin-left: 20px
+      margin-right: 20px
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__main-content
+    margin-top: $navbar-height-mobile
+
+    .hic__main-content-background
+      top: $navbar-height-mobile
+
+    .hic__contents
+      margin: $navbar-height-mobile + 30px 20px
+      margin-bottom: 30px
+
+      .hic__content-title
+        font-size: 28px
+        text-align: center
+        padding: 32px 20px
+        line-height: 32px
+
+      .hic__content-company-logos
+        padding: 5px
+
+        .company-logos
+          width: 80px
+          height: 48px
+          border: 1px solid rgba($color: #338396, $alpha: 0.12)
+          border-radius: 4px
+          margin: 4px
+          padding: 0
+          max-width: 30%
+
+          &:nth-child(1)
+            margin-left: 0
+            svg
+              width: 32px
+              height: auto
+
+          &:nth-child(2)
+            svg
+              width: 48px
+              height: auto
+              
+          &:nth-child(3)
+            margin-right: 0
+            svg
+              width: 48px
+              height: auto
+
+          &:nth-child(4)
+            margin-left: 0
+            svg
+              width: 64px
+              height: auto
+
+          &:nth-child(5)
+            svg
+              width: 64px
+              height: auto
+
+          &:nth-child(6)
+            margin-right: 0
+            svg
+              width: 64px
+              height: auto
+
+      .hic__content-progress
+        padding-left: 20px
+        padding-right: 20px
+
+      .hic__content-footer
+        padding: 20px
+
+        .footer-text
+          font-size: 12px
+          padding: 0 10px
+
+        .lock-image
+          svg
+            width: 8px
+            height: auto
+
+
+// Children Components Styling
+@import './StepContainer/stepContainer'

@@ -1,0 +1,49 @@
+div.hic__step-1
+
+  //- Form
+  .step-1__form
+    .form-group.form-check
+      label.step-1__form-label My life stage is:
+      .step-1__form-radio-container.container-fluid
+        .row
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-1__form-radio-column.pl-0
+            .step-1__form-radio-item
+              input#single.form-radio-item__radio(name='firstQuestion', type='radio')
+              label.form-radio-item__label(for='single')
+                .form-radio-item__image
+                  include ../../../../static/icons/check_white.svg
+                p.form-radio-item__text Single
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-1__form-radio-column.pr-0
+            .step-1__form-radio-item
+              input#couple.form-radio-item__radio(name='firstQuestion', type='radio')
+              label.form-radio-item__label(for='couple')
+                .form-radio-item__image
+                  include ../../../../static/icons/check_white.svg
+                p.form-radio-item__text Couple
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-1__form-radio-column.pl-0
+            .step-1__form-radio-item
+              input#family.form-radio-item__radio(name='firstQuestion', type='radio')
+              label.form-radio-item__label(for='family')
+                .form-radio-item__image
+                  include ../../../../static/icons/check_white.svg
+                p.form-radio-item__text Family
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-1__form-radio-column.pr-0
+            .step-1__form-radio-item
+              input#singleParentFamily.form-radio-item__radio(name='firstQuestion', type='radio')
+              label.form-radio-item__label(for='singleParentFamily')
+                .form-radio-item__image
+                  include ../../../../static/icons/check_white.svg
+                p.form-radio-item__text Single Parent Family
+        small.form-text.step-1__form-info-message.invisible Please select one of these
+
+    .form-submit-button
+      button#step-1-button-submit.btn.step-1__form-submit 
+        | Continue
+        .button-icon
+          include ../../../../static/icons/chevron_right_white.svg
+
+
+  //- Promotion
+  .d-none.d-md-block.d-lg-block.d-xl-block
+    include ../Promotion/promotion.pug
+  

@@ -1,0 +1,52 @@
+div.hic__main-content
+
+  //- Background
+  .hic__main-content-background
+  
+  //- Contents
+  .hic__contents
+
+    //- Content Title
+    p.hic__content-title 
+      | Compare 
+      b Health Insurance 
+      | Quotes 
+    
+    //- Content Companies Logo
+    .hic__content-company-logos.container-fluid
+      .row
+        .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.company-logos
+          include ../../static/images/bupa_logo.svg
+        .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.company-logos
+          include ../../static/images/nib_logo.svg
+        .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.company-logos
+          include ../../static/images/ahm_logo.svg
+        .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.company-logos
+          include ../../static/images/aui_logo.svg
+        .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.company-logos
+          include ../../static/images/gmhba_logo.svg
+        .col-4.col-sm-4.col-md-2.col-lg-2.col-xl-2.company-logos
+          include ../../static/images/hcf_logo.svg
+    
+    //- Content Subtitle
+    p.hic__content-subtitle.d-none.d-md-block.d-lg-block.d-xl-block
+      | Search the market for competitive health insurance 
+      br
+      | quotes from 
+      b Bupa, HCF, nib 
+      | & more!
+    
+    //- Content Progress Bar
+    .hic__content-progress
+      .progress
+        .progress-bar
+      p.progress-indicator Progress 30%
+
+    //- Content Step Container
+    include ./StepContainer/stepContainer.pug
+    
+    //- Content Footer
+    .hic__content-footer
+      .lock-image
+        include ../../static/icons/lock.svg
+      span.footer-text Safe &nbsp; | &nbsp; Secure &nbsp; | &nbsp; Privacy Protected

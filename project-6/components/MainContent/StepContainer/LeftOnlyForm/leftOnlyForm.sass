@@ -1,0 +1,20 @@
+.hic__left-only-form
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+  .left-form
+    width: 50%
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__left-only-form
+    .left-form
+      width: 100%
+
+
+// Children Components Styling
+@import './StepOne/stepOne'
+@import './StepTwo/stepTwo'
+@import '../Promotion/promotion'

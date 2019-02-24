@@ -1,11 +1,5 @@
 .hic__step-1
-  display: flex
-  justify-content: space-between
-  align-items: flex-start
-
   .step-1__form
-    width: 50%
-
     .form-group
       padding: 0
       margin: 0
@@ -108,6 +102,24 @@
 
 
 
+// Tooltip Overrides
+.form-radio-tooltip-info
+  &.tooltip.show
+    opacity: 1
+    // left: -15px !important
+
+  .arrow
+    &::before
+      border-right-color: $primary
+
+  .tooltip-inner
+    background-color: $primary
+    font-size: 12px
+    padding: 15px
+    max-width: 150px
+
+
+
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
   .hic__step-1
@@ -130,8 +142,6 @@
 @include media-breakpoint-down(sm)
   .hic__step-1
     .step-1__form
-      width: 100%
-      
       .step-1__form-radio-container
         .step-1__form-radio-column
           
@@ -162,6 +172,3 @@
 
     
 
-
-// Children Components Styling
-@import '../Promotion/promotion'

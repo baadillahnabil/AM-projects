@@ -1,0 +1,14 @@
+.hic__left-only-form
+  
+  .left-form
+    //- Step 1
+    #hic__step-1
+      include ./StepOne/stepOne.pug
+      
+    //- Step 2
+    #hic__step-2.d-none
+      include ./StepTwo/stepTwo.pug
+
+  //- Promotion
+  .d-none.d-md-block.d-lg-block.d-xl-block
+    include ../Promotion/promotion.pug

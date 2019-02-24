@@ -1,5 +1,1 @@
-import $ from 'jquery'
-import 'popper.js'
-import 'bootstrap'
-
-// import './components/StepContainer/stepContainer'
+import './components/MainContent/mainContent'

@@ -1,0 +1,72 @@
+.hic__step-3
+
+  //- Form
+  .step-3__form
+    .form-group.form-check
+      label.step-3__form-label Select the types of extras cover you're interested in
+      #thirdStepRadio.step-3__form-radio-container.container-fluid
+        .row
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pl-0
+            .step-3__form-radio-item
+              input#privateHospital.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='privateHospital', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Private Hospital
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pr-0
+            .step-3__form-radio-item
+              input#ambulanceCover.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              label.form-radio-item__label.two-lined-text.pr-4(data-placement='right', data-toggle='tooltip', for='ambulanceCover', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Ambulance Cover
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pl-0
+            .step-3__form-radio-item
+              input#pregnancy.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              label.form-radio-item__label.two-lined-text(data-placement='right', data-toggle='tooltip', for='pregnancy', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Pregnancy & Birth Related
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pr-0
+            .step-3__form-radio-item
+              input#psychiatric.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              label.form-radio-item__label.two-lined-text(data-placement='right', data-toggle='tooltip', for='psychiatric', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Psychiatric Service
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pl-0
+            .step-3__form-radio-item
+              input#heartSurgery.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='heartSurgery', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Heart Surgery
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pr-0
+            .step-3__form-radio-item
+              input#rehab.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='rehab', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Rehabilitation
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12.step-3__form-radio-column.pl-0.pr-0
+            .step-3__form-radio-item
+              input#noOption.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              label.form-radio-item__label.no-check-icon(data-placement='right', data-toggle='tooltip', for='noOption', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+                p.form-radio-item__text I only want hospital cover
+                .form-radio-item__image-arrow
+                  include ../../../../../static/icons/arrow_long_right.svg
+        small.form-text.step-3__form-info-message.invisible Please select one of these
+
+    //- Button Submit
+    .form-submit-button
+      button#step-3-button-submit.btn.step-3__form-submit 
+        | Continue
+        .button-icon
+          include ../../../../../static/icons/chevron_right_white.svg
+
+    //- Button Back
+    .form-back-button
+      button#step-3-button-back.btn.step-3__button-back 
+        .button-icon
+          include ../../../../../static/icons/chevron_left_white.svg
+        | Back

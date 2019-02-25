@@ -1,26 +1,28 @@
-.hic__step-1
-  .step-1__form
+.hic__step-3
+  .step-3__form
+    position: relative
+
     .form-group
       padding: 0
       margin: 0
 
-    .step-1__form-label
+    .step-3__form-label
       font-family: 'ProximaNova-SemiBold', sans-serif
       font-size: 21px
       margin-bottom: 17px
 
-    .step-1__form-radio-container
+    .step-3__form-radio-container
       padding: 0
 
       .row
         margin: 0
 
-      .step-1__form-radio-column
+      .step-3__form-radio-column
         padding-left: 8px
         padding-right: 8px
         margin-top: 15px
 
-        .step-1__form-radio-item
+        .step-3__form-radio-item
           background-color: white
           width: 100%
 
@@ -55,6 +57,17 @@
             &.two-lined-text
               padding: 8px 15px
 
+            &.no-check-icon
+              justify-content: center
+              padding-top: 20px
+              padding-bottom: 20px
+
+              .form-radio-item__text
+                margin-left: 0
+
+              .form-radio-item__image-arrow
+                margin-left: 16px
+
             .form-radio-item__image
               border: 1px solid #9a9a9a
               border-radius: 50%
@@ -66,12 +79,12 @@
 
             .form-radio-item__text
               margin-bottom: 0
-              margin-left: 15px
+              margin-left: 16px
               font-size: 21px
               line-height: 24px
               color: #25282B
 
-      .step-1__form-info-message
+      .step-3__form-info-message
         text-align: center
         color: red
         font-size: 12px
@@ -108,6 +121,40 @@
       .button-icon
         margin-left: 10px
 
+    .form-back-button
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      position: absolute
+      bottom: -70px
+      left: 0
+
+      button.step-3__button-back
+        width: 100%
+        color: #35869A
+        text-align: center
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-size: 21px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+          box-shadow: none
+
+        &:active
+          box-shadow: none
+
+      .button-icon
+        margin-right: 10px
+        margin-top: -4px
+
+        svg
+          g
+            fill: #35869A
+
+
 
 
 // Tooltip Overrides
@@ -130,10 +177,10 @@
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  .hic__step-1
-    .step-1__form
-      .step-1__form-radio-container
-        .step-1__form-radio-column
+  .hic__step-3
+    .step-3__form
+      .step-3__form-radio-container
+        .step-3__form-radio-column
           padding: 0
 
           &:not(:first-child)
@@ -148,20 +195,29 @@
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  .hic__step-1
-    .step-1__form
-      .step-1__form-radio-container
-        .step-1__form-radio-column
+  .hic__step-3
+    .step-3__form
+      .step-3__form-radio-container
+        .step-3__form-radio-column
           
           &:not(:first-child)
             margin-top: 10px
 
-          .step-1__form-radio-item
+          .step-3__form-radio-item
             .form-radio-item__label
-              padding: 10px 15px
+              padding: 10px
 
               &.two-lined-text
-                padding: 10px 15px
+                padding: 10px
+
+              &.no-check-icon
+                justify-content: center
+                padding: 10px 0
+
+                .form-radio-item__image-arrow
+                  svg
+                    width: 16px
+                    height: auto
 
               .form-radio-item__image
                 min-width: 24px
@@ -169,11 +225,24 @@
 
               .form-radio-item__text
                 font-size: 16px
+                margin-left: 8px
 
       .form-submit-button
         button
           font-size: 21px
           margin-bottom: 0
 
-    
+      .form-back-button
+        position: relative
+        bottom: auto
+        left: auto
+        margin-top: 25px
 
+        button.step-3__button-back
+          font-size: 16px
+
+          svg
+            width: 7px
+
+  .form-radio-tooltip-info
+    display: none

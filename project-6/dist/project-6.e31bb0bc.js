@@ -22451,13 +22451,133 @@ function isPostcodeValid() {
     return true;
   }
 }
-},{"jquery":"node_modules/jquery/dist/jquery.js","devbridge-autocomplete":"node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js","lodash/find":"node_modules/lodash/find.js","./geodata":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/geodata.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/leftOnlyForm.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","devbridge-autocomplete":"node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js","lodash/find":"node_modules/lodash/find.js","./geodata":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/geodata.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepThree/stepThree.js":[function(require,module,exports) {
+"use strict";
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+var _methods = require("../methods");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery.default)(document).ready(function () {
+  // Check Validation
+  (0, _jquery.default)('#thirdStepRadio input[name="thirdStepRadio"]').on('change', function () {
+    isRadioValid();
+  }); // On Continue Button Clicked
+
+  (0, _jquery.default)('#step-3-button-submit').on('click', function () {
+    if (!isRadioValid()) return;
+    (0, _jquery.default)('#hic__step-3').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step-3').addClass('d-none');
+      (0, _jquery.default)('#hic__step-3').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step-4').removeClass('d-none');
+      (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeIn');
+      });
+    });
+    (0, _methods.adjustProgressBar)('increase');
+  }); // On Back Button Clicked
+
+  (0, _jquery.default)('#step-3-button-back').on('click', function () {
+    (0, _jquery.default)('#hic__step-3').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step-3').addClass('d-none');
+      (0, _jquery.default)('#hic__step-3').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step-2').removeClass('d-none');
+      (0, _jquery.default)('#hic__step-2').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step-2').removeClass('animated faster fadeIn');
+      });
+    });
+    (0, _methods.adjustProgressBar)('decrease');
+  });
+});
+
+function isRadioValid() {
+  var isSelected = (0, _jquery.default)('#thirdStepRadio input[name="thirdStepRadio"]:checked').val() !== undefined;
+
+  if (!isSelected) {
+    (0, _jquery.default)('#thirdStepRadio  .form-radio-item__label').addClass('error-state');
+    (0, _jquery.default)('#thirdStepRadio > .step-3__form-info-message').removeClass('invisible');
+    return false;
+  } else {
+    (0, _jquery.default)('#thirdStepRadio  .form-radio-item__label').removeClass('error-state');
+    (0, _jquery.default)('#thirdStepRadio > .step-3__form-info-message').addClass('invisible');
+    return true;
+  }
+}
+},{"jquery":"node_modules/jquery/dist/jquery.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepFour/stepFour.js":[function(require,module,exports) {
+"use strict";
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+var _methods = require("../methods");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery.default)(document).ready(function () {
+  // Check Validation
+  (0, _jquery.default)('#fourthStepRadio input[name="fourthStepRadio"]').on('change', function () {
+    isRadioValid();
+  }); // On Continue Button Clicked
+
+  (0, _jquery.default)('#step-4-button-submit').on('click', function () {
+    if (!isRadioValid()) return;
+    (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step-4').addClass('d-none');
+      (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step-5').removeClass('d-none');
+      (0, _jquery.default)('#hic__step-5').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step-5').removeClass('animated faster fadeIn');
+      });
+    });
+    (0, _methods.adjustProgressBar)('increase');
+  }); // On Back Button Clicked
+
+  (0, _jquery.default)('#step-4-button-back').on('click', function () {
+    (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step-4').addClass('d-none');
+      (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step-3').removeClass('d-none');
+      (0, _jquery.default)('#hic__step-3').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step-3').removeClass('animated faster fadeIn');
+      });
+    });
+    (0, _methods.adjustProgressBar)('decrease');
+  });
+});
+
+function isRadioValid() {
+  var isSelected = (0, _jquery.default)('#fourthStepRadio input[name="fourthStepRadio"]:checked').val() !== undefined;
+
+  if (!isSelected) {
+    (0, _jquery.default)('#fourthStepRadio  .form-radio-item__label').addClass('error-state');
+    (0, _jquery.default)('#fourthStepRadio > .step-4__form-info-message').removeClass('invisible');
+    return false;
+  } else {
+    (0, _jquery.default)('#fourthStepRadio  .form-radio-item__label').removeClass('error-state');
+    (0, _jquery.default)('#fourthStepRadio > .step-4__form-info-message').addClass('invisible');
+    return true;
+  }
+}
+},{"jquery":"node_modules/jquery/dist/jquery.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/leftOnlyForm.js":[function(require,module,exports) {
 "use strict";
 
 require("./StepOne/stepOne");
 
 require("./StepTwo/stepTwo");
-},{"./StepOne/stepOne":"components/MainContent/StepContainer/LeftOnlyForm/StepOne/stepOne.js","./StepTwo/stepTwo":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/stepTwo.js"}],"components/MainContent/StepContainer/stepContainer.js":[function(require,module,exports) {
+
+require("./StepThree/stepThree");
+
+require("./StepFour/stepFour");
+},{"./StepOne/stepOne":"components/MainContent/StepContainer/LeftOnlyForm/StepOne/stepOne.js","./StepTwo/stepTwo":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/stepTwo.js","./StepThree/stepThree":"components/MainContent/StepContainer/LeftOnlyForm/StepThree/stepThree.js","./StepFour/stepFour":"components/MainContent/StepContainer/LeftOnlyForm/StepFour/stepFour.js"}],"components/MainContent/StepContainer/stepContainer.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));

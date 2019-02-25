@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icons/Arrow/Right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-step4" transform="translate(-581.000000, -891.000000)" fill="#25282B">
+            <g id="Body" transform="translate(162.000000, 128.000000)">
+                <g id="Group-4" transform="translate(32.000000, 448.000000)">
+                    <g id="Life-stage" transform="translate(0.000000, 3.000000)">
+                        <g id="Option" transform="translate(0.000000, 288.000000)">
+                            <g id="Icons/Arrow/Right" transform="translate(384.000000, 20.000000)">
+                                <path d="M17.8424819,11.1662927 L12.5946902,5.60451668 C12.2340471,5.22229577 12.2515395,4.62008556 12.6337604,4.25944253 C13.0159813,3.89879951 13.6181915,3.91629184 13.9788345,4.29851275 L20.7405592,11.4648029 C21.0947682,11.8402047 21.0851076,12.4295481 20.718785,12.7931389 L13.9570603,19.5044407 C13.5840836,19.8746361 12.9816237,19.8723814 12.6114283,19.4994047 C12.2412329,19.126428 12.2434877,18.523968 12.6164643,18.1537726 L17.7391201,13.0693171 L3.9515122,13.0693171 C3.42600652,13.0693171 3,12.6433105 3,12.1178049 C3,11.5922992 3.42600652,11.1662927 3.9515122,11.1662927 L17.8424819,11.1662927 Z" id="Status"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

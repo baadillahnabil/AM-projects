@@ -18,9 +18,21 @@
         font-size: 21px
         font-family: 'ProximaNova-SemiBold', sans-serif
         color: #25282B
+        z-index: 1060
+        position: relative
 
         &:focus
           box-shadow: none
+
+        &.error-state
+          border: 1px solid red
+
+      .step-2__form-info-message
+        text-align: center
+        color: red
+        font-size: 12px
+        margin-top: 2px
+        margin-bottom: 0.25rem
 
 
     .form-submit-button
@@ -87,6 +99,18 @@
             fill: #35869A
 
 
+.autocomplete-suggestions
+  z-index: 1060
+  
+  .autocomplete-suggestion
+    font-size: 16px
+    padding: 16px 20px
+
+    strong
+      font-family: 'ProximaNova-Bold', sans-serif
+      color: $primary
+
+
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
 
@@ -118,6 +142,17 @@
           svg
             width: 7px
 
+
+// Backdrop Styling
+.backdrop-layer
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: rgba($color: #000000, $alpha: 0.5)
+  z-index: 1050
+
 // Autocomplete Styling Overrides
 .autocomplete-suggestions 
   background-color: white
@@ -125,13 +160,19 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
   left: 752px
   width: 292px
+  z-index: 1060
 
   .autocomplete-suggestion 
-    padding: 5px
+    font-size: 16px
+    padding: 16px 20px
     cursor: pointer
 
     &:hover 
       background-color: rgba($color: $primary, $alpha: 0.2)
+
+    strong
+      font-family: 'ProximaNova-Bold', sans-serif
+      color: $primary
 
   .autocomplete-selected 
     background-color: rgba($color: $primary, $alpha: 0.2)

@@ -2,7 +2,7 @@ import $ from 'jquery'
 import 'devbridge-autocomplete'
 import find from 'lodash/find'
 import GeoData from './geodata'
-import { adjustProgressBar } from '../methods'
+import { adjustProgressBar } from '../../methods'
 
 // Set Autocomplete Data
 let parsedData = []

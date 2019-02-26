@@ -3,6 +3,7 @@ import 'popper.js'
 import 'bootstrap'
 
 import './LeftOnlyForm/leftOnlyForm'
+import './StepSix/stepSix'
 
 $(document).ready(() => {
   $('[data-toggle="tooltip"]').tooltip({

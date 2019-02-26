@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import { adjustProgressBar } from '../methods'
+import { adjustProgressBar, hideLogosAnimation } from '../../methods'
 
 $(document).ready(() => {
   $('#currentFund').on('change', () => {
@@ -10,15 +10,17 @@ $(document).ready(() => {
   $('#step-5-button-submit').on('click', () => {
     if (!isSelectValid()) return
 
-    $('#hic__step-5').addClass('animated faster fadeOut')
-    $('#hic__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-      $('#hic__step-5').addClass('d-none')
-      $('#hic__step-5').removeClass('animated faster fadeOut')
+    $('.hic__left-only-form').addClass('animated faster fadeOut')
+    $('.hic__left-only-form').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('.hic__left-only-form').addClass('d-none')
+      $('.hic__left-only-form').removeClass('animated faster fadeOut')
 
       $('#hic__step-6').removeClass('d-none')
       $('#hic__step-6').addClass('animated faster fadeIn')
       $('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
         $('#hic__step-6').removeClass('animated faster fadeIn')
+
+        hideLogosAnimation()
       })
     })
 
@@ -32,10 +34,10 @@ $(document).ready(() => {
       $('#hic__step-5').addClass('d-none')
       $('#hic__step-5').removeClass('animated faster fadeOut')
 
-      $('#hic__step-6').removeClass('d-none')
-      $('#hic__step-6').addClass('animated faster fadeIn')
-      $('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-        $('#hic__step-6').removeClass('animated faster fadeIn')
+      $('#hic__step-4').removeClass('d-none')
+      $('#hic__step-4').addClass('animated faster fadeIn')
+      $('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+        $('#hic__step-4').removeClass('animated faster fadeIn')
       })
     })
 

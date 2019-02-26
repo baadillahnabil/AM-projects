@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import { adjustProgressBar } from '../methods'
+import { adjustProgressBar } from '../../methods'
 
 $(document).ready(() => {
   // Check Validation

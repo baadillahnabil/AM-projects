@@ -17699,12 +17699,13 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     value: true
   });
 });
-},{"jquery":"node_modules/jquery/dist/jquery.js","popper.js":"node_modules/popper.js/dist/esm/popper.js"}],"components/MainContent/StepContainer/LeftOnlyForm/methods.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","popper.js":"node_modules/popper.js/dist/esm/popper.js"}],"components/MainContent/StepContainer/methods.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.hideLogosAnimation = hideLogosAnimation;
 exports.adjustProgressBar = void 0;
 
 var _jquery = _interopRequireDefault(require("jquery"));
@@ -17723,15 +17724,43 @@ var adjustProgressBar = function adjustProgressBar(method) {
     (0, _jquery.default)('.hic__content-progress .progress .progress-bar').css('width', "".concat(currentWidth - size, "%"));
     (0, _jquery.default)('.hic__content-progress .progress-indicator .amount').html(currentWidth - size);
   }
-};
+}; // Executed on Step 6
+
 
 exports.adjustProgressBar = adjustProgressBar;
+
+function hideLogosAnimation() {
+  for (var element = 1; element <= 6; element++) {
+    (0, _jquery.default)(".hic__content-company-logos .row .company-logos:nth-child(".concat(element, ")")).css('opacity', '0.4');
+  }
+
+  var iterate = 1;
+  var startAnimation = setInterval(function () {
+    (0, _jquery.default)(".hic__content-company-logos .row .company-logos:nth-child(".concat(iterate, ")")).css('opacity', '1');
+    iterate++;
+
+    if (iterate >= 7) {
+      clearInterval(startAnimation);
+      (0, _jquery.default)('#hic__step-6').addClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step-6').addClass('d-none');
+        (0, _jquery.default)('#hic__step-6').removeClass('animated faster fadeOut');
+        (0, _jquery.default)('#hic__step-7').removeClass('d-none');
+        (0, _jquery.default)('#hic__step-7').addClass('animated faster fadeIn');
+        (0, _jquery.default)('#hic__step-7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+          (0, _jquery.default)('#hic__step-7').removeClass('animated faster fadeIn');
+        });
+      });
+      adjustProgressBar('increase');
+    }
+  }, 1000);
+}
 },{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepOne/stepOne.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
-var _methods = require("../methods");
+var _methods = require("../../methods");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17770,7 +17799,7 @@ function isRadioValid() {
     return true;
   }
 }
-},{"jquery":"node_modules/jquery/dist/jquery.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","../../methods":"components/MainContent/StepContainer/methods.js"}],"node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js":[function(require,module,exports) {
 var define;
 /**
 *  Ajax Autocomplete for jQuery, version 1.4.10
@@ -22337,7 +22366,7 @@ var _find = _interopRequireDefault(require("lodash/find"));
 
 var _geodata = _interopRequireDefault(require("./geodata"));
 
-var _methods = require("../methods");
+var _methods = require("../../methods");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22451,12 +22480,12 @@ function isPostcodeValid() {
     return true;
   }
 }
-},{"jquery":"node_modules/jquery/dist/jquery.js","devbridge-autocomplete":"node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js","lodash/find":"node_modules/lodash/find.js","./geodata":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/geodata.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepThree/stepThree.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","devbridge-autocomplete":"node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js","lodash/find":"node_modules/lodash/find.js","./geodata":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/geodata.js","../../methods":"components/MainContent/StepContainer/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepThree/stepThree.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
-var _methods = require("../methods");
+var _methods = require("../../methods");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22509,12 +22538,12 @@ function isRadioValid() {
     return true;
   }
 }
-},{"jquery":"node_modules/jquery/dist/jquery.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepFour/stepFour.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","../../methods":"components/MainContent/StepContainer/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepFour/stepFour.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
-var _methods = require("../methods");
+var _methods = require("../../methods");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22567,12 +22596,12 @@ function isRadioValid() {
     return true;
   }
 }
-},{"jquery":"node_modules/jquery/dist/jquery.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepFive/stepFive.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","../../methods":"components/MainContent/StepContainer/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepFive/stepFive.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
-var _methods = require("../methods");
+var _methods = require("../../methods");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22583,14 +22612,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   (0, _jquery.default)('#step-5-button-submit').on('click', function () {
     if (!isSelectValid()) return;
-    (0, _jquery.default)('#hic__step-5').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-5').addClass('d-none');
-      (0, _jquery.default)('#hic__step-5').removeClass('animated faster fadeOut');
+    (0, _jquery.default)('.hic__left-only-form').addClass('animated faster fadeOut');
+    (0, _jquery.default)('.hic__left-only-form').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('.hic__left-only-form').addClass('d-none');
+      (0, _jquery.default)('.hic__left-only-form').removeClass('animated faster fadeOut');
       (0, _jquery.default)('#hic__step-6').removeClass('d-none');
       (0, _jquery.default)('#hic__step-6').addClass('animated faster fadeIn');
       (0, _jquery.default)('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
         (0, _jquery.default)('#hic__step-6').removeClass('animated faster fadeIn');
+        (0, _methods.hideLogosAnimation)();
       });
     });
     (0, _methods.adjustProgressBar)('increase');
@@ -22601,10 +22631,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _jquery.default)('#hic__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
       (0, _jquery.default)('#hic__step-5').addClass('d-none');
       (0, _jquery.default)('#hic__step-5').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-6').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-6').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-6').removeClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step-4').removeClass('d-none');
+      (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('decrease');
@@ -22624,7 +22654,7 @@ function isSelectValid() {
 
   return isSelected;
 }
-},{"jquery":"node_modules/jquery/dist/jquery.js","../methods":"components/MainContent/StepContainer/LeftOnlyForm/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/leftOnlyForm.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","../../methods":"components/MainContent/StepContainer/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/leftOnlyForm.js":[function(require,module,exports) {
 "use strict";
 
 require("./StepOne/stepOne");
@@ -22636,7 +22666,9 @@ require("./StepThree/stepThree");
 require("./StepFour/stepFour");
 
 require("./StepFive/stepFive");
-},{"./StepOne/stepOne":"components/MainContent/StepContainer/LeftOnlyForm/StepOne/stepOne.js","./StepTwo/stepTwo":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/stepTwo.js","./StepThree/stepThree":"components/MainContent/StepContainer/LeftOnlyForm/StepThree/stepThree.js","./StepFour/stepFour":"components/MainContent/StepContainer/LeftOnlyForm/StepFour/stepFour.js","./StepFive/stepFive":"components/MainContent/StepContainer/LeftOnlyForm/StepFive/stepFive.js"}],"components/MainContent/StepContainer/stepContainer.js":[function(require,module,exports) {
+},{"./StepOne/stepOne":"components/MainContent/StepContainer/LeftOnlyForm/StepOne/stepOne.js","./StepTwo/stepTwo":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/stepTwo.js","./StepThree/stepThree":"components/MainContent/StepContainer/LeftOnlyForm/StepThree/stepThree.js","./StepFour/stepFour":"components/MainContent/StepContainer/LeftOnlyForm/StepFour/stepFour.js","./StepFive/stepFive":"components/MainContent/StepContainer/LeftOnlyForm/StepFive/stepFive.js"}],"components/MainContent/StepContainer/StepSix/stepSix.js":[function(require,module,exports) {
+
+},{}],"components/MainContent/StepContainer/stepContainer.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));
@@ -22647,6 +22679,8 @@ require("bootstrap");
 
 require("./LeftOnlyForm/leftOnlyForm");
 
+require("./StepSix/stepSix");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery.default)(document).ready(function () {
@@ -22654,7 +22688,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     template: '<div class="tooltip form-radio-tooltip-info" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
   });
 });
-},{"jquery":"node_modules/jquery/dist/jquery.js","popper.js":"node_modules/popper.js/dist/esm/popper.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","./LeftOnlyForm/leftOnlyForm":"components/MainContent/StepContainer/LeftOnlyForm/leftOnlyForm.js"}],"components/MainContent/mainContent.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","popper.js":"node_modules/popper.js/dist/esm/popper.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","./LeftOnlyForm/leftOnlyForm":"components/MainContent/StepContainer/LeftOnlyForm/leftOnlyForm.js","./StepSix/stepSix":"components/MainContent/StepContainer/StepSix/stepSix.js"}],"components/MainContent/mainContent.js":[function(require,module,exports) {
 "use strict";
 
 require("./StepContainer/stepContainer");

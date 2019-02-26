@@ -15678,10 +15678,17 @@ body {
   fill: #35869A;
 }
 
+@media (max-width: 1199.98px) {
+  .hic__step-5 .step-5__form .step-5__form-input .form-control.step-5__form-input-select {
+    padding-right: 40px;
+    background-position-x: calc(100% + 25px);
+  }
+}
 @media (max-width: 767.98px) {
   .hic__step-5 .step-5__form .step-5__form-input .form-control.step-5__form-input-select {
     font-size: 16px;
-    padding: 25px 15px;
+    padding: 13px 15px;
+    padding-right: 40px;
   }
   .hic__step-5 .step-5__form .form-submit-button button {
     font-size: 21px;

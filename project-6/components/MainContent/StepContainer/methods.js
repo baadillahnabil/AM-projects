@@ -18,7 +18,7 @@ export const adjustProgressBar = (method, size = 14) => {
   }
 }
 
-// Executed on Step 6
+// Executed on Step 6 To Step 7
 export function hideLogosAnimation() {
   for (let element = 1; element <= 6; element++) {
     $(`.hic__content-company-logos .row .company-logos:nth-child(${element})`).css('opacity', '0.4')
@@ -26,10 +26,14 @@ export function hideLogosAnimation() {
   let iterate = 1
   const startAnimation = setInterval(() => {
     $(`.hic__content-company-logos .row .company-logos:nth-child(${iterate})`).css('opacity', '1')
+    $('#statusNumber').html(iterate)
     iterate++
+
+    // When Done
     if (iterate >= 7) {
       clearInterval(startAnimation)
 
+      // 1. Move to step 7
       $('#hic__step-6').addClass('animated faster fadeOut')
       $('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
         $('#hic__step-6').addClass('d-none')
@@ -42,7 +46,11 @@ export function hideLogosAnimation() {
         })
       })
 
-      adjustProgressBar('increase')
+      // 2. Modify progress bar
+      adjustProgressBar('increase', 30)
+      $('.hic__content-progress .progress').addClass('progress-on-step-7')
+      $('.hic__content-progress .progress .progress-bar').html('One Last Thing...')
+      $('.hic__content-progress .progress-indicator').addClass('d-none')
     }
   }, 1000)
 }

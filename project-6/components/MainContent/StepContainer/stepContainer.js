@@ -4,6 +4,7 @@ import 'bootstrap'
 
 import './LeftOnlyForm/leftOnlyForm'
 import './StepSix/stepSix'
+import './StepSeven/stepSeven'
 
 $(document).ready(() => {
   $('[data-toggle="tooltip"]').tooltip({

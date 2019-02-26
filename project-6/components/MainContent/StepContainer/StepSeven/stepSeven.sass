@@ -1,0 +1,170 @@
+.hic__step-7
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+  margin-top: 10px
+
+  .hic__form
+    width: 50%
+    padding-right: 35px
+    border-right: 1px solid #F1F0F0
+
+    .hic__form-title
+      font-size: 16px
+
+    .step-7__form-input
+      margin-bottom: 16px
+
+      .step-7__form-input-field
+        border-radius: 8px
+        border-color: #9A9A9A
+        font-size: 21px
+        padding: 35px 25px
+
+        &:focus
+          box-shadow: none
+
+        &::placeholder
+          color: #A0A4A8
+
+        &.error-state
+          border: 1px solid red
+
+    .step-7__form-info-message
+      text-align: center
+      color: red
+      font-size: 12px
+      margin-top: 5px
+      margin-bottom: 0.25rem
+
+
+  .form-submit-button
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+    button
+      width: 100%
+      border-radius: 8px
+      background-color: $secondary
+      color: white
+      text-align: center
+      font-family: 'ProximaNova-Bold', sans-serif
+      font-size: 28px
+      padding: 12px
+      margin: 5px 0
+      margin-bottom: 35px
+      box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: 0.1)
+      display: flex
+      justify-content: center
+      align-items: center
+
+      &:focus
+        outline: none
+
+      &:active
+        box-shadow: none
+
+    .button-icon
+      margin-left: 10px
+
+  .hic__benefits
+    width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 15px
+
+    .hic__benefits-item
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      margin: 20px
+      margin-right: 10px
+
+      &.more-than-one-line
+        align-items: flex-start
+
+      .benefit-image
+        display: flex
+        justify-content: center
+        align-items: center
+        min-width: 40px
+        min-height: 40px
+        background-color: $primary
+        border-radius: 50%
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: center
+
+      .benefit-text
+        margin-bottom: 0
+        margin-left: 16px
+        font-size: 21px
+        line-height: 32px
+
+        a
+          color: $primary
+          font-family: 'ProximaNova-Bold', sans-serif
+          text-decoration: underline
+
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)    
+  .hic__step-7
+    flex-direction: column
+    margin-top: 0
+
+    .hic__form
+      width: 100%
+      padding-right: 0
+      border-right: none
+      margin-bottom: 40px
+
+      .step-7__form-input
+        margin-bottom: 10px
+
+        .step-7__form-input-field
+          font-size: 16px
+          padding: 25px 16px
+
+          &.error-state
+            border-color: red
+
+      .form-submit-button
+        button
+          font-size: 21px
+          margin-bottom: 0
+    
+    .hic__benefits
+      width: 100%
+      border-top: 1px solid #F1F0F0
+      padding-top: 25px
+      padding-left: 0
+
+      .hic__benefits-item
+        margin: 10px 0
+
+        .benefit-image
+          min-width: 32px
+          min-height: 32px
+
+          svg
+            width: 16px
+            height: auto
+
+        .benefit-text
+          font-family: 'ProximaNova-RegItalic', sans-serif
+          font-size: 16px
+          line-height: 24px
+          margin-left: 10px
+
+          a
+            font-family: 'ProximaNova-BoldItalic', sans-serif
+

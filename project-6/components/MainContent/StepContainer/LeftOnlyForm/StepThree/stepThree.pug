@@ -8,51 +8,51 @@
         .row
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pl-0
             .step-3__form-radio-item
-              input#privateHospital.form-radio-item__radio(name='thirdStepRadio', type='radio')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='privateHospital', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+              input#privateHospital.form-radio-item__radio(name='thirdStepRadioOption', type='checkbox')
+              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='privateHospital', title='Accommodation in a private hospital. You can choose your own doctor.')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
                 p.form-radio-item__text Private Hospital
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pr-0
             .step-3__form-radio-item
-              input#ambulanceCover.form-radio-item__radio(name='thirdStepRadio', type='radio')
-              label.form-radio-item__label.two-lined-text.pr-4(data-placement='right', data-toggle='tooltip', for='ambulanceCover', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+              input#ambulanceCover.form-radio-item__radio(name='thirdStepRadioOption', type='checkbox')
+              label.form-radio-item__label.pr-4(data-placement='right', data-toggle='tooltip', for='ambulanceCover', title='Ambulance cover for emergencies is a feature of most policies. Level of cover depends on which state you live in.')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
                 p.form-radio-item__text Ambulance Cover
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pl-0
             .step-3__form-radio-item
-              input#pregnancy.form-radio-item__radio(name='thirdStepRadio', type='radio')
-              label.form-radio-item__label.two-lined-text(data-placement='right', data-toggle='tooltip', for='pregnancy', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+              input#pregnancy.form-radio-item__radio(name='thirdStepRadioOption', type='checkbox')
+              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='pregnancy', title='Antenatal and post-natal care e.g. treatment for back pain, hypertension, labour and delivery procedures.')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
                 p.form-radio-item__text Pregnancy & Birth Related
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pr-0
             .step-3__form-radio-item
-              input#psychiatric.form-radio-item__radio(name='thirdStepRadio', type='radio')
-              label.form-radio-item__label.two-lined-text(data-placement='right', data-toggle='tooltip', for='psychiatric', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+              input#psychiatric.form-radio-item__radio(name='thirdStepRadioOption', type='checkbox')
+              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='psychiatric', title='Treatment for mental conditions e.g. depression, anxiety, eating disorders.')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
                 p.form-radio-item__text Psychiatric Service
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pl-0
             .step-3__form-radio-item
-              input#heartSurgery.form-radio-item__radio(name='thirdStepRadio', type='radio')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='heartSurgery', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
+              input#heartSurgery.form-radio-item__radio(name='thirdStepRadioOption', type='checkbox')
+              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='heartSurgery', title='Open-heart and by-pass surgery, coronary angiograms, angioplasty, testing and diagnosis procedures.')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
                 p.form-radio-item__text Heart Surgery
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-3__form-radio-column.pr-0
             .step-3__form-radio-item
-              input#rehab.form-radio-item__radio(name='thirdStepRadio', type='radio')
+              input#rehab.form-radio-item__radio(name='thirdStepRadioOption', type='checkbox')
               label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='rehab', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
                 p.form-radio-item__text Rehabilitation
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12.step-3__form-radio-column.pl-0.pr-0
             .step-3__form-radio-item
-              input#noOptionStep3.form-radio-item__radio(name='thirdStepRadio', type='radio')
-              label.form-radio-item__label.no-check-icon(data-placement='right', data-toggle='tooltip', for='noOptionStep3', title='Helps with recovery following an accident or major surgery e.g. hip replacements, heart surgery.')
-                p.form-radio-item__text I only want hospital cover
+              input#noOptionStep3.form-radio-item__radio(name='thirdStepRadioOptionNo', type='checkbox')
+              label.form-radio-item__label.no-check-icon(for='noOptionStep3')
+                p.form-radio-item__text I only want extras cover
                 .form-radio-item__image-arrow
                   include ../../../../../static/icons/arrow_long_right.svg
         small.form-text.step-3__form-info-message.invisible Please select one of these

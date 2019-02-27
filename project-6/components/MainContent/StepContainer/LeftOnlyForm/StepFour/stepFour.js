@@ -3,7 +3,12 @@ import { adjustProgressBar } from '../../methods'
 
 $(document).ready(() => {
   // Check Validation
-  $('#fourthStepRadio input[name="fourthStepRadio"]').on('change', () => {
+  $('#fourthStepRadio input[name="fourthStepRadioOption"]').on('change', () => {
+    $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').prop('checked', false)
+    isRadioValid()
+  })
+  $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').on('change', () => {
+    $('#fourthStepRadio input[name="fourthStepRadioOption"]').prop('checked', false)
     isRadioValid()
   })
 
@@ -45,7 +50,9 @@ $(document).ready(() => {
 })
 
 function isRadioValid() {
-  const isSelected = $('#fourthStepRadio input[name="fourthStepRadio"]:checked').val() !== undefined
+  const isSelected =
+    $('#fourthStepRadio input[name="fourthStepRadioOption"]:checked').val() !== undefined ||
+    $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]:checked').val() !== undefined
   if (!isSelected) {
     $('#fourthStepRadio  .form-radio-item__label').addClass('error-state')
     $('#fourthStepRadio > .step-4__form-info-message').removeClass('invisible')

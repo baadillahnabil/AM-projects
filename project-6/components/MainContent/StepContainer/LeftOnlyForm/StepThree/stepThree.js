@@ -5,10 +5,13 @@ $(document).ready(() => {
   // Check Validation
   $('#thirdStepRadio input[name="thirdStepRadioOption"]').on('change', () => {
     $('#thirdStepRadio input[name="thirdStepRadioOptionNo"]').prop('checked', false)
+    $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').removeAttr('disabled')
     isRadioValid()
   })
   $('#thirdStepRadio input[name="thirdStepRadioOptionNo"]').on('change', () => {
     $('#thirdStepRadio input[name="thirdStepRadioOption"]').prop('checked', false)
+    $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').prop('checked', false)
+    $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').attr('disabled', 'true')
     isRadioValid()
   })
 

@@ -6,12 +6,14 @@ $(document).ready(() => {
   $('#thirdStepRadio input[name="thirdStepRadioOption"]').on('change', () => {
     $('#thirdStepRadio input[name="thirdStepRadioOptionNo"]').prop('checked', false)
     $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').removeAttr('disabled')
+    $('#fourthStepRadio #noOptionStep4 + .form-radio-item__label').removeClass('disabled')
     isRadioValid()
   })
   $('#thirdStepRadio input[name="thirdStepRadioOptionNo"]').on('change', () => {
     $('#thirdStepRadio input[name="thirdStepRadioOption"]').prop('checked', false)
     $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').prop('checked', false)
     $('#fourthStepRadio input[name="fourthStepRadioOptionNo"]').attr('disabled', 'true')
+    $('#fourthStepRadio #noOptionStep4 + .form-radio-item__label').addClass('disabled')
     isRadioValid()
   })
 

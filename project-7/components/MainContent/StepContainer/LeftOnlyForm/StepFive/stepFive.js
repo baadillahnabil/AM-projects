@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import { adjustProgressBar, hideLogosAnimation } from '../../methods'
+import { adjustProgressBar } from '../../methods'
 
 $(document).ready(() => {
   // Check Validation
@@ -26,7 +26,26 @@ $(document).ready(() => {
       $('#eng__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
         $('#eng__step-6').removeClass('animated faster fadeIn')
 
-        hideLogosAnimation()
+        // Move to step 7
+        setTimeout(() => {
+          $('#eng__step-6').addClass('animated faster fadeOut')
+          $('#eng__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+            $('#eng__step-6').addClass('d-none')
+            $('#eng__step-6').removeClass('animated faster fadeOut')
+
+            $('#eng__step-7').removeClass('d-none')
+            $('#eng__step-7').addClass('animated faster fadeIn')
+            $('#eng__step-7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+              $('#eng__step-7').removeClass('animated faster fadeIn')
+            })
+          })
+
+          // Modify progress bar
+          adjustProgressBar('increase', 30)
+          $('.eng__content-progress .progress').addClass('progress-on-step-7')
+          $('.eng__content-progress .progress .progress-bar').html('One Last Thing...')
+          $('.eng__content-progress .progress-indicator').addClass('d-none')
+        }, 3000)
       })
     })
 

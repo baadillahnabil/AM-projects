@@ -14707,7 +14707,7 @@ body {
   .eng__main-content .eng__contents .eng__content-title {
     font-size: 28px;
     text-align: center;
-    padding: 32px 20px;
+    padding: 32px 15px;
     line-height: 32px;
   }
   .eng__main-content .eng__contents .eng__content-company-logos {
@@ -14726,7 +14726,7 @@ body {
     margin-left: 0;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(1) svg {
-    width: 32px;
+    width: 64px;
     height: auto;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(2) svg {
@@ -14737,26 +14737,26 @@ body {
     margin-right: 0;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(3) svg {
-    width: 48px;
+    width: 64px;
     height: auto;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(4) {
     margin-left: 0;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(4) svg {
-    width: 64px;
-    height: auto;
+    width: auto;
+    height: 32px;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(5) svg {
-    width: 64px;
-    height: auto;
+    width: auto;
+    height: 40px;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(6) {
     margin-right: 0;
   }
   .eng__main-content .eng__contents .eng__content-company-logos .company-logos:nth-child(6) svg {
-    width: 64px;
-    height: auto;
+    width: auto;
+    height: 32px;
   }
   .eng__main-content .eng__contents .eng__content-progress {
     padding-left: 20px;
@@ -14779,13 +14779,13 @@ body {
     height: auto;
   }
 }
-.hic__step-container {
+.eng__step-container {
   padding: 0 30px;
   padding-top: 32px;
 }
 
 @media (max-width: 767.98px) {
-  .hic__step-container {
+  .eng__step-container {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -15061,24 +15061,24 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .hic__step-2 .step-2__form .step-2__form-input .form-control.step-2__form-input-field {
+  .eng__step-2 .step-2__form .step-2__form-input .form-control.step-2__form-input-field {
     font-size: 16px;
     padding: 25px 15px;
   }
-  .hic__step-2 .step-2__form .form-submit-button button {
+  .eng__step-2 .step-2__form .form-submit-button button {
     font-size: 21px;
     margin-bottom: 0;
   }
-  .hic__step-2 .step-2__form .form-back-button {
+  .eng__step-2 .step-2__form .form-back-button {
     position: relative;
     bottom: auto;
     left: auto;
     margin-top: 25px;
   }
-  .hic__step-2 .step-2__form .form-back-button button.step-2__button-back {
+  .eng__step-2 .step-2__form .form-back-button button.step-2__button-back {
     font-size: 16px;
   }
-  .hic__step-2 .step-2__form .form-back-button button.step-2__button-back svg {
+  .eng__step-2 .step-2__form .form-back-button button.step-2__button-back svg {
     width: 7px;
   }
 }
@@ -15532,6 +15532,7 @@ body {
   }
   .eng__step-4 .step-4__form .step-4__form-radio-container .step-4__form-radio-column .step-4__form-radio-item .form-radio-item__label {
     padding: 10px 15px;
+    height: 48px;
   }
   .eng__step-4 .step-4__form .step-4__form-radio-container .step-4__form-radio-column .step-4__form-radio-item .form-radio-item__label.no-check-icon {
     justify-content: center;
@@ -15761,6 +15762,7 @@ body {
   }
   .eng__step-5 .step-5__form .step-5__form-radio-container .step-5__form-radio-column .step-5__form-radio-item .form-radio-item__label {
     padding: 10px 15px;
+    height: 48px;
   }
   .eng__step-5 .step-5__form .step-5__form-radio-container .step-5__form-radio-column .step-5__form-radio-item .form-radio-item__label.no-check-icon {
     justify-content: center;
@@ -15794,7 +15796,7 @@ body {
     width: 7px;
   }
 }
-.hic__promotion {
+.eng__promotion {
   width: 396px;
   height: 266px;
   background-image: url("chat_box.5dc806c3.svg");
@@ -15802,14 +15804,14 @@ body {
   background-repeat: no-repeat;
   padding: 30px 45px;
 }
-.hic__promotion .promotion-title {
+.eng__promotion .promotion-title {
   margin-bottom: 0;
   line-height: 24px;
   font-family: "ProximaNova-Bold", sans-serif;
   font-size: 21px;
   color: #D2F6FF;
 }
-.hic__promotion .promotion-amount {
+.eng__promotion .promotion-amount {
   margin-bottom: 0;
   margin-top: 5px;
   line-height: 80px;
@@ -15818,12 +15820,12 @@ body {
   color: white;
   display: flex;
 }
-.hic__promotion .promotion-amount .asterisks {
+.eng__promotion .promotion-amount .asterisks {
   font-size: 28px;
   margin-top: -15px;
   margin-left: 10px;
 }
-.hic__promotion .promotion-text {
+.eng__promotion .promotion-text {
   margin-bottom: 0;
   margin-top: 5px;
   line-height: 24px;
@@ -15833,12 +15835,12 @@ body {
 }
 
 @media (max-width: 1199.98px) {
-  .hic__promotion {
+  .eng__promotion {
     padding: 25px 35px;
   }
 }
 .loader {
-  color: #35869a;
+  color: #f26522;
   font-size: 20px;
   margin: 100px auto;
   width: 1em;
@@ -15905,35 +15907,35 @@ body {
     box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
   }
 }
-.hic__step-6 {
+.eng__step-6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.hic__step-6 .hic__loader {
+.eng__step-6 .eng__loader {
   display: flex;
   justify-content: center;
   margin: 40px 0;
 }
-.hic__step-6 .hic__loader .loader {
+.eng__step-6 .eng__loader .loader {
   margin: 60px auto;
   font-size: 17px;
   animation: load4 1.1s infinite linear;
 }
-.hic__step-6 .hic__title {
+.eng__step-6 .eng__title {
   font-family: "ProximaNova-SemiBold", sans-serif;
   font-size: 28px;
   text-align: center;
   color: #25282B;
   margin-bottom: 25px;
 }
-.hic__step-6 .hic__status-text {
+.eng__step-6 .eng__status-text {
   font-size: 21px;
   text-align: center;
   color: #25282B;
   margin-bottom: 50px;
 }
-.hic__step-6 .hic__status-text .status-number-wrapper {
+.eng__step-6 .eng__status-text .status-number-wrapper {
   font-family: "ProximaNova-Bold", sans-serif;
   color: white;
   padding: 10px 20px;
@@ -15941,32 +15943,32 @@ body {
   border-radius: 8px;
   margin: 0 15px;
 }
-.hic__step-6 .hic__benefits {
+.eng__step-6 .eng__benefits {
   border-top: 1px solid #EBEBEB;
   padding-top: 30px;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.hic__step-6 .hic__benefits .hic__benefits-item {
+.eng__step-6 .eng__benefits .eng__benefits-item {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 20px;
 }
-.hic__step-6 .hic__benefits .hic__benefits-item .benefit-image {
+.eng__step-6 .eng__benefits .eng__benefits-item .benefit-image {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  background-color: #35869a;
+  background-color: #FB9943;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
 }
-.hic__step-6 .hic__benefits .hic__benefits-item .benefit-text {
+.eng__step-6 .eng__benefits .eng__benefits-item .benefit-text {
   margin-bottom: 0;
   margin-left: 16px;
   font-family: "ProximaNova-RegItalic", sans-serif;
@@ -15974,76 +15976,98 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .hic__step-6 .hic__title {
+  .eng__step-6 .eng__title {
     font-size: 21px;
     line-height: 24px;
   }
-  .hic__step-6 .hic__status-text {
+  .eng__step-6 .eng__status-text {
     font-size: 16px;
     margin-bottom: 30px;
-    line-height: 32px;
+    line-height: 24px;
   }
-  .hic__step-6 .hic__status-text .status-number-wrapper {
+  .eng__step-6 .eng__status-text .status-number-wrapper {
     margin: 0 5px;
     padding: 8px;
   }
-  .hic__step-6 .hic__benefits {
+  .eng__step-6 .eng__benefits {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 15px;
   }
-  .hic__step-6 .hic__benefits .hic__benefits-item {
+  .eng__step-6 .eng__benefits .eng__benefits-item {
     margin: 4px 0;
   }
 }
-.hic__step-7 {
+.eng__step-7 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   margin-top: 10px;
 }
-.hic__step-7 .hic__form {
+.eng__step-7 .eng__form {
   width: 50%;
   padding-right: 35px;
   border-right: 1px solid #F1F0F0;
 }
-.hic__step-7 .hic__form .hic__form-title {
-  font-size: 16px;
+.eng__step-7 .eng__form .eng__form-title {
+  font-size: 21px;
+  color: #52575C;
 }
-.hic__step-7 .hic__form .step-7__form-input {
+.eng__step-7 .eng__form .step-7__form-input {
   margin-bottom: 16px;
 }
-.hic__step-7 .hic__form .step-7__form-input .step-7__form-input-field {
+.eng__step-7 .eng__form .step-7__form-input .step-7__form-input-field {
   border-radius: 8px;
   border-color: #9A9A9A;
   font-size: 21px;
   padding: 35px 25px;
 }
-.hic__step-7 .hic__form .step-7__form-input .step-7__form-input-field:focus {
+.eng__step-7 .eng__form .step-7__form-input .step-7__form-input-field:focus {
   box-shadow: none;
 }
-.hic__step-7 .hic__form .step-7__form-input .step-7__form-input-field::placeholder {
+.eng__step-7 .eng__form .step-7__form-input .step-7__form-input-field::placeholder {
   color: #A0A4A8;
 }
-.hic__step-7 .hic__form .step-7__form-input .step-7__form-input-field.error-state {
+.eng__step-7 .eng__form .step-7__form-input .step-7__form-input-field.error-state {
   border: 1px solid red;
 }
-.hic__step-7 .hic__form .step-7__form-info-message {
+.eng__step-7 .eng__form .step-7__form-info-message {
   text-align: center;
   color: red;
   font-size: 12px;
   margin-top: 5px;
   margin-bottom: 0.25rem;
 }
-.hic__step-7 .form-submit-button {
+.eng__step-7 .step-7__form-agreement-checkbox .form-check {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+.eng__step-7 .step-7__form-agreement-checkbox .form-check .agreement-checkbox-input {
+  width: auto;
+  height: auto;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+.eng__step-7 .step-7__form-agreement-checkbox .form-check .agreement-checkbox-input:focus {
+  box-shadow: none;
+}
+.eng__step-7 .step-7__form-agreement-checkbox .form-check .agreement-checkbox-label {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-right: 15px;
+  color: #52575C;
+}
+.eng__step-7 .form-submit-button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.hic__step-7 .form-submit-button button {
+.eng__step-7 .form-submit-button button {
   width: 100%;
   border-radius: 8px;
-  background-color: #0A4C7B;
+  background-color: #f26522;
   color: white;
   text-align: center;
   font-family: "ProximaNova-Bold", sans-serif;
@@ -16056,105 +16080,111 @@ body {
   justify-content: center;
   align-items: center;
 }
-.hic__step-7 .form-submit-button button:focus {
+.eng__step-7 .form-submit-button button:focus {
   outline: none;
 }
-.hic__step-7 .form-submit-button button:active {
+.eng__step-7 .form-submit-button button:active {
   box-shadow: none;
 }
-.hic__step-7 .form-submit-button .button-icon {
+.eng__step-7 .form-submit-button .button-icon {
   margin-left: 10px;
 }
-.hic__step-7 .hic__benefits {
+.eng__step-7 .eng__benefits {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
 }
-.hic__step-7 .hic__benefits .hic__benefits-item {
+.eng__step-7 .eng__benefits .eng__benefits-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 20px;
   margin-right: 10px;
 }
-.hic__step-7 .hic__benefits .hic__benefits-item.more-than-one-line {
+.eng__step-7 .eng__benefits .eng__benefits-item.more-than-one-line {
   align-items: flex-start;
 }
-.hic__step-7 .hic__benefits .hic__benefits-item .benefit-image {
+.eng__step-7 .eng__benefits .eng__benefits-item .benefit-image {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 40px;
   min-height: 40px;
-  background-color: #35869a;
+  background-color: #FB9943;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
 }
-.hic__step-7 .hic__benefits .hic__benefits-item .benefit-text {
+.eng__step-7 .eng__benefits .eng__benefits-item .benefit-text {
   margin-bottom: 0;
   margin-left: 16px;
   font-size: 21px;
   line-height: 32px;
 }
-.hic__step-7 .hic__benefits .hic__benefits-item .benefit-text a {
-  color: #35869a;
+.eng__step-7 .eng__benefits .eng__benefits-item .benefit-text a {
+  color: #f26522;
   font-family: "ProximaNova-Bold", sans-serif;
   text-decoration: underline;
 }
 
 @media (max-width: 767.98px) {
-  .hic__step-7 {
+  .eng__step-7 {
     flex-direction: column;
     margin-top: 0;
   }
-  .hic__step-7 .hic__form {
+  .eng__step-7 .eng__form {
     width: 100%;
     padding-right: 0;
     border-right: none;
     margin-bottom: 40px;
   }
-  .hic__step-7 .hic__form .step-7__form-input {
+  .eng__step-7 .eng__form .eng__form-title {
+    font-size: 16px;
+  }
+  .eng__step-7 .eng__form .step-7__form-input {
     margin-bottom: 10px;
   }
-  .hic__step-7 .hic__form .step-7__form-input .step-7__form-input-field {
+  .eng__step-7 .eng__form .step-7__form-input .step-7__form-input-field {
     font-size: 16px;
     padding: 25px 16px;
   }
-  .hic__step-7 .hic__form .step-7__form-input .step-7__form-input-field.error-state {
+  .eng__step-7 .eng__form .step-7__form-input .step-7__form-input-field.error-state {
     border-color: red;
   }
-  .hic__step-7 .hic__form .form-submit-button button {
+  .eng__step-7 .eng__form .form-submit-button button {
     font-size: 21px;
     margin-bottom: 0;
   }
-  .hic__step-7 .hic__benefits {
+  .eng__step-7 .eng__form .step-7__form-agreement-checkbox .form-check .agreement-checkbox-label {
+    margin-right: 5px;
+  }
+  .eng__step-7 .eng__benefits {
     width: 100%;
     border-top: 1px solid #F1F0F0;
     padding-top: 25px;
     padding-left: 0;
   }
-  .hic__step-7 .hic__benefits .hic__benefits-item {
+  .eng__step-7 .eng__benefits .eng__benefits-item {
     margin: 10px 0;
   }
-  .hic__step-7 .hic__benefits .hic__benefits-item .benefit-image {
+  .eng__step-7 .eng__benefits .eng__benefits-item .benefit-image {
     min-width: 32px;
     min-height: 32px;
   }
-  .hic__step-7 .hic__benefits .hic__benefits-item .benefit-image svg {
+  .eng__step-7 .eng__benefits .eng__benefits-item .benefit-image svg {
     width: 16px;
     height: auto;
   }
-  .hic__step-7 .hic__benefits .hic__benefits-item .benefit-text {
+  .eng__step-7 .eng__benefits .eng__benefits-item .benefit-text {
     font-family: "ProximaNova-RegItalic", sans-serif;
     font-size: 16px;
     line-height: 24px;
     margin-left: 10px;
   }
-  .hic__step-7 .hic__benefits .hic__benefits-item .benefit-text a {
+  .eng__step-7 .eng__benefits .eng__benefits-item .benefit-text a {
     font-family: "ProximaNova-BoldItalic", sans-serif;
   }
 }

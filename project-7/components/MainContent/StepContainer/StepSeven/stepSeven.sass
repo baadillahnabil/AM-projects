@@ -1,16 +1,17 @@
-.hic__step-7
+.eng__step-7
   display: flex
   justify-content: space-between
   margin-bottom: 20px
   margin-top: 10px
 
-  .hic__form
+  .eng__form
     width: 50%
     padding-right: 35px
     border-right: 1px solid #F1F0F0
 
-    .hic__form-title
-      font-size: 16px
+    .eng__form-title
+      font-size: 21px
+      color: #52575C
 
     .step-7__form-input
       margin-bottom: 16px
@@ -37,6 +38,28 @@
       margin-top: 5px
       margin-bottom: 0.25rem
 
+  .step-7__form-agreement-checkbox
+    .form-check
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      margin: 20px 0
+
+      .agreement-checkbox-input
+        width: auto
+        height: auto
+        margin-right: 15px
+        margin-top: 3px
+
+        &:focus
+          box-shadow: none
+
+      .agreement-checkbox-label
+        font-size: 16px
+        margin-bottom: 0
+        margin-right: 15px
+        color: #52575C
+
 
   .form-submit-button
     display: flex
@@ -46,7 +69,7 @@
     button
       width: 100%
       border-radius: 8px
-      background-color: $secondary
+      background-color: $primary
       color: white
       text-align: center
       font-family: 'ProximaNova-Bold', sans-serif
@@ -68,14 +91,14 @@
     .button-icon
       margin-left: 10px
 
-  .hic__benefits
+  .eng__benefits
     width: 50%
     display: flex
     flex-direction: column
     justify-content: center
     padding-left: 15px
 
-    .hic__benefits-item
+    .eng__benefits-item
       display: flex
       justify-content: flex-start
       align-items: center
@@ -91,7 +114,7 @@
         align-items: center
         min-width: 40px
         min-height: 40px
-        background-color: $primary
+        background-color: $primaryLight
         border-radius: 50%
         background-repeat: no-repeat
         background-size: 20px
@@ -117,15 +140,18 @@
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)    
-  .hic__step-7
+  .eng__step-7
     flex-direction: column
     margin-top: 0
 
-    .hic__form
+    .eng__form
       width: 100%
       padding-right: 0
       border-right: none
       margin-bottom: 40px
+
+      .eng__form-title
+        font-size: 16px
 
       .step-7__form-input
         margin-bottom: 10px
@@ -141,14 +167,19 @@
         button
           font-size: 21px
           margin-bottom: 0
+
+      .step-7__form-agreement-checkbox
+        .form-check
+          .agreement-checkbox-label
+            margin-right: 5px
     
-    .hic__benefits
+    .eng__benefits
       width: 100%
       border-top: 1px solid #F1F0F0
       padding-top: 25px
       padding-left: 0
 
-      .hic__benefits-item
+      .eng__benefits-item
         margin: 10px 0
 
         .benefit-image

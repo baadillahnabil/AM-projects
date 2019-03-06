@@ -17705,7 +17705,6 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.hideLogosAnimation = hideLogosAnimation;
 exports.adjustProgressBar = void 0;
 
 var _jquery = _interopRequireDefault(require("jquery"));
@@ -17715,52 +17714,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // Add progress bar
 var adjustProgressBar = function adjustProgressBar(method) {
   var size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 14;
-  var currentWidth = Math.ceil((0, _jquery.default)('.hic__content-progress .progress .progress-bar').width() / (0, _jquery.default)('.hic__content-progress .progress .progress-bar').parent().width() * 100);
+  var currentWidth = Math.ceil((0, _jquery.default)('.eng__content-progress .progress .progress-bar').width() / (0, _jquery.default)('.eng__content-progress .progress .progress-bar').parent().width() * 100);
 
   if (method === 'increase') {
-    (0, _jquery.default)('.hic__content-progress .progress .progress-bar').css('width', "".concat(currentWidth + size, "%"));
-    (0, _jquery.default)('.hic__content-progress .progress-indicator .amount').html(currentWidth + size);
+    (0, _jquery.default)('.eng__content-progress .progress .progress-bar').css('width', "".concat(currentWidth + size, "%"));
+    (0, _jquery.default)('.eng__content-progress .progress-indicator .amount').html(currentWidth + size);
   } else if (method === 'decrease') {
-    (0, _jquery.default)('.hic__content-progress .progress .progress-bar').css('width', "".concat(currentWidth - size, "%"));
-    (0, _jquery.default)('.hic__content-progress .progress-indicator .amount').html(currentWidth - size);
+    (0, _jquery.default)('.eng__content-progress .progress .progress-bar').css('width', "".concat(currentWidth - size, "%"));
+    (0, _jquery.default)('.eng__content-progress .progress-indicator .amount').html(currentWidth - size);
   }
-}; // Executed on Step 6 To Step 7
-
+};
 
 exports.adjustProgressBar = adjustProgressBar;
-
-function hideLogosAnimation() {
-  for (var element = 1; element <= 6; element++) {
-    (0, _jquery.default)(".hic__content-company-logos .row .company-logos:nth-child(".concat(element, ")")).css('opacity', '0.4');
-  }
-
-  var iterate = 1;
-  var startAnimation = setInterval(function () {
-    (0, _jquery.default)(".hic__content-company-logos .row .company-logos:nth-child(".concat(iterate, ")")).css('opacity', '1');
-    (0, _jquery.default)('#statusNumber').html(iterate);
-    iterate++; // When Done
-
-    if (iterate >= 7) {
-      clearInterval(startAnimation); // 1. Move to step 7
-
-      (0, _jquery.default)('#hic__step-6').addClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-6').addClass('d-none');
-        (0, _jquery.default)('#hic__step-6').removeClass('animated faster fadeOut');
-        (0, _jquery.default)('#hic__step-7').removeClass('d-none');
-        (0, _jquery.default)('#hic__step-7').addClass('animated faster fadeIn');
-        (0, _jquery.default)('#hic__step-7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-          (0, _jquery.default)('#hic__step-7').removeClass('animated faster fadeIn');
-        });
-      }); // 2. Modify progress bar
-
-      adjustProgressBar('increase', 30);
-      (0, _jquery.default)('.hic__content-progress .progress').addClass('progress-on-step-7');
-      (0, _jquery.default)('.hic__content-progress .progress .progress-bar').html('One Last Thing...');
-      (0, _jquery.default)('.hic__content-progress .progress-indicator').addClass('d-none');
-    }
-  }, 1000);
-}
 },{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/StepContainer/LeftOnlyForm/StepOne/stepOne.js":[function(require,module,exports) {
 "use strict";
 
@@ -22646,8 +22611,25 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       (0, _jquery.default)('#eng__step-6').removeClass('d-none');
       (0, _jquery.default)('#eng__step-6').addClass('animated faster fadeIn');
       (0, _jquery.default)('#eng__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#eng__step-6').removeClass('animated faster fadeIn');
-        (0, _methods.hideLogosAnimation)();
+        (0, _jquery.default)('#eng__step-6').removeClass('animated faster fadeIn'); // Move to step 7
+
+        setTimeout(function () {
+          (0, _jquery.default)('#eng__step-6').addClass('animated faster fadeOut');
+          (0, _jquery.default)('#eng__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+            (0, _jquery.default)('#eng__step-6').addClass('d-none');
+            (0, _jquery.default)('#eng__step-6').removeClass('animated faster fadeOut');
+            (0, _jquery.default)('#eng__step-7').removeClass('d-none');
+            (0, _jquery.default)('#eng__step-7').addClass('animated faster fadeIn');
+            (0, _jquery.default)('#eng__step-7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+              (0, _jquery.default)('#eng__step-7').removeClass('animated faster fadeIn');
+            });
+          }); // Modify progress bar
+
+          (0, _methods.adjustProgressBar)('increase', 30);
+          (0, _jquery.default)('.eng__content-progress .progress').addClass('progress-on-step-7');
+          (0, _jquery.default)('.eng__content-progress .progress .progress-bar').html('One Last Thing...');
+          (0, _jquery.default)('.eng__content-progress .progress-indicator').addClass('d-none');
+        }, 3000);
       });
     });
     (0, _methods.adjustProgressBar)('increase');
@@ -22694,8 +22676,14 @@ require("./StepFour/stepFour");
 
 require("./StepFive/stepFive");
 },{"./StepOne/stepOne":"components/MainContent/StepContainer/LeftOnlyForm/StepOne/stepOne.js","./StepTwo/stepTwo":"components/MainContent/StepContainer/LeftOnlyForm/StepTwo/stepTwo.js","./StepThree/stepThree":"components/MainContent/StepContainer/LeftOnlyForm/StepThree/stepThree.js","./StepFour/stepFour":"components/MainContent/StepContainer/LeftOnlyForm/StepFour/stepFour.js","./StepFive/stepFive":"components/MainContent/StepContainer/LeftOnlyForm/StepFive/stepFive.js"}],"components/MainContent/StepContainer/StepSix/stepSix.js":[function(require,module,exports) {
+"use strict";
 
-},{}],"components/MainContent/StepContainer/StepSeven/stepSeven.js":[function(require,module,exports) {
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery.default)(document).ready(function () {});
+},{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/StepContainer/StepSeven/stepSeven.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));

@@ -1,8 +1,8 @@
-.hic__step-7
+.eng__step-7
   
   //- Form
-  .hic__form
-    p.hic__form-title In order to save you time and money we need to ask you for a few more basic details so that we can provide you with an accurate comparison from our trusted panel of health funds.
+  .eng__form
+    p.eng__form-title Enter your details and we’ll find you the best deal in your area.
     #formStep7.mt-4
       .form-group.step-7__form-input
         input#step-7-name.form-control.step-7__form-input-field(type='text', placeholder='Name')
@@ -13,25 +13,31 @@
       .form-group.step-7__form-input
         input#step-7-email.form-control.step-7__form-input-field(type='text', placeholder='Email')
         small.form-text.step-7__form-info-message.d-none Please enter a valid email address
-
+      
+      //- Agreement Checkbox
+      .form-group.step-7__form-check.step-7__form-agreement-checkbox
+        .form-check.pl-0
+          input#agreementCheckbox.form-control.agreement-checkbox-input(type='checkbox')
+          label.agreement-checkbox-label(for='agreementCheckbox') I understand and accept the Website Terms of Use and Privacy Policy.
+    
     //- Button Submit
     .form-submit-button
       button#step-7-button-submit.btn.step-7__form-submit 
-        | Show me quotes
+        | Compare Now
         .button-icon
           include ../../../../static/icons/chevron_right_white.svg
 
   //- Benefits
-  .hic__benefits
-    .hic__benefits-item.more-than-one-line
+  .eng__benefits
+    .eng__benefits-item.more-than-one-line
       .benefit-image
         include ../../../../static/icons/heart.svg
       p.benefit-text We’ll help you figure out how to choose the best policy for your particular situation
-    .hic__benefits-item.more-than-one-line
+    .eng__benefits-item.more-than-one-line
       .benefit-image
         include ../../../../static/icons/chat.svg
       p.benefit-text Got Questions? We’re happy to answer any health insurance related queries without any obligation on your part.
-    .hic__benefits-item
+    .eng__benefits-item
       .benefit-image
         include ../../../../static/icons/lock_heart.svg
       p.benefit-text We don't spam! Check our 

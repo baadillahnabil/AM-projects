@@ -1,60 +1,25 @@
-.hic__step-4
+.eng__step-4
 
   //- Form
   .step-4__form
     .form-group.form-check
-      label.step-4__form-label Select the types of extras cover you're interested in
+      label.step-4__form-label Do you own or rent the property?
       #fourthStepRadio.step-4__form-radio-container.container-fluid
         .row
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-4__form-radio-column.pl-0
             .step-4__form-radio-item
-              input#generalDental.form-radio-item__radio(name='fourthStepRadioOption', type='checkbox')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='generalDental', title='Regular check-ups, cleaning, fillings, preventative x-rays.')
+              input#own.form-radio-item__radio(name='fourthStepRadioOption', type='radio')
+              label.form-radio-item__label(for='own')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
-                p.form-radio-item__text General Dental
+                p.form-radio-item__text Own
           .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-4__form-radio-column.pr-0
             .step-4__form-radio-item
-              input#optical.form-radio-item__radio(name='fourthStepRadioOption', type='checkbox')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='optical', title='Glasses, contact lenses and repair under some policies.')
+              input#rent.form-radio-item__radio(name='fourthStepRadioOption', type='radio')
+              label.form-radio-item__label(for='rent')
                 .form-radio-item__image
                   include ../../../../../static/icons/check_white.svg
-                p.form-radio-item__text Optical
-          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-4__form-radio-column.pl-0
-            .step-4__form-radio-item
-              input#majorDental.form-radio-item__radio(name='fourthStepRadioOption', type='checkbox')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='majorDental', title='Restorations, crowns, bridgework, dentures.')
-                .form-radio-item__image
-                  include ../../../../../static/icons/check_white.svg
-                p.form-radio-item__text Major Dental
-          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-4__form-radio-column.pr-0
-            .step-4__form-radio-item
-              input#physiotherapy.form-radio-item__radio(name='fourthStepRadioOption', type='checkbox')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='physiotherapy', title='Treatment of joint and muscle pain, sports injuries. Can also include pre- and post-natal care.')
-                .form-radio-item__image
-                  include ../../../../../static/icons/check_white.svg
-                p.form-radio-item__text Physiotherapy
-          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-4__form-radio-column.pl-0
-            .step-4__form-radio-item
-              input#endodontic.form-radio-item__radio(name='fourthStepRadioOption', type='checkbox')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='endodontic', title='Root canal procedures and treatment of exposed nerves.')
-                .form-radio-item__image
-                  include ../../../../../static/icons/check_white.svg
-                p.form-radio-item__text Endodontic
-          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-4__form-radio-column.pr-0
-            .step-4__form-radio-item
-              input#hearingAids.form-radio-item__radio(name='fourthStepRadioOption', type='checkbox')
-              label.form-radio-item__label(data-placement='right', data-toggle='tooltip', for='hearingAids', title='Help for those experiencing hearing loss.')
-                .form-radio-item__image
-                  include ../../../../../static/icons/check_white.svg
-                p.form-radio-item__text Hearing Aids
-          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12.step-4__form-radio-column.pl-0.pr-0
-            .step-4__form-radio-item
-              input#noOptionStep4.form-radio-item__radio(name='fourthStepRadioOptionNo', type='checkbox')
-              label.form-radio-item__label.no-check-icon(for='noOptionStep4')
-                p.form-radio-item__text I only want hospital cover
-                .form-radio-item__image-arrow
-                  include ../../../../../static/icons/arrow_long_right.svg
+                p.form-radio-item__text Rent
         small.form-text.step-4__form-info-message.invisible Please select one of these
 
     //- Button Submit

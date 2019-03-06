@@ -11,15 +11,15 @@ $(document).ready(() => {
   $('#step-1-button-submit').on('click', () => {
     if (!isRadioValid()) return
 
-    $('#hic__step-1').addClass('animated faster fadeOut')
-    $('#hic__step-1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-      $('#hic__step-1').addClass('d-none')
-      $('#hic__step-1').removeClass('animated faster fadeOut')
+    $('#eng__step-1').addClass('animated faster fadeOut')
+    $('#eng__step-1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#eng__step-1').addClass('d-none')
+      $('#eng__step-1').removeClass('animated faster fadeOut')
 
-      $('#hic__step-2').removeClass('d-none')
-      $('#hic__step-2').addClass('animated faster fadeIn')
-      $('#hic__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-        $('#hic__step-2').removeClass('animated faster fadeIn')
+      $('#eng__step-2').removeClass('d-none')
+      $('#eng__step-2').addClass('animated faster fadeIn')
+      $('#eng__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+        $('#eng__step-2').removeClass('animated faster fadeIn')
       })
     })
 

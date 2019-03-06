@@ -1,50 +1,116 @@
-.hic__step-5
+.eng__step-5
   .step-5__form
     position: relative
 
-    .step-5__form-input
+    .form-group
       padding: 0
       margin: 0
 
-      .step-5__form-label
-        font-family: 'ProximaNova-SemiBold', sans-serif
-        font-size: 21px
-        margin-bottom: 17px
+    .step-5__form-label
+      font-family: 'ProximaNova-SemiBold', sans-serif
+      font-size: 21px
+      margin-bottom: 17px
 
-      .form-control.step-5__form-input-select
-        border-radius: 8px
-        border: 1px solid #9a9a9a
-        padding: 15px 25px 
-        font-size: 21px
-        color: #25282B
-        display: flex
-        justify-content: space-between
-        align-items: center
-        background-image: url('static/icons/arrow_down_black.svg')
-        height: 100%
-        background-position: right
-        background-origin: content-box
-        background-repeat: no-repeat
-        -webkit-appearance: none
-        -moz-appearance: none
-        appearance: none
+    .step-5__form-radio-container
+      padding: 0
 
-        &:focus
-          box-shadow: none
+      .row
+        margin: 0
 
-        &::-ms-expand
-          display: none
+      .step-5__form-radio-column
+        padding-left: 8px
+        padding-right: 8px
+        margin-top: 15px
 
-        &.error-state
-          border: 1px solid red
+        .step-5__form-radio-item
+          background-color: white
+          width: 100%
+
+          .form-radio-item__radio
+            display: none
+
+            &:checked
+              +.form-radio-item__label
+                border: 2px solid $primary
+                background-color: rgba($color: #F26522, $alpha: 0.14)
+
+                .form-radio-item__image
+                  background-color: $primary
+                  border: none
+
+                .form-radio-item__text
+                  color: $primary
+                  font-family: 'ProximaNova-Bold', sans-serif
+
+                .form-radio-item__image-arrow                           
+                  svg
+                    g
+                      fill: $primary
+
+          .form-radio-item__label
+            margin-bottom: 0
+            display: flex
+            align-items: center
+            cursor: pointer
+            border: 1px solid #9a9a9a
+            padding: 0 15px
+            border-radius: 8px
+            height: 64px
+
+            &.error-state
+              border-color: red
+
+            &.no-check-icon
+              justify-content: center
+              padding-top: 20px
+              padding-bottom: 20px
+
+              .form-radio-item__text
+                margin-left: 0
+
+              .form-radio-item__image-arrow
+                margin-left: 16px
+                
+                svg
+                  g
+                    fill: #25282B
+
+            &.disabled
+              border-color: #eaeaea
+              background-color: #f9f9f9
+              cursor: default
+
+              .form-radio-item__text
+                color: #c2c2c2
+
+              .form-radio-item__image-arrow
+                svg
+                  g
+                    fill: #bdbdbd
+
+
+            .form-radio-item__image
+              border: 1px solid #9a9a9a
+              border-radius: 50%
+              min-width: 32px
+              min-height: 32px
+              display: flex
+              align-items: center
+              justify-content: center
+
+            .form-radio-item__text
+              margin-bottom: 0
+              margin-left: 15px
+              font-size: 21px
+              line-height: 24px
+              color: #25282B
 
       .step-5__form-info-message
         text-align: center
         color: red
         font-size: 12px
-        margin-top: 2px
+        margin-top: 5px
         margin-bottom: 0.25rem
-
 
     .form-submit-button
       display: flex
@@ -54,7 +120,7 @@
       button
         width: 100%
         border-radius: 8px
-        background-color: $secondary
+        background-color: $primary
         color: white
         text-align: center
         font-family: 'ProximaNova-Bold', sans-serif
@@ -81,7 +147,7 @@
       justify-content: center
       align-items: flex-end
       position: absolute
-      bottom: -95px
+      bottom: -70px
       left: 0
 
       button.step-5__button-back
@@ -111,25 +177,67 @@
 
 
 
+
+// Tooltip Overrides
+.form-radio-tooltip-info
+  &.tooltip.show
+    opacity: 1
+    // left: -15px !important
+
+  .arrow
+    &::before
+      border-right-color: $primary
+
+  .tooltip-inner
+    background-color: $primary
+    font-size: 12px
+    padding: 15px
+    max-width: 150px
+
+
+
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  .hic__step-5
-      .step-5__form
-        .step-5__form-input
-          .form-control.step-5__form-input-select
-            padding-right: 40px
-            background-position-x: calc(100% + 25px)
+  .eng__step-5
+    .step-5__form
+      .step-5__form-radio-container
+        .step-5__form-radio-column
+          padding: 0
+
+          &:not(:first-child)
+            margin-top: 15px
+
 
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  .hic__step-5
+  .eng__step-5
     .step-5__form
-      .step-5__form-input
-        .form-control.step-5__form-input-select
-          font-size: 16px
-          padding: 13px 15px
-          padding-right: 40px
+      .step-5__form-radio-container
+        .step-5__form-radio-column
+          
+          &:not(:first-child)
+            margin-top: 10px
+
+          .step-5__form-radio-item
+            .form-radio-item__label
+              padding: 10px 15px
+
+              &.no-check-icon
+                justify-content: center
+                padding: 10px 0
+
+                .form-radio-item__image-arrow
+                  svg
+                    width: 16px
+                    height: auto
+
+              .form-radio-item__image
+                min-width: 24px
+                min-height: 24px
+
+              .form-radio-item__text
+                font-size: 16px
 
       .form-submit-button
         button
@@ -147,5 +255,4 @@
 
           svg
             width: 7px
-
 

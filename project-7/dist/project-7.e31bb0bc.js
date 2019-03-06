@@ -17778,14 +17778,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   (0, _jquery.default)('#step-1-button-submit').on('click', function () {
     if (!isRadioValid()) return;
-    (0, _jquery.default)('#hic__step-1').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-1').addClass('d-none');
-      (0, _jquery.default)('#hic__step-1').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-2').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-2').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-2').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-1').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-1').addClass('d-none');
+      (0, _jquery.default)('#eng__step-1').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-2').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-2').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-2').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('increase');
@@ -22430,28 +22430,28 @@ try {
 
   (0, _jquery.default)('#step-2-button-submit').on('click', function () {
     if (!isPostcodeValid()) return;
-    (0, _jquery.default)('#hic__step-2').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-2').addClass('d-none');
-      (0, _jquery.default)('#hic__step-2').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-3').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-3').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-3').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-2').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-2').addClass('d-none');
+      (0, _jquery.default)('#eng__step-2').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-3').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-3').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-3').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('increase');
   }); // On Back Button Clicked
 
   (0, _jquery.default)('#step-2-button-back').on('click', function () {
-    (0, _jquery.default)('#hic__step-2').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-2').addClass('d-none');
-      (0, _jquery.default)('#hic__step-2').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-1').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-1').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-1').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-2').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-2').addClass('d-none');
+      (0, _jquery.default)('#eng__step-2').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-1').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-1').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-1').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('decrease');
@@ -22513,28 +22513,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   (0, _jquery.default)('#step-3-button-submit').on('click', function () {
     if (!isRadioValid()) return;
-    (0, _jquery.default)('#hic__step-3').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-3').addClass('d-none');
-      (0, _jquery.default)('#hic__step-3').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-4').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-3').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-3').addClass('d-none');
+      (0, _jquery.default)('#eng__step-3').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-4').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-4').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-4').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('increase');
   }); // On Back Button Clicked
 
   (0, _jquery.default)('#step-3-button-back').on('click', function () {
-    (0, _jquery.default)('#hic__step-3').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-3').addClass('d-none');
-      (0, _jquery.default)('#hic__step-3').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-2').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-2').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-2').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-3').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-3').addClass('d-none');
+      (0, _jquery.default)('#eng__step-3').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-2').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-2').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-2').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('decrease');
@@ -22576,28 +22576,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   (0, _jquery.default)('#step-4-button-submit').on('click', function () {
     if (!isRadioValid()) return;
-    (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-4').addClass('d-none');
-      (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-5').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-5').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-5').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-4').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-4').addClass('d-none');
+      (0, _jquery.default)('#eng__step-4').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-5').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-5').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-5').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('increase');
   }); // On Back Button Clicked
 
   (0, _jquery.default)('#step-4-button-back').on('click', function () {
-    (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-4').addClass('d-none');
-      (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-3').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-3').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-3').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-4').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-4').addClass('d-none');
+      (0, _jquery.default)('#eng__step-4').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-3').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-3').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-3').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('decrease');
@@ -22627,20 +22627,26 @@ var _methods = require("../../methods");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery.default)(document).ready(function () {
-  (0, _jquery.default)('#currentFund').on('change', function () {
-    isSelectValid();
+  // Check Validation
+  (0, _jquery.default)('#fifthStepRadio input[name="fifthStepRadioOption"]').on('change', function () {
+    (0, _jquery.default)('#fifthStepRadio input[name="fifthStepRadioOptionNo"]').prop('checked', false);
+    isRadioValid();
+  });
+  (0, _jquery.default)('#fifthStepRadio input[name="fifthStepRadioOptionNo"]').on('change', function () {
+    (0, _jquery.default)('#fifthStepRadio input[name="fifthStepRadioOption"]').prop('checked', false);
+    isRadioValid();
   }); // On Continue Button Clicked
 
   (0, _jquery.default)('#step-5-button-submit').on('click', function () {
-    if (!isSelectValid()) return;
-    (0, _jquery.default)('.hic__left-only-form').addClass('animated faster fadeOut');
-    (0, _jquery.default)('.hic__left-only-form').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('.hic__left-only-form').addClass('d-none');
-      (0, _jquery.default)('.hic__left-only-form').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-6').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-6').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-6').removeClass('animated faster fadeIn');
+    if (!isRadioValid()) return;
+    (0, _jquery.default)('.eng__left-only-form').addClass('animated faster fadeOut');
+    (0, _jquery.default)('.eng__left-only-form').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('.eng__left-only-form').addClass('d-none');
+      (0, _jquery.default)('.eng__left-only-form').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-6').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-6').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-6').removeClass('animated faster fadeIn');
         (0, _methods.hideLogosAnimation)();
       });
     });
@@ -22648,32 +22654,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   }); // On Back Button Clicked
 
   (0, _jquery.default)('#step-5-button-back').on('click', function () {
-    (0, _jquery.default)('#hic__step-5').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step-5').addClass('d-none');
-      (0, _jquery.default)('#hic__step-5').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step-4').removeClass('d-none');
-      (0, _jquery.default)('#hic__step-4').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step-4').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#eng__step-5').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#eng__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#eng__step-5').addClass('d-none');
+      (0, _jquery.default)('#eng__step-5').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#eng__step-6').removeClass('d-none');
+      (0, _jquery.default)('#eng__step-6').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#eng__step-6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#eng__step-6').removeClass('animated faster fadeIn');
       });
     });
     (0, _methods.adjustProgressBar)('decrease');
   });
 });
 
-function isSelectValid() {
-  var isSelected = (0, _jquery.default)('#currentFund option:selected').val() !== '';
+function isRadioValid() {
+  var isSelected = (0, _jquery.default)('#fifthStepRadio input[name="fifthStepRadioOption"]:checked').val() !== undefined || (0, _jquery.default)('#fifthStepRadio input[name="fifthStepRadioOptionNo"]:checked').val() !== undefined;
 
   if (!isSelected) {
-    (0, _jquery.default)('#currentFund').addClass('error-state');
-    (0, _jquery.default)('#currentFund + .step-5__form-info-message').removeClass('invisible');
+    (0, _jquery.default)('#fifthStepRadio  .form-radio-item__label').addClass('error-state');
+    (0, _jquery.default)('#fifthStepRadio > .step-5__form-info-message').removeClass('invisible');
+    return false;
   } else {
-    (0, _jquery.default)('#currentFund').removeClass('error-state');
-    (0, _jquery.default)('#currentFund + .step-5__form-info-message').addClass('invisible');
+    (0, _jquery.default)('#fifthStepRadio  .form-radio-item__label').removeClass('error-state');
+    (0, _jquery.default)('#fifthStepRadio > .step-5__form-info-message').addClass('invisible');
+    return true;
   }
-
-  return isSelected;
 }
 },{"jquery":"node_modules/jquery/dist/jquery.js","../../methods":"components/MainContent/StepContainer/methods.js"}],"components/MainContent/StepContainer/LeftOnlyForm/leftOnlyForm.js":[function(require,module,exports) {
 "use strict";

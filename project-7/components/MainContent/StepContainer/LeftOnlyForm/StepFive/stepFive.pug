@@ -1,60 +1,26 @@
-.hic__step-5
+.eng__step-5
 
   //- Form
   .step-5__form
-    currentFund.form-group.step-5__form-input
-      label.step-5__form-label(for='currentFund') Your Current Health Fund
-      select#currentFund.form-control.step-5__form-input-select
-        option(selected, value='', disabled) Please select your current fund
-        option(value='not insured') Not Insured
-        option(value='ACA Health Benefits Fund') ACA Health Benefits Fund
-        option(value='ahm') ahm health insurance
-        option(value='Allianz Overseas Student Health Cover') Allianz Overseas Student Health Cover
-        option(value='Apia health insurance') Apia health insurance
-        option(value='au') Australian Unity Health Limited
-        option(value='bupa') Bupa
-        option(value='CBHS Health Fund Limited') CBHS Health Fund Limited
-        option(value='Cessnock District Health Fund') Cessnock District Health Fund
-        option(value='CUA Health Limited') CUA Health Limited
-        option(value='Defence Health Limited') Defence Health Limited
-        option(value='Doctors Health Fund') Doctors' Health Fund
-        option(value='Emergency Services Health') Emergency Services Health
-        option(value='Frank Health Insurance') Frank Health Insurance
-        option(value='GMF') GMF
-        option(value='gmhba') GMHBA Limited
-        option(value='Grand United Corporate Health') Grand United Corporate Health
-        option(value='HBA') HBA
-        option(value='HBF Health Limited') HBF Health Limited
-        option(value='hcf') HCF
-        option(value='Health Care Insurance Limited') Health Care Insurance Limited
-        option(value='HIF') HIF
-        option(value='Health Partners') Health Partners
-        option(value='health.com.au') health.com.au
-        option(value='IMAN Health Cover') IMAN Health Cover
-        option(value='la trobe') Latrobe Health Services
-        option(value='medibank') Medibank Private Limited
-        option(value='Mildura Health Fund') Mildura Health Fund
-        option(value='MyOwn') MyOwn
-        option(value='Navy Health') Navy Health
-        option(value='nib') NIB Health Funds Ltd.
-        option(value='Nurses & Midwives Health') Nurses & Midwives Health
-        option(value='Onemedifund') Onemedifund
-        option(value='peoplecare') Peoplecare Health Insurance
-        option(value='Phoenix Health Fund Limited') Phoenix Health Fund Limited
-        option(value='Police Health') Police Health
-        option(value='Qantas Assure') Qantas Assure
-        option(value='Queensland Country Health Fund Ltd') Queensland Country Health Fund Ltd
-        option(value='rt') rt Health fund
-        option(value='Reserve Bank Health Society Ltd') Reserve Bank Health Society Ltd
-        option(value='st lukes') St.Lukes Health
-        option(value='teachers') Teachers Health
-        option(value='Transport Health Pty Ltd') Transport Health Pty Ltd
-        option(value='TUH') TUH
-        option(value='UniHealth') UniHealth
-        option(value='westfund') Westfund Limited
-        option(value='other') Other
-        option(value='not_sure') I Don't Know
-      small.form-text.step-5__form-info-message.invisible Please select an option from the list
+    .form-group.form-check
+      label.step-5__form-label Are you moving into this property?
+      #fifthStepRadio.step-5__form-radio-container.container-fluid
+        .row
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-5__form-radio-column.pl-0
+            .step-5__form-radio-item
+              input#yes.form-radio-item__radio(name='fifthStepRadioOption', type='radio')
+              label.form-radio-item__label(for='yes')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Yes
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-5__form-radio-column.pr-0
+            .step-5__form-radio-item
+              input#no.form-radio-item__radio(name='fifthStepRadioOption', type='radio')
+              label.form-radio-item__label(for='no')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text No
+        small.form-text.step-5__form-info-message.invisible Please select one of these
 
     //- Button Submit
     .form-submit-button

@@ -1,9 +1,9 @@
-.hic__main-content
+.eng__main-content
   width: 100%
   height: 100%
   margin-top: $navbar-height
 
-  .hic__main-content-background
+  .eng__main-content-background
     z-index: -1
     position: absolute
     top: $navbar-height
@@ -11,14 +11,14 @@
     height: 411px
     width: 100%
 
-  .hic__contents
+  .eng__contents
     margin: $navbar-height + 40px 12%
     margin-bottom: 40px
     background-color: white
     border-radius: 8px
     box-shadow: 0 10px 40px -10px rgba($color: #000000, $alpha: 0.16)
 
-    .hic__content-title
+    .eng__content-title
       padding: 32px 30px
       font-family: 'ProximaNova-Bold', sans-serif
       font-size: 38px
@@ -28,7 +28,7 @@
       b
         color: $primary
 
-    .hic__content-company-logos
+    .eng__content-company-logos
       padding: 26px 20px
       background-color: rgba($color: #35869A, $alpha: 0.08)
 
@@ -41,7 +41,7 @@
         justify-content: center
         align-items: center
     
-    .hic__content-subtitle 
+    .eng__content-subtitle 
       padding: 0 30px
       padding-top: 32px
       font-family: 'ProximaNova-SemiBold', sans-serif
@@ -52,7 +52,7 @@
       b
         color: $primary
 
-    .hic__content-progress
+    .eng__content-progress
       padding: 0 30px
       padding-top: 32px
 
@@ -81,7 +81,7 @@
         margin-top: 8px
         margin-bottom: 0
 
-    .hic__content-footer
+    .eng__content-footer
       display: flex
       justify-content: center
       align-items: center
@@ -95,31 +95,31 @@
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  .hic__main-content
-    .hic__contents
+  .eng__main-content
+    .eng__contents
       margin-left: 20px
       margin-right: 20px
 
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  .hic__main-content
+  .eng__main-content
     margin-top: $navbar-height-mobile
 
-    .hic__main-content-background
+    .eng__main-content-background
       top: $navbar-height-mobile
 
-    .hic__contents
+    .eng__contents
       margin: $navbar-height-mobile + 30px 20px
       margin-bottom: 30px
 
-      .hic__content-title
+      .eng__content-title
         font-size: 28px
         text-align: center
         padding: 32px 20px
         line-height: 32px
 
-      .hic__content-company-logos
+      .eng__content-company-logos
         padding: 5px
 
         .company-logos
@@ -165,7 +165,7 @@
               width: 64px
               height: auto
 
-      .hic__content-progress
+      .eng__content-progress
         padding-left: 20px
         padding-right: 20px
 
@@ -176,7 +176,7 @@
               font-size: 21px
               font-family: 'ProximaNova-Bold', sans-serif
 
-      .hic__content-footer
+      .eng__content-footer
         padding: 20px
 
         .footer-text

@@ -16,15 +16,15 @@ $(document).ready(() => {
   $('#step-4-button-submit').on('click', () => {
     if (!isRadioValid()) return
 
-    $('#hic__step-4').addClass('animated faster fadeOut')
-    $('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-      $('#hic__step-4').addClass('d-none')
-      $('#hic__step-4').removeClass('animated faster fadeOut')
+    $('#eng__step-4').addClass('animated faster fadeOut')
+    $('#eng__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#eng__step-4').addClass('d-none')
+      $('#eng__step-4').removeClass('animated faster fadeOut')
 
-      $('#hic__step-5').removeClass('d-none')
-      $('#hic__step-5').addClass('animated faster fadeIn')
-      $('#hic__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-        $('#hic__step-5').removeClass('animated faster fadeIn')
+      $('#eng__step-5').removeClass('d-none')
+      $('#eng__step-5').addClass('animated faster fadeIn')
+      $('#eng__step-5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+        $('#eng__step-5').removeClass('animated faster fadeIn')
       })
     })
 
@@ -33,15 +33,15 @@ $(document).ready(() => {
 
   // On Back Button Clicked
   $('#step-4-button-back').on('click', () => {
-    $('#hic__step-4').addClass('animated faster fadeOut')
-    $('#hic__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-      $('#hic__step-4').addClass('d-none')
-      $('#hic__step-4').removeClass('animated faster fadeOut')
+    $('#eng__step-4').addClass('animated faster fadeOut')
+    $('#eng__step-4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#eng__step-4').addClass('d-none')
+      $('#eng__step-4').removeClass('animated faster fadeOut')
 
-      $('#hic__step-3').removeClass('d-none')
-      $('#hic__step-3').addClass('animated faster fadeIn')
-      $('#hic__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-        $('#hic__step-3').removeClass('animated faster fadeIn')
+      $('#eng__step-3').removeClass('d-none')
+      $('#eng__step-3').addClass('animated faster fadeIn')
+      $('#eng__step-3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+        $('#eng__step-3').removeClass('animated faster fadeIn')
       })
     })
 

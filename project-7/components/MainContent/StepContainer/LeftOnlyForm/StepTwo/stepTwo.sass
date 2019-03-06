@@ -1,0 +1,179 @@
+.hic__step-2
+  .step-2__form
+    position: relative
+
+    .step-2__form-input
+      padding: 0
+      margin: 0
+
+      .step-2__form-label
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        margin-bottom: 17px
+
+      .form-control.step-2__form-input-field
+        border-radius: 8px
+        border: 1px solid #9a9a9a
+        padding: 35px 25px 
+        font-size: 21px
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        color: #25282B
+        z-index: 1060
+        position: relative
+
+        &:focus
+          box-shadow: none
+
+        &.error-state
+          border: 1px solid red
+
+      .step-2__form-info-message
+        text-align: center
+        color: red
+        font-size: 12px
+        margin-top: 2px
+        margin-bottom: 0.25rem
+
+
+    .form-submit-button
+      display: flex
+      justify-content: center
+      align-items: flex-end
+
+      button
+        width: 100%
+        border-radius: 8px
+        background-color: $primary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 5px 0
+        margin-bottom: 35px
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: 0.1)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+
+      .button-icon
+        margin-left: 10px
+
+    .form-back-button
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      position: absolute
+      bottom: -95px
+      left: 0
+
+      button.step-2__button-back
+        width: 100%
+        color: #35869A
+        text-align: center
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-size: 21px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+          box-shadow: none
+
+        &:active
+          box-shadow: none
+
+      .button-icon
+        margin-right: 10px
+        margin-top: -4px
+
+        svg
+          g
+            fill: #35869A
+
+
+.autocomplete-suggestions
+  z-index: 1060
+  
+  .autocomplete-suggestion
+    font-size: 16px
+    padding: 16px 20px
+
+    strong
+      font-family: 'ProximaNova-Bold', sans-serif
+      color: $primary
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__step-2
+    .step-2__form
+      .step-2__form-input
+        .form-control.step-2__form-input-field
+          font-size: 16px
+          padding: 25px 15px
+
+      .form-submit-button
+        button
+          font-size: 21px
+          margin-bottom: 0
+
+      .form-back-button
+        position: relative
+        bottom: auto
+        left: auto
+        margin-top: 25px
+
+        button.step-2__button-back
+          font-size: 16px
+
+          svg
+            width: 7px
+
+
+// Backdrop Styling
+.backdrop-layer
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: rgba($color: #000000, $alpha: 0.5)
+  z-index: 1050
+
+// Autocomplete Styling Overrides
+.autocomplete-suggestions 
+  background-color: white
+  overflow: auto
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+  left: 752px
+  width: 292px
+  z-index: 1060
+
+  .autocomplete-suggestion 
+    font-size: 16px
+    padding: 16px 20px
+    cursor: pointer
+
+    &:hover 
+      background-color: rgba($color: $primary, $alpha: 0.2)
+
+    strong
+      font-family: 'ProximaNova-Bold', sans-serif
+      color: $primary
+
+  .autocomplete-selected 
+    background-color: rgba($color: $primary, $alpha: 0.2)
+  

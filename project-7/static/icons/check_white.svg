@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Icon/24px/white/Check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-Desktop" transform="translate(-412.000000, -350.000000)">
+            <g id="Body" transform="translate(0.000000, 84.000000)">
+                <g id="CTA" transform="translate(352.000000, 48.000000)">
+                    <g id="Question" transform="translate(40.000000, 168.000000)">
+                        <g id="Group-2" transform="translate(0.000000, 32.000000)">
+                            <g id="Icon/24px/white/Check" transform="translate(16.000000, 12.000000)">
+                                <g id="Tick"></g>
+                                <g id="UI/Color/Flat/White-(Default)" fill="#FFFFFF" fill-rule="evenodd">
+                                    <path d="M19.0852877,8.53818993 L10.4997172,17.5640216 C9.94676739,18.1453261 9.05158272,18.1453261 8.50004714,17.5640216 L4.91365168,13.7952054 C4.36211611,13.2139008 4.36211611,12.2728117 4.91365168,11.6915072 C5.46660146,11.1116893 6.36178613,11.1116893 6.91332171,11.6915072 L9.49988215,14.4107043 L17.0856176,6.43597844 C17.6371532,5.85467385 18.5323379,5.85467385 19.0852877,6.43597844 C19.6382374,7.01579632 19.6382374,7.95688534 19.0852877,8.53818993" id="path-1"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+import $ from 'jquery'
+import 'popper.js'
+import 'bootstrap'
+
+import './LeftOnlyForm/leftOnlyForm'
+import './StepSix/stepSix'
+import './StepSeven/stepSeven'
+
+$(document).ready(() => {
+  $('[data-toggle="tooltip"]').tooltip({
+    template:
+      '<div class="tooltip form-radio-tooltip-info" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+  })
+})

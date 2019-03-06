@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icons/Chevron/Bottom</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-step5" transform="translate(-673.000000, -653.000000)" fill="#25282B">
+            <g id="Body" transform="translate(162.000000, 128.000000)">
+                <g id="Group-4" transform="translate(31.000000, 448.000000)">
+                    <g id="Life-stage">
+                        <g id="Option" transform="translate(0.500000, 49.000000)">
+                            <g id="Icons/Chevron/Bottom" transform="translate(474.500000, 20.000000)">
+                                <path d="M17.3055,8.29788186 C17.6932692,7.90462184 18.3264186,7.9001707 18.7196786,8.28793997 C19.1129386,8.67570923 19.1173897,9.30885857 18.7296205,9.70211858 L12.8133933,15.7021186 C12.4259924,16.0950051 11.7935786,16.0998759 11.400172,15.7130031 L5.29883912,9.7130031 C4.9050585,9.32576252 4.89975676,8.69261973 5.28699734,8.29883912 C5.67423792,7.9050585 6.30738071,7.89975676 6.70116132,8.28699734 L12.0904486,13.5867776 L17.3055,8.29788186 Z" id="Status"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

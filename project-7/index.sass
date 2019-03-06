@@ -1,0 +1,77 @@
+// Add Bootstrap Mixins Breakpoint
+@import 'node_modules/bootstrap/scss/_functions'
+@import 'node_modules/bootstrap/scss/_variables'
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, 2k: 1440px, 4k: 2560px)
+$container-max-widths: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, 2k: 1440px, 4k: 2560px)
+
+
+
+
+// node_modules dependencies
+@import 'node_modules/bootstrap/scss/bootstrap'
+@import 'node_modules/animate.css/animate'
+
+
+
+// Fonts
+$font--proxima-regular: 'static/fonts/ProximaNova-Reg.ttf'
+$font--proxima-regular-italic: 'static/fonts/ProximaNova-RegItalic.otf'
+$font--proxima-semi-bold: 'static/fonts/ProximaNova-SemiBold.otf'
+$font--proxima-bold: 'static/fonts/ProximaNova-Bold.otf'
+$font--proxima-bold-italic: 'static/fonts/ProximaNova-BoldItalic.otf'
+$font--proxima-extra-bold: 'static/fonts/ProximaNova-ExtraBold.otf'
+
+@font-face
+  font-family: 'ProximaNova-Reg'
+  src: url($font--proxima-regular) format('truetype')
+
+@font-face
+  font-family: 'ProximaNova-RegItalic'
+  src: url($font--proxima-regular-italic) format('opentype')
+
+@font-face
+  font-family: 'ProximaNova-SemiBold'
+  src: url($font--proxima-semi-bold) format('opentype')
+
+@font-face
+  font-family: 'ProximaNova-Bold'
+  src: url($font--proxima-bold) format('opentype')
+
+@font-face
+  font-family: 'ProximaNova-BoldItalic'
+  src: url($font--proxima-bold-italic) format('opentype')
+
+@font-face
+  font-family: 'ProximaNova-ExtraBold'
+  src: url($font--proxima-extra-bold) format('opentype')
+
+
+
+// Colors
+$primary: #F26522
+$secondary: #0A4C7B
+
+
+
+// Global Variables
+$navbar-height: 88px
+$navbar-height-mobile: 72px
+
+  
+
+// Main Theme
+body
+  font-family: 'ProximaNova-Reg', sans-serif
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.animated.faster 
+  animation-duration: 200ms
+
+
+
+// All Components Style
+@import './components/Header/header'
+@import './components/MainContent/mainContent'
+@import './components/Footer/footer'

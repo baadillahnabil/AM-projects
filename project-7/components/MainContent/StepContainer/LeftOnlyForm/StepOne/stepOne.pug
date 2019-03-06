@@ -1,0 +1,36 @@
+.hic__step-1
+
+  //- Form
+  .step-1__form
+    .form-group.form-check
+      label.step-1__form-label What are you looking to compare?
+      #firstStepRadio.step-1__form-radio-container.container-fluid
+        .row
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-1__form-radio-column.pl-0
+            .step-1__form-radio-item
+              input#electricity.form-radio-item__radio(name='firstStepRadio', type='radio')
+              label.form-radio-item__label(for='electricity')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Electricity
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-1__form-radio-column.pr-0
+            .step-1__form-radio-item
+              input#gas.form-radio-item__radio(name='firstStepRadio', type='radio')
+              label.form-radio-item__label(for='gas')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Gas
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-6.step-1__form-radio-column.pl-0
+            .step-1__form-radio-item
+              input#electricityGas.form-radio-item__radio(name='firstStepRadio', type='radio')
+              label.form-radio-item__label(for='electricityGas')
+                .form-radio-item__image
+                  include ../../../../../static/icons/check_white.svg
+                p.form-radio-item__text Electricity & Gas
+        small.form-text.step-1__form-info-message.invisible Please select one of these
+
+    .form-submit-button
+      button#step-1-button-submit.btn.step-1__form-submit 
+        | Continue
+        .button-icon
+          include ../../../../../static/icons/chevron_right_white.svg

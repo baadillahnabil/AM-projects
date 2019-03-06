@@ -1,0 +1,38 @@
+.hic__step-7
+  
+  //- Form
+  .hic__form
+    p.hic__form-title In order to save you time and money we need to ask you for a few more basic details so that we can provide you with an accurate comparison from our trusted panel of health funds.
+    #formStep7.mt-4
+      .form-group.step-7__form-input
+        input#step-7-name.form-control.step-7__form-input-field(type='text', placeholder='Name')
+        small.form-text.step-7__form-info-message.d-none Please enter a valid name
+      .form-group.step-7__form-input
+        input#step-7-phone.form-control.step-7__form-input-field(type='text', placeholder='Phone Number')
+        small.form-text.step-7__form-info-message.d-none Please enter a valid 10 digit mobile number
+      .form-group.step-7__form-input
+        input#step-7-email.form-control.step-7__form-input-field(type='text', placeholder='Email')
+        small.form-text.step-7__form-info-message.d-none Please enter a valid email address
+
+    //- Button Submit
+    .form-submit-button
+      button#step-7-button-submit.btn.step-7__form-submit 
+        | Show me quotes
+        .button-icon
+          include ../../../../static/icons/chevron_right_white.svg
+
+  //- Benefits
+  .hic__benefits
+    .hic__benefits-item.more-than-one-line
+      .benefit-image
+        include ../../../../static/icons/heart.svg
+      p.benefit-text We’ll help you figure out how to choose the best policy for your particular situation
+    .hic__benefits-item.more-than-one-line
+      .benefit-image
+        include ../../../../static/icons/chat.svg
+      p.benefit-text Got Questions? We’re happy to answer any health insurance related queries without any obligation on your part.
+    .hic__benefits-item
+      .benefit-image
+        include ../../../../static/icons/lock_heart.svg
+      p.benefit-text We don't spam! Check our 
+        a(href='#') Terms of Use

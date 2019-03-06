@@ -1,0 +1,23 @@
+.hic__step-container
+  padding: 0 30px
+  padding-top: 32px
+
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__step-container
+    padding-left: 15px
+    padding-right: 15px
+
+
+
+// Children Components Styling
+@import './LeftOnlyForm/leftOnlyForm'
+@import './StepSix/stepSix'
+@import './StepSeven/stepSeven'

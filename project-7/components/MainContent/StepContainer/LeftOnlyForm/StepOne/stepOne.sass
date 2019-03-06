@@ -1,0 +1,169 @@
+.hic__step-1
+  .step-1__form
+    .form-group
+      padding: 0
+      margin: 0
+
+    .step-1__form-label
+      font-family: 'ProximaNova-SemiBold', sans-serif
+      font-size: 21px
+      margin-bottom: 17px
+
+    .step-1__form-radio-container
+      padding: 0
+
+      .row
+        margin: 0
+
+      .step-1__form-radio-column
+        padding-left: 8px
+        padding-right: 8px
+        margin-top: 15px
+
+        .step-1__form-radio-item
+          background-color: white
+          width: 100%
+
+          .form-radio-item__radio
+            display: none
+
+            &:checked
+              +.form-radio-item__label
+                border: 2px solid $primary
+                background-color: rgba($color: #F26522, $alpha: 0.14)
+
+                .form-radio-item__image
+                  background-color: $primary
+                  border: none
+
+                .form-radio-item__text
+                  color: $primary
+                  font-family: 'ProximaNova-Bold', sans-serif
+
+          .form-radio-item__label
+            margin-bottom: 0
+            display: flex
+            align-items: center
+            cursor: pointer
+            border: 1px solid #9a9a9a
+            padding: 0 15px
+            border-radius: 8px
+            height: 64px
+
+            &.error-state
+              border-color: red
+
+            .form-radio-item__image
+              border: 1px solid #9a9a9a
+              border-radius: 50%
+              min-width: 32px
+              min-height: 32px
+              display: flex
+              align-items: center
+              justify-content: center
+
+            .form-radio-item__text
+              margin-bottom: 0
+              margin-left: 15px
+              font-size: 21px
+              line-height: 24px
+              color: #25282B
+
+      .step-1__form-info-message
+        text-align: center
+        color: red
+        font-size: 12px
+        margin-top: 5px
+        margin-bottom: 0.25rem
+
+    .form-submit-button
+      display: flex
+      justify-content: center
+      align-items: flex-end
+
+      button
+        width: 100%
+        border-radius: 8px
+        background-color: $primary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 5px 0
+        margin-bottom: 35px
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: 0.1)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+
+      .button-icon
+        margin-left: 10px
+
+
+
+// Tooltip Overrides
+.form-radio-tooltip-info
+  &.tooltip.show
+    opacity: 1
+    // left: -15px !important
+
+  .arrow
+    &::before
+      border-right-color: $primary
+
+  .tooltip-inner
+    background-color: $primary
+    font-size: 12px
+    padding: 15px
+    max-width: 150px
+
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .hic__step-1
+    .step-1__form
+      .step-1__form-radio-container
+        .step-1__form-radio-column
+          padding: 0
+
+          &:not(:first-child)
+            margin-top: 15px
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__step-1
+    .step-1__form
+      .step-1__form-radio-container
+        .step-1__form-radio-column
+          
+          &:not(:first-child)
+            margin-top: 10px
+
+          .step-1__form-radio-item
+            .form-radio-item__label
+              height: 48px
+
+              .form-radio-item__image
+                min-width: 24px
+                min-height: 24px
+
+              .form-radio-item__text
+                font-size: 16px
+
+      .form-submit-button
+        button
+          font-size: 21px
+          margin-bottom: 0
+
+    
+

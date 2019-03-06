@@ -1,0 +1,25 @@
+.hic__step-2
+
+  //- Form
+  .step-2__form
+    .form-group.step-2__form-input
+      label.step-2__form-label(for='postcode') My postcode is:
+      input#postcode.form-control.step-2__form-input-field(type='text', placeholder='Enter postcode here')
+      small.form-text.step-2__form-info-message.invisible Please enter a valid postcode from the list
+
+      //- Backdrop Layer
+      .backdrop-layer.d-none
+    
+    //- Button Submit
+    .form-submit-button
+      button#step-2-button-submit.btn.step-2__form-submit 
+        | Continue
+        .button-icon
+          include ../../../../../static/icons/chevron_right_white.svg
+
+    //- Button Back
+    .form-back-button
+      button#step-2-button-back.btn.step-2__button-back 
+        .button-icon
+          include ../../../../../static/icons/chevron_left_white.svg
+        | Back

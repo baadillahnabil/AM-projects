@@ -1,0 +1,100 @@
+@import '_spinner.scss'
+  
+
+.hic__step-6
+  display: flex
+  justify-content: center
+  flex-direction: column
+
+  .hic__loader
+    display: flex
+    justify-content: center
+    margin: 40px 0
+
+    .loader
+      margin: 60px auto
+      font-size: 17px
+      animation: load4 1.1s infinite linear
+
+  .hic__title
+    font-family: 'ProximaNova-SemiBold', sans-serif
+    font-size: 28px
+    text-align: center
+    color: #25282B
+    margin-bottom: 25px
+
+  .hic__status-text
+    font-size: 21px
+    text-align: center
+    color: #25282B
+    margin-bottom: 50px
+
+    .status-number-wrapper
+      font-family: 'ProximaNova-Bold', sans-serif
+      color: white
+      padding: 10px 20px
+      background-color: $secondary
+      border-radius: 8px
+      margin: 0 15px
+
+  .hic__benefits
+    border-top: 1px solid #EBEBEB
+    padding-top: 30px
+    display: flex
+    justify-content: center
+    margin-bottom: 30px
+
+    .hic__benefits-item
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 20px
+
+      .benefit-image
+        display: flex
+        justify-content: center
+        align-items: center
+        min-width: 32px
+        min-height: 32px
+        background-color: $primary
+        border-radius: 50%
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: center
+
+      .benefit-text
+        margin-bottom: 0
+        margin-left: 16px
+        font-family: 'ProximaNova-RegItalic', sans-serif
+        font-size: 16px
+  
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)    
+  .hic__step-6
+    .hic__title
+      font-size: 21px
+      line-height: 24px
+
+    .hic__status-text
+      font-size: 16px
+      margin-bottom: 30px
+      line-height: 32px
+
+      .status-number-wrapper
+        margin: 0 5px
+        padding: 8px
+
+    .hic__benefits
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 15px
+
+      .hic__benefits-item
+        margin: 4px 0
+

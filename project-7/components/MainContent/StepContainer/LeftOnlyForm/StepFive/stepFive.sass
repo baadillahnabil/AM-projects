@@ -1,0 +1,151 @@
+.hic__step-5
+  .step-5__form
+    position: relative
+
+    .step-5__form-input
+      padding: 0
+      margin: 0
+
+      .step-5__form-label
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        margin-bottom: 17px
+
+      .form-control.step-5__form-input-select
+        border-radius: 8px
+        border: 1px solid #9a9a9a
+        padding: 15px 25px 
+        font-size: 21px
+        color: #25282B
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-image: url('static/icons/arrow_down_black.svg')
+        height: 100%
+        background-position: right
+        background-origin: content-box
+        background-repeat: no-repeat
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+
+        &:focus
+          box-shadow: none
+
+        &::-ms-expand
+          display: none
+
+        &.error-state
+          border: 1px solid red
+
+      .step-5__form-info-message
+        text-align: center
+        color: red
+        font-size: 12px
+        margin-top: 2px
+        margin-bottom: 0.25rem
+
+
+    .form-submit-button
+      display: flex
+      justify-content: center
+      align-items: flex-end
+
+      button
+        width: 100%
+        border-radius: 8px
+        background-color: $secondary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 5px 0
+        margin-bottom: 35px
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: 0.1)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+
+      .button-icon
+        margin-left: 10px
+
+    .form-back-button
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      position: absolute
+      bottom: -95px
+      left: 0
+
+      button.step-5__button-back
+        width: 100%
+        color: #35869A
+        text-align: center
+        font-family: 'ProximaNova-Bold', sans-serif
+        font-size: 21px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+          box-shadow: none
+
+        &:active
+          box-shadow: none
+
+      .button-icon
+        margin-right: 10px
+        margin-top: -4px
+
+        svg
+          g
+            fill: #35869A
+
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .hic__step-5
+      .step-5__form
+        .step-5__form-input
+          .form-control.step-5__form-input-select
+            padding-right: 40px
+            background-position-x: calc(100% + 25px)
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__step-5
+    .step-5__form
+      .step-5__form-input
+        .form-control.step-5__form-input-select
+          font-size: 16px
+          padding: 13px 15px
+          padding-right: 40px
+
+      .form-submit-button
+        button
+          font-size: 21px
+          margin-bottom: 0
+
+      .form-back-button
+        position: relative
+        bottom: auto
+        left: auto
+        margin-top: 25px
+
+        button.step-5__button-back
+          font-size: 16px
+
+          svg
+            width: 7px
+
+

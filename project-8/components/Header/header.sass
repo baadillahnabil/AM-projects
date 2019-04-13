@@ -1,0 +1,60 @@
+.hic__header
+  background-color: white
+  padding: 0 12%
+  height: $navbar-height
+  display: flex
+  justify-content: space-between
+  box-shadow: 0 1px 0 0 rgba($color: #000000, $alpha: 0.16)
+
+  .phone
+    display: flex
+
+    .phone-icon
+      margin-right: 15px
+
+    .phone-details
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+      .phone-days
+        font-size: 13px
+        margin-bottom: 0
+
+      .phone-number
+        font-size: 32px
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        margin-bottom: 0
+        line-height: 32px
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .hic__header
+    padding: 0 20px
+
+    .logo
+      svg
+        width: auto
+        height: 48px
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__header
+    height: $navbar-height-mobile
+    padding: 0 20px
+
+    .logo
+      svg
+        width: auto
+        height: 40px
+
+    .phone
+      .phone-icon
+        margin-right: 0
+
+        svg
+          width: 32px
+          height: auto

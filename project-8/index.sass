@@ -1,0 +1,24 @@
+// node_modules dependencies and theming imports
+@import './theme/override'
+@import 'node_modules/bootstrap/scss/bootstrap'
+@import 'node_modules/animate.css/animate'
+@import './theme/fonts'
+@import './theme/colors'
+@import './theme/variables'
+  
+
+// Main Theme
+body
+  font-family: 'ProximaNova-Reg', sans-serif
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.animated.faster 
+  animation-duration: 200ms
+
+
+// All Components Style
+@import './components/Header/header'
+@import './components/MainContent/mainContent'
+@import './components/Footer/footer'

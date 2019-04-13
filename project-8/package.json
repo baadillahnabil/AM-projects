@@ -1,0 +1,24 @@
+{
+  "name": "am-projects__project-8",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:baadillahnabil/AM-projects.git",
+  "author": "baadillahnabil <baadillahnabil@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "rm -rf dist && clear && parcel index.pug",
+    "build": "rm -rf dist && rm -rf .cache && parcel build index.pug --public-url ./",
+    "deploy": "yarn build && git add . && git commit -m 'build production' && git push origin master"
+  },
+  "devDependencies": {
+    "animate.css": "^3.7.0",
+    "bootstrap": "^4.3.1",
+    "cssnano": "^4.1.10",
+    "devbridge-autocomplete": "^1.4.10",
+    "jquery": "^3.4.0",
+    "lodash": "^4.17.11",
+    "popper.js": "^1.15.0",
+    "pug": "^2.0.3",
+    "sass": "^1.18.0"
+  }
+}

@@ -1,14 +1,13 @@
 .hic__main-content
+  margin-top: $navbar-height
 
   
-    
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
   .hic__main-content
+    margin-top: $navbar-height-mobile
     
 
 
-// Mobile Breakpoint
-@include media-breakpoint-down(sm)
-  .hic__main-content
-    
+// Component Styles
+@import './Step1/step1'

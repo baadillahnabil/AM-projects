@@ -14597,6 +14597,169 @@ body {
     height: auto;
   }
 }
+.hic__main-content {
+  margin-top: 88px;
+}
+
+@media (max-width: 1199.98px) {
+  .hic__main-content {
+    margin-top: 72px;
+  }
+}
+.hic__step1 .banner {
+  padding: 140px;
+  background-color: #35869A;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.hic__step1 .banner .banner-image svg {
+  width: 340px;
+  height: 340px;
+}
+.hic__step1 .banner .banner-desc {
+  padding: 50px 30px;
+}
+.hic__step1 .banner .banner-desc .banner-title p {
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 50px;
+  line-height: 56px;
+  color: white;
+  margin-bottom: 25px;
+}
+.hic__step1 .banner .banner-desc .banner-subtitle p {
+  font-size: 24px;
+  line-height: 30px;
+  opacity: 0.9;
+  color: white;
+}
+.hic__step1 .banner .banner-desc .banner-cta {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.hic__step1 .banner .banner-desc .banner-cta button {
+  width: 256px;
+  border-radius: 8px;
+  background-color: #71BE59;
+  color: white;
+  text-align: center;
+  font-family: "ProximaNova-SemiBold", sans-serif;
+  font-size: 21px;
+  padding: 12px;
+  margin: 5px 0;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hic__step1 .banner .banner-desc .banner-cta button:focus {
+  outline: none;
+}
+.hic__step1 .banner .banner-desc .banner-cta button:active {
+  box-shadow: none;
+}
+.hic__step1 .banner .banner-desc .banner-info p {
+  font-family: "ProximaNova-RegItalic", sans-serif;
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+}
+.hic__step1 .partners {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+}
+.hic__step1 .partners .container-fluid {
+  padding: 0;
+}
+.hic__step1 .partners .row {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hic__step1 .partners .company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex-grow: 0;
+  flex-basis: 14%;
+}
+
+@media (max-width: 1199.98px) {
+  .hic__step1 .banner {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hic__step1 .banner .banner-image svg {
+    width: 284px;
+    height: 284px;
+  }
+  .hic__step1 .banner .banner-desc {
+    padding: 0 30px;
+  }
+  .hic__step1 .banner .banner-desc .banner-title p {
+    margin-bottom: 15px;
+    font-size: 44px;
+    line-height: 48px;
+  }
+  .hic__step1 .partners {
+    padding: 0 20px;
+  }
+  .hic__step1 .partners .company-logo {
+    min-width: 20%;
+  }
+}
+@media (max-width: 767.98px) {
+  .hic__step1 .banner {
+    padding: 30px 20px;
+  }
+  .hic__step1 .banner .banner-image {
+    position: absolute;
+    top: 240px;
+  }
+  .hic__step1 .banner .banner-image svg {
+    width: 216px;
+    height: 216px;
+  }
+  .hic__step1 .banner .banner-desc {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hic__step1 .banner .banner-desc .banner-title p {
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .hic__step1 .banner .banner-desc .banner-subtitle p {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 280px;
+  }
+  .hic__step1 .banner .banner-desc .banner-info p {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .hic__step1 .banner .banner-desc .banner-cta {
+    margin: 0;
+  }
+  .hic__step1 .partners {
+    padding: 15px 20px;
+  }
+  .hic__step1 .partners .row {
+    justify-content: flex-start;
+  }
+  .hic__step1 .partners .company-logo {
+    min-width: 50%;
+    padding: 15px 0;
+  }
+}
 .hic__footer {
   padding: 30px 10%;
   box-shadow: 0 -4px 16px 0 rgba(0, 0, 0, 0.04);
@@ -14625,10 +14788,12 @@ body {
   .hic__footer .footer-links {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   .hic__footer .footer-links .footer-link {
     font-size: 14px;
+    text-align: center;
+    margin: 0;
   }
   .hic__footer .footer-text {
     display: none;

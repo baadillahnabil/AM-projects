@@ -23,21 +23,16 @@
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  .hic__footer   
+  .hic__footer
     padding: 20px 16px
     
     .footer-links
+      display: flex
+      align-items: center
+      justify-content: center
+
       .footer-link
-        display: block
-        width: 100%
-        text-align: center
-        margin: 8px 0
+        font-size: 14px
 
     .footer-text
-      .copyright
-        font-family: 'ProximaNova-SemiBold', sans-serif
-        display: block
-        margin-bottom: 15px
-        color: #52575C
-        padding-right: 35px
-
+      display: none

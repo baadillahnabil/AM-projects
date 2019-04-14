@@ -14622,17 +14622,15 @@ body {
   .hic__footer {
     padding: 20px 16px;
   }
-  .hic__footer .footer-links .footer-link {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 8px 0;
+  .hic__footer .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .hic__footer .footer-text .copyright {
-    font-family: "ProximaNova-SemiBold", sans-serif;
-    display: block;
-    margin-bottom: 15px;
-    color: #52575C;
-    padding-right: 35px;
+  .hic__footer .footer-links .footer-link {
+    font-size: 14px;
+  }
+  .hic__footer .footer-text {
+    display: none;
   }
 }

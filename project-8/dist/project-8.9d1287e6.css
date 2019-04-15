@@ -14844,6 +14844,16 @@ body {
   box-shadow: none;
   border-color: #CACACA;
 }
+.hic__step2 .content .form .form-group input.form-control.error-state {
+  border: 1px solid red;
+}
+.hic__step2 .content .form .form-group .info {
+  text-align: center;
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 0.25rem;
+}
 .hic__step2 .content .button-next {
   margin-top: 20px;
 }

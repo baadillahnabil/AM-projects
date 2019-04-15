@@ -2,12 +2,16 @@ nav#navbar.navbar.navbar-light.navbar-expand-lg.fixed-top.hic__header
   
   //- Company Logo
   a.navbar-brand(href='#')
-    div.d-inline-block.align-top.logo
+    .d-inline-block.align-top.logo
       include ../../static/images/logo_full.svg
+  
+  .assistant-avatar
+    img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
+  
   
   //- Contact Number
   .phone
-    div.d-inline-block.align-top.phone-icon
+    .d-inline-block.align-top.phone-icon
       include ../../static/icons/phone_header.svg
     .phone-details.d-none.d-md-flex.d-lg-flex.d-xl-flex
       p.mb-0.phone-days Monday-Friday 8am to 8pm AEST

@@ -10975,11 +10975,11 @@ function isFirstNameValid() {
 
   if (isEmpty || isMatch || isSingleCharacter || !stringOnlyRegEx.test((0, _jquery.default)('#step2-form__firstName').val())) {
     (0, _jquery.default)('#step2-form__firstName').addClass('error-state');
-    (0, _jquery.default)('#step2-form__firstName + .info').removeClass('invisible');
+    (0, _jquery.default)('#step2-form__firstName + .info').removeClass('d-none');
     return false;
   } else {
     (0, _jquery.default)('#step2-form__firstName').removeClass('error-state');
-    (0, _jquery.default)('#step2-form__firstName + .info').addClass('invisible');
+    (0, _jquery.default)('#step2-form__firstName + .info').addClass('d-none');
     return true;
   }
 } // Rule:
@@ -10998,24 +10998,44 @@ function isLastNameValid() {
 
   if (isEmpty || isMatch || isSingleCharacter || !stringOnlyRegEx.test((0, _jquery.default)('#step2-form__lastName').val())) {
     (0, _jquery.default)('#step2-form__lastName').addClass('error-state');
-    (0, _jquery.default)('#step2-form__lastName + .info').removeClass('invisible');
+    (0, _jquery.default)('#step2-form__lastName + .info').removeClass('d-none');
     return false;
   } else {
     (0, _jquery.default)('#step2-form__lastName').removeClass('error-state');
-    (0, _jquery.default)('#step2-form__lastName + .info').addClass('invisible');
+    (0, _jquery.default)('#step2-form__lastName + .info').addClass('d-none');
     return true;
   }
 }
 
-function goToStep3() {// TODO
+function goToStep3() {
+  (0, _jquery.default)('#hic__step2').addClass('animated faster fadeOut');
+  (0, _jquery.default)('#hic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+    (0, _jquery.default)('#hic__step2').addClass('d-none');
+    (0, _jquery.default)('#hic__step2').removeClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step3').removeClass('d-none');
+    (0, _jquery.default)('#hic__step3').addClass('animated faster fadeIn');
+    (0, _jquery.default)('#hic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step3').removeClass('animated faster fadeIn');
+    });
+  });
 }
+},{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/Step3/step3.js":[function(require,module,exports) {
+"use strict";
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery.default)(document).ready(function () {});
 },{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/mainContent.js":[function(require,module,exports) {
 "use strict";
 
 require("./Step1/step1");
 
 require("./Step2/step2");
-},{"./Step1/step1":"components/MainContent/Step1/step1.js","./Step2/step2":"components/MainContent/Step2/step2.js"}],"index.js":[function(require,module,exports) {
+
+require("./Step3/step3");
+},{"./Step1/step1":"components/MainContent/Step1/step1.js","./Step2/step2":"components/MainContent/Step2/step2.js","./Step3/step3":"components/MainContent/Step3/step3.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./components/MainContent/mainContent");

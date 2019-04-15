@@ -41,12 +41,12 @@ function isFirstNameValid() {
 
   if (isEmpty || isMatch || isSingleCharacter || !stringOnlyRegEx.test($('#step2-form__firstName').val())) {
     $('#step2-form__firstName').addClass('error-state')
-    $('#step2-form__firstName + .info').removeClass('invisible')
+    $('#step2-form__firstName + .info').removeClass('d-none')
 
     return false
   } else {
     $('#step2-form__firstName').removeClass('error-state')
-    $('#step2-form__firstName + .info').addClass('invisible')
+    $('#step2-form__firstName + .info').addClass('d-none')
 
     return true
   }
@@ -66,17 +66,28 @@ function isLastNameValid() {
 
   if (isEmpty || isMatch || isSingleCharacter || !stringOnlyRegEx.test($('#step2-form__lastName').val())) {
     $('#step2-form__lastName').addClass('error-state')
-    $('#step2-form__lastName + .info').removeClass('invisible')
+    $('#step2-form__lastName + .info').removeClass('d-none')
 
     return false
   } else {
     $('#step2-form__lastName').removeClass('error-state')
-    $('#step2-form__lastName + .info').addClass('invisible')
+    $('#step2-form__lastName + .info').addClass('d-none')
 
     return true
   }
 }
 
 function goToStep3() {
-  // TODO
+  $('#hic__step2').addClass('animated faster fadeOut')
+  $('#hic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+    $('#hic__step2').addClass('d-none')
+    $('#hic__step2').removeClass('animated faster fadeOut')
+
+    $('#hic__step3').removeClass('d-none')
+    $('#hic__step3').addClass('animated faster fadeIn')
+
+    $('#hic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#hic__step3').removeClass('animated faster fadeIn')
+    })
+  })
 }

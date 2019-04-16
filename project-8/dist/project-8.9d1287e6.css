@@ -15043,6 +15043,52 @@ body {
   margin-top: -3px;
 }
 
+@media (max-width: 1199.98px) {
+  .hic__step3 .content .title p {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hic__step3 {
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .hic__step3 .content {
+    width: auto;
+    height: auto;
+  }
+  .hic__step3 .content .title p {
+    padding: 0 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hic__step3 .content .form-area {
+    width: 100%;
+  }
+  .hic__step3 .content .form-area .form {
+    width: 100%;
+  }
+  .hic__step3 .content .form-area .form .form-group .input-group {
+    width: 100%;
+  }
+  .hic__step3 .content .form-area .form .form-group .input-group input.form-control {
+    min-width: 0;
+  }
+  .hic__step3 .content .form-area .form .button-next {
+    width: 100%;
+    margin-top: 0;
+  }
+  .hic__step3 .content .form-area .form .button-next button {
+    width: 100%;
+  }
+  .hic__step3 .content .form-area .form .button-back {
+    width: 100%;
+  }
+  .hic__step3 .content .form-area .form .button-back button {
+    width: 100%;
+  }
+}
 .hic__footer {
   padding: 30px 10%;
   box-shadow: 0 -4px 16px 0 rgba(0, 0, 0, 0.04);

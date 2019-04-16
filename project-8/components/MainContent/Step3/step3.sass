@@ -133,12 +133,53 @@
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  // .hic__step3
+  .hic__step3
+    .content
+      .title
+        p
+          padding: 0 30px
     
     
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  // .hic__step3
-    
-    
+  .hic__step3
+    padding: 20px
+    padding-top: 30px
+
+    .content
+      width: auto
+      height: auto
+
+      .title
+        p
+          padding: 0 5px
+          margin-bottom: 15px
+          font-size: 24px
+          line-height: 28px
+
+      .form-area
+        width: 100%
+  
+        .form
+          width: 100%
+
+          .form-group
+            .input-group
+              width: 100%
+              input.form-control
+                min-width: 0
+
+          .button-next
+            width: 100%
+            margin-top: 0
+
+            button
+              width: 100%
+          
+          .button-back
+            width: 100%
+            // margin-top: 0
+
+            button
+              width: 100%

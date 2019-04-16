@@ -1,4 +1,28 @@
 .hic__step3
 
-  h1 This is Step 3
+  .content
+    .title
+      p Great! Thanks Heru. Please enter your suburb or postcode.
 
+    .form-area
+      .image
+        include ../../../static/images/aussie.svg
+
+      .form
+        .form-group
+          label.label(for='step3-form__postcode') Your Postcode
+          .input-group
+            .input-group-prepend
+              span.input-group-text
+                include ../../../static/icons/maps-and-flags.svg
+            input#step3-form__postcode.form-control(type='text')
+          small.form-text.info.d-none Please enter a valid first name
+
+        .button-next
+          button#step3-next-button.btn Next
+        
+        .button-back
+          button#step3-back-button.btn
+            .button-icon
+              include ../../../static/icons/chevron-left.svg
+            | Back

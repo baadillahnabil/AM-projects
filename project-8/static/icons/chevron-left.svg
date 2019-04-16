@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="12px" viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icons/Chevron/Left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Back-mobile" transform="translate(0.000000, -6.000000)" fill="#CACCCF">
+            <g id="Back">
+                <g id="Icons/Chevron/Left" transform="translate(0.000000, 6.000000)">
+                    <path d="M6.97912498,3.22341139 C7.26995192,2.92846638 7.74481392,2.92512803 8.03975894,3.21595498 C8.33470395,3.50678192 8.3380423,3.98164392 8.04721535,4.27658894 L3.610045,8.77658894 C3.31949429,9.0712538 2.84518393,9.0749069 2.55012899,8.78475233 L-2.02587066,4.28475233 C-2.32120613,3.99432189 -2.32518243,3.5194648 -2.034752,3.22412934 C-1.74432156,2.92879387 -1.26946447,2.92481757 -0.974129008,3.215248 L3.06783642,7.19008319 L6.97912498,3.22341139 Z" id="Status" transform="translate(3.006585, 6.000000) scale(-1, 1) rotate(-90.000000) translate(-3.006585, -6.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

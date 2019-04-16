@@ -11026,7 +11026,34 @@ var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery.default)(document).ready(function () {});
+(0, _jquery.default)(document).ready(function () {
+  // On Next Button Clicked
+  (0, _jquery.default)('#step3-next-button').on('click', function () {
+    (0, _jquery.default)('#hic__step3').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step3').addClass('d-none');
+      (0, _jquery.default)('#hic__step3').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step4').removeClass('d-none');
+      (0, _jquery.default)('#hic__step4').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step4').removeClass('animated faster fadeIn');
+      });
+    });
+  }); // On Back Button Clicked
+
+  (0, _jquery.default)('#step3-back-button').on('click', function () {
+    (0, _jquery.default)('#hic__step3').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step3').addClass('d-none');
+      (0, _jquery.default)('#hic__step3').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step2').removeClass('d-none');
+      (0, _jquery.default)('#hic__step2').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step2').removeClass('animated faster fadeIn');
+      });
+    });
+  });
+});
 },{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/mainContent.js":[function(require,module,exports) {
 "use strict";
 

@@ -14,12 +14,12 @@
       .form
         .form-group
           label.label(for='step3-form__postcode') Your Postcode
-          .input-group
+          .input-group#step3-form__postcode
             .input-group-prepend
               span.input-group-text
                 include ../../../static/icons/maps-and-flags.svg
-            input#step3-form__postcode.form-control(type='text')
-          small.form-text.info.d-none Please enter a valid first name
+            input.form-control(type='text', autofocus)
+          small.form-text.info.d-none Please enter a valid postcode from the list
 
         .button-next
           button#step3-next-button.btn Next

@@ -21,6 +21,9 @@ $(document).ready(() => {
       const firstName = $('#step2-form__firstName').val()
       window.localStorage.setItem('first_name', firstName)
 
+      // Set Name
+      $('#step3-personName').html(window.localStorage.getItem('first_name'))
+
       // Go To Step 3
       goToStep3()
     }

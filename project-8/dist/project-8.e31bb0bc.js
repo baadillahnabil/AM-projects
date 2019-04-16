@@ -10955,7 +10955,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     if (isFirstNameValid() && isLastNameValid()) {
       // Save First Name on LocalStorage so that we can use that name
       var firstName = (0, _jquery.default)('#step2-form__firstName').val();
-      window.localStorage.setItem('first_name', firstName); // Go To Step 3
+      window.localStorage.setItem('first_name', firstName); // Set Name
+
+      (0, _jquery.default)('#step3-personName').html(window.localStorage.getItem('first_name')); // Go To Step 3
 
       goToStep3();
     }

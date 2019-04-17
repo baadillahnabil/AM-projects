@@ -44,12 +44,12 @@ function isRadioValid() {
   const isSelected = $('#step2-form input[name="step2-form"]:checked').val() !== undefined
   if (!isSelected) {
     $('#step2-form label.label').addClass('error-state')
-    $('#step2-form > .info').removeClass('d-none')
+    $('#step2-form + .info').removeClass('d-none')
 
     return false
   } else {
     $('#step2-form  label.label').removeClass('error-state')
-    $('#step2-form > .info').addClass('d-none')
+    $('#step2-form + .info').addClass('d-none')
 
     return true
   }

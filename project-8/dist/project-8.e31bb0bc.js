@@ -15735,11 +15735,11 @@ function isRadioValid() {
 
   if (!isSelected) {
     (0, _jquery.default)('#step2-form label.label').addClass('error-state');
-    (0, _jquery.default)('#step2-form > .info').removeClass('d-none');
+    (0, _jquery.default)('#step2-form + .info').removeClass('d-none');
     return false;
   } else {
     (0, _jquery.default)('#step2-form  label.label').removeClass('error-state');
-    (0, _jquery.default)('#step2-form > .info').addClass('d-none');
+    (0, _jquery.default)('#step2-form + .info').addClass('d-none');
     return true;
   }
 }

@@ -15133,6 +15133,9 @@ body {
   color: #25282B;
   text-align: center;
 }
+.hic__step4 .content .form {
+  width: 100%;
+}
 .hic__step4 .content .form .form-group.form-check {
   padding: 0;
 }
@@ -15140,7 +15143,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .hic__step4 .content .form .form-group.form-check .form-container .form-item {
   padding: 8px;
@@ -15256,6 +15258,9 @@ body {
   }
   .hic__step4 .content .form {
     width: 490px;
+  }
+  .hic__step4 .content .form .form-group.form-check .form-container {
+    flex-wrap: wrap;
   }
   .hic__step4 .content .form .form-group.form-check .form-container .form-item:nth-child(1) {
     padding-left: 0;

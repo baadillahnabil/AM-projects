@@ -1,0 +1,261 @@
+.hic__step4
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 100px
+
+  .content
+    width: 736px
+    height: 654px
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    .title
+      p
+        margin-bottom: 35px
+        font-size: 35px
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        line-height: 40px
+        color: #25282B
+        text-align: center
+
+    .form
+      .form-group.form-check
+        padding: 0
+
+        .form-container
+          display: flex
+          align-items: center
+          justify-content: center
+          flex-wrap: wrap
+
+          .form-item
+            padding: 8px
+
+            &:first-child
+              padding-left: 0
+
+            &:last-child
+              padding-right: 0
+
+            input
+              display: none
+
+              &:checked
+                + label.label
+                  border: 2px solid $primary
+                  background-color: rgba($color: $primary, $alpha: .14)
+
+                  .text
+                    font-family: 'ProximaNova-SemiBold', sans-serif
+                    color: $primary
+
+            label.label
+              display: flex
+              flex-direction: column
+              align-items: center
+              padding-top: 7px
+              padding-bottom: 15px
+              width: 171px
+              cursor: pointer
+              border: 1px solid #C6C6C6
+              border-radius: 8px
+              margin-bottom: 0
+
+              &.error-state
+                border-color: red
+
+              .image
+                padding: 20px
+
+                svg
+                  height: 108px
+                  width: auto
+
+              .text
+                font-size: 20px
+                color: #25282B
+                text-align: center
+                margin-bottom: 0
+                
+        .info
+          text-align: center
+          color: red
+          font-size: 12px
+          margin-top: 2px
+          margin-bottom: 0.25rem
+        
+    .button-next
+      margin-top: 20px
+
+      button
+        width: 256px
+        border-radius: 4px
+        background-color: $secondary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 5px 0
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+
+    .button-back
+      display: flex
+      justify-content: flex-start
+      margin-top: 30px
+
+      button
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #CACCCF
+        font-size: 16px
+        line-height: 24px
+        padding: 0
+
+        &:focus
+          outline: none
+          box-shadow: none
+
+        &:active
+          box-shadow: none
+
+        .button-icon
+          margin-right: 10px
+          margin-top: -3px
+    
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .hic__step4
+    .content
+      height: auto
+
+      .title
+        p
+          padding: 0 30px
+
+      .form
+        width: 490px
+
+        .form-group.form-check
+          .form-container
+            .form-item
+              &:nth-child(1)
+                padding-left: 0
+
+              &:nth-child(2)
+                padding-right: 0
+              
+              &:nth-child(3)
+                padding-left: 0
+
+              &:nth-child(4)
+                padding-right: 0
+
+              label.label
+                width: 235px
+                padding-bottom: 10px
+
+                .image
+                  padding: 15px
+
+                  svg
+                    height: 78px
+
+                .text
+                  font-size: 18px
+    
+      .button-back
+        margin-bottom: 50px
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__step4
+    padding: 20px
+    padding-top: 30px
+
+    .content
+      width: auto
+      height: auto
+
+      .title
+        p
+          margin-bottom: 15px
+          font-size: 24px
+          line-height: 28px
+          padding: 0
+
+      .form
+        width: 100%
+
+        .form-group.form-check
+          .form-container
+            flex-wrap: nowrap
+            flex-direction: column
+
+            .form-item
+              background-color: white
+              width: 100%
+              padding: 5px 0
+
+
+              input
+                &:checked
+                  + label.label
+                    .image
+                      background-color: $primary
+                      border: none
+
+              label.label
+                flex-direction: row
+                align-items: center
+                width: 100%
+                padding: 10px 0      
+
+                .image
+                  display: flex
+                  align-items: center
+                  justify-content: center
+                  border: 1px solid #9A9A9A
+                  border-radius: 50%
+                  width: 24px
+                  height: 24px
+                  margin: 0 10px
+
+                  svg
+                    width: 12px
+                    height: 10px
+
+                .text
+                  font-size: 18px
+                  line-height: 24px
+                  
+
+      .button-next
+        width: 100%
+        margin-top: 0
+
+        button
+          width: 100%
+
+      .button-back
+        width: 100%
+        margin-top: 13px
+        margin-bottom: 0
+
+        button
+          width: 100%

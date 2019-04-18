@@ -15551,7 +15551,7 @@ body {
     height: auto;
   }
   .hic__step5 .content .title p {
-    padding: 0 30px;
+    padding: 0 40px;
   }
   .hic__step5 .content .button-back {
     margin-bottom: 50px;
@@ -15571,6 +15571,29 @@ body {
     font-size: 24px;
     line-height: 28px;
     padding: 0;
+  }
+  .hic__step5 .content .form .form-group.form-check .form-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .hic__step5 .content .form .form-group.form-check .form-container .form-item {
+    width: 100%;
+    padding: 4px 0;
+  }
+  .hic__step5 .content .chat-bubble {
+    width: 100%;
+  }
+  .hic__step5 .content .chat-bubble .message {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 18px;
+  }
+  .hic__step5 .content .button-skip {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .hic__step5 .content .button-skip button {
+    width: 100%;
   }
   .hic__step5 .content .button-next {
     width: 100%;

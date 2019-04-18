@@ -15750,7 +15750,55 @@ var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery.default)(document).ready(function () {});
+(0, _jquery.default)(document).ready(function () {
+  // On Selection Changed
+  (0, _jquery.default)('#step5-form input[name="step5-form"]').on('change', function () {
+    var selected = (0, _jquery.default)('#step5-form input[name="step5-form"]:checked').val() !== undefined;
+
+    if (selected) {
+      (0, _jquery.default)('#step5-skip-button').addClass('d-none');
+      (0, _jquery.default)('#step5-chat-bubble').addClass('d-none');
+      (0, _jquery.default)('#step5-next-button').removeClass('d-none');
+    } else {
+      (0, _jquery.default)('#step5-next-button').addClass('d-none');
+      (0, _jquery.default)('#step5-chat-bubble').removeClass('d-none');
+      (0, _jquery.default)('#step5-skip-button').removeClass('d-none');
+    }
+  }); // On Next or Skip Button Clicked
+
+  (0, _jquery.default)('#step5-next-button').on('click', function () {
+    goToStep6();
+  });
+  (0, _jquery.default)('#step5-skip-button').on('click', function () {
+    goToStep6();
+  }); // On Back Button Clicked
+
+  (0, _jquery.default)('#step5-back-button').on('click', function () {
+    (0, _jquery.default)('#hic__step5').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step5').addClass('d-none');
+      (0, _jquery.default)('#hic__step5').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#hic__step4').removeClass('d-none');
+      (0, _jquery.default)('#hic__step4').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#hic__step4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#hic__step4').removeClass('animated faster fadeIn');
+      });
+    });
+  });
+});
+
+function goToStep6() {
+  (0, _jquery.default)('#hic__step5').addClass('animated faster fadeOut');
+  (0, _jquery.default)('#hic__step5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+    (0, _jquery.default)('#hic__step5').addClass('d-none');
+    (0, _jquery.default)('#hic__step5').removeClass('animated faster fadeOut');
+    (0, _jquery.default)('#hic__step6').removeClass('d-none');
+    (0, _jquery.default)('#hic__step6').addClass('animated faster fadeIn');
+    (0, _jquery.default)('#hic__step6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#hic__step6').removeClass('animated faster fadeIn');
+    });
+  });
+}
 },{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/mainContent.js":[function(require,module,exports) {
 "use strict";
 

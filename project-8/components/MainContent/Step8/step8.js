@@ -34,6 +34,8 @@ function goToStep9() {
 
     $('#hic__step9').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
       $('#hic__step9').removeClass('animated faster fadeIn')
+
+      step9ProgressAnimation()
     })
   })
 }
@@ -74,4 +76,24 @@ function isPhoneValid() {
 
     return true
   }
+}
+
+function step9ProgressAnimation() {
+  setTimeout(() => {
+    $('.hic__step9 .progress .progress-bar').css('width', '0')
+    $('.hic__step9 .progress .progress-bar').css('width', '30%')
+    setTimeout(() => {
+      $('.hic__step9 .progress .progress-bar').css('width', '70%')
+      setTimeout(() => {
+        $('.hic__step9 .progress .progress-bar').css('width', '100%')
+
+        // on progress complete
+        $('#step9-firstTitle').addClass('d-none')
+        $('#step9-secondTitle').removeClass('d-none')
+        $('#step9-loading .success').removeClass('d-none')
+        $('#step9-loading .loading').addClass('d-none')
+        $('#step9-loading .message').html('Analysis complete')
+      }, 800)
+    }, 1000)
+  }, 500)
 }

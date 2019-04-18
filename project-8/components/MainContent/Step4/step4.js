@@ -2,7 +2,7 @@ import $ from 'jquery'
 
 $(document).ready(() => {
   // Check Validation
-  $('#step2-form input[name="step2-form"]').on('change', () => {
+  $('#step4-form input[name="step4-form"]').on('change', () => {
     isRadioValid()
   })
 
@@ -41,15 +41,15 @@ $(document).ready(() => {
 })
 
 function isRadioValid() {
-  const isSelected = $('#step2-form input[name="step2-form"]:checked').val() !== undefined
+  const isSelected = $('#step4-form input[name="step4-form"]:checked').val() !== undefined
   if (!isSelected) {
-    $('#step2-form label.label').addClass('error-state')
-    $('#step2-form + .info').removeClass('d-none')
+    $('#step4-form label.label').addClass('error-state')
+    $('#step4-form + .info').removeClass('d-none')
 
     return false
   } else {
-    $('#step2-form  label.label').removeClass('error-state')
-    $('#step2-form + .info').addClass('d-none')
+    $('#step4-form  label.label').removeClass('error-state')
+    $('#step4-form + .info').addClass('d-none')
 
     return true
   }

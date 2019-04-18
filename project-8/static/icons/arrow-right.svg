@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icons/Arrow/Right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms-/-Button-/-HIC-/-Ghost" transform="translate(-226.000000, -22.000000)" fill="#71BE59">
+            <g id="Icons/Arrow/Right" transform="translate(224.000000, 20.000000)">
+                <path d="M11.8949879,7.44419511 L8.39646011,3.73634445 C8.15603142,3.48153051 8.16769298,3.08005704 8.42250692,2.83962836 C8.67732086,2.59919967 9.07879433,2.61086123 9.31922301,2.86567516 L13.8270395,7.64320194 C14.0631788,7.89346983 14.0567384,8.28636538 13.8125234,8.52875927 L9.30470689,13.0029605 C9.05605576,13.2497574 8.65441578,13.2482542 8.40761887,12.9996031 C8.16082196,12.750952 8.1623251,12.349312 8.41097623,12.1025151 L11.8260801,8.71287804 L2.63434147,8.71287804 C2.28400435,8.71287804 2,8.4288737 2,8.07853658 C2,7.72819946 2.28400435,7.44419511 2.63434147,7.44419511 L11.8949879,7.44419511 Z" id="Status"></path>
+            </g>
+        </g>
+    </g>
+</svg>

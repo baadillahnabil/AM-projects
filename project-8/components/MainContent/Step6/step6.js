@@ -6,13 +6,21 @@ $(document).ready(() => {
     const selected = $('#step6-form input[name="step6-form"]:checked').val() !== undefined
 
     if (selected) {
-      $('#step6-skip-button').addClass('d-none')
-      $('#step6-chat-bubble').addClass('d-none')
-      $('#step6-next-button').removeClass('d-none')
+      $('#step6-skip-button').fadeOut(200)
+      $('#step6-chat-bubble').fadeOut(200, () => {
+        $('#step6-next-button').removeClass('d-none')
+        $('#step6-next-button').css('display', '')
+        $('#step6-skip-button').addClass('d-none')
+        $('#step6-chat-bubble').addClass('d-none')
+      })
     } else {
-      $('#step6-next-button').addClass('d-none')
-      $('#step6-chat-bubble').removeClass('d-none')
-      $('#step6-skip-button').removeClass('d-none')
+      $('#step6-next-button').fadeOut(200, () => {
+        $('#step6-skip-button').removeClass('d-none')
+        $('#step6-chat-bubble').removeClass('d-none')
+        $('#step6-skip-button').css('display', '')
+        $('#step6-chat-bubble').css('display', '')
+        $('#step6-next-button').addClass('d-none')
+      })
     }
   })
 

@@ -8,14 +8,14 @@
         Created with Sketch.
     </desc>
     <defs>
-        <linearGradient id="linearGradient-1" x1="100%" x2="0%" y1="50.0000407%" y2="50%">
+        <linearGradient id="linearGradient-1-myOwn" x1="100%" x2="0%" y1="50.0000407%" y2="50%">
             <stop offset="0%" stop-color="#D31145"/>
             <stop offset="48.6903902%" stop-color="#AC55A1"/>
             <stop offset="100%" stop-color="#27AAE1"/>
         </linearGradient>
     </defs>
     <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-        <g id="Tablet-Step1" fill="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(-406.000000, -837.000000)">
+        <g id="Tablet-Step1" fill="url(#linearGradient-1-myOwn)" fill-rule="nonzero" transform="translate(-406.000000, -837.000000)">
             <g id="Partner" transform="translate(0.000000, 740.000000)">
                 <g id="Group-2" transform="translate(252.000000, 86.000000)">
                     <g id="Logo-8" transform="translate(146.000000, 0.000000)">

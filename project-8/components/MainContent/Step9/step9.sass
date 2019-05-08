@@ -49,6 +49,31 @@
         width: 0
         background-color: $primary
 
+    .button-next
+      margin-top: 60px
+
+      button
+        width: 188px
+        border-radius: 4px
+        background-color: $secondary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 0
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+
+
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
@@ -84,5 +109,12 @@
 
       .progress
         width: 100%
+
+      .button-next
+        width: 100%
+        margin-top: 25px
+
+        button
+          width: 100%      
       
       

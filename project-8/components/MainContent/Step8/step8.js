@@ -91,6 +91,7 @@ function step9ProgressAnimation() {
         $('#step9-firstTitle').addClass('d-none')
         $('#step9-secondTitle').removeClass('d-none')
         $('#step9-loading .success').removeClass('d-none')
+        $('#step9-next-button').removeClass('d-none')
         $('#step9-loading .loading').addClass('d-none')
         $('#step9-loading .message').html('Analysis complete')
       }, 800)

@@ -4,6 +4,15 @@ $(document).ready(() => {
   // Check Validation
   $('#currentFund').on('change', () => {
     isSelectValid()
+
+    const value = $('#currentFund').val()
+    if (value === 'not insured') {
+      $('#step7-chat-bubble .message').html('No worries, we will find suitable health insurance cover for you.')
+    } else {
+      $('#step7-chat-bubble .message').html(
+        'We will take into account your current fund when putting together your health insurance quotes.'
+      )
+    }
   })
 
   // On Next or Skip Button Clicked

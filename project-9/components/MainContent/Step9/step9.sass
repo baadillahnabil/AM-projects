@@ -1,0 +1,120 @@
+.hic__step9
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 100px
+
+  .content
+    width: 736px
+    height: 654px
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    .title
+      p
+        margin-bottom: 35px
+        font-size: 35px
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        line-height: 40px
+        color: #25282B
+        text-align: center
+
+    .text
+      display: flex
+      align-items: center
+      font-size: 16px
+      line-height: 20px
+      margin-top: 20px
+
+      .success
+        margin-right: 10px
+
+      .loading
+        margin-right: 10px
+
+        .spinner-border
+          width: 20px
+          height: 20px
+          border-width: 3px
+          border-color: rgba($color: $primary, $alpha: .2)
+          border-right-color: $primary
+
+    .progress
+      width: 488px
+      height: 6px
+      margin-top: 16px
+
+      .progress-bar
+        width: 0
+        background-color: $primary
+
+    .button-next
+      margin-top: 60px
+
+      button
+        width: 188px
+        border-radius: 4px
+        background-color: $secondary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 0
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .hic__step9
+    .content
+      height: auto
+
+      .title
+        p
+          padding: 0 20px
+
+      
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .hic__step9
+    padding: 20px
+    padding-top: 30px
+
+    .content
+      width: auto
+      height: auto
+
+      .title
+        p
+          margin-bottom: 15px
+          font-size: 24px
+          line-height: 28px
+          padding: 0 5px
+      
+      .text
+        margin-top: 40px
+
+      .progress
+        width: 100%
+
+      .button-next
+        width: 100%
+        margin-top: 25px
+
+        button
+          width: 100%      
+      
+      

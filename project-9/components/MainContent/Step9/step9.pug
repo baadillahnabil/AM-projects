@@ -1,0 +1,32 @@
+.hic__step9
+
+  .content
+    .title
+      p#step9-firstTitle
+        | Won't be a moment! 
+        br
+        | I'm putting your quotes together now...
+      p#step9-secondTitle.d-none 
+        | Thanks again 
+        span#step9-personName
+        | .
+        br
+        | Glad I could help. We'll be in contact shortly with your quotes. 
+        br
+        br
+        | Have a lovely day!
+
+    .text#step9-loading
+      .success.d-none
+        include ../../../static/icons/check-green.svg
+      .loading
+        .spinner-border
+          .sr-only
+      span.message Finding best matches
+    
+    .progress
+      .progress-bar
+
+    .button-next.d-none#step9-next-button
+      button.btn See My Quotes
+      

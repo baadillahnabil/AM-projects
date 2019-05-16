@@ -1,0 +1,190 @@
+.lic__step1
+  
+  .banner
+    padding: 110px 100px
+    background-image: linear-gradient(180deg, #75A245, #71A145, #538842)
+    display: flex
+    align-content: center
+    justify-content: center
+
+    .banner-image
+      img
+        width: 340px
+        height: 340px
+
+    .banner-desc
+      padding: 50px 30px
+
+      .banner-title
+        p 
+          font-family: 'ProximaNova-SemiBold', sans-serif
+          font-size: 50px
+          line-height: 56px
+          color: white
+          margin-bottom: 25px
+
+      .banner-subtitle
+        p 
+          font-size: 24px
+          line-height: 30px
+          opacity: .9
+          color: white
+
+      .banner-cta
+        margin-top: 40px
+        margin-bottom: 20px
+
+        button
+          width: 256px
+          border-radius: 4px
+          border: none
+          background-color: $secondary
+          color: white
+          text-align: center
+          font-family: 'ProximaNova-SemiBold', sans-serif
+          font-size: 21px
+          padding: 12px
+          margin: 5px 0
+          box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
+          display: flex
+          justify-content: center
+          align-items: center
+
+          &:focus
+            outline: none
+
+          &:active
+            box-shadow: none
+
+      .banner-info
+        p
+          font-family: 'ProximaNova-RegItalic', sans-serif
+          font-size: 14px
+          color: white
+          line-height: 24px
+
+  .partners
+    padding: 0 10%
+    display: flex
+    align-items: center
+
+    .company-logo
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-top: 15px
+      padding-bottom: 15px
+
+
+  .step1-carousel-left-arrow
+    cursor: pointer
+  .step1-carousel-right-arrow
+    cursor: pointer
+  .slick-initialized .slick-slide 
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+
+    
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .lic__step1
+
+    .banner
+      padding-left: 40px
+      padding-right: 40px
+
+      .banner-image
+        img
+          width: 284px
+          height: 284px
+      
+      .banner-desc
+        padding: 0 30px
+
+        .banner-title
+          p
+            margin-bottom: 15px
+            font-size: 44px
+            line-height: 48px
+
+    .partners
+      padding: 0 20px
+
+      .company-logo
+        min-width: 20%
+
+    
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .lic__step1
+    
+    .banner
+      padding: 30px 20px
+
+      .banner-image
+        position: absolute
+        top: 240px
+
+        img
+          width: 216px
+          height: 216px
+
+      .banner-desc
+        padding: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .banner-title
+          p
+            font-size: 32px
+            line-height: 34px
+            text-align: center
+
+        .banner-subtitle
+          p
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+            margin-bottom: 280px
+
+        .banner-info
+          p
+            font-size: 13px
+            text-align: center
+            margin-bottom: 0
+
+        .banner-cta
+          margin: 0
+    
+    .partners
+      padding: 0
+      margin-top: 20px
+      margin-bottom: 15px
+
+      .row
+        justify-content: flex-start
+
+      .company-logo
+        width: auto !important
+        min-width: 0
+        padding: 0
+        margin: 5px
+        border: 1px solid #F1F1F1
+        border-radius: 2px
+
+        svg, img
+          width: 104px
+          height: auto
+
+    .step1-carousel-left-arrow
+      margin-left: 20px
+      margin-bottom: 10px
+    .step1-carousel-right-arrow
+      margin-right: 20px
+      margin-bottom: 10px

@@ -1,0 +1,68 @@
+.hic__step5
+
+  .content
+    .title
+      p Which hospital services are you interested in?
+
+    .form
+      .form-group.form-check
+
+        #step5-form.form-container
+          .form-item.pl-0
+            input#step5-form__private-hospital(name='step5-form', type='checkbox')
+            label.label(for='step5-form__private-hospital')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Private Hospital
+          .form-item.pr-0
+            input#step5-form__psychiatric-service(name='step5-form', type='checkbox')
+            label.label(for='step5-form__psychiatric-service')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Psychiatric Service
+          .form-item.pl-0
+            input#step5-form__ambulance-cover(name='step5-form', type='checkbox')
+            label.label(for='step5-form__ambulance-cover')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Ambulance Cover
+          .form-item.pr-0
+            input#step5-form__heart-surgery(name='step5-form', type='checkbox')
+            label.label(for='step5-form__heart-surgery')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Heart Surgery
+          .form-item.pl-0
+            input#step5-form__pregnancy(name='step5-form', type='checkbox')
+            label.label(for='step5-form__pregnancy')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Pregnancy & Birth Related
+          .form-item.pr-0
+            input#step5-form__rehab(name='step5-form', type='checkbox')
+            label.label(for='step5-form__rehab')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Rehabilitation
+
+        small.form-text.info.d-none Please select at least one of these
+
+
+    .chat-bubble#step5-chat-bubble
+      .avatar
+        img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
+      .message Don't want hospital cover? You can skip this question if you want extras only.
+
+    .button-skip#step5-skip-button
+      button.btn I only want extras cover
+        .button-icon
+          include ../../../static/icons/arrow-right.svg
+
+    .button-next#step5-next-button.d-none
+      button.btn Next
+
+    .button-back
+      button#step5-back-button.btn
+        .button-icon
+          include ../../../static/icons/chevron-left.svg
+        | Back

@@ -1,0 +1,31 @@
+.hic__step3
+
+  .content
+    .title
+      p 
+        | Great! Thanks 
+        span#step3-personName
+        | . Please enter your suburb or postcode.
+
+    .form-area
+      .image.d-none.d-md-block.d-lg-block.d-xl-block
+        include ../../../static/images/aussie.svg
+
+      .form
+        .form-group
+          label.label(for='step3-form__postcode') Your Postcode
+          .input-group#step3-form__postcode
+            .input-group-prepend
+              span.input-group-text
+                include ../../../static/icons/maps-and-flags.svg
+            input.form-control(type='text', autofocus)
+          small.form-text.info.d-none Please enter a valid postcode from the list
+
+        .button-next
+          button#step3-next-button.btn Next
+        
+        .button-back
+          button#step3-back-button.btn
+            .button-icon
+              include ../../../static/icons/chevron-left.svg
+            | Back

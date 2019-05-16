@@ -83,16 +83,16 @@ function isLastNameValid() {
 }
 
 function goToStep3() {
-  $('#hic__step2').addClass('animated faster fadeOut')
-  $('#hic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-    $('#hic__step2').addClass('d-none')
-    $('#hic__step2').removeClass('animated faster fadeOut')
+  $('#lic__step2').addClass('animated faster fadeOut')
+  $('#lic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+    $('#lic__step2').addClass('d-none')
+    $('#lic__step2').removeClass('animated faster fadeOut')
 
-    $('#hic__step3').removeClass('d-none')
-    $('#hic__step3').addClass('animated faster fadeIn')
+    $('#lic__step3').removeClass('d-none')
+    $('#lic__step3').addClass('animated faster fadeIn')
 
-    $('#hic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-      $('#hic__step3').removeClass('animated faster fadeIn')
+    $('#lic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#lic__step3').removeClass('animated faster fadeIn')
     })
   })
 }

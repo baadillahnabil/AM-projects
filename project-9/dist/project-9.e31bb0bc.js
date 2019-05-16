@@ -14080,14 +14080,14 @@ function isLastNameValid() {
 }
 
 function goToStep3() {
-  (0, _jquery.default)('#hic__step2').addClass('animated faster fadeOut');
-  (0, _jquery.default)('#hic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-    (0, _jquery.default)('#hic__step2').addClass('d-none');
-    (0, _jquery.default)('#hic__step2').removeClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step3').removeClass('d-none');
-    (0, _jquery.default)('#hic__step3').addClass('animated faster fadeIn');
-    (0, _jquery.default)('#hic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step3').removeClass('animated faster fadeIn');
+  (0, _jquery.default)('#lic__step2').addClass('animated faster fadeOut');
+  (0, _jquery.default)('#lic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+    (0, _jquery.default)('#lic__step2').addClass('d-none');
+    (0, _jquery.default)('#lic__step2').removeClass('animated faster fadeOut');
+    (0, _jquery.default)('#lic__step3').removeClass('d-none');
+    (0, _jquery.default)('#lic__step3').addClass('animated faster fadeIn');
+    (0, _jquery.default)('#lic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#lic__step3').removeClass('animated faster fadeIn');
     });
   });
 }

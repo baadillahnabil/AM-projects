@@ -14140,52 +14140,33 @@ var _jquery = _interopRequireDefault(require("jquery"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery.default)(document).ready(function () {
-  // Check Validation
-  (0, _jquery.default)('#step4-form input[name="step4-form"]').on('change', function () {
-    isRadioValid();
-  }); // On Next Button Clicked
-
+  // On Next Button Clicked
   (0, _jquery.default)('#step4-next-button').on('click', function () {
-    if (!isRadioValid()) return;
-    (0, _jquery.default)('#hic__step4').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step4').addClass('d-none');
-      (0, _jquery.default)('#hic__step4').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step5').removeClass('d-none');
-      (0, _jquery.default)('#hic__step5').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step5').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#lic__step4').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#lic__step4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#lic__step4').addClass('d-none');
+      (0, _jquery.default)('#lic__step4').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#lic__step5').removeClass('d-none');
+      (0, _jquery.default)('#lic__step5').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#lic__step5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#lic__step5').removeClass('animated faster fadeIn');
       });
     });
   }); // On Back Button Clicked
 
   (0, _jquery.default)('#step4-back-button').on('click', function () {
-    (0, _jquery.default)('#hic__step4').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step4').addClass('d-none');
-      (0, _jquery.default)('#hic__step4').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step3').removeClass('d-none');
-      (0, _jquery.default)('#hic__step3').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step3').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#lic__step4').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#lic__step4').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#lic__step4').addClass('d-none');
+      (0, _jquery.default)('#lic__step4').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#lic__step3').removeClass('d-none');
+      (0, _jquery.default)('#lic__step3').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#lic__step3').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#lic__step3').removeClass('animated faster fadeIn');
       });
     });
   });
 });
-
-function isRadioValid() {
-  var isSelected = (0, _jquery.default)('#step4-form input[name="step4-form"]:checked').val() !== undefined;
-
-  if (!isSelected) {
-    (0, _jquery.default)('#step4-form label.label').addClass('error-state');
-    (0, _jquery.default)('#step4-form + .info').removeClass('d-none');
-    return false;
-  } else {
-    (0, _jquery.default)('#step4-form  label.label').removeClass('error-state');
-    (0, _jquery.default)('#step4-form + .info').addClass('d-none');
-    return true;
-  }
-}
 },{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/Step5/step5.js":[function(require,module,exports) {
 "use strict";
 

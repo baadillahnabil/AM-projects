@@ -1,4 +1,4 @@
-.hic__step3
+.lic__step3
   display: flex
   align-items: center
   justify-content: center
@@ -20,128 +20,139 @@
         color: #25282B
         text-align: center
 
-    .form-area
-      display: flex
-      justify-content: center
-      align-items: flex-start
+    .form
+      width: 100%
 
-      .image
-        margin-left: 65px
-        margin-right: 40px
+      .form-group.form-check
+        padding: 0
 
-        svg
-          height: 227px
-          width: auto
+        .form-container
+          display: flex
+          align-items: center
+          justify-content: center
+          flex-wrap: wrap
 
-      .form
-        margin-top: 10px
+          .form-item
+            padding: 6px 0
+
+            input
+              display: none
+
+              &:checked
+                + label.label
+                  border: 2px solid $primary
+                  background-color: rgba($color: $primary, $alpha: .14)
+
+                  .image
+                    border-color: $primary
+
+                    .dot
+                      background-color: $primary
+
+                  .text
+                    font-family: 'ProximaNova-SemiBold', sans-serif
+                    color: $primary
+
+            label.label
+              display: flex
+              flex-direction: row
+              align-items: center
+              cursor: pointer
+              border: 1px solid #C6C6C6
+              border-radius: 8px
+              margin-bottom: 0
+              width: 456px
+              padding: 10px 0 
+
+              &.error-state
+                border-color: red
+
+              .image
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 1px solid #9A9A9A
+                border-radius: 50%
+                min-width: 24px
+                min-height: 24px
+                margin: 0 10px
+
+                .dot
+                  background-color: white
+                  width: 14px
+                  height: 14px
+                  border-radius: 50%
+
+              .text
+                font-size: 18px
+                color: #25282B
+                text-align: center
+                margin-bottom: 0
+                line-height: 24px
+                
+        .info
+          text-align: center
+          color: red
+          font-size: 12px
+          margin-top: 2px
+          margin-bottom: 0.25rem
+        
+
+    
+    .button-next
+      margin-top: 10px
+
+      button
+        width: 188px
+        border-radius: 4px
+        background-color: $secondary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 5px 0
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
         display: flex
         justify-content: center
-        flex-direction: column
+        align-items: center
 
-        .form-group
-          padding: 0
+        &:focus
+          outline: none
 
-          label.label
-            text-transform: uppercase
-            font-size: 12px
-            line-height: 18px
-            color: #52575C
+        &:active
+          box-shadow: none
 
-          .input-group
-            &.error-state
-                border: 1px solid red
-                border-radius: 4px
+    .button-back
+      display: flex
+      justify-content: flex-start
+      margin-top: 25px
 
-                .input-group-prepend
-                  .input-group-text
-                    border: none
-                    
-                input 
-                  border: none
-            
-            .input-group-prepend
-              .input-group-text
-                background-color: transparent
-                border: 1px solid #CACACA
-                border-right: none
-            
-            input.form-control
-              border-radius: 4px
-              border-top-left-radius: 0
-              border-bottom-left-radius: 0
-              border-color: #CACACA
-              font-size: 16px
-              font-family: 'ProximaNova-SemiBold', sans-serif
-              padding: 25px 0
-              color: #25282B
-              min-width: 280px
-              border-left: none
+      button
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #CACCCF
+        font-size: 16px
+        line-height: 24px
+        padding: 0
 
-              &:focus
-                box-shadow: none
-                border-color: #CACACA
+        &:focus
+          outline: none
+          box-shadow: none
 
-          .info
-            text-align: center
-            color: red
-            font-size: 12px
-            margin-top: 2px
-            margin-bottom: 0.25rem
+        &:active
+          box-shadow: none
 
-        .button-next
-          margin-top: 5px
-
-          button
-            width: 188px
-            border-radius: 4px
-            background-color: $secondary
-            color: white
-            text-align: center
-            font-family: 'ProximaNova-SemiBold', sans-serif
-            font-size: 21px
-            padding: 12px
-            margin: 5px 0
-            box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
-            display: flex
-            justify-content: center
-            align-items: center
-
-            &:focus
-              outline: none
-
-            &:active
-              box-shadow: none
-
-        .button-back
-          display: flex
-          justify-content: flex-start
-          margin-top: 13px
-
-          button
-            display: flex
-            justify-content: center
-            align-items: center
-            color: #CACCCF
-            font-size: 16px
-            line-height: 24px
-            padding: 0
-
-            &:focus
-              outline: none
-              box-shadow: none
-
-            &:active
-              box-shadow: none
-
-            .button-icon
-              margin-right: 10px
-              margin-top: -3px
+        .button-icon
+          margin-right: 10px
+          margin-top: -3px
+    
 
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  .hic__step3
+  .lic__step3
     .content
       .title
         p
@@ -151,7 +162,7 @@
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  .hic__step3
+  .lic__step3
     padding: 20px
     padding-top: 30px
 
@@ -161,50 +172,40 @@
 
       .title
         p
-          padding: 0 5px
+          padding: 0
           margin-bottom: 15px
           font-size: 24px
           line-height: 28px
 
-      .form-area
+      .form
+        .form-group.form-check
+          .form-container
+            flex-wrap: nowrap
+            flex-direction: column
+
+            .form-item
+              width: 100%
+              padding: 4px 0
+
+              label.label
+                width: 100%
+
+                .text
+                  text-align: left
+                  padding-right: 20px
+
+      .button-next
         width: 100%
-  
-        .form
+        margin-top: 0
+
+        button
           width: 100%
 
-          .form-group
-            .input-group
-              width: 100%
-              input.form-control
-                min-width: 0
+      .button-back
+        width: 100%
+        margin-top: 13px
+        margin-bottom: 0
 
-          .button-next
-            width: 100%
-            margin-top: 0
+        button
+          width: 100%
 
-            button
-              width: 100%
-          
-          .button-back
-            width: 100%
-
-            button
-              width: 100%
-
-
-// Autocomplete Styling Overrides
-.autocomplete-suggestions 
-  background-color: white
-  overflow: auto
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
-
-  .autocomplete-suggestion 
-    padding: 5px
-    cursor: pointer
-
-    &:hover 
-      background-color: rgba($color: $primary, $alpha: 0.2)
-
-  .autocomplete-selected 
-    background-color: rgba($color: $primary, $alpha: 0.2)
-  

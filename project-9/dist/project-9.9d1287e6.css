@@ -15145,6 +15145,11 @@ body {
 .lic__step3 .content .button-next button:active {
   box-shadow: none;
 }
+.lic__step3 .content .button-next.disabled-state button {
+  box-shadow: none;
+  background-color: #CACCCF;
+  cursor: not-allowed;
+}
 .lic__step3 .content .button-back {
   display: flex;
   justify-content: flex-start;

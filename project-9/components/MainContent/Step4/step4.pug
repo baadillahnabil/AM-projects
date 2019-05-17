@@ -2,53 +2,16 @@
 
   .content
     .title
-      p Whether you're covering yourself or the whole family, there's something for everyone. Who's your policy for?
+      p There are lots of things that will affect the price of your life insurance. 
 
-    .form
-      .form-group.form-check
+    .chat-bubble#step5-chat-bubble
+      .avatar
+        img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
+      .message I need to ask you a few quick questions so that I can give you an accurate quote.
 
-        #step4-form.form-container
-          .form-item
-            input#step4-form__family(name='step4-form', type='radio')
-            label.label(for='step4-form__family')
-              .image
-                .d-none.d-md-block.d-lg-block.d-xl-block
-                  include ../../../static/icons/family.svg
-                .d-md-none.d-lg-none.d-xl-none
-                  include ../../../static/icons/check_white.svg
-              p.text Family
-          .form-item
-            input#step4-form__single-parent(name='step4-form', type='radio')
-            label.label(for='step4-form__single-parent')
-              .image
-                .d-none.d-md-block.d-lg-block.d-xl-block
-                  include ../../../static/icons/single-parent.svg
-                .d-md-none.d-lg-none.d-xl-none
-                  include ../../../static/icons/check_white.svg
-              p.text Single Parent
-          .form-item
-            input#step4-form__couple(name='step4-form', type='radio')
-            label.label(for='step4-form__couple')
-              .image
-                .d-none.d-md-block.d-lg-block.d-xl-block
-                  include ../../../static/icons/couple.svg
-                .d-md-none.d-lg-none.d-xl-none
-                  include ../../../static/icons/check_white.svg
-              p.text Couple
-          .form-item
-            input#step4-form__single(name='step4-form', type='radio')
-            label.label(for='step4-form__single')
-              .image
-                .d-none.d-md-block.d-lg-block.d-xl-block
-                  include ../../../static/icons/single.svg
-                .d-md-none.d-lg-none.d-xl-none
-                  include ../../../static/icons/check_white.svg
-              p.text Single
-
-        small.form-text.info.d-none Please select one of these
 
     .button-next
-      button#step4-next-button.btn Next
+      button#step4-next-button.btn Got it
 
     .button-back
       button#step4-back-button.btn

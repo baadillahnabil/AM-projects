@@ -20,78 +20,33 @@
         color: #25282B
         text-align: center
 
-    .form
-      width: 100%
+    .chat-bubble
+      display: flex
+      align-items: flex-end
+      width: 484px
 
-      .form-group.form-check
-        padding: 0
+      .avatar
+        img
+          width: 32px
+          height: 32px
 
-        .form-container
-          display: flex
-          align-items: center
-          justify-content: center
+      .message
+        font-size: 16px
+        color: #25282B
+        padding: 10px 15px
+        margin-left: 10px
+        border: 1px solid rgba($color: #35869A, $alpha: .07)
+        border-top-left-radius: 24px
+        border-top-right-radius: 24px
+        border-bottom-right-radius: 24px
+        background-color: rgba($color: #35869A, $alpha: .07)
 
-          .form-item
-            padding: 8px
-
-            &:first-child
-              padding-left: 0
-
-            &:last-child
-              padding-right: 0
-
-            input
-              display: none
-
-              &:checked
-                + label.label
-                  border: 2px solid $primary
-                  background-color: rgba($color: $primary, $alpha: .14)
-
-                  .text
-                    font-family: 'ProximaNova-SemiBold', sans-serif
-                    color: $primary
-
-            label.label
-              display: flex
-              flex-direction: column
-              align-items: center
-              padding-top: 7px
-              padding-bottom: 15px
-              width: 171px
-              cursor: pointer
-              border: 1px solid #C6C6C6
-              border-radius: 8px
-              margin-bottom: 0
-
-              &.error-state
-                border-color: red
-
-              .image
-                padding: 20px
-
-                svg
-                  height: 108px
-                  width: auto
-
-              .text
-                font-size: 20px
-                color: #25282B
-                text-align: center
-                margin-bottom: 0
-                
-        .info
-          text-align: center
-          color: red
-          font-size: 12px
-          margin-top: 2px
-          margin-bottom: 0.25rem
         
     .button-next
-      margin-top: 20px
+      margin-top: 40px
 
       button
-        width: 256px
+        width: 188px
         border-radius: 4px
         background-color: $secondary
         color: white
@@ -147,39 +102,6 @@
       .title
         p
           padding: 0 30px
-
-      .form
-        width: 490px
-
-        .form-group.form-check
-          .form-container
-            flex-wrap: wrap
-            
-            .form-item
-              &:nth-child(1)
-                padding-left: 0
-
-              &:nth-child(2)
-                padding-right: 0
-              
-              &:nth-child(3)
-                padding-left: 0
-
-              &:nth-child(4)
-                padding-right: 0
-
-              label.label
-                width: 235px
-                padding-bottom: 10px
-
-                .image
-                  padding: 15px
-
-                  svg
-                    height: 78px
-
-                .text
-                  font-size: 18px
     
       .button-back
         margin-bottom: 50px
@@ -201,52 +123,6 @@
           font-size: 24px
           line-height: 28px
           padding: 0
-
-      .form
-        width: 100%
-
-        .form-group.form-check
-          .form-container
-            flex-wrap: nowrap
-            flex-direction: column
-
-            .form-item
-              background-color: white
-              width: 100%
-              padding: 5px 0
-
-
-              input
-                &:checked
-                  + label.label
-                    .image
-                      background-color: $primary
-                      border: none
-
-              label.label
-                flex-direction: row
-                align-items: center
-                width: 100%
-                padding: 10px 0      
-
-                .image
-                  display: flex
-                  align-items: center
-                  justify-content: center
-                  border: 1px solid #9A9A9A
-                  border-radius: 50%
-                  width: 24px
-                  height: 24px
-                  margin: 0 10px
-
-                  svg
-                    width: 12px
-                    height: 10px
-
-                .text
-                  font-size: 18px
-                  line-height: 24px
-                  
 
       .button-next
         width: 100%

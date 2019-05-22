@@ -22188,7 +22188,7 @@ function renderRangeSlider() {
         $rangeEl.find('.rangeslider__labels').append("<span class=\"rangeslider__labels__label\">".concat(value, "</span>"));
       }); // set buttons value
 
-      (0, _jquery.default)('#step5-next-button-amount').html("&nbsp;".concat(_accounting.default.formatNumber(this.value, {
+      (0, _jquery.default)('#step5-next-button-amount').html("&nbsp;$".concat(_accounting.default.formatNumber(this.value, {
         thousand: ','
       }), "&nbsp;"));
     },
@@ -22199,7 +22199,7 @@ function renderRangeSlider() {
         thousand: ','
       }))); // set buttons value
 
-      (0, _jquery.default)('#step5-next-button-amount').html("&nbsp;".concat(_accounting.default.formatNumber(this.value, {
+      (0, _jquery.default)('#step5-next-button-amount').html("&nbsp;$".concat(_accounting.default.formatNumber(this.value, {
         thousand: ','
       }), "&nbsp;"));
     },

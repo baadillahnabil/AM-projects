@@ -76,7 +76,7 @@ function renderRangeSlider() {
 
       // set buttons value
       $('#step5-next-button-amount').html(
-        `&nbsp;${accounting.formatNumber(this.value, {
+        `&nbsp;$${accounting.formatNumber(this.value, {
           thousand: ','
         })}&nbsp;`
       )
@@ -93,7 +93,7 @@ function renderRangeSlider() {
 
       // set buttons value
       $('#step5-next-button-amount').html(
-        `&nbsp;${accounting.formatNumber(this.value, {
+        `&nbsp;$${accounting.formatNumber(this.value, {
           thousand: ','
         })}&nbsp;`
       )

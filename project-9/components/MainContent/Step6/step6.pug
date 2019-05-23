@@ -1,64 +1,21 @@
-.hic__step6
+.lic__step6
 
   .content
     .title
-      p Which of these extras services are you interested in?
+      p How old are you?
 
     .form
-      .form-group.form-check
-
-        #step6-form.form-container
-          .form-item.pl-0
-            input#step6-form__general-dental(name='step6-form', type='checkbox')
-            label.label(for='step6-form__general-dental')
-              .image
-                include ../../../static/icons/check_white.svg
-              p.text General Dental
-          .form-item.pr-0
-            input#step6-form__optical(name='step6-form', type='checkbox')
-            label.label(for='step6-form__optical')
-              .image
-                include ../../../static/icons/check_white.svg
-              p.text Optical
-          .form-item.pl-0
-            input#step6-form__major-dental(name='step6-form', type='checkbox')
-            label.label(for='step6-form__major-dental')
-              .image
-                include ../../../static/icons/check_white.svg
-              p.text Major Dental
-          .form-item.pr-0
-            input#step6-form__physiotherapy(name='step6-form', type='checkbox')
-            label.label(for='step6-form__physiotherapy')
-              .image
-                include ../../../static/icons/check_white.svg
-              p.text Physiotherapy
-          .form-item.pl-0
-            input#step6-form__endodontic(name='step6-form', type='checkbox')
-            label.label(for='step6-form__endodontic')
-              .image
-                include ../../../static/icons/check_white.svg
-              p.text Endodontic
-          .form-item.pr-0
-            input#step6-form__hearing-aids(name='step6-form', type='checkbox')
-            label.label(for='step6-form__hearing-aids')
-              .image
-                include ../../../static/icons/check_white.svg
-              p.text Hearing Aids
-
-        small.form-text.info.d-none Please select at least one of these
-
+      .form-group
+        label.label(for='step6-form__age') Your Age
+        input#step6-form__age.form-control(type='text', autofocus)
+        small.form-text.info.d-none Please enter a valid age
 
     .chat-bubble#step6-chat-bubble
       .avatar
         img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
-      .message If you don’t really need extras cover, you can skip this question
+      .message Your age will affect how much you pay for life insurance products.
 
-    .button-skip#step6-skip-button
-      button.btn I only want hospital cover
-        .button-icon
-          include ../../../static/icons/arrow-right.svg
-
-    .button-next#step6-next-button.d-none
+    .button-next#step6-next-button
       button.btn Next
 
     .button-back

@@ -1,4 +1,4 @@
-.hic__step6
+.lic__step6
   display: flex
   align-items: center
   justify-content: center
@@ -21,83 +21,47 @@
         text-align: center
 
     .form
-      width: 100%
+      display: flex
+      justify-content: center
 
-      .form-group.form-check
-        padding: 0
+      .form-group
+        padding: 0 8px
 
-        .form-container
-          display: flex
-          align-items: center
-          justify-content: center
-          flex-wrap: wrap
+        label.label
+          text-transform: uppercase
+          font-size: 12px
+          line-height: 18px
+          color: #52575C
 
-          .form-item
-            padding: 8px
+        input.form-control
+          border-radius: 4px
+          border-color: #CACACA
+          font-size: 16px
+          font-family: 'ProximaNova-SemiBold', sans-serif
+          padding: 25px 16px
+          color: #25282B
+          min-width: 188px
 
-            input
-              display: none
+          &:focus
+            box-shadow: none
+            border-color: #CACACA
 
-              &:checked
-                + label.label
-                  border: 2px solid $primary
-                  background-color: rgba($color: $primary, $alpha: .14)
+          &.error-state
+            border: 1px solid red
 
-                  .image
-                    background-color: $primary
-                    border: none
-
-                  .text
-                    font-family: 'ProximaNova-SemiBold', sans-serif
-                    color: $primary
-
-            label.label
-              display: flex
-              flex-direction: row
-              align-items: center
-              cursor: pointer
-              border: 1px solid #C6C6C6
-              border-radius: 8px
-              margin-bottom: 0
-              width: 280px
-              padding: 10px 0 
-
-              &.error-state
-                border-color: red
-
-              .image
-                display: flex
-                align-items: center
-                justify-content: center
-                border: 1px solid #9A9A9A
-                border-radius: 50%
-                width: 24px
-                height: 24px
-                margin: 0 10px
-
-                svg
-                  width: 12px
-                  height: 10px
-
-              .text
-                font-size: 18px
-                color: #25282B
-                text-align: center
-                margin-bottom: 0
-                line-height: 24px
-                
         .info
           text-align: center
           color: red
           font-size: 12px
           margin-top: 2px
           margin-bottom: 0.25rem
-        
+
 
     .chat-bubble
       display: flex
       align-items: flex-end
       width: 484px
+      margin-top: 20px
 
       .avatar
         img
@@ -107,41 +71,19 @@
       .message
         font-size: 16px
         color: #25282B
-        padding: 15px 25px
+        padding: 10px 15px
         margin-left: 10px
-        border: 1px solid rgba($color: #35869A, $alpha: .07)
         border-top-left-radius: 24px
         border-top-right-radius: 24px
         border-bottom-right-radius: 24px
         background-color: rgba($color: #35869A, $alpha: .07)
 
-    .button-skip
-      margin-top: 40px
-
-      button
-        display: flex
-        justify-content: space-between
-        border: 1px solid #71BE59
-        border-radius: 4px
-        color: #71BE59
-        line-height: 24px
-        width: 280px
-        padding: 14px
-        font-family: 'ProximaNova-SemiBold', sans-serif
-
-        &:focus
-          box-shadow: none
-          outline: none
-
-        &:active
-          box-shadow: none
-
-
+    
     .button-next
-      margin-top: 20px
+      margin-top: 30px
 
       button
-        width: 256px
+        width: 188px
         border-radius: 4px
         background-color: $secondary
         color: white
@@ -190,7 +132,7 @@
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  .hic__step6
+  .lic__step6
     .content
       height: auto
 
@@ -204,7 +146,7 @@
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  .hic__step6
+  .lic__step6
     padding: 20px
     padding-top: 30px
 
@@ -220,37 +162,28 @@
           padding: 0
 
       .form
-        .form-group.form-check
-          .form-container
-            flex-wrap: nowrap
-            flex-direction: column
+        width: 100%
 
-            .form-item
-              width: 100%
-              padding: 4px 0
-
-              label.label
-                width: 100%
+        .form-group
+          padding: 4px
+          width: 100%
+            
+          input.form-control
+            width: 100%
+            min-width: 0
                   
       .chat-bubble
         width: 100%
+        margin-top: 0
 
         .message
           font-size: 16px
-          padding: 10px
-          line-height: 18px
-      
-      .button-skip
-        width: 100%
-        margin-top: 20px
-
-        button
-          width: 100%
-
+          padding: 13px
+          line-height: 20px
 
       .button-next
         width: 100%
-        margin-top: 0
+        margin-top: 20px
 
         button
           width: 100%

@@ -25433,6 +25433,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       (0, _jquery.default)('#step7-chat-2').html("That's okay. We'll quote you as an <b>Office Worker </b>for now, but you can change this later.");
       (0, _jquery.default)('#step7-chat-2').addClass('d-none');
     }
+
+    isSelectValid();
   }); // on "I can’t find my occupation" clicked
 
   (0, _jquery.default)('#step7-no-selection').on('click', function () {
@@ -25444,17 +25446,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _jquery.default)('#step7-chat-1').html(chat2);
     (0, _jquery.default)('#step7-chat-2').html(chat1);
     (0, _jquery.default)('#step7-chat-2').removeClass('d-none');
-  }); // change width on mobile
-
-  var mobileBreakpoint = window.matchMedia('(max-width: 767px)');
-
-  if (mobileBreakpoint.matches) {
-    console.log('matches');
-    (0, _jquery.default)('#step7-form__occupation').data('width', '100%');
-  } // On Next or Skip Button Clicked
-
+  }); // On Next or Skip Button Clicked
 
   (0, _jquery.default)('#step7-next-button').on('click', function () {
+    if (!isSelectValid()) return;
     (0, _jquery.default)('#lic__step7').addClass('animated faster fadeOut');
     (0, _jquery.default)('#lic__step7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
       (0, _jquery.default)('#lic__step7').addClass('d-none');
@@ -25480,6 +25475,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     });
   });
 });
+
+function isSelectValid() {
+  var isSelected = (0, _jquery.default)('#step7-form__occupation').val() !== '';
+
+  if (!isSelected) {
+    (0, _jquery.default)('#step7-form__form-group .bootstrap-select').addClass('error-state');
+    (0, _jquery.default)('#step7-form__form-group .info').removeClass('d-none');
+    return false;
+  } else {
+    (0, _jquery.default)('#step7-form__form-group .bootstrap-select').removeClass('error-state');
+    (0, _jquery.default)('#step7-form__form-group .info').addClass('d-none');
+    return true;
+  }
+}
 },{"jquery":"node_modules/jquery/dist/jquery.js","popper.js":"node_modules/popper.js/dist/esm/popper.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","bootstrap-select":"node_modules/bootstrap-select/dist/js/bootstrap-select.js"}],"components/MainContent/Step8/step8.js":[function(require,module,exports) {
 "use strict";
 

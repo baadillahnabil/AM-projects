@@ -5,11 +5,11 @@
       p What's your current occupation?
 
     .form
-      .form-group
+      .form-group#step7-form__form-group
         select#step7-form__occupation.selectpicker(
           data-live-search='true', 
           data-size='6', 
-          data-style='select-picker', 
+          data-style='select-picker',
           title='Please select your occupation'
         )
           option.option(value='not insured') Not Insured
@@ -61,8 +61,8 @@
           option.option(value='other') Other
           option.option.d-none(value='__none__') I can’t find my occupation
         
-        .none-selected#step7-no-selection I can’t find my occupation
         small.form-text.info.d-none Please select an option from the list
+        .none-selected#step7-no-selection I can’t find my occupation
 
     .chat-bubble
       .avatar

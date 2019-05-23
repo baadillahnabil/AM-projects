@@ -25,6 +25,8 @@ $(document).ready(() => {
       )
       $('#step7-chat-2').addClass('d-none')
     }
+
+    isSelectValid()
   })
 
   // on "I can’t find my occupation" clicked
@@ -40,15 +42,10 @@ $(document).ready(() => {
     $('#step7-chat-2').removeClass('d-none')
   })
 
-  // change width on mobile
-  const mobileBreakpoint = window.matchMedia('(max-width: 767px)')
-  if (mobileBreakpoint.matches) {
-    console.log('matches')
-    $('#step7-form__occupation').data('width', '100%')
-  }
-
   // On Next or Skip Button Clicked
   $('#step7-next-button').on('click', () => {
+    if (!isSelectValid()) return
+
     $('#lic__step7').addClass('animated faster fadeOut')
     $('#lic__step7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
       $('#lic__step7').addClass('d-none')
@@ -78,3 +75,19 @@ $(document).ready(() => {
     })
   })
 })
+
+function isSelectValid() {
+  const isSelected = $('#step7-form__occupation').val() !== ''
+
+  if (!isSelected) {
+    $('#step7-form__form-group .bootstrap-select').addClass('error-state')
+    $('#step7-form__form-group .info').removeClass('d-none')
+
+    return false
+  } else {
+    $('#step7-form__form-group .bootstrap-select').removeClass('error-state')
+    $('#step7-form__form-group .info').addClass('d-none')
+
+    return true
+  }
+}

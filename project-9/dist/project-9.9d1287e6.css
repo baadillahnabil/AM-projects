@@ -16270,7 +16270,10 @@ body {
 .lic__step7 .content .form .form-group .bootstrap-select .dropdown-menu ul.inner .option.active {
   background-color: #F7F7F7;
 }
-.lic__step7 .content .form .form-group .bootstrap-select .none-selected {
+.lic__step7 .content .form .form-group .bootstrap-select.error-state {
+  border: 1px solid red;
+}
+.lic__step7 .content .form .form-group .none-selected {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -16281,9 +16284,6 @@ body {
   width: 100%;
   text-decoration: underline;
   cursor: pointer;
-}
-.lic__step7 .content .form .form-group .bootstrap-select.error-state {
-  border: 1px solid red;
 }
 .lic__step7 .content .form .form-group .info {
   text-align: center;

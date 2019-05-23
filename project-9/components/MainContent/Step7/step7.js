@@ -40,6 +40,8 @@ $(document).ready(() => {
     $('#step7-chat-1').html(chat2)
     $('#step7-chat-2').html(chat1)
     $('#step7-chat-2').removeClass('d-none')
+
+    isSelectValid()
   })
 
   // On Next or Skip Button Clicked

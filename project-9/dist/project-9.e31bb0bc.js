@@ -25444,7 +25444,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _jquery.default)('#step7-chat-1').html(chat2);
     (0, _jquery.default)('#step7-chat-2').html(chat1);
     (0, _jquery.default)('#step7-chat-2').removeClass('d-none');
-  }); // On Next or Skip Button Clicked
+  }); // change width on mobile
+
+  var mobileBreakpoint = window.matchMedia('(max-width: 767px)');
+
+  if (mobileBreakpoint.matches) {
+    console.log('matches');
+    (0, _jquery.default)('#step7-form__occupation').data('width', '100%');
+  } // On Next or Skip Button Clicked
+
 
   (0, _jquery.default)('#step7-next-button').on('click', function () {
     (0, _jquery.default)('#lic__step7').addClass('animated faster fadeOut');

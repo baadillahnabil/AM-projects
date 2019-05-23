@@ -40,6 +40,13 @@ $(document).ready(() => {
     $('#step7-chat-2').removeClass('d-none')
   })
 
+  // change width on mobile
+  const mobileBreakpoint = window.matchMedia('(max-width: 767px)')
+  if (mobileBreakpoint.matches) {
+    console.log('matches')
+    $('#step7-form__occupation').data('width', '100%')
+  }
+
   // On Next or Skip Button Clicked
   $('#step7-next-button').on('click', () => {
     $('#lic__step7').addClass('animated faster fadeOut')

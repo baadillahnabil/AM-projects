@@ -22215,34 +22215,52 @@ var _jquery = _interopRequireDefault(require("jquery"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery.default)(document).ready(function () {
-  // TODO : Validation
-  // On Next or Skip Button Clicked
+  // Validation
+  (0, _jquery.default)('#step6-form__age').on('input', function () {
+    isAgeValid();
+  }); // On Next or Skip Button Clicked
+
   (0, _jquery.default)('#step6-next-button').on('click', function () {
-    (0, _jquery.default)('#hic__step6').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step6').addClass('d-none');
-      (0, _jquery.default)('#hic__step6').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step7').removeClass('d-none');
-      (0, _jquery.default)('#hic__step7').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step7').removeClass('animated faster fadeIn');
+    if (!isAgeValid()) return;
+    (0, _jquery.default)('#lic__step6').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#lic__step6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#lic__step6').addClass('d-none');
+      (0, _jquery.default)('#lic__step6').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#lic__step7').removeClass('d-none');
+      (0, _jquery.default)('#lic__step7').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#lic__step7').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#lic__step7').removeClass('animated faster fadeIn');
       });
     });
   }); // On Back Button Clicked
 
   (0, _jquery.default)('#step6-back-button').on('click', function () {
-    (0, _jquery.default)('#hic__step6').addClass('animated faster fadeOut');
-    (0, _jquery.default)('#hic__step6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-      (0, _jquery.default)('#hic__step6').addClass('d-none');
-      (0, _jquery.default)('#hic__step6').removeClass('animated faster fadeOut');
-      (0, _jquery.default)('#hic__step5').removeClass('d-none');
-      (0, _jquery.default)('#hic__step5').addClass('animated faster fadeIn');
-      (0, _jquery.default)('#hic__step5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-        (0, _jquery.default)('#hic__step5').removeClass('animated faster fadeIn');
+    (0, _jquery.default)('#lic__step6').addClass('animated faster fadeOut');
+    (0, _jquery.default)('#lic__step6').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+      (0, _jquery.default)('#lic__step6').addClass('d-none');
+      (0, _jquery.default)('#lic__step6').removeClass('animated faster fadeOut');
+      (0, _jquery.default)('#lic__step5').removeClass('d-none');
+      (0, _jquery.default)('#lic__step5').addClass('animated faster fadeIn');
+      (0, _jquery.default)('#lic__step5').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+        (0, _jquery.default)('#lic__step5').removeClass('animated faster fadeIn');
       });
     });
   });
 });
+
+function isAgeValid() {
+  var isEmpty = (0, _jquery.default)('#step6-form__age').val() === '';
+
+  if (isEmpty) {
+    (0, _jquery.default)('#step6-form__age').addClass('error-state');
+    (0, _jquery.default)('#step6-form__age + .info').removeClass('d-none');
+    return false;
+  } else {
+    (0, _jquery.default)('#step6-form__age').removeClass('error-state');
+    (0, _jquery.default)('#step6-form__age + .info').addClass('d-none');
+    return true;
+  }
+}
 },{"jquery":"node_modules/jquery/dist/jquery.js"}],"components/MainContent/Step7/step7.js":[function(require,module,exports) {
 "use strict";
 

@@ -1,4 +1,4 @@
-.hic__step7
+.lic__step7
   display: flex
   align-items: center
   justify-content: center
@@ -28,34 +28,70 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        
-        select.form-control
+
+        .bootstrap-select
           border-radius: 4px
-          border: 1px solid #9a9a9a
-          padding: 16px
-          font-size: 16px
-          font-family: 'ProximaNova-SemiBold', sans-serif
-          color: #25282B
-          display: flex
-          justify-content: space-between
-          align-items: center
-          background-image: url('static/icons/triangle-down.svg')
-          width: 328px
-          height: 100%
-          background-position: right
-          background-origin: content-box
-          background-repeat: no-repeat
-          -webkit-appearance: none
-          -moz-appearance: none
-          appearance: none
-          margin-top: 20px
-          margin-bottom: 10px
+          border: 1px solid #CACACA
 
-          &:focus
-            box-shadow: none
+          .select-picker
+            &:focus
+              outline: none !important
+              box-shadow: none
 
-          &::-ms-expand
-            display: none
+            .filter-option-inner-inner
+              color: #25282B
+              font-family: 'ProximaNova-SemiBold', sans-serif
+              
+              &::after
+                color: #25282B
+          
+          .dropdown-menu
+            padding: 5px 20px 20px 20px
+
+            .bs-searchbox
+              padding: 0
+              margin: 10px 0
+
+              input
+                border-radius: 4px
+                box-shadow: 0 0 4px 0 #95C849
+
+                &:focus
+                  border-color: transparent
+
+                &::placeholder
+                  color: #D2D2D2
+            
+            ul.inner
+              padding: 0
+              margin-bottom: 50px !important
+
+              .option
+                border-bottom: 1px solid #DBDBDB
+                padding: 8px 0
+                font-size: 16px
+                line-height: 20px
+                color: #25282B
+
+                &:active
+                  background-color: inherit
+                &:focus
+                  outline: none
+
+                &.active
+                  background-color: #F7F7F7
+
+          .none-selected
+            position: fixed
+            bottom: 0
+            left: 0
+            padding: 8px 20px
+            background-color: #E9E9E9
+            color: #25282B
+            font-family: 'ProximaNova-Bold', sans-serif
+            width: 100%
+            text-decoration: underline
+            cursor: pointer
 
           &.error-state
             border: 1px solid red
@@ -72,25 +108,32 @@
       display: flex
       align-items: flex-end
       width: 484px
+      margin-top: 10px
 
       .avatar
         img
           width: 32px
           height: 32px
 
-      .message
-        font-size: 16px
-        color: #25282B
-        padding: 15px 20px
-        margin-left: 10px
-        border: 1px solid rgba($color: #35869A, $alpha: .07)
-        border-top-left-radius: 24px
-        border-top-right-radius: 24px
-        border-bottom-right-radius: 24px
-        background-color: rgba($color: #35869A, $alpha: .07)
+      .messages
+        .message
+          font-size: 16px
+          color: #25282B
+          padding: 10px 15px
+          margin-left: 10px
+          margin-top: 8px
+          border-top-left-radius: 24px
+          border-top-right-radius: 24px
+          border-bottom-right-radius: 24px
+          background-color: rgba($color: #35869A, $alpha: .07)
+
+          &.full-rounded
+            border-bottom-left-radius: 24px
+        
+
 
     .button-next
-      margin-top: 40px
+      margin-top: 30px
 
       button
         width: 188px
@@ -142,7 +185,7 @@
 
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  .hic__step7
+  .lic__step7
     .content
       height: auto
 
@@ -156,7 +199,7 @@
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  .hic__step7
+  .lic__step7
     padding: 20px
     padding-top: 30px
 
@@ -180,11 +223,12 @@
                   
       .chat-bubble
         width: 100%
+        margin-top: 0
 
         .message
           font-size: 16px
-          padding: 14px
-          line-height: 18px
+          padding: 13px
+          line-height: 20px
       
       .button-next
         width: 100%

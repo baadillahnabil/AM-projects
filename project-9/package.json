@@ -24,7 +24,9 @@
   },
   "dependencies": {
     "accounting": "^0.4.1",
+    "bootstrap-select": "^1.13.10",
     "rangeslider.js": "^2.3.2",
+    "select2": "^4.0.7",
     "slick-carousel": "^1.8.1"
   }
 }

@@ -1,68 +1,79 @@
-.hic__step7
+.lic__step7
 
   .content
     .title
-      p Which health fund are you currently with?
+      p What's your current occupation?
 
     .form
       .form-group
-        select#currentFund.form-control
-          option(selected, value='', disabled) Please select your current health fund
-          option(value='not insured') Not Insured
-          option(value='ACA Health Benefits Fund') ACA Health Benefits Fund
-          option(value='ahm') ahm health insurance
-          option(value='Allianz Overseas Student Health Cover') Allianz Overseas Student Health Cover
-          option(value='Apia health insurance') Apia health insurance
-          option(value='au') Australian Unity Health Limited
-          option(value='bupa') Bupa
-          option(value='CBHS Health Fund Limited') CBHS Health Fund Limited
-          option(value='Cessnock District Health Fund') Cessnock District Health Fund
-          option(value='CUA Health Limited') CUA Health Limited
-          option(value='Defence Health Limited') Defence Health Limited
-          option(value='Doctors Health Fund') Doctors' Health Fund
-          option(value='Emergency Services Health') Emergency Services Health
-          option(value='Frank Health Insurance') Frank Health Insurance
-          option(value='GMF') GMF
-          option(value='gmhba') GMHBA Limited
-          option(value='Grand United Corporate Health') Grand United Corporate Health
-          option(value='HBA') HBA
-          option(value='HBF Health Limited') HBF Health Limited
-          option(value='hcf') HCF
-          option(value='Health Care Insurance Limited') Health Care Insurance Limited
-          option(value='HIF') HIF
-          option(value='Health Partners') Health Partners
-          option(value='health.com.au') health.com.au
-          option(value='IMAN Health Cover') IMAN Health Cover
-          option(value='la trobe') Latrobe Health Services
-          option(value='medibank') Medibank Private Limited
-          option(value='Mildura Health Fund') Mildura Health Fund
-          option(value='MyOwn') MyOwn
-          option(value='Navy Health') Navy Health
-          option(value='nib') NIB Health Funds Ltd.
-          option(value='Nurses & Midwives Health') Nurses & Midwives Health
-          option(value='Onemedifund') Onemedifund
-          option(value='peoplecare') Peoplecare Health Insurance
-          option(value='Phoenix Health Fund Limited') Phoenix Health Fund Limited
-          option(value='Police Health') Police Health
-          option(value='Qantas Assure') Qantas Assure
-          option(value='Queensland Country Health Fund Ltd') Queensland Country Health Fund Ltd
-          option(value='rt') rt Health fund
-          option(value='Reserve Bank Health Society Ltd') Reserve Bank Health Society Ltd
-          option(value='st lukes') St.Lukes Health
-          option(value='teachers') Teachers Health
-          option(value='Transport Health Pty Ltd') Transport Health Pty Ltd
-          option(value='TUH') TUH
-          option(value='UniHealth') UniHealth
-          option(value='westfund') Westfund Limited
-          option(value='other') Other
-          option(value='not_sure') I Don't Know
+        select#step7-form__occupation.selectpicker(
+          data-live-search='true', 
+          data-size='6', 
+          data-style='select-picker', 
+          data-width='328px',
+          title='Please select your occupation'
+        )
+          option.option(value='not insured') Not Insured
+          option.option(value='ACA Health Benefits Fund') ACA Health Benefits Fund
+          option.option(value='ahm') ahm health insurance
+          option.option(value='Allianz Overseas Student Health Cover') Allianz Overseas Student Health Cover
+          option.option(value='Apia health insurance') Apia health insurance
+          option.option(value='au') Australian Unity Health Limited
+          option.option(value='bupa') Bupa
+          option.option(value='CBHS Health Fund Limited') CBHS Health Fund Limited
+          option.option(value='Cessnock District Health Fund') Cessnock District Health Fund
+          option.option(value='CUA Health Limited') CUA Health Limited
+          option.option(value='Defence Health Limited') Defence Health Limited
+          option.option(value='Doctors Health Fund') Doctors' Health Fund
+          option.option(value='Emergency Services Health') Emergency Services Health
+          option.option(value='Frank Health Insurance') Frank Health Insurance
+          option.option(value='GMF') GMF
+          option.option(value='gmhba') GMHBA Limited
+          option.option(value='Grand United Corporate Health') Grand United Corporate Health
+          option.option(value='HBA') HBA
+          option.option(value='HBF Health Limited') HBF Health Limited
+          option.option(value='hcf') HCF
+          option.option(value='Health Care Insurance Limited') Health Care Insurance Limited
+          option.option(value='HIF') HIF
+          option.option(value='Health Partners') Health Partners
+          option.option(value='health.com.au') health.com.au
+          option.option(value='IMAN Health Cover') IMAN Health Cover
+          option.option(value='la trobe') Latrobe Health Services
+          option.option(value='medibank') Medibank Private Limited
+          option.option(value='Mildura Health Fund') Mildura Health Fund
+          option.option(value='MyOwn') MyOwn
+          option.option(value='Navy Health') Navy Health
+          option.option(value='nib') NIB Health Funds Ltd.
+          option.option(value='Nurses & Midwives Health') Nurses & Midwives Health
+          option.option(value='Onemedifund') Onemedifund
+          option.option(value='peoplecare') Peoplecare Health Insurance
+          option.option(value='Phoenix Health Fund Limited') Phoenix Health Fund Limited
+          option.option(value='Police Health') Police Health
+          option.option(value='Qantas Assure') Qantas Assure
+          option.option(value='Queensland Country Health Fund Ltd') Queensland Country Health Fund Ltd
+          option.option(value='rt') rt Health fund
+          option.option(value='Reserve Bank Health Society Ltd') Reserve Bank Health Society Ltd
+          option.option(value='st lukes') St.Lukes Health
+          option.option(value='teachers') Teachers Health
+          option.option(value='Transport Health Pty Ltd') Transport Health Pty Ltd
+          option.option(value='TUH') TUH
+          option.option(value='UniHealth') UniHealth
+          option.option(value='westfund') Westfund Limited
+          option.option(value='other') Other
+          option.option.d-none(value='__none__') I can’t find my occupation
+        
+        .none-selected#step7-no-selection I can’t find my occupation
         small.form-text.info.d-none Please select an option from the list
 
-
-    .chat-bubble#step7-chat-bubble
+    .chat-bubble
       .avatar
         img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
-      .message We will take into account your current fund when putting together your health insurance quotes.
+      .messages
+        .message.full-rounded#step7-chat-2.d-none
+          | That's okay. We'll quote you as an 
+          b Office Worker 
+          | for now, but you can change this later.
+        .message#step7-chat-1 The risk profile of your job can increase the price of your premium.
 
     .button-next
       button#step7-next-button.btn Next

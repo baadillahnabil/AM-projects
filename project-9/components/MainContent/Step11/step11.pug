@@ -2,12 +2,7 @@
 
   .content
     .title
-      p 
-        | Thanks 
-        span#step11-personName
-        | ! This is the last step. 
-        br.d-none.d-md-block.d-lg-block.d-xl-block
-        | Ready to view your quotes?
+      p That's everything! Now let's you get a quote
 
     .inner-content
       .points
@@ -15,17 +10,20 @@
           .icon
             include ../../../static/icons/heart.svg
           .text 
-            p We'll help you find the best policy matches for you and your family, taking your current needs and budget into account.
+            p.title Free quotes with general advice
+            p.description Our quotes are free and we don't mark up any of our products.
         .item
           .icon
-            include ../../../static/icons/chat.svg
+            include ../../../static/icons/open-lock.svg
           .text 
-            p Have questions? We're more than happy to assist, and want all our customers to be informed about their health cover.
+            p.title No lock-in contract
+            p.description There is no lock-in contract so you can change your policy at any time.
         .item
           .icon
-            include ../../../static/icons/lock.svg
+            include ../../../static/icons/calendar.svg
           .text 
-            p By clicking 'Next', I acknowledge that I have read and agree to the Terms of Use, the Privacy Policy and the Collection Notice. I confirm that you may contact me about your services. I consent to you using sensitive personal information that you may collect for the purposes of providing your products and services.
+            p.title Cooling off period
+            p.description All policies we compare have a cooling off period if you change your mind.
           
       .form
         .form-group
@@ -47,6 +45,15 @@
           
 
         .button-next
-          button#step11-next-button.btn Next
+          button#step11-next-button.btn Get my quotes
+
+        .note 
+          | By clicking 'Get quotes', I acknowledge that I have read and agree to the 
+          span.link Terms of Use
+          | , the 
+          span.link Privacy Policy 
+          | and the 
+          span.link Collection Notice
+          | . I confirm that you may contact me about your services.
 
       

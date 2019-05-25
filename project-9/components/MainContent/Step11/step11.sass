@@ -24,8 +24,8 @@
       display: flex
       align-items: center
       justify-content: center
-      width: 926px
-      margin-top: 30px
+      width: 100%
+      margin-top: 20px
 
       .points
         width: 50%
@@ -40,7 +40,7 @@
           align-items: flex-start
 
           .icon
-            background-color: $primary
+            background-color: #097A3E
             border-radius: 50%
             min-width: 32px
             min-height: 32px
@@ -50,10 +50,14 @@
             margin-right: 16px
 
           .text
-            p
-              font-size: 14px
-              line-height: 20px
+            line-height: 20px
+            font-size: 14px
 
+            .title
+              color: #25282B
+              font-family: 'ProximaNova-Bold', sans-serif
+              margin-bottom: 5px
+  
       .form
         width: 50%
         padding-left: 40px
@@ -107,10 +111,10 @@
 
       
         .button-next
-          margin-top: 40px
+          margin-top: 25px
 
           button
-            width: 188px
+            width: 100%
             border-radius: 4px
             background-color: $secondary
             color: white
@@ -129,6 +133,20 @@
 
             &:active
               box-shadow: none
+
+        .note 
+          margin-top: 20px
+          line-height: 20px
+          font-size: 14px
+          color: #25282B
+
+          .link
+            font-family: 'ProximaNova-Bold', sans-serif
+            color: $primary
+            cursor: pointer
+
+            &:hover
+              text-decoration: underline
 
 
 

@@ -24,16 +24,16 @@ $(document).ready(() => {
 })
 
 function goToStep12() {
-  $('#hic__step11').addClass('animated faster fadeOut')
-  $('#hic__step11').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-    $('#hic__step11').addClass('d-none')
-    $('#hic__step11').removeClass('animated faster fadeOut')
+  $('#lic__step11').addClass('animated faster fadeOut')
+  $('#lic__step11').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+    $('#lic__step11').addClass('d-none')
+    $('#lic__step11').removeClass('animated faster fadeOut')
 
-    $('#hic__step12').removeClass('d-none')
-    $('#hic__step12').addClass('animated faster fadeIn')
+    $('#lic__step12').removeClass('d-none')
+    $('#lic__step12').addClass('animated faster fadeIn')
 
-    $('#hic__step12').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-      $('#hic__step12').removeClass('animated faster fadeIn')
+    $('#lic__step12').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#lic__step12').removeClass('animated faster fadeIn')
 
       step12ProgressAnimation()
     })
@@ -80,12 +80,12 @@ function isPhoneValid() {
 
 function step12ProgressAnimation() {
   setTimeout(() => {
-    $('.hic__step12 .progress .progress-bar').css('width', '0')
-    $('.hic__step12 .progress .progress-bar').css('width', '30%')
+    $('.lic__step12 .progress .progress-bar').css('width', '0')
+    $('.lic__step12 .progress .progress-bar').css('width', '30%')
     setTimeout(() => {
-      $('.hic__step12 .progress .progress-bar').css('width', '70%')
+      $('.lic__step12 .progress .progress-bar').css('width', '70%')
       setTimeout(() => {
-        $('.hic__step12 .progress .progress-bar').css('width', '100%')
+        $('.lic__step12 .progress .progress-bar').css('width', '100%')
 
         // on progress complete
         $('#step12-firstTitle').addClass('d-none')

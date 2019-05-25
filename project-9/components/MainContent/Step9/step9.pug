@@ -1,0 +1,35 @@
+.lic__step9
+
+  .content
+    .title
+      p Have you smoked any substance or used any nicotine replacement product in the past 12 months?
+
+    .form
+      .form-group.form-radio
+        #step9-form.form-container
+          .form-item
+            input#step9-form__yes(name='step9-form', type='radio')
+            label.label(for='step9-form__yes')
+              .image
+                .dot
+              p.text Yes
+          .form-item
+            input#step9-form__no(name='step9-form', type='radio')
+            label.label(for='step9-form__no')
+              .image
+                .dot
+              p.text No
+
+    .chat-bubble#step8-chat-bubble
+      .avatar
+        img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
+      .message Your smoking status can increase the cost of your premium.
+
+    .button-next.disabled-state#step9-next-button
+      button.btn Next
+
+    .button-back
+      button#step9-back-button.btn
+        .button-icon
+          include ../../../static/icons/chevron-left.svg
+        | Back

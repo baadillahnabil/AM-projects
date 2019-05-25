@@ -24,7 +24,7 @@ $(document).ready(() => {
       // Set Name
       $('#step3-personName').html(window.localStorage.getItem('first_name'))
       $('#step8-personName').html(window.localStorage.getItem('first_name'))
-      $('#step9-personName').html(window.localStorage.getItem('first_name'))
+      $('#step12-personName').html(window.localStorage.getItem('first_name'))
 
       // Go To Step 3
       goToStep3()

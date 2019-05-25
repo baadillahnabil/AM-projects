@@ -1,0 +1,52 @@
+.hic__step11
+
+  .content
+    .title
+      p 
+        | Thanks 
+        span#step11-personName
+        | ! This is the last step. 
+        br.d-none.d-md-block.d-lg-block.d-xl-block
+        | Ready to view your quotes?
+
+    .inner-content
+      .points
+        .item
+          .icon
+            include ../../../static/icons/heart.svg
+          .text 
+            p We'll help you find the best policy matches for you and your family, taking your current needs and budget into account.
+        .item
+          .icon
+            include ../../../static/icons/chat.svg
+          .text 
+            p Have questions? We're more than happy to assist, and want all our customers to be informed about their health cover.
+        .item
+          .icon
+            include ../../../static/icons/lock.svg
+          .text 
+            p By clicking 'Next', I acknowledge that I have read and agree to the Terms of Use, the Privacy Policy and the Collection Notice. I confirm that you may contact me about your services. I consent to you using sensitive personal information that you may collect for the purposes of providing your products and services.
+          
+      .form
+        .form-group
+          label.label(for='step11-form__email') Email Address
+          .input-group#step11-form__email
+            .input-group-prepend
+              span.input-group-text
+                include ../../../static/icons/mail.svg
+            input.form-control(type='text', autofocus)
+          small.form-text.info.d-none Please enter a valid email address
+        .form-group
+          label.label(for='step11-form__phone') Phone Number
+          .input-group#step11-form__phone
+            .input-group-prepend
+              span.input-group-text
+                include ../../../static/icons/phone.svg
+            input.form-control(type='text', maxlength='10', autofocus)
+          small.form-text.info.d-none Please enter a valid 10 digit mobile number
+          
+
+        .button-next
+          button#step11-next-button.btn Next
+
+      

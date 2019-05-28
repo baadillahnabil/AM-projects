@@ -80,6 +80,9 @@ function renderRangeSlider() {
           thousand: ','
         })}&nbsp;`
       )
+
+      // Set tooltip position
+      $('.lic__step5 .rangeslider__handle__value').addClass('left-corner')
     },
 
     // Callback function
@@ -97,6 +100,16 @@ function renderRangeSlider() {
           thousand: ','
         })}&nbsp;`
       )
+
+      // Set tooltip position
+      if (position < 40) {
+        $('.lic__step5 .rangeslider__handle__value').addClass('left-corner')
+      } else if (position > 230) {
+        $('.lic__step5 .rangeslider__handle__value').addClass('right-corner')
+      } else {
+        $('.lic__step5 .rangeslider__handle__value').removeClass('left-corner')
+        $('.lic__step5 .rangeslider__handle__value').removeClass('right-corner')
+      }
     },
 
     // Callback function

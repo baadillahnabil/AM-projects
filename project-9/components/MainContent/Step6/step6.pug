@@ -7,13 +7,15 @@
     .form
       .form-group
         label.label(for='step6-form__age') Your Age
-        input#step6-form__age.form-control(type='text', autofocus)
+        input#step6-form__age.form-control(type='text', autofocus, maxlength='2')
         small.form-text.info.d-none Please enter a valid age
 
-    .chat-bubble#step6-chat-bubble
+    .chat-bubble
       .avatar
         img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
-      .message Your age will affect how much you pay for life insurance products.
+      .messages
+        .message.full-rounded#step6-chat-2.d-none Do to your age you maybe ineligible for life insurance. Your advisor will provide you with more information.
+        .message#step6-chat-1 Your age will affect how much you pay for life insurance products.
 
     .button-next#step6-next-button
       button.btn Next

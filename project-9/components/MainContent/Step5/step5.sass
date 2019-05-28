@@ -24,7 +24,7 @@
     $roundness: 6.5px
     $sliderHeight: 13px
     $handleSize: 24px
-    $valueWidth: 90px
+    $valueWidth: 100px
     $labelMarkerHeight: 12px
 
     .range-slider-wrap
@@ -90,7 +90,7 @@
 
           &:after
             content: ""
-
+        
       &__fill
         position: absolute
         top: 0
@@ -177,7 +177,7 @@
         text-align: center
         font-family: 'ProximaNova-SemiBold', sans-serif
         font-size: 21px
-        padding: 12px
+        padding: 12px 10px
         margin: 5px 0
         box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
         display: flex
@@ -250,6 +250,21 @@
 
       .rangeslider
         width: 280px
+
+        &__handle
+          &__value
+            &.left-corner
+              left: -5px
+              
+              &:before
+                left: calc(50% - 43px)
+
+            &.right-corner
+              left: -70px 
+              
+              &:before
+                left: calc(50% - -22px)
+
                   
       .chat-bubble
         width: 100%

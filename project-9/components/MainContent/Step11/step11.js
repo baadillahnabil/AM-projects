@@ -21,6 +21,21 @@ $(document).ready(() => {
       goToStep12()
     }
   })
+
+  // On Back Button
+  $('#step11-back-button').on('click', () => {
+    $('#lic__step11').addClass('animated faster fadeOut')
+    $('#lic__step11').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#lic__step11').addClass('d-none')
+      $('#lic__step11').removeClass('animated faster fadeOut')
+
+      $('#lic__step10').removeClass('d-none')
+      $('#lic__step10').addClass('animated faster fadeIn')
+      $('#lic__step10').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+        $('#lic__step10').removeClass('animated faster fadeIn')
+      })
+    })
+  })
 })
 
 function goToStep12() {

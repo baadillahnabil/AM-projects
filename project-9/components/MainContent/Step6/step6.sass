@@ -61,22 +61,28 @@
       display: flex
       align-items: flex-end
       width: 484px
-      margin-top: 20px
+      margin-top: 10px
 
       .avatar
         img
           width: 32px
           height: 32px
 
-      .message
-        font-size: 16px
-        color: #25282B
-        padding: 10px 15px
-        margin-left: 10px
-        border-top-left-radius: 24px
-        border-top-right-radius: 24px
-        border-bottom-right-radius: 24px
-        background-color: rgba($color: #35869A, $alpha: .07)
+      .messages
+        .message
+          font-size: 16px
+          color: #25282B
+          padding: 10px 15px
+          margin-left: 10px
+          margin-top: 8px
+          border-top-left-radius: 24px
+          border-top-right-radius: 24px
+          border-bottom-right-radius: 24px
+          background-color: rgba($color: #35869A, $alpha: .07)
+
+          &.full-rounded
+            border-bottom-left-radius: 24px
+        
 
     
     .button-next

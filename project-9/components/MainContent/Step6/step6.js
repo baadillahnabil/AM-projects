@@ -3,6 +3,23 @@ import $ from 'jquery'
 $(document).ready(() => {
   // Validation
   $('#step6-form__age').on('input', () => {
+    const value = $('#step6-form__age').val()
+
+    if (value >= 74) {
+      const chat1 = $('#step6-chat-1').html()
+      const chat2 = $('#step6-chat-2').html()
+
+      $('#step6-chat-1').html(chat2)
+      $('#step6-chat-2').html(chat1)
+      $('#step6-chat-2').removeClass('d-none')
+    } else {
+      $('#step6-chat-1').html('Your age will affect how much you pay for life insurance products.')
+      $('#step6-chat-2').html(
+        'Do to your age you maybe ineligible for life insurance. Your advisor will provide you with more information.'
+      )
+      $('#step6-chat-2').addClass('d-none')
+    }
+
     isAgeValid()
   })
 

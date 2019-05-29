@@ -5,6 +5,8 @@ $(document).ready(() => {
   $('#step6-form__age').on('input', () => {
     const value = $('#step6-form__age').val()
 
+    if (isNaN(value)) $('#step6-form__age').val('')
+
     if (value >= 74) {
       const chat1 = $('#step6-chat-1').html()
       const chat2 = $('#step6-chat-2').html()

@@ -15065,7 +15065,7 @@ body {
   }
   .lic__header .logo svg {
     width: auto;
-    height: 34px;
+    height: 40px;
   }
   .lic__header .phone .phone-icon {
     margin-right: 0;
@@ -15264,7 +15264,6 @@ body {
     min-width: 0;
     padding: 0;
     margin: 5px;
-    border: 1px solid #F1F1F1;
     border-radius: 2px;
   }
   .lic__step1 .partners .company-logo svg, .lic__step1 .partners .company-logo img {

@@ -11,6 +11,7 @@ $(document).ready(() => {
     isLastNameValid()
   })
 
+  // On Next Button
   $('#step2-next-button').on('click', () => {
     // Check Validation
     isFirstNameValid()
@@ -30,6 +31,21 @@ $(document).ready(() => {
       goToStep3()
     }
   })
+
+  // On Back Button Clicked
+  $('#step2-back-button').on('click', () => {
+    $('#lic__step2').addClass('animated faster fadeOut')
+    $('#lic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+      $('#lic__step2').addClass('d-none')
+      $('#lic__step2').removeClass('animated faster fadeOut')
+
+      $('#lic__step1').removeClass('d-none')
+      $('#lic__step1').addClass('animated faster fadeIn')
+      $('#lic__step1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
+        $('#lic__step1').removeClass('animated faster fadeIn')
+      })
+    })
+  })
 })
 
 // Rule:
@@ -44,7 +60,12 @@ function isFirstNameValid() {
   const isSingleCharacter = $('#step2-form__firstName').val().length <= 1
   const stringOnlyRegEx = /^[A-Za-z]+$/
 
-  if (isEmpty || isMatch || isSingleCharacter || !stringOnlyRegEx.test($('#step2-form__firstName').val())) {
+  if (
+    isEmpty ||
+    isMatch ||
+    isSingleCharacter ||
+    !stringOnlyRegEx.test($('#step2-form__firstName').val())
+  ) {
     $('#step2-form__firstName').addClass('error-state')
     $('#step2-form__firstName + .info').removeClass('d-none')
 
@@ -69,7 +90,12 @@ function isLastNameValid() {
   const isSingleCharacter = $('#step2-form__lastName').val().length <= 1
   const stringOnlyRegEx = /^[A-Za-z]+$/
 
-  if (isEmpty || isMatch || isSingleCharacter || !stringOnlyRegEx.test($('#step2-form__lastName').val())) {
+  if (
+    isEmpty ||
+    isMatch ||
+    isSingleCharacter ||
+    !stringOnlyRegEx.test($('#step2-form__lastName').val())
+  ) {
     $('#step2-form__lastName').addClass('error-state')
     $('#step2-form__lastName + .info').removeClass('d-none')
 

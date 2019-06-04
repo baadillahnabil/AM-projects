@@ -15,7 +15,7 @@ $(document).ready(() => {
     arrows: true,
     slidesToScroll: 1,
     mobileFirst: true,
-    // autoplay: true,
+    autoplay: true,
     prevArrow: `<img src="${leftArrow}" class="step1-carousel-left-arrow" />`,
     nextArrow: `<img src="${rightArrow}" class="step1-carousel-right-arrow" />`,
     responsive: [

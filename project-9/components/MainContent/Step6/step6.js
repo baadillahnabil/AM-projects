@@ -61,10 +61,18 @@ $(document).ready(() => {
 
 function isAgeValid() {
   const isEmpty = $('#step6-form__age').val() === ''
+  const isBelow18 = $('#step6-form__age').val() < 18
 
-  if (isEmpty) {
+  if (isEmpty || isBelow18) {
     $('#step6-form__age').addClass('error-state')
     $('#step6-form__age + .info').removeClass('d-none')
+
+    if (isEmpty) $('#step6-form__age + .info').html('Please enter a valid age')
+    else if (isBelow18) {
+      $('#step6-form__age + .info').html(
+        'Sorry, you must be 18 and above to purchase life insurance'
+      )
+    }
 
     return false
   } else {

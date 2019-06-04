@@ -31,21 +31,6 @@ $(document).ready(() => {
       goToStep3()
     }
   })
-
-  // On Back Button Clicked
-  $('#step2-back-button').on('click', () => {
-    $('#lic__step2').addClass('animated faster fadeOut')
-    $('#lic__step2').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-      $('#lic__step2').addClass('d-none')
-      $('#lic__step2').removeClass('animated faster fadeOut')
-
-      $('#lic__step1').removeClass('d-none')
-      $('#lic__step1').addClass('animated faster fadeIn')
-      $('#lic__step1').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-        $('#lic__step1').removeClass('animated faster fadeIn')
-      })
-    })
-  })
 })
 
 // Rule:

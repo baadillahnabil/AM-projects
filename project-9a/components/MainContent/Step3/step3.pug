@@ -1,0 +1,51 @@
+.lic__step3
+
+  .content
+    .title
+      p 
+        | Great to meet you 
+        span#step3-personName.person-name Heru
+        | !
+        br
+        | I was wondering, why are you researching life insurance today?
+
+    .form
+      .form-group.form-check
+
+        #step3-form.form-container
+          .form-item
+            input#step3-form__private-hospital(name='step3-form', type='radio')
+            label.label(for='step3-form__private-hospital')
+              .image
+                .dot
+              p.text I want to buy new cover
+          .form-item
+            input#step3-form__psychiatric-service(name='step3-form', type='radio')
+            label.label(for='step3-form__psychiatric-service')
+              .image
+                .dot
+              p.text I'm looking to switch and save
+          .form-item
+            input#step3-form__ambulance-cover(name='step3-form', type='radio')
+            label.label(for='step3-form__ambulance-cover')
+              .image
+                .dot
+              p.text I just want to compare
+          .form-item
+            input#step3-form__heart-surgery(name='step3-form', type='radio')
+            label.label(for='step3-form__heart-surgery')
+              .image
+                .dot
+              p.text Replace the default cover in my superannuation
+
+        small.form-text.info.d-none Please select at least one of these
+
+
+    .button-next.disabled-state#step3-next-button
+      button.btn Next
+
+    .button-back
+      button#step3-back-button.btn
+        .button-icon
+          include ../../../static/icons/chevron-left.svg
+        | Back

@@ -1,0 +1,68 @@
+.lic__step11
+
+  .content
+    .title
+      p 
+        | That's everything! 
+        br.d-xl-none
+        | Now let's you get a quote
+
+    .inner-content
+      .points
+        .item
+          .icon
+            include ../../../static/icons/heart.svg
+          .text 
+            p.title Free quotes with general advice
+            p.description Our quotes are free and we don't mark up any of our products.
+        .item
+          .icon
+            include ../../../static/icons/open-lock.svg
+          .text 
+            p.title No lock-in contract
+            p.description There is no lock-in contract so you can change your policy at any time.
+        .item
+          .icon
+            include ../../../static/icons/calendar.svg
+          .text 
+            p.title Cooling off period
+            p.description All policies we compare have a cooling off period if you change your mind.
+          
+      .form
+        .form-group
+          label.label(for='step11-form__email') Email Address
+          .input-group#step11-form__email
+            .input-group-prepend
+              span.input-group-text
+                include ../../../static/icons/mail.svg
+            input.form-control(type='text', autofocus)
+          small.form-text.info.d-none Please enter a valid email address
+        .form-group
+          label.label(for='step11-form__phone') Phone Number
+          .input-group#step11-form__phone
+            .input-group-prepend
+              span.input-group-text
+                include ../../../static/icons/phone.svg
+            input.form-control(type='text', maxlength='10', autofocus)
+          small.form-text.info.d-none Please enter a valid 10 digit mobile number
+
+
+        .button-next
+          button#step11-next-button.btn Get my quotes
+
+        .button-back
+          button#step11-back-button.btn
+            .button-icon
+              include ../../../static/icons/chevron-left.svg
+            | Back
+
+        .note 
+          | By clicking 'Get quotes', I acknowledge that I have read and agree to the 
+          span.link Terms of Use
+          | , the 
+          span.link Privacy Policy 
+          | and the 
+          span.link Collection Notice
+          | . I confirm that you may contact me about your services.
+
+      

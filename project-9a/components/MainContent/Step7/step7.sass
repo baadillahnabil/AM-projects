@@ -1,0 +1,249 @@
+.lic__step7
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 100px
+
+  .content
+    width: 736px
+    height: 654px
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    .title
+      p
+        margin-bottom: 35px
+        font-size: 35px
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        line-height: 40px
+        color: #25282B
+        text-align: center
+
+    .form
+      width: 100%
+
+      .form-group
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .bootstrap-select
+          border-radius: 4px
+          border: 1px solid #CACACA
+          width: 328px
+
+          .select-picker
+            &:focus
+              outline: none !important
+              box-shadow: none
+
+            .filter-option-inner-inner
+              color: #25282B
+              font-family: 'ProximaNova-SemiBold', sans-serif
+              
+              &::after
+                color: #25282B
+          
+          .dropdown-menu
+            padding: 5px 20px 20px 20px
+            min-width: 0 !important
+            width: 100% !important
+
+            .bs-searchbox
+              padding: 0
+              margin: 10px 0
+
+              input
+                border-radius: 4px
+                box-shadow: 0 0 4px 0 #95C849
+
+                &:focus
+                  border-color: transparent
+
+                &::placeholder
+                  color: #D2D2D2
+            
+            ul.inner
+              padding: 0
+              margin-bottom: 50px !important
+
+              .option
+                border-bottom: 1px solid #DBDBDB
+                padding: 8px 0
+                font-size: 16px
+                line-height: 20px
+                color: #25282B
+
+                &:active
+                  background-color: inherit
+                &:focus
+                  outline: none
+
+                &.active
+                  background-color: #F7F7F7
+
+          &.error-state
+            border: 1px solid red
+
+        .none-selected
+          position: fixed
+          bottom: 0
+          left: 0
+          padding: 8px 20px
+          background-color: #E9E9E9
+          color: #25282B
+          font-family: 'ProximaNova-Bold', sans-serif
+          width: 100%
+          text-decoration: underline
+          cursor: pointer
+                
+        .info
+          text-align: center
+          color: red
+          font-size: 12px
+          margin-top: 2px
+          margin-bottom: 0.25rem
+        
+
+    .chat-bubble
+      display: flex
+      align-items: flex-end
+      width: 484px
+      margin-top: 10px
+
+      .avatar
+        img
+          width: 32px
+          height: 32px
+
+      .messages
+        .message
+          font-size: 16px
+          color: #25282B
+          padding: 10px 15px
+          margin-left: 10px
+          margin-top: 8px
+          border-top-left-radius: 24px
+          border-top-right-radius: 24px
+          border-bottom-right-radius: 24px
+          background-color: rgba($color: #35869A, $alpha: .07)
+
+          &.full-rounded
+            border-bottom-left-radius: 24px
+        
+
+
+    .button-next
+      margin-top: 30px
+
+      button
+        width: 188px
+        border-radius: 4px
+        background-color: $secondary
+        color: white
+        text-align: center
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        font-size: 21px
+        padding: 12px
+        margin: 5px 0
+        box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:focus
+          outline: none
+
+        &:active
+          box-shadow: none
+
+    .button-back
+      display: flex
+      justify-content: flex-start
+      margin-top: 25px
+
+      button
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #CACCCF
+        font-size: 16px
+        line-height: 24px
+        padding: 0
+
+        &:focus
+          outline: none
+          box-shadow: none
+
+        &:active
+          box-shadow: none
+
+        .button-icon
+          margin-right: 10px
+          margin-top: -3px
+    
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .lic__step7
+    .content
+      height: auto
+
+      .title
+        p
+          padding: 0 40px
+
+      .button-back
+        margin-bottom: 50px
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .lic__step7
+    padding: 20px
+    padding-top: 30px
+
+    .content
+      width: auto
+      height: auto
+
+      .title
+        p
+          margin-bottom: 15px
+          font-size: 24px
+          line-height: 28px
+          padding: 0
+
+      .form
+        margin-top: 15px
+
+        .form-group
+          .bootstrap-select
+            width: 100%
+                  
+      .chat-bubble
+        width: 100%
+        margin-top: 0
+
+        .message
+          font-size: 16px
+          padding: 13px
+          line-height: 20px
+      
+      .button-next
+        width: 100%
+        margin-top: 25px
+
+        button
+          width: 100%
+
+      .button-back
+        width: 100%
+        margin-top: 13px
+        margin-bottom: 0
+
+        button
+          width: 100%

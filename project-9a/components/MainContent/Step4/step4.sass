@@ -1,0 +1,161 @@
+.lic__step4
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 100px
+
+  .content
+    width: 736px
+    height: 654px
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    .title
+      p
+        margin-bottom: 35px
+        font-size: 35px
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        line-height: 40px
+        color: #25282B
+        text-align: center
+
+    .chat-bubble
+      display: flex
+      align-items: flex-end
+      width: 484px
+
+      .avatar
+        img
+          width: 32px
+          height: 32px
+
+      .message
+        font-size: 16px
+        color: #25282B
+        padding: 10px 15px
+        margin-left: 10px
+        border: 1px solid rgba($color: #35869A, $alpha: .07)
+        border-top-left-radius: 24px
+        border-top-right-radius: 24px
+        border-bottom-right-radius: 24px
+        background-color: rgba($color: #35869A, $alpha: .07)
+
+    .action-buttons
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+
+      .button-next
+        margin-top: 40px
+
+        button
+          width: 188px
+          border-radius: 4px
+          background-color: $secondary
+          color: white
+          text-align: center
+          font-family: 'ProximaNova-SemiBold', sans-serif
+          font-size: 21px
+          padding: 12px
+          margin: 5px 0
+          box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
+          display: flex
+          justify-content: center
+          align-items: center
+
+          &:focus
+            outline: none
+
+          &:active
+            box-shadow: none
+
+      .button-back
+        display: flex
+        justify-content: flex-start
+        margin-top: 30px
+
+        button
+          display: flex
+          justify-content: center
+          align-items: center
+          color: #CACCCF
+          font-size: 16px
+          line-height: 24px
+          padding: 0
+
+          &:focus
+            outline: none
+            box-shadow: none
+
+          &:active
+            box-shadow: none
+
+          .button-icon
+            margin-right: 10px
+            margin-top: -3px
+      
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .lic__step4
+    .content
+      height: auto
+
+      .title
+        p
+          padding: 0 30px
+
+      .action-buttons
+        .button-back
+          margin-bottom: 50px
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .lic__step4
+    padding: 20px
+    padding-top: 30px
+
+    .content
+      width: auto
+      height: auto
+
+      .title
+        p
+          margin-bottom: 15px
+          font-size: 24px
+          line-height: 28px
+          padding: 0
+
+      .chat-bubble
+        width: 100%
+        margin-top: 10px
+
+        .message
+          font-size: 16px
+          padding: 15px
+          line-height: 20px
+
+      .action-buttons
+        width: 100%
+        position: fixed
+        bottom: 0
+        padding: 20px
+
+        .button-next
+          width: 100%
+          margin-top: 30px
+
+          button
+            width: 100%
+
+        .button-back
+          width: 100%
+          margin-top: 13px
+          margin-bottom: 0
+
+          button
+            width: 100%

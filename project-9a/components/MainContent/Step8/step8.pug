@@ -1,0 +1,37 @@
+.lic__step8
+
+  .content
+    .title
+      p What is your gender?
+
+    .form
+      .form-group.form-radio
+        #step8-form.form-container
+          .form-item
+            input#step8-form__male(name='step8-form', type='radio')
+            label.label(for='step8-form__male')
+              .image
+                include ../../../static/icons/male.svg
+              p.text Male
+          .form-item
+            input#step8-form__female(name='step8-form', type='radio')
+            label.label(for='step8-form__female')
+              .image
+                include ../../../static/icons/female.svg
+              p.text Female
+          
+        small.form-text.info.d-none Please select one of these
+
+    .chat-bubble#step8-chat-bubble
+      .avatar
+        img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
+      .message Insurers also take into your account your gender when determining the price of your premium.
+
+    .button-next
+      button#step8-next-button.btn Next
+
+    .button-back
+      button#step8-back-button.btn
+        .button-icon
+          include ../../../static/icons/chevron-left.svg
+        | Back

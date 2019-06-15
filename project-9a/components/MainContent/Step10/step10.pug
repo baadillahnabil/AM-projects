@@ -1,0 +1,48 @@
+.lic__step10
+
+  .content
+    .title
+      p Would you be interested in cover that can
+
+    .form
+      .form-group.form-check
+        #step10-form.form-container
+          .form-item
+            input#step10-form__option-1(name='step10-form', type='checkbox')
+            label.label(for='step10-form__option-1')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Replace up to 75% of your income if you're unable to work
+          .form-item
+            input#step10-form__option-2(name='step10-form', type='checkbox')
+            label.label(for='step10-form__option-2')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Help you if you're diagnosed with a serious illness
+          .form-item
+            input#step10-form__option-3(name='step10-form', type='checkbox')
+            label.label(for='step10-form__option-3')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Help you if you're seriously injured and unable to work
+          .form-item
+            input#step10-form__option-4(name='step10-form', type='checkbox')
+            label.label(for='step10-form__option-4')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Help you pay for ongoing medical treatment
+          .form-item
+            input#step10-form__option-5(name='step10-form', type='checkbox')
+            label.label(for='step10-form__option-5')
+              .image
+                include ../../../static/icons/check_white.svg
+              p.text Be paid from your super balance so you save 15%
+    
+    .button-next.disabled-state#step10-next-button
+      button.btn Next
+
+    .button-back
+      button#step10-back-button.btn
+        .button-icon
+          include ../../../static/icons/chevron-left.svg
+        | Back

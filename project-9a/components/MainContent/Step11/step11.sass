@@ -1,0 +1,243 @@
+.lic__step11
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 100px
+
+  .content
+    width: 736px
+    height: 654px
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    .title
+      p
+        margin-bottom: 35px
+        font-size: 35px
+        font-family: 'ProximaNova-SemiBold', sans-serif
+        line-height: 40px
+        color: #25282B
+        text-align: center
+
+    .inner-content
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      margin-top: 20px
+
+      .points
+        width: 50%
+        height: 100%
+        padding-right: 40px
+        padding-top: 16px
+        border-right: 1px solid #EDEDED
+
+        .item
+          display: flex
+          justify-content: flex-start
+          align-items: flex-start
+
+          .icon
+            background-color: #097A3E
+            border-radius: 50%
+            min-width: 32px
+            min-height: 32px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 16px
+
+          .text
+            line-height: 20px
+            font-size: 14px
+
+            .title
+              color: #25282B
+              font-family: 'ProximaNova-Bold', sans-serif
+              margin-bottom: 5px
+  
+      .form
+        width: 50%
+        padding-left: 40px
+
+        .form-group
+          label.label
+            text-transform: uppercase
+            font-size: 12px
+            line-height: 18px
+            color: #52575C
+
+          .input-group
+            &.error-state
+              border: 1px solid red
+              border-radius: 4px
+
+              .input-group-prepend
+                .input-group-text
+                  border: none
+                  
+              input 
+                border: none
+            
+            .input-group-prepend
+              .input-group-text
+                background-color: transparent
+                border: 1px solid #CACACA
+                border-right: none
+            
+            input.form-control
+              border-radius: 4px
+              border-top-left-radius: 0
+              border-bottom-left-radius: 0
+              border-color: #CACACA
+              font-size: 16px
+              font-family: 'ProximaNova-SemiBold', sans-serif
+              padding: 25px 0
+              color: #25282B
+              border-left: none
+
+              &:focus
+                box-shadow: none
+                border-color: #CACACA
+
+          .info
+            text-align: center
+            color: red
+            font-size: 12px
+            margin-top: 2px
+            margin-bottom: 0.25rem
+
+      
+        .button-next
+          margin-top: 25px
+
+          button
+            width: 100%
+            border-radius: 4px
+            background-color: $secondary
+            color: white
+            text-align: center
+            font-family: 'ProximaNova-SemiBold', sans-serif
+            font-size: 21px
+            padding: 12px
+            margin: 0
+            box-shadow: inset 0 -4px 0 rgba($color: #000000, $alpha: .19)
+            display: flex
+            justify-content: center
+            align-items: center
+
+            &:focus
+              outline: none
+
+            &:active
+              box-shadow: none
+
+        .button-back
+          display: flex
+          justify-content: flex-start
+          margin-top: 25px
+
+          button
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #CACCCF
+            font-size: 16px
+            line-height: 24px
+            padding: 0
+
+            &:focus
+              outline: none
+              box-shadow: none
+
+            &:active
+              box-shadow: none
+
+            .button-icon
+              margin-right: 10px
+              margin-top: -3px
+        
+
+        .note 
+          margin-top: 20px
+          line-height: 20px
+          font-size: 14px
+          color: #25282B
+
+          .link
+            font-family: 'ProximaNova-Bold', sans-serif
+            color: $primary
+            cursor: pointer
+
+            &:hover
+              text-decoration: underline
+
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .lic__step11
+    .content
+      height: auto
+
+      .title
+        p
+          padding: 0 40px
+
+      .inner-content
+        flex-direction: column-reverse
+        width: 424px
+
+        .points
+          width: 100%
+          padding-right: 0
+          padding-top: 40px
+          border-right: none
+          border-top: 1px solid #EDEDED
+          margin: 40px 0
+        
+        .form
+          padding-left: 0
+          width: 100%
+
+          .button-back
+            justify-content: center
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .lic__step11
+    padding: 20px
+    padding-top: 30px
+
+    .content
+      width: auto
+      height: auto
+
+      .title
+        p
+          margin-bottom: 15px
+          font-size: 24px
+          line-height: 28px
+          padding: 0
+
+      .inner-content
+        flex-direction: column-reverse
+        width: 100%
+        margin-top: 15px
+        
+        .points
+          padding-top: 20px
+          margin: 20px 0
+
+        .form        
+          .button-next
+            width: 100%
+            margin-top: 25px
+
+            button
+              width: 100%
+
+      

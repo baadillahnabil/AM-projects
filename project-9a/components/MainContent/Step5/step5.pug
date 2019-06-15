@@ -1,0 +1,33 @@
+.lic__step5
+
+  .content
+    .title
+      p How much would you like to be covered for?
+    
+    //- TODO 
+    .range-slider-wrap
+      input#step5-cover-range(
+        type='range',
+        min='0',
+        max='2000000',
+        step='50000',
+        value='50000',
+        labels='0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000'
+      )
+    
+    .chat-bubble#step5-chat-bubble
+      .avatar
+        img(src='static/images/assistant-avatar.png', alt='assistant-avatar')
+      .message This is the amount the insurer will pay if you pass away. Don't stress too much about the exact number. You can always change the amount once you've seen your quote.
+
+    .button-next#step5-next-button
+      button.btn 
+        | I want
+        span#step5-next-button-amount $100,000
+        | of cover 
+
+    .button-back
+      button#step5-back-button.btn
+        .button-icon
+          include ../../../static/icons/chevron-left.svg
+        | Back

@@ -1,0 +1,21 @@
+.top-banner
+  .content
+    p.title Compare Electricity & Gas Plans Today!
+    p.description 
+      | Find the most competitive energy plans 
+      br.d-none.d-lg-block-d-xl-block
+      | in your area now.
+    .form
+      .form-group
+        .input-group#form__postcode
+          .input-group-prepend
+            span.input-group-text
+              include ../../../static/icons/location.svg
+          input.form-control(type='text', placeholder='Enter your postcode / suburb', autofocus)
+          .input-group-append
+            span.input-group-text
+              include ../../../static/icons/question.svg
+        
+      .button-cta
+        button#step3-next-button.btn Get Started
+  .light-bulb

@@ -1,0 +1,56 @@
+nav#navbar.navbar.navbar-light.navbar-expand-xl.fixed-top.eng__header
+
+
+  //- Button Toggle Tablet/Mobile Menu & Company Logo
+  a.navbar-brand(href='#')
+
+    .menu-responsive
+      button.navbar-toggler.navbar-custom__toggler(
+        data-target='#navbarToggleBreakpoint', 
+        data-toggle='collapse', 
+        type='button', 
+        aria-controls='navbarToggleBreakpoint', 
+        aria-expanded='false', 
+        aria-label='Toggle navigation'
+      )
+        include ../../static/icons/hamburger.svg
+
+    .logo
+      include ../../static/images/logo_full.svg
+      
+
+  //- Menus
+  .collapse.navbar-collapse.navbar-menus#navbarToggleBreakpoint
+    ul#navbarMenus.navbar-nav
+
+      li.nav-item
+        a.nav-link(href='#')
+          | Energy Guides
+          i.fas.fa-angle-right.d-lg-none.d-xl-none.float-right
+      li.nav-item
+        a.nav-link(href='#')
+          | Energy Suppliers
+          i.fas.fa-angle-right.d-lg-none.d-xl-none.float-right
+      li.nav-item
+        a.nav-link(href='#')
+          | Tools & Calculator
+          i.fas.fa-angle-right.d-lg-none.d-xl-none.float-right
+      li.nav-item
+        a.nav-link(href='#')
+          | About Us
+          i.fas.fa-angle-right.d-lg-none.d-xl-none.float-right
+      li.nav-item
+        a.nav-link(href='#')
+          | Blog
+          i.fas.fa-angle-right.d-lg-none.d-xl-none.float-right
+  
+
+  //- Contact Number
+  a.phone(href='tel:1300163402')
+    .d-inline-block.align-top.phone-icon
+      include ../../static/icons/phone_header.svg
+    .phone-details.d-none.d-md-flex.d-lg-flex.d-xl-flex
+      p.phone-days Monday-Friday 8am to 8pm AEST
+      p.mb-0.phone-number 1300 163 402
+
+  

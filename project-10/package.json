@@ -11,15 +11,16 @@
     "deploy": "yarn build && git add . && git commit -m 'build production' && git push origin master"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.6.1",
     "bootstrap": "^4.3.1",
     "cssnano": "^4.1.10",
     "jquery": "^3.4.1",
-    "node-gyp": "^5.0.1",
+    "node-gyp": "^5.0.2",
     "popper.js": "^1.15.0",
     "postcss-modules": "^1.4.1",
     "pug": "^2.0.4",
-    "sass": "^1.22.0"
+    "sass": "^1.22.3",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {}
 }

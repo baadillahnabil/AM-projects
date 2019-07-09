@@ -1,0 +1,65 @@
+.companyLogos
+  padding: 0 10%
+  margin-top: 48px
+  
+  .title
+    p 
+      font-size: 18px
+      letter-spacing: 0.33px
+      color: #52575C
+      line-height: 27px
+      text-align: center
+
+  .companyLogosList
+    display: flex
+    align-items: center
+    
+    .company-logo
+      display: flex !important
+      justify-content: center
+      align-items: center
+      padding-top: 16px
+      padding-bottom: 16px
+
+
+    .carousel-left-arrow, .carousel-right-arrow
+      cursor: pointer
+      position: absolute
+
+    .carousel-left-arrow
+      left: -50px
+
+    .carousel-right-arrow
+      right: -50px
+
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .companyLogos
+    padding: 0 110px
+    margin-top: 32px
+
+    .companyLogosList
+      .company-logo
+
+      .carousel-left-arrow, .carousel-right-arrow
+        cursor: pointer
+        position: absolute
+
+      .carousel-left-arrow
+        left: -75px
+
+      .carousel-right-arrow
+        right: -75px
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .companyLogos
+    padding: 0 16px
+    margin-top: 24px
+
+    .companyLogosList
+      .company-logo
+        svg
+          width: 148px
+          height: auto

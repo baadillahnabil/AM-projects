@@ -21055,14 +21055,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   (0, _jquery.default)('#testimonialList').slick({
     infinite: true,
     dots: false,
-    speed: 300,
+    speed: 400,
     rows: 1,
     slidesToShow: 3,
     arrows: true,
     slidesToScroll: 1,
     mobileFirst: true,
     adaptiveHeight: true,
-    // autoplay: true,
+    autoplay: true,
     prevArrow: "<img src=\"".concat(_arrow_left.default, "\" class=\"carousel-left-arrow\" />"),
     nextArrow: "<img src=\"".concat(_arrow_right.default, "\" class=\"carousel-right-arrow\" />"),
     responsive: [{
@@ -21083,13 +21083,58 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }]
   });
 });
+},{"jquery":"node_modules/jquery/dist/jquery.js","slick-carousel":"node_modules/slick-carousel/slick/slick.js","../../../static/icons/arrow_left.svg":"static/icons/arrow_left.svg","../../../static/icons/arrow_right.svg":"static/icons/arrow_right.svg"}],"components/MainContent/HowWork/howWork.js":[function(require,module,exports) {
+"use strict";
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+require("slick-carousel");
+
+var _arrow_left = _interopRequireDefault(require("../../../static/icons/arrow_left.svg"));
+
+var _arrow_right = _interopRequireDefault(require("../../../static/icons/arrow_right.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery.default)(document).ready(function () {
+  (0, _jquery.default)('#howWorkServices').slick({
+    infinite: true,
+    dots: false,
+    speed: 500,
+    rows: 1,
+    slidesToShow: 6,
+    arrows: false,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    variableWidth: true,
+    autoplay: true,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 100,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
 },{"jquery":"node_modules/jquery/dist/jquery.js","slick-carousel":"node_modules/slick-carousel/slick/slick.js","../../../static/icons/arrow_left.svg":"static/icons/arrow_left.svg","../../../static/icons/arrow_right.svg":"static/icons/arrow_right.svg"}],"components/MainContent/mainContent.js":[function(require,module,exports) {
 "use strict";
 
 require("./CompanyLogos/companyLogos");
 
 require("./Testimonial/testimonial");
-},{"./CompanyLogos/companyLogos":"components/MainContent/CompanyLogos/companyLogos.js","./Testimonial/testimonial":"components/MainContent/Testimonial/testimonial.js"}],"index.js":[function(require,module,exports) {
+
+require("./HowWork/howWork");
+},{"./CompanyLogos/companyLogos":"components/MainContent/CompanyLogos/companyLogos.js","./Testimonial/testimonial":"components/MainContent/Testimonial/testimonial.js","./HowWork/howWork":"components/MainContent/HowWork/howWork.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("jquery");

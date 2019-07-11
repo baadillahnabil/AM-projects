@@ -1,0 +1,123 @@
+.howWork
+  padding: 80px 10%
+
+  .title
+    p 
+      font-family: 'ProximaNova-Bold', sans-serif
+      font-size: 38px
+      line-height: 48px
+      letter-spacing: -0.1px
+      color: $text_default
+      text-align: center
+      margin-bottom: 0
+
+  .description
+    p
+      font-size: 22px
+      line-height: 27px
+      letter-spacing: 0.4px
+      color: #A0A4A8
+      text-align: center
+      margin-bottom: 0
+      margin-top: 16px
+
+  .services
+    margin-top: 48px
+    
+    .service
+      width: 261px !important
+      height: 256px
+      background: linear-gradient(180deg, #105F97 0%, #0A4C7B 100%)
+      border-radius: 8px
+      display: flex !important
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      margin: 0 12px
+
+      .icon
+        width: 72px
+        height: 72px
+        background-color: #ffffff
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+
+      .description
+        p 
+          margin-bottom: 0
+          margin-top: 24px
+          font-family: 'ProximaNova-SemiBold', sans-serif
+          font-size: 16px
+          line-height: 24px
+          letter-spacing: 0.2px
+          text-align: center
+          color: #ffffff
+          padding: 0 24px
+
+    .slick-current
+      .service
+        margin-left: 0
+
+
+  .customerReview
+    display: flex
+    background-color: #0A4C7B
+    border-radius: 8px
+    margin-top: 24px
+    padding: 56px 0
+    padding-left: 64px
+    padding-right: 32px
+
+    .leftSide
+      padding-right: 58px
+      margin-right: 40px
+      border-right: 1px solid rgba($color: #ffffff, $alpha: .24)
+
+      .icon
+      .title
+        p 
+          font-family: 'ProximaNova-Bold', sans-serif
+          font-size: 24px
+          letter-spacing: 0.3px
+          line-height: 29px
+          color: #ffffff
+          text-align: left
+          margin-bottom: 0
+          margin-top: 24px
+
+
+    .rightSide
+      .description
+        p 
+          text-align: left
+          color: #ffffff
+          font-family: 'ProximaNova-RegItalic', sans-serif
+          font-size: 18px
+          letter-spacing: 0.2px
+          line-height: 27px
+          margin-bottom: 0
+          margin-top: 8px
+
+      .writer
+        p 
+          margin-bottom: 8px
+          margin-top: 16px
+          font-family: 'ProximaNova-Bold', sans-serif
+          font-size: 16px
+          color: #ffffff
+          letter-spacing: 0.18px
+          line-height: 19px
+  
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .howWork
+    
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .howWork
+    

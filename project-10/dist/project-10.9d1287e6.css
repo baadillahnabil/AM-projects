@@ -15082,6 +15082,124 @@ body {
   line-height: 19px;
 }
 
+@media (max-width: 1199.98px) {
+  .howWork {
+    padding: 80px 0;
+  }
+  .howWork .title p {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .howWork .description p {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .howWork .services {
+    padding-left: 24px;
+    margin-top: 40px;
+  }
+  .howWork .customerReview {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 32px;
+    padding: 32px;
+    padding-left: 40px;
+  }
+  .howWork .customerReview .leftSide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 32px;
+    margin-right: 32px;
+  }
+  .howWork .customerReview .leftSide .title p {
+    padding: 0;
+  }
+  .howWork .customerReview .rightSide .description p {
+    padding: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .howWork {
+    padding: 56px 0;
+  }
+  .howWork .title p {
+    padding: 0 16px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .howWork .description p {
+    padding: 0 16px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .howWork .services {
+    padding-left: 16px;
+  }
+  .howWork .services .service {
+    margin: 0 8px;
+  }
+  .howWork .customerReview {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .howWork .customerReview .leftSide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  }
+  .howWork .customerReview .leftSide .title p {
+    margin-top: 0;
+    margin-left: 16px;
+    padding: 0;
+  }
+  .howWork .customerReview .rightSide .description p {
+    margin-top: 0;
+    padding: 0;
+  }
+}
 .eng__footer {
   padding: 30px 10%;
   -webkit-box-shadow: 0 -4px 16px 0 rgba(0, 0, 0, 0.04);

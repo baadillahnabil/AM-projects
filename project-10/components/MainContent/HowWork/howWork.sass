@@ -75,7 +75,6 @@
       margin-right: 40px
       border-right: 1px solid rgba($color: #ffffff, $alpha: .24)
 
-      .icon
       .title
         p 
           font-family: 'ProximaNova-Bold', sans-serif
@@ -114,10 +113,95 @@
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
   .howWork
+    padding: 80px 0
+
+    .title 
+      p
+        padding-left: 24px
+        padding-right: 24px
     
+    .description
+      p
+        padding-left: 24px
+        padding-right: 24px
+
+    .services
+      padding-left: 24px
+      margin-top: 40px
+
+    .customerReview
+      margin-left: 24px
+      margin-right: 24px
+      margin-top: 32px
+      padding: 32px
+      padding-left: 40px
+
+      .leftSide
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-right: 32px
+        margin-right: 32px
+
+        .title
+          p
+            padding: 0
+
+      .rightSide
+        .description
+          p
+            padding: 0
+
 
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
   .howWork
+    padding: 56px 0
+
+    .title 
+      p
+        padding: 0 16px
+        font-size: 30px
+        line-height: 38px
     
+    .description
+      p
+        padding: 0 16px
+        font-size: 22px
+        line-height: 27px
+
+    .services
+      padding-left: 16px
+
+      .service
+        margin: 0 8px
+
+    .customerReview
+      margin-left: 16px
+      margin-right: 16px
+      padding: 24px
+      flex-direction: column
+
+      .leftSide
+        display: flex
+        flex-direction: row
+        align-items: center
+        border-right: 0
+        margin: 0
+        padding: 0
+        padding-bottom: 16px
+        margin-bottom: 16px
+        border-bottom: 1px solid rgba($color: #ffffff, $alpha: .24)
+
+        .title
+          p
+            margin-top: 0
+            margin-left: 16px
+            padding: 0
+
+      .rightSide
+        .description
+          p
+            margin-top: 0
+            padding: 0

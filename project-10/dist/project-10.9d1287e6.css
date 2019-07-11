@@ -14659,10 +14659,10 @@ body {
           box-shadow: none;
 }
 .top-banner .light-bulb {
-  width: 50%;
+  width: 45%;
   background-image: url("/bulb.024e5915.svg");
   background-repeat: no-repeat;
-  background-position: right 65px top;
+  background-position: right top;
 }
 
 @media (max-width: 1199.98px) {
@@ -14716,9 +14716,9 @@ body {
     margin: 0;
   }
   .top-banner .light-bulb {
-    width: 100%;
+    width: 95%;
     height: 269px;
-    background-position: left 130px top;
+    background-position: center top;
     -webkit-background-size: 234px auto;
             background-size: 234px auto;
   }
@@ -14727,8 +14727,6 @@ body {
   .top-banner {
     padding: 0 16px;
     background-image: url("/banner_bg_mobile.a87e36cf.png");
-    -webkit-background-size: contain;
-            background-size: contain;
     height: 428px;
   }
   .top-banner .content {
@@ -14759,11 +14757,11 @@ body {
     width: 100%;
   }
   .top-banner .light-bulb {
-    width: 100%;
+    width: 95%;
     height: 133px;
     -webkit-background-size: 117px auto;
             background-size: 117px auto;
-    background-position: left 105px top -10px;
+    background-position: center top;
   }
 }
 .companyLogos {

@@ -5,44 +5,36 @@ import leftArrow from '../../../static/icons/arrow_left.svg'
 import rightArrow from '../../../static/icons/arrow_right.svg'
 
 $(document).ready(() => {
-  $('#companyLogosList').slick({
+  $('#testimonialList').slick({
     infinite: true,
     dots: false,
     speed: 300,
-    rows: 2,
-    slidesToShow: 6,
+    rows: 1,
+    slidesToShow: 3,
     arrows: true,
     slidesToScroll: 1,
     mobileFirst: true,
-    autoplay: true,
+    adaptiveHeight: true,
+    // autoplay: true,
     prevArrow: `<img src="${leftArrow}" class="carousel-left-arrow" />`,
     nextArrow: `<img src="${rightArrow}" class="carousel-right-arrow" />`,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          rows: 2,
-          arrows: true,
-          variableWidth: false,
-          slidesToShow: 6
+          slidesToShow: 3
         }
       },
       {
         breakpoint: 767,
         settings: {
-          rows: 2,
-          arrows: true,
-          variableWidth: false,
-          slidesToShow: 3
+          slidesToShow: 2
         }
       },
       {
         breakpoint: 100,
         settings: {
-          rows: 1,
-          slidesToShow: 2,
-          arrows: false,
-          variableWidth: true
+          slidesToShow: 1
         }
       }
     ]

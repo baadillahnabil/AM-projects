@@ -1,0 +1,85 @@
+.moving
+  padding: 80px 10%
+
+  .title
+    p 
+      font-family: 'ProximaNova-Bold', sans-serif
+      font-size: 38px
+      letter-spacing: 0.1px
+      line-height: 48px
+      color: $text_default
+      text-align: center
+
+  .content
+    margin-top: 40px
+    padding: 40px 110px
+    box-shadow: 0 16px 24px -4px rgba($color: #000000, $alpha: .1)
+
+    .points
+      display: flex
+      justify-content: space-between
+
+      .point
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-direction: column
+        width: 229px
+        height: 212px
+
+
+        .number
+          p
+            width: 32px
+            height: 32px
+            background-color: $primary
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #ffffff
+            font-family: 'ProximaNova-Bold', sans-serif
+            font-size: 18px
+            letter-spacing: 0.2px
+            line-height: 22px
+            margin-bottom: 0
+
+        .icon
+          margin-top: 24px
+
+          svg
+            width: 66px
+            height: 80px
+          
+          
+        .description
+          p 
+            margin-bottom: 0
+            margin-top: 21px
+            text-align: center
+            font-family: 'ProximaNova-SemiBold', sans-serif
+            font-size: 18px
+            letter-spacing: 0.2px
+            line-height: 27px
+            color: #52575C
+
+      .separator
+        position: relative
+
+        .dashed
+          height: 1px
+          width: 154px
+          border-bottom: 2px dashed $primary
+          position: absolute
+          top: 45%
+          left: -75px
+
+  
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  

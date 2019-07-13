@@ -44,24 +44,30 @@
             line-height: 22px
             margin-bottom: 0
 
-        .icon
-          margin-top: 24px
+        .grouped
+          display: flex
+          align-items: center
+          justify-content: flex-start
+          flex-direction: column
 
-          svg
-            width: 66px
-            height: 80px
-          
-          
-        .description
-          p 
-            margin-bottom: 0
-            margin-top: 21px
-            text-align: center
-            font-family: 'ProximaNova-SemiBold', sans-serif
-            font-size: 18px
-            letter-spacing: 0.2px
-            line-height: 27px
-            color: #52575C
+          .icon
+            margin-top: 24px
+
+            svg
+              width: 66px
+              height: 80px
+            
+            
+          .description
+            p 
+              margin-bottom: 0
+              margin-top: 21px
+              text-align: center
+              font-family: 'ProximaNova-SemiBold', sans-serif
+              font-size: 18px
+              letter-spacing: 0.2px
+              line-height: 27px
+              color: #52575C
 
       .separator
         position: relative
@@ -74,12 +80,82 @@
           top: 45%
           left: -75px
 
-  
+
 // Tablet Breakpoint
 @include media-breakpoint-down(lg)
-  
+  .moving
+    padding: 80px 24px
+
+    .content
+      box-shadow: none
+      padding: 40px 0
+      
+      .points
+        .point
+          width: 208px
+          height: 206px
+
+        .separator
+          .dashed
+            width: 142px
+            left: -70px
+
 
 
 // Mobile Breakpoint
 @include media-breakpoint-down(sm)
-  
+  .moving
+    padding: 56px 0
+
+    .title
+      p
+        font-size: 30px
+        line-height: 38px
+        padding: 0 16px
+
+    .content
+      padding: 32px 45px 64px 45px
+      margin-top: 0
+      box-shadow: 0 16px 24px -4px rgba($color: #000000, $alpha: .1)
+      
+      .points
+        flex-direction: column
+        align-items: flex-start
+
+        .point
+          width: 100%
+          height: auto
+          flex-direction: row
+          justify-content: flex-start
+          align-items: flex-start
+
+          &:not(:last-child)
+            .grouped
+              border-left: 2px dashed $primary
+              margin-left: -17px
+              padding-left: 41px
+              padding-bottom: 24px
+
+          .number
+            z-index: 2
+
+            p
+          
+          .grouped
+            align-items: flex-start
+            margin-left: 24px
+
+            .icon
+              margin-top: 0
+
+              svg
+
+            .description
+              p
+                margin-top: 8px
+                text-align: left
+
+        .separator
+          display: none
+
+

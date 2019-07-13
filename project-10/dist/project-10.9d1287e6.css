@@ -15433,14 +15433,38 @@ body {
   line-height: 22px;
   margin-bottom: 0;
 }
-.moving .content .points .point .icon {
+.moving .content .points .point .grouped {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.moving .content .points .point .grouped .icon {
   margin-top: 24px;
 }
-.moving .content .points .point .icon svg {
+.moving .content .points .point .grouped .icon svg {
   width: 66px;
   height: 80px;
 }
-.moving .content .points .point .description p {
+.moving .content .points .point .grouped .description p {
   margin-bottom: 0;
   margin-top: 21px;
   text-align: center;
@@ -15462,6 +15486,102 @@ body {
   left: -75px;
 }
 
+@media (max-width: 1199.98px) {
+  .moving {
+    padding: 80px 24px;
+  }
+  .moving .content {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 40px 0;
+  }
+  .moving .content .points .point {
+    width: 208px;
+    height: 206px;
+  }
+  .moving .content .points .separator .dashed {
+    width: 142px;
+    left: -70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .moving {
+    padding: 56px 0;
+  }
+  .moving .title p {
+    font-size: 30px;
+    line-height: 38px;
+    padding: 0 16px;
+  }
+  .moving .content {
+    padding: 32px 45px 64px 45px;
+    margin-top: 0;
+    -webkit-box-shadow: 0 16px 24px -4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 16px 24px -4px rgba(0, 0, 0, 0.1);
+  }
+  .moving .content .points {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .moving .content .points .point {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .moving .content .points .point:not(:last-child) .grouped {
+    border-left: 2px dashed #F26522;
+    margin-left: -17px;
+    padding-left: 41px;
+    padding-bottom: 24px;
+  }
+  .moving .content .points .point .number {
+    z-index: 2;
+  }
+  .moving .content .points .point .grouped {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 24px;
+  }
+  .moving .content .points .point .grouped .icon {
+    margin-top: 0;
+  }
+  .moving .content .points .point .grouped .description p {
+    margin-top: 8px;
+    text-align: left;
+  }
+  .moving .content .points .separator {
+    display: none;
+  }
+}
 .eng__footer {
   padding: 30px 10%;
   -webkit-box-shadow: 0 -4px 16px 0 rgba(0, 0, 0, 0.04);

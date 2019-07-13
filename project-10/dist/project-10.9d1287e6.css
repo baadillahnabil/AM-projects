@@ -15218,6 +15218,7 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .compare .image img {
   width: 535px;
@@ -15283,6 +15284,73 @@ body {
           box-shadow: none;
 }
 
+@media (max-width: 1199.98px) {
+  .compare .image img {
+    width: 327px;
+    height: 257px;
+    position: absolute;
+    left: -83px;
+    bottom: 0;
+  }
+  .compare .content {
+    padding: 80px 24px;
+  }
+  .compare .content .title p {
+    text-align: center;
+  }
+  .compare .content .description p {
+    margin-left: 244px;
+    margin-top: 32px;
+  }
+  .compare .content .button-cta {
+    margin-left: 244px;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .compare {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: transparent;
+  }
+  .compare .image {
+    width: 100%;
+    height: 276px;
+    margin-top: 56px;
+  }
+  .compare .image img {
+    position: relative;
+    left: -24px;
+    width: 100%;
+    height: 100%;
+  }
+  .compare .content {
+    background-color: #F6F6F6;
+    padding: 40px 16px;
+  }
+  .compare .content .title p {
+    font-size: 30px;
+    text-align: left;
+    line-height: 38px;
+  }
+  .compare .content .description p {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  .compare .content .button-cta {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+  .compare .content .button-cta button {
+    width: 100%;
+  }
+}
 .eng__footer {
   padding: 30px 10%;
   -webkit-box-shadow: 0 -4px 16px 0 rgba(0, 0, 0, 0.04);

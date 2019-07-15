@@ -1,0 +1,94 @@
+.footer
+  padding: 80px 162px
+  padding-bottom: 88px
+  display: flex
+  
+  .logo-address
+    .address
+      p
+        margin-top: 24px
+        font-size: 16px
+        letter-spacing: 0.2px
+        line-height: 24px
+        color: #52575C
+        margin-bottom: 0
+  
+  .right-side
+    display: flex
+    margin-left: 81px
+
+    .links
+      display: flex
+      align-items: center
+
+      .left
+        width: 166px
+
+      .right
+        width: 166px
+        margin-left: 24px
+      
+      .link
+        p
+          font-family: 'ProximaNova-SemiBold', sans-serif
+          font-size: 14px
+          letter-spacing: 0
+          line-height: 17px
+          color: $text_default
+          margin-bottom: 16px
+          cursor: pointer
+
+          &:hover
+            text-decoration: underline
+
+    .social-copyright
+      margin-left: 78px
+
+      .social
+        display: flex
+
+        .icon
+          margin-right: 16px
+          cursor: pointer
+
+      .copyright
+        p
+          font-size: 16px
+          letter-spacing: 0.2px
+          line-height: 24px
+          color: #52575C
+          margin-bottom: 0
+          margin-top: 24px
+
+
+  
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .footer
+    padding: 56px 35px
+
+    .right-side
+      flex-direction: column
+
+      .social-copyright
+        margin-left: 0
+        margin-top: 40px
+
+
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .footer
+    padding: 40px 16px
+    flex-direction: column
+
+    .right-side
+      margin-left: 0
+
+      .links
+        margin-top: 40px
+        
+        .left, .right
+          width: 100%
+

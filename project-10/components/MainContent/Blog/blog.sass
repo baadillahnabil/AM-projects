@@ -1,0 +1,176 @@
+.blog
+  padding: 80px 10%
+  background-color: #f6f6f6
+
+  .title
+    p 
+      font-family: 'ProximaNova-Bold', sans-serif
+      font-size: 38px
+      line-height: 48px
+      letter-spacing: -0.1px
+      color: $text_default
+      text-align: center
+      margin-bottom: 0
+
+  .description
+    p
+      font-size: 22px
+      line-height: 27px
+      letter-spacing: 0.4px
+      color: #A0A4A8
+      text-align: center
+      margin-bottom: 0
+      margin-top: 16px
+
+  
+  .blog-cards
+    padding-top: 56px
+    display: flex
+    justify-content: center
+
+    .blog-card
+      width: 356px
+      box-shadow: 0 4px 10px 0 rgba($color: #000000, $alpha: .04)
+      border-radius: 4px
+
+      &:not(:first-child)
+        margin-left: 12px
+      &:not(:last-child)
+        margin-right: 12px
+
+      .image
+        img
+          width: 100%
+          height: 144px
+
+      .body
+        padding: 16px
+        background-color: #ffffff
+        border-bottom-right-radius: 4px
+        border-bottom-left-radius: 4px
+
+        .title
+          .tag 
+            p 
+              font-size: 14px
+              letter-spacing: 0
+              line-height: 17px
+              color: rgba($color: #000000, $alpha: .54)
+              text-align: left
+              margin-bottom: 0
+              font-family: 'ProximaNova-Regular', sans-serif
+
+          .text
+            height: 66px
+            margin-bottom: 16px
+            
+            p 
+              font-family: 'ProximaNova-SemiBold', sans-serif
+              font-size: 17px
+              letter-spacing: 0
+              line-height: 22px
+              color: rgba($color: #000000, $alpha: .84)
+              text-align: left
+              margin-bottom: 0
+              margin-top: 4px
+              cursor: pointer
+
+              &:hover
+                text-decoration: underline
+
+        .writer
+          .name
+            p 
+              font-size: 14px
+              letter-spacing: 0
+              line-height: 18px
+              color: rgba($color: #000000, $alpha: .85)
+              text-align: left
+              margin-bottom: 0
+
+          .date
+            p 
+              font-size: 14px
+              letter-spacing: 0
+              line-height: 18px
+              color: rgba($color: #000000, $alpha: .54)
+              text-align: left
+              margin-bottom: 0
+              margin-top: 2px
+  
+
+// Tablet Breakpoint
+@include media-breakpoint-down(lg)
+  .blog
+    padding: 80px 25px
+
+    .title 
+      p
+        padding-left: 24px
+        padding-right: 24px
+    
+    .description
+      p
+        padding-left: 24px
+        padding-right: 24px
+
+    .blog-cards
+      padding-top: 48px
+
+      .blog-card
+        width: 229px
+
+        &:not(:first-child)
+          margin-left: 8px
+        &:not(:last-child)
+          margin-right: 8px
+
+        .image
+          img
+            height: 148px
+
+        .body
+          .title
+            .tag, .text
+              p 
+                padding: 0
+            
+            .tag
+
+// Mobile Breakpoint
+@include media-breakpoint-down(sm)
+  .blog
+    padding: 56px 16px
+    padding-bottom: 64px
+
+    .title 
+      p
+        padding: 0 16px
+        font-size: 30px
+        line-height: 38px
+    
+    .description
+      p
+        padding: 0 16px
+        font-size: 22px
+        line-height: 27px
+
+    .blog-cards
+      padding-top: 40px
+      flex-direction: column
+      
+      .blog-card
+        width: 100%
+        
+        &:not(:first-child)
+          margin-left: 0
+          margin-top: 8px
+
+        &:not(:last-child)
+          margin-right: 0
+          margin-bottom: 8px
+
+        .image
+          img
+            height: 144px
+    
